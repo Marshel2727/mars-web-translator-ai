@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+server/venv/
+server/.venv/
+
+# Environment files
+.env
+.env.*
+!.env.example
+server/.env
+server/.env.*
+!server/.env.example
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / browser extension tooling
+node_modules/
+dist/
+build/
+*.zip
+
+# Local runtime files
+*.pid
+*.sqlite
+*.sqlite3
+*.db
+
+# Codex/local agent metadata
+.agents/
+.codex/

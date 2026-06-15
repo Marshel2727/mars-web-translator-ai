@@ -1,0 +1,53 @@
+(() => {
+    globalThis.MarsTranslator = globalThis.MarsTranslator || {};
+
+    globalThis.MarsTranslator.constants = {
+        API_BASE_URL: "http://127.0.0.1:8000",
+        MESSAGE_TYPES: {
+            TRANSLATE_VISIBLE_TEXT: "TRANSLATE_VISIBLE_TEXT",
+            RESTORE_ORIGINAL_TEXT: "RESTORE_ORIGINAL_TEXT",
+        },
+        SKIP_SELECTOR: [
+            "script",
+            "style",
+            "noscript",
+            "code",
+            "pre",
+            "kbd",
+            "samp",
+            "textarea",
+            "input",
+            "select",
+            "option",
+            "svg",
+        ].join(", "),
+        BLOCKED_HOSTS: [
+            "chat.openai.com",
+            "chatgpt.com",
+            "claude.ai",
+            "gemini.google.com",
+            "bard.google.com",
+            "aistudio.google.com",
+            "copilot.microsoft.com",
+            "perplexity.ai",
+            "poe.com",
+            "you.com",
+            "phind.com",
+            "grok.com",
+            "x.ai",
+            "huggingface.co",
+            "character.ai",
+            "meta.ai",
+            "notebooklm.google.com",
+        ],
+        MAX_BATCH_SIZE: 20,
+        MAX_PRIORITY_NODES_PER_SCAN: 40,
+        MAX_BACKGROUND_NODES_PER_SCAN: 500,
+        PRIORITY_TRANSLATE_DELAY_MS: 250,
+        BACKGROUND_TRANSLATE_DELAY_MS: 1500,
+        BACKGROUND_BATCH_PAUSE_MS: 250,
+        CACHE_STORAGE_KEY: "marsTranslationCacheV1",
+        MAX_PERSISTENT_CACHE_ITEMS: 3000,
+        CACHE_SAVE_DELAY_MS: 700,
+    };
+})();

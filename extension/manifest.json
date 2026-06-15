@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Mars Web Translator AI",
+  "version": "1.0.0",
+  "description": "Translate dokumentasi web menggunakan FastAPI dan Ollama lokal.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*",
+    "http://localhost:8000/*",
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_title": "Mars Translator"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "src/shared/constants.js",
+        "src/shared/language_detector.js",
+        "src/shared/message_types.js",
+        "src/shared/api.js",
+        "src/content/dom_scanner.js",
+        "src/content/text_replacer.js",
+        "src/content/viewport_translator.js",
+        "src/content/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+body {
+  width: 380px;
+  font-family: Arial, sans-serif;
+  padding: 12px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+#translateVisibleBtn {
+  background: #2563eb;
+}
+
+#restoreBtn {
+  background: #16a34a;
+}
+
+#testApiBtn {
+  background: #6b7280;
+}
+
+pre {
+  white-space: pre-wrap;
+  background: #f3f4f6;
+  padding: 10px;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+}
