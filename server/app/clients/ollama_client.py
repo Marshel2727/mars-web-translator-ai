@@ -13,7 +13,13 @@ class OllamaClient:
     @classmethod
     def client(cls) -> httpx.AsyncClient:
         if cls._client is None:
-            cls._client = httpx.AsyncClient(timeout=settings.REQUEST_TIMEOUT)
+            cls._client = httpx.AsyncClient(
+                timeout=settings.REQUEST_TIMEOUT,
+                limits=httpx.Limits(
+                    max_connections=5,
+                    max_keepalive_connections=3,
+                ),
+            )
         return cls._client
 
     @classmethod

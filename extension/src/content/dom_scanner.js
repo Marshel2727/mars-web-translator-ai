@@ -4,6 +4,8 @@
     const { SKIP_SELECTOR } = globalThis.MarsTranslator.constants;
     const languageDetector = globalThis.MarsTranslator.languageDetector;
 
+    const SYNTAX_HIGHLIGHT_PATTERN = /\b(hljs|highlight|prism|shiki|CodeMirror|monaco|code-block|syntax|token|language-)\b/i;
+
     function isVisibleElement(element) {
         const style = window.getComputedStyle(element);
         const rect = element.getBoundingClientRect();
@@ -39,6 +41,20 @@
         return true;
     }
 
+    function hasSyntaxHighlightAncestor(element) {
+        let current = element;
+        while (current && current !== document.body) {
+            if (current.className && typeof current.className === "string" && SYNTAX_HIGHLIGHT_PATTERN.test(current.className)) {
+                return true;
+            }
+            if (current.dataset && (current.dataset.language || current.dataset.lang)) {
+                return true;
+            }
+            current = current.parentElement;
+        }
+        return false;
+    }
+
     function isTranslatableNode(node, options = {}, originalTextMap = new Map()) {
         const parent = node.parentElement;
         const text = node.nodeValue?.trim();
@@ -47,6 +63,7 @@
         if (!parent) return false;
         if (!document.body.contains(parent)) return false;
         if (parent.closest(SKIP_SELECTOR)) return false;
+        if (hasSyntaxHighlightAncestor(parent)) return false;
         if (originalTextMap.has(node)) return false;
         if (!isVisibleElement(parent)) return false;
         if (options.visibleOnly && !isElementInViewport(parent)) return false;

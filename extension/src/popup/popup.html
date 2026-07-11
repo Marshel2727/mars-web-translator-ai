@@ -3,19 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <title>Mars Translator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="popup.css" />
 </head>
 <body>
-  <h2>Mars Translator</h2>
+  <div class="popup-container">
+    <!-- Header -->
+    <div class="popup-header">
+      <div class="header-title">
+        <span class="logo-icon">🪐</span>
+        <h1>Mars Translator</h1>
+      </div>
+      <span class="version-badge">v1.1</span>
+    </div>
 
-  <p>Translate teks yang sedang terlihat di halaman web.</p>
+    <!-- Server Status -->
+    <div class="status-bar" id="serverStatus">
+      <span class="status-dot" id="statusDot"></span>
+      <span class="status-text" id="statusText">Memeriksa server...</span>
+    </div>
 
-  <button id="translateVisibleBtn">Translate Visible Text</button>
-  <button id="restoreBtn">Restore Original</button>
-  <button id="testApiBtn">Test API</button>
+    <!-- Action Buttons -->
+    <div class="actions-section">
+      <button id="translateVisibleBtn" class="btn btn-primary">
+        <span class="btn-icon">🌐</span>
+        <span class="btn-label">Translate Visible Text</span>
+      </button>
+      <button id="restoreBtn" class="btn btn-success">
+        <span class="btn-icon">↩️</span>
+        <span class="btn-label">Restore Original</span>
+      </button>
+      <button id="testApiBtn" class="btn btn-secondary">
+        <span class="btn-icon">🔌</span>
+        <span class="btn-label">Test API Connection</span>
+      </button>
+    </div>
 
-  <h3>Status:</h3>
-  <pre id="result">Belum ada aksi.</pre>
+    <!-- Stats Section -->
+    <div class="stats-section">
+      <h3 class="section-title">Statistik</h3>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-value" id="cacheCount">—</span>
+          <span class="stat-label">Cache Items</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="serverCacheCount">—</span>
+          <span class="stat-label">Server Cache</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Result Section -->
+    <div class="result-section">
+      <h3 class="section-title">Status</h3>
+      <div class="result-box" id="result">Belum ada aksi.</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="popup-footer">
+      <a href="#" id="openOptionsLink" class="footer-link">⚙️ Pengaturan</a>
+    </div>
+  </div>
 
   <script src="popup.js"></script>
 </body>

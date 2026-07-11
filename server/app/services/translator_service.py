@@ -5,6 +5,7 @@ import re
 from app.clients.ollama_client import OllamaClient
 from app.core.prompts import build_batch_translate_prompt, build_prompt
 from app.schemas.translate import TranslateItem
+from app.services.cache_service import TranslationCacheService
 from app.utils.language_detector import should_skip_translation
 
 logger = logging.getLogger(__name__)
@@ -21,19 +22,40 @@ PROMPT_LEAK_MARKERS = (
     "INPUT MULAI",
     "INPUT SELESAI",
     "TEKS:",
+    "<text_to_translate>",
+    "</text_to_translate>",
+    "<text_to_explain>",
+    "</text_to_explain>",
+    "<input_json>",
+    "</input_json>",
 )
 
 class TranslatorService:
     def __init__(self):
         self.ollama_client = OllamaClient()
+        self.cache = TranslationCacheService()
         
     async def translate(self, text: str, mode: str) -> str:
         if mode == "translate" and should_skip_translation(text):
             return text
 
+        # Check cache before calling Ollama
+        cached = await self.cache.get(text, mode)
+        if cached is not None:
+            logger.info("Cache hit for mode=%s, text_len=%d", mode, len(text))
+            return cached
+
         prompt = build_prompt(text=text, mode=mode)
         result = await self.ollama_client.generate(prompt)
-        return self._sanitize_model_output(original_text=text, translated_text=result)
+        sanitized = self._sanitize_model_output(original_text=text, translated_text=result)
+
+        # Save to cache (non-blocking on errors)
+        try:
+            await self.cache.set(text, mode, sanitized)
+        except Exception as exc:
+            logger.warning("Failed to write translation to cache: %s", exc)
+
+        return sanitized
 
     async def translate_batch(self, items: list[TranslateItem], mode: str) -> dict[str, str]:
         skipped_translations = {
@@ -50,12 +72,38 @@ class TranslatorService:
         if not translatable_items:
             return skipped_translations
 
+        # Check cache for each translatable item
+        cached_results: dict[str, str] = {}
+        uncached_items: list[TranslateItem] = []
+
+        for item in translatable_items:
+            try:
+                cached = await self.cache.get(item.text, mode)
+            except Exception:
+                cached = None
+
+            if cached is not None:
+                cached_results[item.id] = cached
+            else:
+                uncached_items.append(item)
+
+        cache_hits = len(cached_results)
+        if cache_hits:
+            logger.info(
+                "Batch cache: %d hits, %d misses", cache_hits, len(uncached_items)
+            )
+
+        # If all items were cached, return early
+        if not uncached_items:
+            cached_results.update(skipped_translations)
+            return cached_results
+
         prompt_items = [
             {
                 "id": item.id,
                 "text": item.text,
             }
-            for item in translatable_items
+            for item in uncached_items
         ]
         prompt = build_batch_translate_prompt(items=prompt_items, mode=mode)
         raw_result = await self.ollama_client.generate(prompt, response_format="json")
@@ -65,29 +113,39 @@ class TranslatorService:
         except ValueError as exc:
             logger.warning("Batch translation JSON parsing failed: %s", exc)
             translated_results = await self._translate_items_individually(
-                items=translatable_items,
+                items=uncached_items,
                 mode=mode,
             )
+            translated_results.update(cached_results)
             translated_results.update(skipped_translations)
             return translated_results
 
         original_text_by_id = {
             item.id: item.text
-            for item in translatable_items
+            for item in uncached_items
         }
         translated_results: dict[str, str] = {}
         for item in parsed_results:
             item_id = item.get("id")
             translated_text = item.get("translated_text")
             if item_id and translated_text:
-                translated_results[item_id] = self._sanitize_model_output(
+                sanitized = self._sanitize_model_output(
                     original_text=original_text_by_id.get(item_id, ""),
                     translated_text=translated_text,
                 )
+                translated_results[item_id] = sanitized
+
+                # Save each result to cache
+                original = original_text_by_id.get(item_id)
+                if original:
+                    try:
+                        await self.cache.set(original, mode, sanitized)
+                    except Exception as exc:
+                        logger.warning("Failed to cache batch item id=%s: %s", item_id, exc)
 
         missing_items = [
             item
-            for item in translatable_items
+            for item in uncached_items
             if item.id not in translated_results
         ]
         if missing_items:
@@ -97,6 +155,7 @@ class TranslatorService:
             )
             translated_results.update(fallback_results)
 
+        translated_results.update(cached_results)
         translated_results.update(skipped_translations)
 
         return translated_results
@@ -141,9 +200,10 @@ class TranslatorService:
     def _sanitize_model_output(self, original_text: str, translated_text: str) -> str:
         cleaned_text = translated_text.strip()
         leak_patterns = (
-            r"\s*(?:ATURAN OUTPUT|Aturan|ATURAN):[\s\S]*?(?:TEKS|INPUT MULAI|Input JSON|INPUT JSON):?\s*",
-            r"\s*(?:Terjemahkan|Jelaskan)[\s\S]*?(?:TEKS|INPUT MULAI):?\s*",
+            r"\s*(?:ATURAN OUTPUT|Aturan|ATURAN):[\s\S]*?(?:TEKS|INPUT MULAI|Input JSON|INPUT JSON|<text_to_translate>|<text_to_explain>|<input_json>):?\s*",
+            r"\s*(?:Terjemahkan|Jelaskan)[\s\S]*?(?:TEKS|INPUT MULAI|<text_to_translate>|<text_to_explain>):?\s*",
             r"\s*(?:INPUT MULAI|INPUT SELESAI)\s*",
+            r"\s*</?(?:text_to_translate|text_to_explain|input_json)>\s*",
         )
 
         for pattern in leak_patterns:

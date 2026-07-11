@@ -8,15 +8,16 @@ Terjemahkan INPUT berikut ke Bahasa Indonesia yang natural, jelas, dan mudah dip
 ATURAN OUTPUT:
 - Jawab hanya hasil terjemahan dari INPUT.
 - Jangan salin instruksi, aturan, label, atau pembatas prompt.
+- Jangan salin tag XML pembatas.
 - Jangan ubah kode program.
 - Jangan ubah nama function, class, package, command, URL, path file, parameter, atau keyword programming.
 - Pertahankan istilah teknis penting jika istilah Inggrisnya lebih umum.
 - Jangan menambahkan opini.
 - Jangan meringkas terlalu pendek.
 
-INPUT MULAI
+<text_to_translate>
 {text}
-INPUT SELESAI
+</text_to_translate>
 """
 
 def build_explain_prompt(text: str) -> str:
@@ -32,13 +33,14 @@ Format:
 
 Aturan:
 - Jangan salin instruksi, aturan, label, atau pembatas prompt.
+- Jangan salin tag XML pembatas.
 - Jangan ubah kode program.
 - Jangan ubah nama function, class, package, command, URL, path file, parameter, atau keyword programming.
 - Jika ada istilah teknis, jelaskan dengan bahasa sederhana.
 
-INPUT MULAI
+<text_to_explain>
 {text}
-INPUT SELESAI
+</text_to_explain>
 """
     
 def build_prompt(text: str, mode: str) -> str:
@@ -63,8 +65,9 @@ Aturan:
 - Jangan ubah nilai id.
 - Jangan ubah kode program, command, URL, path file, parameter, keyword programming, nama package, nama function, nama class, nama produk, atau nama model.
 - Jangan menyalin instruksi, aturan, label, pembatas prompt, pembuka, penutup, catatan, markdown, atau penjelasan ekstra.
+- Jangan salin tag XML pembatas.
 - Pertahankan istilah teknis Inggris jika lebih umum dipakai.
-- Balas hanya JSON valid.
+- Balas hanya dengan JSON valid tanpa tag XML.
 
 Format output wajib:
 {{
@@ -73,6 +76,7 @@ Format output wajib:
   ]
 }}
 
-Input JSON:
+<input_json>
 {payload}
+</input_json>
 """

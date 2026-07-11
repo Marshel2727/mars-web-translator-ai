@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mars Translator - Pengaturan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <div class="options-container">
+    <div class="options-header">
+      <span class="logo-icon">🪐</span>
+      <h1>Mars Translator — Pengaturan</h1>
+    </div>
+
+    <div class="options-card">
+      <h2>Koneksi Server</h2>
+      <div class="form-group">
+        <label for="apiBaseUrl">Server URL</label>
+        <input type="url" id="apiBaseUrl" placeholder="http://127.0.0.1:8000" />
+      </div>
+    </div>
+
+    <div class="options-card">
+      <h2>Terjemahan</h2>
+      <div class="form-group">
+        <label for="maxBatchSize">Ukuran Batch Maksimal</label>
+        <input type="number" id="maxBatchSize" min="1" max="50" placeholder="20" />
+      </div>
+      <div class="form-group toggle-group">
+        <label for="autoTranslate">Auto-Translate saat halaman dimuat</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="autoTranslate" />
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="options-card">
+      <h2>Cache</h2>
+      <p class="card-description">Cache browser menyimpan hasil terjemahan di perangkat ini agar halaman yang sama tidak perlu diterjemahkan ulang.</p>
+      <div class="button-group">
+        <button id="clearBrowserCacheBtn" class="btn btn-warning">Hapus Cache Browser</button>
+        <button id="clearServerCacheBtn" class="btn btn-warning">Hapus Cache Server</button>
+      </div>
+    </div>
+
+    <div class="actions-bar">
+      <button id="saveBtn" class="btn btn-primary">Simpan Pengaturan</button>
+      <button id="resetBtn" class="btn btn-secondary">Reset ke Default</button>
+    </div>
+
+    <div class="toast" id="toast"></div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
