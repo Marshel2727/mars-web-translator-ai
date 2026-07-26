@@ -3,7 +3,7 @@ from unittest.mock import AsyncMock
 import pytest
 from app.services.cache_service import TranslationCacheService
 from app.services.translator_service import TranslatorService
-from app.schemas.translate import TranslateItem
+from app.schemas.translate import OllamaOptionsPayload, TranslateItem
 
 @pytest.mark.asyncio
 async def test_cache_service_crud():
@@ -185,3 +185,74 @@ def test_api_batch_translate_endpoint(test_client, mock_ollama_client):
     assert len(res_data["results"]) == 1
     assert res_data["results"][0]["id"] == "abc"
     assert res_data["results"][0]["translated_text"] == "Terjemahan Sukses"
+
+
+# ================================================================
+# Tests for OllamaOptionsPayload — new configurable params
+# ================================================================
+
+def test_ollama_options_payload_defaults():
+    """OllamaOptionsPayload should accept all None (use server-side defaults)."""
+    opts = OllamaOptionsPayload()
+    assert opts.num_ctx is None
+    assert opts.num_predict is None
+    assert opts.temperature is None
+    assert opts.top_p is None
+    assert opts.keep_alive is None
+
+
+def test_ollama_options_payload_subtitle_preset():
+    """Fast subtitle preset values should be accepted."""
+    opts = OllamaOptionsPayload(
+        num_ctx=512,
+        num_predict=64,
+        temperature=0.0,
+        top_p=0.8,
+        keep_alive="30m",
+    )
+    assert opts.num_ctx == 512
+    assert opts.num_predict == 64
+    assert opts.keep_alive == "30m"
+
+
+@pytest.mark.asyncio
+async def test_translator_service_passes_options_to_ollama(mock_ollama_client):
+    """TranslatorService.translate() should forward options to OllamaClient.generate()."""
+    mock_ollama_client.generate.return_value = "Terjemahan opsi"
+
+    opts = OllamaOptionsPayload(num_ctx=512, num_predict=64, temperature=0.0, top_p=0.8, keep_alive="15m")
+    service = TranslatorService()
+    result = await service.translate("Options forward test", "translate", options=opts)
+
+    assert result == "Terjemahan opsi"
+    # Verify generate was called with the expected options dict
+    call_kwargs = mock_ollama_client.generate.call_args
+    assert call_kwargs is not None
+    passed_options = call_kwargs.kwargs.get("options") or {}
+    assert passed_options.get("num_ctx") == 512
+    assert passed_options.get("num_predict") == 64
+    assert call_kwargs.kwargs.get("keep_alive") == "15m"
+
+
+def test_api_batch_translate_with_ollama_options(test_client, mock_ollama_client):
+    """Batch translate endpoint should accept and forward ollama_options payload."""
+    mock_ollama_client.generate.return_value = json.dumps({
+        "results": [{"id": "x1", "translated_text": "Terjemahan dengan opsi"}]
+    })
+
+    payload = {
+        "mode": "translate",
+        "items": [{"id": "x1", "text": "Options test in API"}],
+        "options": {
+            "num_ctx": 512,
+            "num_predict": 64,
+            "temperature": 0.0,
+            "top_p": 0.8,
+            "keep_alive": "30m",
+        },
+    }
+    response = test_client.post("/api/v1/translate/batch", json=payload)
+    assert response.status_code == 200
+    res_data = response.json()
+    assert res_data["results"][0]["translated_text"] == "Terjemahan dengan opsi"
+

@@ -48,6 +48,10 @@
         },
     });
 
+    globalThis.MarsTranslator.prefillCache = (originalText, translatedText) => {
+        textReplacer.setCachedTranslation(originalText, translatedText);
+    };
+
     const viewportTranslator = createViewportTranslator({
         state,
         domScanner,

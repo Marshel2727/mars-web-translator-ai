@@ -25,11 +25,26 @@
       <span class="status-text" id="statusText">Memeriksa server...</span>
     </div>
 
+    <!-- Model Selector Section -->
+    <div class="model-section">
+      <h3 class="section-title">Model Ollama</h3>
+      <div class="select-wrapper">
+        <select id="modelSelect" disabled>
+          <option value="">Memuat daftar model...</option>
+        </select>
+      </div>
+    </div>
+
+
     <!-- Action Buttons -->
     <div class="actions-section">
       <button id="translateVisibleBtn" class="btn btn-primary">
         <span class="btn-icon">🌐</span>
         <span class="btn-label">Translate Visible Text</span>
+      </button>
+      <button id="checkSubtitleBtn" class="btn btn-primary" style="background: linear-gradient(135deg, #10b981, #059669); box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);">
+        <span class="btn-icon">🔎</span>
+        <span class="btn-label">Cek Subtitle Video</span>
       </button>
       <button id="restoreBtn" class="btn btn-success">
         <span class="btn-icon">↩️</span>

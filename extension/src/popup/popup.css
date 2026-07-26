@@ -298,3 +298,55 @@ body {
   40% { content: '..'; }
   60%, 100% { content: '...'; }
 }
+
+/* ========== Model Selection ========== */
+.model-section {
+  margin-bottom: 16px;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 10px;
+  color: #a78bfa;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.25s ease;
+  appearance: none;
+}
+
+.select-wrapper select option {
+  background: #1a1035;
+  color: #e2e0ef;
+}
+
+.select-wrapper select:hover:not(:disabled) {
+  border-color: rgba(139, 92, 246, 0.6);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.select-wrapper select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.select-wrapper::after {
+  content: '▼';
+  font-size: 10px;
+  color: #a78bfa;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+

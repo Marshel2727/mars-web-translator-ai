@@ -1,7 +1,17 @@
 import json
+import re
+
+
+def _escape_xml_special(text: str) -> str:
+    """Escape characters that could break XML-like delimiters in prompts."""
+    text = text.replace("&", "&amp;")
+    text = text.replace("<", "&lt;")
+    text = text.replace(">", "&gt;")
+    return text
 
 
 def build_translate_prompt(text: str) -> str:
+    safe_text = _escape_xml_special(text)
     return f"""
 Terjemahkan INPUT berikut ke Bahasa Indonesia yang natural, jelas, dan mudah dipahami.
 
@@ -16,11 +26,12 @@ ATURAN OUTPUT:
 - Jangan meringkas terlalu pendek.
 
 <text_to_translate>
-{text}
+{safe_text}
 </text_to_translate>
 """
 
 def build_explain_prompt(text: str) -> str:
+    safe_text = _escape_xml_special(text)
     return f"""
 Jelaskan INPUT berikut dalam Bahasa Indonesia sederhana.
 
@@ -39,7 +50,7 @@ Aturan:
 - Jika ada istilah teknis, jelaskan dengan bahasa sederhana.
 
 <text_to_explain>
-{text}
+{safe_text}
 </text_to_explain>
 """
     
@@ -51,32 +62,20 @@ def build_prompt(text: str, mode: str) -> str:
 
 
 def build_batch_translate_prompt(items: list[dict[str, str]], mode: str) -> str:
-    payload = json.dumps(items, ensure_ascii=False)
+    safe_items = [
+        {"id": item["id"], "text": item["text"]}
+        for item in items
+    ]
+    payload = json.dumps(safe_items, ensure_ascii=False)
 
     if mode == "explain":
-        task = "Jelaskan setiap teks dokumentasi dalam Bahasa Indonesia sederhana."
+        task = "Jelaskan setiap teks ke Bahasa Indonesia sederhana."
     else:
-        task = "Terjemahkan setiap teks dokumentasi ke Bahasa Indonesia yang natural, jelas, dan mudah dipahami."
+        task = "Terjemahkan setiap teks ke Bahasa Indonesia yang natural dan jelas."
 
-    return f"""
-{task}
-
-Aturan:
-- Jangan ubah nilai id.
-- Jangan ubah kode program, command, URL, path file, parameter, keyword programming, nama package, nama function, nama class, nama produk, atau nama model.
-- Jangan menyalin instruksi, aturan, label, pembatas prompt, pembuka, penutup, catatan, markdown, atau penjelasan ekstra.
-- Jangan salin tag XML pembatas.
-- Pertahankan istilah teknis Inggris jika lebih umum dipakai.
-- Balas hanya dengan JSON valid tanpa tag XML.
-
-Format output wajib:
-{{
-  "results": [
-    {{"id": "id yang sama", "translated_text": "hasil"}}
-  ]
-}}
-
-<input_json>
-{payload}
-</input_json>
-"""
+    return f"""Output ONLY valid JSON. No markdown, no explanation, no extra text.
+{task} Jangan ubah kode, nama, URL.
+Contoh format output:
+{{"results":[{{"id":"id_1","translated_text":"hasil_terjemahan"}}]}}
+Input: {payload}
+Output JSON:"""

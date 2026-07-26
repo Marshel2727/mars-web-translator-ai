@@ -28,9 +28,16 @@
         "src/content/dom_scanner.js",
         "src/content/text_replacer.js",
         "src/content/viewport_translator.js",
+        "src/content/subtitle_translator.js",
         "src/content/content.js"
       ],
-      "run_at": "document_idle"
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/content/interceptor.js"],
+      "matches": ["<all_urls>"]
     }
   ]
 }

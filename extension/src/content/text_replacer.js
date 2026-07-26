@@ -92,14 +92,15 @@
                 setCachedTranslation(originalText, translatedText);
             }
 
-            originalTextMap.set(node, originalText);
+            // Only set originalTextMap if not already set, to prevent overwrite with stale data
+            if (!originalTextMap.has(node)) {
+                originalTextMap.set(node, originalText);
+            }
             node.nodeValue = `${leadingSpace}${translatedText}${trailingSpace}`;
         }
 
         function applyCachedTranslations(nodes) {
             let appliedCount = 0;
-
-            setApplyingState(true);
 
             for (const node of nodes) {
                 const originalText = node.nodeValue;
@@ -111,12 +112,6 @@
                 applyTranslation(node, originalText, cachedTranslation, { saveToCache: false });
                 appliedCount += 1;
             }
-
-            setTimeout(() => {
-                if (getApplyingState()) {
-                    setApplyingState(false);
-                }
-            }, 0);
 
             return appliedCount;
         }
@@ -141,6 +136,7 @@
             applyCachedTranslations,
             applyTranslation,
             getCachedTranslation,
+            setCachedTranslation,
             initializePersistentCache,
             restoreOriginalText,
         };

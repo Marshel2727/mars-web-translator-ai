@@ -1,5 +1,6 @@
 import hashlib
 import logging
+import re
 from pathlib import Path
 
 import aiosqlite
@@ -32,7 +33,7 @@ class TranslationCacheService:
 
     @staticmethod
     def _hash(text: str) -> str:
-        normalized = text.strip().lower()
+        normalized = re.sub(r"\s+", " ", text).strip().lower()
         return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
 
     @classmethod
@@ -45,6 +46,8 @@ class TranslationCacheService:
         logger.info("Opening translation cache DB at %s", _DB_PATH)
 
         cls._connection = await aiosqlite.connect(str(_DB_PATH))
+        await cls._connection.execute("PRAGMA journal_mode=WAL")
+        await cls._connection.execute("PRAGMA busy_timeout=5000")
         await cls._connection.execute(_CREATE_TABLE_SQL)
         await cls._connection.execute(_CREATE_INDEX_SQL)
         await cls._connection.commit()
@@ -83,6 +86,28 @@ class TranslationCacheService:
             """,
             (text_hash, mode, text, translated_text),
         )
+
+    async def set_batch(self, entries: list[tuple[str, str, str]]) -> None:
+        """Store multiple translations in a single transaction.
+
+        Each entry is (text, mode, translated_text).
+        """
+        if not entries:
+            return
+        await self._conn().executemany(
+            """
+            INSERT OR REPLACE INTO translation_cache (text_hash, mode, original_text, translated_text)
+            VALUES (?, ?, ?, ?)
+            """,
+            [
+                (self._hash(text), mode, text, translated_text)
+                for text, mode, translated_text in entries
+            ],
+        )
+        await self._conn().commit()
+
+    async def commit(self) -> None:
+        """Explicitly commit pending writes."""
         await self._conn().commit()
 
     async def get_stats(self) -> dict:

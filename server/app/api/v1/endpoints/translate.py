@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException
 
+from app.api.v1.endpoints.models import get_active_model
 from app.core.config import settings
 from app.schemas.translate import (
     BatchTranslateRequest,
@@ -20,11 +21,13 @@ async def batch_translate(payload: BatchTranslateRequest):
             detail=f"Maksimal {settings.MAX_BATCH_ITEMS} item per batch.",
         )
 
-    service = TranslatorService()
+    model = payload.model or get_active_model()
+    service = TranslatorService(model=model)
     results: list[BatchTranslateResult] = []
     translations = await service.translate_batch(
         items=payload.items,
         mode=payload.mode,
+        options=payload.options,
     )
 
     for item in payload.items:
@@ -38,5 +41,5 @@ async def batch_translate(payload: BatchTranslateRequest):
 
     return BatchTranslateResponse(
         results=results,
-        model=settings.OLLAMA_MODEL,
+        model=service.model,
     )

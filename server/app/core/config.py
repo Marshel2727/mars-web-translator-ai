@@ -14,6 +14,9 @@ class Settings(BaseSettings):
     
     REQUEST_TIMEOUT: int = 120  # seconds
     MAX_BATCH_ITEMS: int = 20
+    DEFAULT_NUM_CTX: int = 8192
+    DEFAULT_NUM_PREDICT: int = 2048
+    MAX_BATCH_CHARS: int = 4000  # max total chars per chunk in batch translation
 
 @lru_cache()
 def get_settings() -> Settings:

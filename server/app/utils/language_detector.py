@@ -85,10 +85,10 @@ def detect_language(text: str) -> tuple[str, float]:
     indonesian_score = indonesian_hits / len(words)
     english_score = english_hits / len(words)
 
-    if indonesian_hits >= 2 and indonesian_score >= 0.18 and indonesian_score > english_score * 1.35:
+    if indonesian_hits >= 2 and indonesian_score >= 0.18 and indonesian_score > english_score:
         return "id", indonesian_score
 
-    if english_hits >= 2 and english_score >= 0.16 and english_score > indonesian_score:
+    if english_hits >= 2 and english_score >= 0.16 and english_score > indonesian_score * 1.2:
         return "en", english_score
 
     return "unknown", max(indonesian_score, english_score)
