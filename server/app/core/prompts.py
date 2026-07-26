@@ -1,4 +1,3 @@
-import json
 import re
 
 
@@ -13,14 +12,19 @@ def _escape_xml_special(text: str) -> str:
 def build_translate_prompt(text: str) -> str:
     safe_text = _escape_xml_special(text)
     return f"""
+# ROLE
+
+Anda adalah penerjemah profesional
+untuk dokumentasi software dan AI.
+
 Terjemahkan INPUT berikut ke Bahasa Indonesia yang natural, jelas, dan mudah dipahami.
 
 ATURAN OUTPUT:
 - Jawab hanya hasil terjemahan dari INPUT.
 - Jangan salin instruksi, aturan, label, atau pembatas prompt.
 - Jangan salin tag XML pembatas.
-- Jangan ubah kode program.
-- Jangan ubah nama function, class, package, command, URL, path file, parameter, atau keyword programming.
+- JANGAN PERNAH ubah kode program.
+- JANGAN PERNAH ubah nama function, class, package, command, URL, path file, parameter, atau keyword programming.
 - Pertahankan istilah teknis penting jika istilah Inggrisnya lebih umum.
 - Jangan menambahkan opini.
 - Jangan meringkas terlalu pendek.
@@ -33,6 +37,11 @@ ATURAN OUTPUT:
 def build_explain_prompt(text: str) -> str:
     safe_text = _escape_xml_special(text)
     return f"""
+# ROLE
+
+Anda adalah penerjemah profesional
+untuk dokumentasi software dan AI.
+
 Jelaskan INPUT berikut dalam Bahasa Indonesia sederhana.
 
 Format:
@@ -45,8 +54,8 @@ Format:
 Aturan:
 - Jangan salin instruksi, aturan, label, atau pembatas prompt.
 - Jangan salin tag XML pembatas.
-- Jangan ubah kode program.
-- Jangan ubah nama function, class, package, command, URL, path file, parameter, atau keyword programming.
+- JANGAN PERNAH ubah kode program.
+- JANGAN PERNAH ubah nama function, class, package, command, URL, path file, parameter, atau keyword programming.
 - Jika ada istilah teknis, jelaskan dengan bahasa sederhana.
 
 <text_to_explain>
@@ -62,20 +71,18 @@ def build_prompt(text: str, mode: str) -> str:
 
 
 def build_batch_translate_prompt(items: list[dict[str, str]], mode: str) -> str:
-    safe_items = [
-        {"id": item["id"], "text": item["text"]}
-        for item in items
-    ]
-    payload = json.dumps(safe_items, ensure_ascii=False)
+    numbered = "\n".join(
+        f"[{i+1}] {item['text']}" for i, item in enumerate(items)
+    )
 
     if mode == "explain":
-        task = "Jelaskan setiap teks ke Bahasa Indonesia sederhana."
+        task = "Jelaskan"
     else:
-        task = "Terjemahkan setiap teks ke Bahasa Indonesia yang natural dan jelas."
+        task = "Terjemahkan"
 
-    return f"""Output ONLY valid JSON. No markdown, no explanation, no extra text.
-{task} Jangan ubah kode, nama, URL.
-Contoh format output:
-{{"results":[{{"id":"id_1","translated_text":"hasil_terjemahan"}}]}}
-Input: {payload}
-Output JSON:"""
+    return f"""{task} setiap teks ke Bahasa Indonesia.
+
+{numbered}
+
+Output:
+[1]"""

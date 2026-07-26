@@ -1,5 +1,4 @@
 import asyncio
-import json
 import logging
 import re
 
@@ -12,23 +11,9 @@ from app.utils.language_detector import should_skip_translation
 
 logger = logging.getLogger(__name__)
 
-BATCH_JSON_SCHEMA = {
-    "type": "object",
-    "properties": {
-        "results": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": {"type": "string"},
-                    "translated_text": {"type": "string"},
-                },
-                "required": ["id", "translated_text"],
-            },
-        },
-    },
-    "required": ["results"],
-}
+PROMPT_VERSION = "2"
+
+BATCH_LINE_RE = re.compile(r"^\s*\[(\d+)\]\s*(.*)")
 
 PROMPT_LEAK_MARKERS = (
     "ATURAN OUTPUT",
@@ -76,7 +61,7 @@ class TranslatorService:
             return text
 
         # Check cache before calling Ollama
-        cached = await self.cache.get(text, mode)
+        cached = await self.cache.get(text, mode, self.model)
         if cached is not None:
             logger.info("Cache hit for mode=%s, text_len=%d", mode, len(text))
             return cached
@@ -90,13 +75,13 @@ class TranslatorService:
         )
         sanitized = self._sanitize_model_output(original_text=text, translated_text=result)
 
-        # Save to cache (non-blocking on errors)
-        try:
-            await self.cache.set(text, mode, sanitized)
-        except Exception as exc:
-            logger.warning("Failed to write translation to cache: %s", exc)
+        if sanitized is not None:
+            try:
+                await self.cache.set(text, mode, sanitized, self.model)
+            except Exception as exc:
+                logger.warning("Failed to write translation to cache: %s", exc)
 
-        return sanitized
+        return sanitized or text
 
     async def translate_batch(
         self,
@@ -124,7 +109,7 @@ class TranslatorService:
 
         async def _check_cache(item: TranslateItem) -> tuple[str, str | None]:
             try:
-                cached = await self.cache.get(item.text, mode)
+                cached = await self.cache.get(item.text, mode, self.model)
             except Exception:
                 cached = None
             return item.id, cached
@@ -158,26 +143,23 @@ class TranslatorService:
         )
 
         translated_results: dict[str, str] = {}
-        all_cache_entries: list[tuple[str, str, str]] = []
+        all_cache_entries: list[tuple[str, str, str, str]] = []
 
         for chunk in chunks:
             prompt_items = [{"id": item.id, "text": item.text} for item in chunk]
             prompt = build_batch_translate_prompt(items=prompt_items, mode=mode)
-            batch_options = dict(_options_to_dict(options) or {})
-            batch_options.setdefault("num_predict", settings.DEFAULT_NUM_PREDICT * 2)
             raw_result = await self.ollama_client.generate(
                 prompt,
-                response_format=BATCH_JSON_SCHEMA,
                 model=self.model,
-                options=batch_options,
+                options=_options_to_dict(options),
                 keep_alive=options.keep_alive if options else None,
             )
 
             try:
-                parsed_results = self._parse_batch_result(raw_result)
+                parsed_results = self._parse_batch_result(raw_result, len(chunk))
             except ValueError as exc:
                 logger.warning(
-                    "Batch translation JSON parsing failed (chunk of %d items): %s",
+                    "Batch translation list parsing failed (chunk of %d items): %s",
                     len(chunk), exc,
                 )
                 logger.debug("Raw model output for failed batch chunk:\n%s", raw_result)
@@ -187,19 +169,14 @@ class TranslatorService:
                 translated_results.update(fallback)
                 continue
 
-            original_text_by_id = {item.id: item.text for item in chunk}
-            for item in parsed_results:
-                item_id = item.get("id")
-                translated_text = item.get("translated_text")
-                if item_id and translated_text:
-                    sanitized = self._sanitize_model_output(
-                        original_text=original_text_by_id.get(item_id, ""),
-                        translated_text=translated_text,
-                    )
-                    translated_results[item_id] = sanitized
-                    original = original_text_by_id.get(item_id)
-                    if original:
-                        all_cache_entries.append((original, mode, sanitized))
+            for idx, text in parsed_results.items():
+                item = chunk[idx]
+                sanitized = self._sanitize_model_output(
+                    original_text=item.text, translated_text=text,
+                )
+                if sanitized is not None:
+                    translated_results[item.id] = sanitized
+                    all_cache_entries.append((item.text, mode, sanitized, self.model))
 
         if all_cache_entries:
             try:
@@ -239,109 +216,25 @@ class TranslatorService:
             chunks.append(current_chunk)
         return chunks
 
-    def _parse_batch_result(self, raw_result: str) -> list[dict[str, str]]:
-        data = self._load_json_from_model_output(raw_result)
+    def _parse_batch_result(
+        self, raw_result: str, expected_count: int,
+    ) -> dict[int, str]:
+        results: dict[int, str] = {}
+        for line in raw_result.strip().split("\n"):
+            m = BATCH_LINE_RE.match(line)
+            if not m:
+                continue
+            idx = int(m.group(1)) - 1
+            text = m.group(2).strip()
+            if 0 <= idx < expected_count and text:
+                results[idx] = text
 
-        if isinstance(data, dict):
-            data = data.get("results")
+        if not results:
+            raise ValueError("Model tidak mengembalikan format yang valid.")
 
-        if not isinstance(data, list):
-            raise ValueError("Format hasil model harus berupa list JSON.")
+        return results
 
-        return [
-            item
-            for item in data
-            if isinstance(item, dict)
-        ]
-
-    def _load_json_from_model_output(self, raw_result: str) -> object:
-        cleaned_result = self._repair_common_json_mistakes(raw_result)
-        try:
-            return json.loads(cleaned_result)
-        except json.JSONDecodeError:
-            pass
-
-        # Coba ekstrak JSON object atau array dari dalam teks
-        for pattern in (r"\{[\s\S]*\}", r"\[[\s\S]*\]"):
-            # Gunakan greedy match untuk menangkap JSON terlengkap
-            matches = list(re.finditer(pattern, cleaned_result))
-            # Coba dari yang terpanjang (kemungkinan paling lengkap)
-            matches_sorted = sorted(matches, key=lambda m: len(m.group(0)), reverse=True)
-            for match in matches_sorted:
-                candidate = self._repair_common_json_mistakes(match.group(0))
-                try:
-                    return json.loads(candidate)
-                except json.JSONDecodeError:
-                    # Coba perbaiki JSON yang terpotong
-                    fixed = self._fix_truncated_json(candidate)
-                    try:
-                        return json.loads(fixed)
-                    except json.JSONDecodeError:
-                        continue
-
-        raise ValueError("Model tidak mengembalikan JSON valid.")
-
-    def _repair_common_json_mistakes(self, text: str) -> str:
-        text = text.strip()
-
-        # Hapus markdown code block (```json ... ``` atau ``` ... ```)
-        text = re.sub(r"```(?:json)?\s*[\s\S]*?```", "", text)
-
-        # Hapus kalimat penjelasan di awal sebelum JSON
-        # Contoh: "Berikut hasilnya:" atau "Tentu, ini terjemahannya:"
-        text = re.sub(r"^[^[{]*(?=[\[{])", "", text, flags=re.DOTALL)
-
-        # Hapus kalimat di akhir setelah JSON
-        text = re.sub(r"(?<=[}\]])[^}\]]*$", "", text, flags=re.DOTALL)
-
-        # Perbaiki single quote menjadi double quote (hati-hati dengan apostrophe dalam teks)
-        # Hanya ganti ' yang berperan sebagai delimiter JSON: 'value' setelah : , [ {
-        text = re.sub(r"(?<=[{,:\[])'([^']*?)'(?=[,}\]:])", r'"\1"', text)
-
-        # Hapus trailing comma sebelum } atau ]
-        text = re.sub(r",\s*([}\]])", r"\1", text)
-
-        # Hapus komentar JavaScript (// ...) - handle both with and without trailing newline
-        text = re.sub(r"//[^\n]*", "", text)
-
-        return text.strip()
-
-    def _fix_truncated_json(self, text: str) -> str:
-        """Coba perbaiki JSON yang terpotong di tengah dengan menutup bracket yang terbuka."""
-        # Jika JSON terpotong di tengah string value (odd number of unescaped quotes),
-        # tutup string dulu dengan menghapus sisa teks dari quote terakhir yang tidak tertutup.
-        quote_positions = [
-            i for i, ch in enumerate(text) if ch == '"' and (i == 0 or text[i - 1] != '\\')
-        ]
-        if len(quote_positions) % 2 != 0:
-            # Find the last unclosed quote and take everything up to it
-            last_quote = quote_positions[-1]
-            # Check if there's content after the last quote that isn't a structural char
-            remaining = text[last_quote + 1:].strip()
-            if remaining and remaining[0] not in (',', '}', ']', ':'):
-                # The quote is mid-value; truncate to the last complete key-value pair
-                text = text[:last_quote]
-                # Re-count quotes after truncation
-                quote_positions = [
-                    i for i, ch in enumerate(text) if ch == '"' and (i == 0 or text[i - 1] != '\\')
-                ]
-
-        if len(quote_positions) % 2 != 0:
-            text += '"'
-
-        # Hitung bracket yang terbuka
-        open_braces = text.count('{') - text.count('}')
-        open_brackets = text.count('[') - text.count(']')
-
-        # Tutup semua bracket yang terbuka
-        text += '}' * open_braces
-        text += ']' * open_brackets
-
-        # Hapus trailing comma yang mungkin muncul sebelum bracket penutup baru
-        text = re.sub(r",\s*([}\]])", r"\1", text)
-        return text
-
-    def _sanitize_model_output(self, original_text: str, translated_text: str) -> str:
+    def _sanitize_model_output(self, original_text: str, translated_text: str) -> str | None:
         cleaned_text = translated_text.strip()
         leak_patterns = (
             r"\s*(?:ATURAN OUTPUT|Aturan|ATURAN):[\s\S]*?(?:TEKS|INPUT MULAI|Input JSON|INPUT JSON|<text_to_translate>|<text_to_explain>|<input_json>):?\s*",
@@ -358,10 +251,10 @@ class TranslatorService:
         cleaned_text = re.sub(r"\s+", " ", cleaned_text).strip()
 
         if any(marker.lower() in cleaned_text.lower() for marker in PROMPT_LEAK_MARKERS):
-            logger.warning("Model output still contains prompt leak marker. Returning original text.")
-            return original_text
+            logger.warning("Model output contains prompt leak marker. Returning None.")
+            return None
 
-        return cleaned_text or original_text
+        return cleaned_text or None
 
     async def _translate_items_individually(
         self,
@@ -384,12 +277,13 @@ class TranslatorService:
                 sanitized = self._sanitize_model_output(
                     original_text=item.text, translated_text=result
                 )
-                results[item.id] = sanitized
+                results[item.id] = sanitized or item.text
 
-                try:
-                    await self.cache.set(item.text, mode, sanitized)
-                except Exception as exc:
-                    logger.warning("Failed to cache single item id=%s: %s", item.id, exc)
+                if sanitized is not None:
+                    try:
+                        await self.cache.set(item.text, mode, sanitized, self.model)
+                    except Exception as exc:
+                        logger.warning("Failed to cache single item id=%s: %s", item.id, exc)
             except Exception as exc:
                 logger.warning("Single item translation failed for id=%s: %s", item.id, exc)
                 results[item.id] = item.text

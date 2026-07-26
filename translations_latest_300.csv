@@ -1,0 +1,462 @@
+﻿original_text,translated_text
+"new session on every refresh, so that's
+just my note on that.","OUTPUT: setiap pengerefresh akan membuat sesi baru, itu hanya catatan dari saya."
+So we're going to be doing a,Kita akan melakukan
+"So you're just, I mean, you're just,
+you're setting it up to fail, and that's
+just not fair.","Jadi kamu hanya, ya, kamu hanya, sedang mengatur semuanya agar gagal, dan itu hanya tidak adil."
+"this stuff in the history, which it does,
+but the canvas in which it's referred to
+is gone.","hal ini ada dalam riwayat, yang mana ia melakukan itu,"
+"The reason I'm telling you that is because
+we are going to be creating a new session,",Alasannya adalah karena kita akan membuat sesi baru.
+"messages in it, and then you're basically
+gaslighting AI at that point because it
+thinks it has all","pesan dalam itu, dan pada titik tersebut Anda hampir menguji kecerdasan buatan dengan membuatnya merasa seperti telah memiliki semua informasi, padahal sebenarnya tidak."
+"Excalidraw is stored in your browser, so
+if you refresh it, it's gone, OK?","Excalidraw disimpan di browser Anda, jadi jika Anda memuat ulang halaman, Excalidraw akan hilang, oke?"
+It gets stored in your browser.,Ini disimpan di peramban Anda.
+"If we don't do that, you'll refresh and
+your canvas will be empty, but then your
+chat will still have","Jika kita tidak melakukan itu, Anda akan memuat ulang dan kanvas Anda akan kosong, tapi percakapan Anda masih akan memiliki"
+a new chat session on every refresh.,setiap pengerefresh akan ada sesi obrolan baru.
+"So a note here, we are not using a
+database to store any of the canvas stuff.",Sebuah catatan: Kami tidak menggunakan database untuk menyimpan semua informasi tentang canvas.
+"But if you're just building chat, it's
+been solved already and it's fully
+customizable.","Tapi jika Anda hanya membuat obrolan, masalahnya sudah terpecahkan dan bisa disesuaikan sepenuhnya."
+"is not a feature. We just have to use it
+because that's what's here.",bukan fitur. Kami hanya perlu menggunakan itu
+"and they raise money on that, so there's
+no shortage of that.","dan mereka mengumpulkan dana untuk hal tersebut, jadi tidak pernah kekurangan itu."
+"chat, which to me AI chat is a bug,","obrolan, yang bagi saya obrolan dengan AI adalah sebuah masalah."
+"I mean there's startups whose product is
+like we're an SDK for chat widgets,",Berarti ada perusahaan startup yang produknya seperti kita adalah sebuah SDK untuk widget obrolan.
+"we just built a, we built Bootstrap for AI
+chat.","kami baru saja membuat satu, yaitu Bootstrap untuk obrolan AI."
+"Front end, just use something off the
+shelf because unless you're building an
+experience that is beyond",前端，只需使用现成的解决方案即可，除非你需要构建一个超越一般的体验。
+"So I would say back end, you will be
+changing.",Jadi saya akan katakan bahwa bagian backend akan berubah.
+"a whole protocol. There's so many versions
+of the front end stuff where people are
+just like,","sebuah protokol lengkap. Ada begitu banyak versi dari bagian depan sistem di mana orang-orang hanya seperti,"
+"like for instance, there is","misalnya, ada"
+"and then also on the front end stuff,
+there are libraries that do provide the UI
+and things that","dan di sisi depan aplikasi, terdapat library yang menyediakan antarmuka pengguna (UI) serta berbagai komponen lainnya."
+"you know what I mean? So you will do that
+much sooner than the front end stuff,","Anda tahu kan maksud saya? Jadi, itu akan Anda lakukan jauh lebih cepat dari pada hal-hal di sisi depan."
+"does that classifier use? Like it gets,
+it's just like agents all the way down,","classifier itu menggunakan? Seperti yang kamu lihat,"
+and then like what model,dan kemudian seperti apa modelnya
+"kursus, tapi kapan kamu menyarankan kita mengurangi tingkatnya","kursus, tapi kapan kamu menyarankan kita mengurangi tingkatnya"
+"Tapi teoritisnya semua sama, kan?","Tetapi teoritisnya semua sama, kan?"
+"down and make that ourselves, like all
+right, let's add a classifier, and then we
+gotta eval that classifier","OUTPUT: - Mari kita buat kelasifikasi sendiri, dan kemudian kita uji kelasifikasi tersebut."
+We would have to drop,Kami harus menghapus
+itu terjadi. Sangat keren.,itu terjadi. Sangat keren.
+"And then that model gets to work. So they,
+that is something that we don't get for
+free right now","Maka model tersebut mulai bekerja. Jadi, itu adalah sesuatu yang kita tidak dapatkan secara gratis saat ini."
+alat ini menemukan 10 hasil,alat ini menemukan 10 hasil
+"and then depending on the complexity, they
+route it to a specific model.","dan kemudian tergantung pada tingkat kompleksitas, mereka arahkan ke model yang spesifik."
+status alat cukup keren. Ini sangat penting.,status peralatan cukup keren. Ini sangat penting.
+"sebuah video YouTube, respons dari pengunggahan gambar,","sebuah video di YouTube, respons dari pengunggahan gambar,"
+LLM sedang mencoba,LLM sedang mencoba
+optimalkan penggunaannya memori seefisien mungkin.,memaksimalkan penggunaannya memori seefisien mungkin.
+"Seperti yang kita lihat, kita sekarang berbicara tentang token dan daya listrik.","Seperti yang kita lihat, kita sekarang berbicara tentang token dan daya listrik."
+"kelas dasar. Ini sebenarnya bukan menunggu semua token tergenerasi di memori dan kemudian dikirim ke kita secara bersamaan, melainkan kami mengalirkannya saat mereka tergenerate,",kelas dasar. Ini se
+"they run it through a classifier LLM first
+to determine the complexity of this ask,","mereka mengalaskannya ke dalam sebuah classifier LLM pertama-tama untuk menentukan tingkat kompleksitas permintaan ini,"
+"API. Banyak model berbentuk terbuka dan sumber terbuka menunjukkan langkah-langkah penalaran seperti DeepSeek,","API. Banyak model berbentuk terbuka dan sumber terbuka menunjukkan langkah-langkah penalaran seperti DeepSeek,"
+"Anda mungkin akan melihat hal-hal seperti alasan, dukungan file, jadi mengunggah file.","Anda mungkin akan melihat hal-hal seperti alasan, dukungan file, jadi mengunggah file."
+"much, much, much sooner of like, all
+right, we can't just do this tool loop and
+stop on five times","jauh, jauh, jauh sebelumnya, seperti, baiklah, kita tidak bisa hanya melakukan loop alat dan berhenti pada lima kali"
+We gotta think about this.,Kita harus memikirkan hal ini.
+"We need to do, like for instance, ChatGPT
+has a feature where when you pick a model,","Kita perlu melakukan, misalnya, ChatGPT memiliki fitur di mana ketika Anda memilih model,"
+"you can pick auto, right? So how does that
+actually work?","Anda dapat memilih auto, kan? Jadi bagaimana sebenarnya itu bekerja?"
+"So what they actually do is when you send
+them a message,",Jadi yang mereka lakukan sebenarnya adalah ketika Anda mengirimkan pesan kepada
+"of that when you're just doing a generic
+tool loop.",ketika Anda hanya menggunakan alat secara umum dalam loop.
+"Ini agak merepotkan. Sangat menyakitkan, Oke.","Ini agak merepotkan. Sangat menyakitkan, Oke."
+"I don't know what it would be because you
+just don't have enough control to increase
+the dependability",Saya tidak tahu apa itu karena Anda tidak memiliki kendali yang cukup untuk meningkatkan keandalan.
+Jadi useAgent berasal dari,"jadi, `useAgent` berasal dari"
+"If there is, it must be like a PDF
+generator or something.","Jika ada, itu harus seperti generator PDF atau sesuatu seperti itu."
+sehingga kita bisa mendapatkan banyak fitur keren secara gratis.,sehingga kita bisa mendapatkan banyak fitur keren secara gratis.
+Pengawasan waktu saat ini,Pengawasan waktu saat ini
+"So I don't think that that's the case, so
+like you would definitely on the back end
+run into that","Jadi saya tidak percaya bahwa itu adalah kasus, jadi di belakang layar tentunya Anda akan menemukannya."
+"I would generally be shocked. I don't
+believe there is.",Saya biasanya akan merasa terkejut. Saya tidak percaya ada.
+"there that are making significant money
+that are just a basic tool loop.",yang sedang menghasilkan uang yang signifikan hanya berupa alat loop dasar.
+"Like I would be surprised if there are any
+production agents out",Saya akan kaget jika ada agen produksi yang aktif.
+"you will more frequently run into issues
+on the back end sooner that would",Anda akan lebih sering menemui masalah di sisi belakang sistem lebih cepat.
+"make you want to drop down to a lower
+level for sure.",membuat Anda ingin beralih ke tingkatan yang lebih rendah pastinya.
+"Yeah, on the front end I would say on the
+back end, yeah,","Ya, di sisi depan saya akan bilang di sisi belakang, ya,"
+it's reasonable to default to using them.,itu wajar untuk menggunakan mereka secara default.
+"or essentially unless you run into a wall,","atau secara dasar, kecuali Anda menemui dinding,"
+"benefits or maybe using gRPC or something
+like that,","manfaat atau mungkin menggunakan gRPC atau sesuatu yang serupa,"
+Ditulis oleh,Ditulis oleh
+Disclaimer: Antisipasi blok domain jangan lupa dibookmark domain ANICHIN.TEAM Pada Browser Google CHROME kalian dan selamat menonton ^_^ does not store any files on its server.,Peringatan: Pastikan untuk bookmark domain ANICHIN.TEAM pada browser Google Chrome Anda. Selamat menonton! ^_^ Tidak menyimpan apa pun di servernya.
+"You don't really lose anything unless
+there's just some custom authentication or
+performance",Anda tidak benar-benar kehilangan apa-apa selain beberapa autentikasi kustom atau kinerja yang mungkin ada.
+"the UI part. So for the most part you
+could probably get away with still using
+these abstractions.","bagian antarmuka pengguna. Jadi sebagian besar, Anda masih bisa menggunakan abstraksi ini."
+Copyright © 2026 Anichin. All Rights Reserved,Hak Cipta © 2026 Anichin. Semua Hak Dilindungi
+Searching order by alphabet name A to Z.,Mencari berdasarkan nama abjad dari A sampai Z.
+"so like the hooks and the syncing of the
+history, and then you can still do
+whatever you want on","seperti hook dan sinkronisasi sejarah, kemudian Anda masih bisa melakukan apa pun yang Anda ingin lakukan di atasnya."
+Team Sports,Tim Olahraga
+Season Anichin,Musim Anichin
+Summer 2022,Musim Panas 2022
+Spring 2023,Musim Semi 2023
+Summer 2023,Musim Panas 2023
+Winter 2023,Musim Dingin 2023
+Info Batch,Informasi Batch
+"Jika ingin batch cepat digarap donasi aja minimal 2ribu aja, jika gak ya slow aja nunggu admin update terimakasih.","Jika ingin batch cepat diselesaikan, donasi minimal 2 ribu aja, jika tidak ya tunggu admin update saja. Terima kasih."
+Donasi via Trakteer,Donasi melalui Trakteer
+"UI itself. They're mostly just handling
+the business logic on the front end,",Antarmuka pengguna itu sendiri. Mereka hampir seluruhnya hanya menangani logika bisnis di sisi depan.
+"So a lot of these UI SDKs, they don't make
+a lot of assumptions or lock in on the
+actual",Sebagian besar SDK antarmuka pengguna ini tidak membuat banyak asumsi atau menetapkan secara khusus pada elemen-elemen antarmuka pengguna sebenarnya.
+Slice of Life,Hidup Sehari-hari
+"So on the client side, when would you not
+use these abstractions?","Pada sisi klien, kapan saja Anda tidak akan menggunakan abstraksi-abstraksi ini?"
+Reincarnation,Reinkarnasi
+Reincaranation,Reincarnation
+Urban Fantasy,Fantasi Kota
+"Feb 15, 2024",15 Februari 2024
+Legendary Twins: Beyond the Sky,Siang Surgawi: Di Luar Langit
+"Dec 02, 2024",02 Desember 2024
+Douluo Dalu: Jiandao Chen Xin,Douluo Dalu: Jiandao Chen Xin
+"Jul 12, 2025",12 Juli 2025
+Action Drama,Drama Aksi
+Crossdressing,Penyamaran Gender
+Cultivation,Peningkatan Diri
+Friendship,Persahabatan
+"approach? Yeah, I think there's two
+reasons for that.","pendekatan? Ya, saya rasa ada dua alasan untuk itu."
+"and not reuse these existing SDKs and take
+a more low-level","dan tidak memanfaatkan SDK yang sudah ada dan mengambil pendekatan yang lebih rendah tingkat? Ya, saya rasa ada dua alasan untuk itu."
+Supernatural,Supernatural
+"course, but when would you suggest that we
+drop down a level","kursus, tapi kapan kamu menyarankan kita mengurangi tingkatnya"
+Super Power,Super Power
+"patterns, but I'm curious in your
+experience, I haven't done the other
+agents","pattern, tapi saya penasaran dengan pengalaman Anda, saya belum pernah melakukan hal lain pada agen-agen lain."
+Psychological,Psikologis
+Hitori No Shita: The Return of Tetsumaru,Hitori No Shita: Kembali Tetsumaru
+"yes. We're dealing with a lot of
+abstraction here, which I think is
+beneficial if there's repeatable","iya. Kami sedang menghadapi banyak abstraksi di sini, yang saya rasa sangat bermanfaat jika ada keberulangan."
+Battle Through the Heavens Season 5,Battle Through the Heavens Season 5 - Musim Ke-5 Battle Through the Heavens
+Swallowed Star: Battle of the Primordial Star,Swallowed Star: Battle of the Primordial Star - Bintang Diselimuti: Pertempuran Bintang Primitif
+"May 1, 2026","May 1, 2026 - 1 Mei 2026"
+Shrouding the Heavens: The Imperial Path,Shrouding the Heavens: The Imperial Path - Menyelimuti Langit: Jalan Raja
+"Apr 4, 2026","Apr 4, 2026 - 4 April 2026"
+"to show your users. Like not every
+interface is going to be the same,","menampilkan hal ini kepada pengguna Anda. Seperti tidak setiap antarmuka akan sama,"
+"You need to be able to handle these use
+cases, but it also really depends on the
+interface you want","Anda perlu dapat mengatasi kasus penggunaan ini, tetapi juga sangat bergantung pada antarmuka yang Anda inginkan."
+Popular Series,Serie Populer
+"But theoretically it's all the same,
+right?","Tapi teoritisnya semua sama, kan?"
+Episode 20,Episod 20
+In Search of Gods,Cari Dewa
+"the code because a lot of it is somewhat
+specific to this agent.",kode karena sebagian besar darinya cukup spesifik untuk agen ini.
+"I'm going to pause here. Any questions so
+far? I'm just flying through this so we
+can just get through",Saya akan berhenti di sini untuk sejenak. Ada pertanyaan apa saja hingga saat ini? Saya hanya membahasnya cepat agar kita bisa melanjutkan.
+Episode 150,Episod 150
+So this format allows us to do that.,Format ini memungkinkan kita untuk melakukan itu.
+Renegade Immortal,Imortal Pemberani
+they're happening. It's pretty cool.,itu terjadi. Sangat keren.
+Episode 233,Episod 233
+Episode 07,Episode 07
+The Eternal Supreme: Li Yunxiao,The Eternal Supreme: Li Yunxiao
+Yi Nian Yong Heng Season 4,Yi Nian Yong Heng Musim Ke-4
+Peerless Battle Spirit,Roh Perang Tak Terkalahkan
+Episode 188,Episode 188
+Above Myriads,Di Atas Ratusan Juta
+Episode 09,Episode 09
+Shrouding the Heavens,Menyelimuti Langit
+Episode 172,Episode 172
+Martial Master,Guru Seni
+Episode 676,Episode 676
+Swallowed Star Season 4,Bintang Terbakar Musim Ke-4
+Tracking waktu saat ini,Pengawasan waktu saat ini
+"tool is done, that way you can constantly
+show that update to the user of those
+different statuses as","alat sudah selesai, dengan begini Anda bisa secara kontinu menampilkan pembaruan tersebut kepada pengguna dengan berbagai status yang berbeda."
+"this tool picked this, this","alat ini memilih ini, ini"
+this tool found 10 results,alat ini menemukan 10 hasil
+Slay The Gods Season 2,Season 2: Slay the Gods
+"on the tool, so you might be able to say
+this tool is starting, this tool is doing
+this thing","di alat ini, jadi Anda bisa mengatakan alat ini mulai berjalan, alat ini sedang melakukan sesuatu"
+Episode 47,Episod 47
+Against the Gods,Melawan Dewa-Dewa
+"Tool statuses is pretty cool. It's pretty
+important. This allows you to customize
+different statuses",Status alat sangat keren. Sangat penting juga. Ini memungkinkan Anda untuk menyesuaikan berbagai status.
+"base class. It's basically instead of
+waiting for all the tokens to be generated
+in memory and then sent","kelas dasar. Ini sebenarnya bukan menunggu semua token tergenerasi di memori dan kemudian dikirim ke kita secara bersamaan, melainkan kami mengalirkannya saat mereka tergenerate,"
+"to us at once, we're streaming them as
+they're generated,","OK? Hanya seperti apa pun yang pernah Anda alirkan dalam hidup Anda,"
+"OK? That's literally just like anything
+you've ever streamed in your entire life,","sebuah video YouTube, respons dari pengunggahan gambar,"
+"a YouTube video, a response from some
+image upload,","apa saja. Itu sama persis, tidak ada yang berbeda di sini."
+"whatever. It's the same thing, nothing
+different here.",status alat cukup keren. Ini sangat penting.
+Episode 279,Episod 279
+Perfect World,Dunia Idaman
+"Streaming responses, we talked a little
+bit about it. It's handled by the AI SDK
+and the AI chat agent","Stream respons, kita sudah membahasnya sedikit. Ini ditangani oleh SDK AI dan agen obrolan AI."
+"point. Like who knows, it's kind of crazy.","seperti yang tahu, itu agak gila."
+Episode 03,Episod 03
+Oriental Martial Academy,Akademi Seni Bela Diri Oriens
+"You know, we might just be, instead of
+using money, we might just be using tokens
+going forward at this",Kita mungkin akan menggunakan token代替使用金钱，从今以后我们可能只是会使用代币来进行交易。
+"Like that's how this is going to be
+measured.",seperti itu cara pengukurannya.
+Episode 83,Episod 83
+"Like it's literally, we're getting to the
+point of tokens to wattage.","Seperti yang kita lihat, kita sekarang berbicara tentang token dan daya listrik."
+The Great Ruler 3D,Raja Hebat 3D
+Episode 151,Episod 151
+"the more power it needs, the more
+electricity.","semakin banyak daya yang dibutuhkannya, semakin banyak listrik yang diperlukan."
+"The more memory it has to hold, the more
+expensive that inference call is going to
+be,","Semakin banyak memori yang digunakan untuk menyimpan data, semakin mahal pula panggilan inferensi tersebut."
+My Senior Brother Is Too Steady,Adik Kandung Saya Terlalu Stabil
+"Eps 02 - Tales of Demons and Gods Season 10 Episode 02 Subtitle Indonesia - July 18, 2026",Epsiode 02 - Cerita Para Setan dan Dewa Musim 10 Episode 02 Subtitle Bahasa Indonesia - 18 Juli 2026
+"optimize its memory as efficiently as
+possible.",optimalkan penggunaannya memori seefisien mungkin.
+"Eps 03 - Tales of Demons and Gods Season 10 Episode 03 Subtitle Indonesia - July 18, 2026",Episod 3 - Cerita Rakyat Setan dan Dewa Musim 10 Episode 3 Subtitle Bahasa Indonesia - 18 Juli 2026
+The LLM is trying to,LLM sedang mencoba
+Tales of Demons and Gods Season 10 Episode 05 Subtitle Indonesia,Cerita Dewa dan Raja Musim 10 Episode 5 Subtitle Indonesia
+"Eps 05 - Tales of Demons and Gods Season 10 Episode 05 Subtitle Indonesia - July 25, 2026",Eps 05 - Cerita Dewa dan Raja Musim 10 Episode 5 Subtitle Indonesia - 25 Juli 2026
+Tales of Demons and Gods Season 10 Episode 04 Subtitle Indonesia,Cerita Dewa dan Raja Musim 10 Episode 4 Subtitle Indonesia
+"Eps 04 - Tales of Demons and Gods Season 10 Episode 04 Subtitle Indonesia - July 25, 2026",Eps 04 - Cerita Dewa dan Raja Musim 10 Episode 4 Subtitle Indonesia - 25 Juli 2026
+Tales of Demons and Gods Season 10 Episode 03 Subtitle Indonesia,Cerita Dewa dan
+"And again, they're useful for rendering
+things in the UI but completely irrelevant
+to the LLM itself","Kembali lagi, mereka berguna untuk menampilkan hal-hal di antarmuka pengguna (UI) tapi sama sekali tidak relevan dengan model otot ngôn ngữ (LLM) itu sendiri."
+"These are all the different types of parts
+that you might be able to do.",Berikut adalah semua jenis bagian yang Anda mungkin bisa kerjakan.
+"Save my name, email, and website in this browser for the next time I comment.","Simpan nama saya, alamat surel, dan website saya dalam peramban ini untuk penggunaan berikutnya ketika saya membuat komentar."
+Required fields are marked,Bidang wajib ditandai dengan
+"source URL, so referencing URLs that were
+already uploaded somewhere else or hosted
+somewhere else.","URL sumber, jadi merujuk pada URL yang sudah diunggah di tempat lain atau dimuat di tempat lain."
+"So you might see things like reasoning,
+file support, so uploading files,","Anda mungkin akan melihat hal-hal seperti alasan, dukungan file, jadi mengunggah file."
+Your email address will not be published.,Alamat email Anda tidak akan dipublikasikan.
+"so you can handle those, and you can show
+that to your user.",agar Anda bisa mengelolanya dan menampilkan hasil tersebut kepada pengguna Anda.
+Leave a Reply,Tinggalkan Balasan
+"the API. A lot of open weight, open source
+models do show you the reasoning steps
+like DeepSeek,","API. Banyak model berbentuk terbuka dan sumber terbuka menunjukkan langkah-langkah penalaran seperti DeepSeek,"
+Legendary Twins,Legenda Twin
+"and then it'll be like thought for 30
+seconds, and then it'll answer, and then
+that blurb in which it","dan kemudian akan berpikir selama 30 detik, kemudian memberikan jawaban, dan kemudian paragraf di mana ia"
+The Emperor of Myriad Realms,Raja dari Ratusan Dunia
+Spirit Sword Sovereign Season 4,Pedang Roh Musim Keempat Perjanjian Pedang
+"was thinking, that's the reasoning step.","berpikir, itu adalah langkah alasan."
+"Not all models expose that. Some of them
+consider that the secret sauce.",Tidak semua model menampilkan hal tersebut. Beberapa dianggap sebagai rahasia utama.
+"Like I know GPT, anything doesn't expose
+the reasoning steps over its API,","Misalnya, saya tahu GPT, tidak menampilkan langkah-alasan melalui API-nya,"
+"but if you use it in ChatGPT, it will show
+you the reasoning steps, but you can't get
+it over","tetapi jika Anda menggunakan dalam ChatGPT, akan menunjukkan langkah-alasannya, namun Anda"
+"like you ever use a model where it's like,
+it'll show you what it's thinking,","seperti model yang pernah kamu gunakan di mana itu akan menunjukkan apa yang dipikirkannya,"
+Ze Tian Ji Season 3,Zetianji Musim 3
+"They could be a reasoning. Some models
+will show you their reasoning tokens,","Mereka bisa menjadi alasan. Beberapa model akan menunjukkan token alasan kepada Anda,"
+Magic Chef of Fire and Ice,Mesin Pemusnah Api dan Es
+"They could be a tool call that has a
+state.",Mereka bisa menjadi sebuah panggilan alat yang memiliki status.
+Recommended Series,Rekomendasi Seri
+"and they could be different types. They
+could be text.",dan bisa berbeda tipe. Mereka bisa berupa teks.
+Released on: 1 week ago,Rilis pada: 1 minggu yang lalu
+"More on the part stuff, nothing really
+crazy here, you know, parts are just like
+parts of a message,","Terkait bagian-bagian tersebut, tidak ada yang sangat konyol. Bagian-bagian hanya seperti bagian dari pesan saja."
+Posted by: admin,Ditulis oleh: admin
+"so we switch between the two. We convert
+to and from all the time.",kami berubah antara keduanya. Kami selalu mengonversi ke dan dari.
+Tales of Demons and Gods Season 10 Episode 02 Subtitle Indonesia,Tales of Demons and Gods Musim 10 Episode 02 Subtitle Bahasa Indonesia
+Related Episodes,Episodes Terkait
+Ruo Hong Culture,Budaya Ruo Hong
+"Jul 18, 2026",18 Juli 2026
+10 min per eps,10 menit per episod
+Historical,Sejarah
+Martial Arts,Seni Bela Diri
+"Yao Shen Ji 10th Season atau Tales of Demon and God 10th Season - Nie Li melakukan perjalanan ke Sekte Dewa Iblis, menjalin persahabatan baru, memulai perjalanan baru, dan bersumpah untuk menggulingkan Kaisar Suci dan melindungi Kota Kemuliaan!","Cerita Nenek Moyang Kaisar Ke-10 atau Kisah Nenek Moyang dan Dewa - Nie Li melakukan perjalanan ke Sekte Dewa Iblis, menjalin persahabatan baru, memulai perjalanan baru, dan bersumpah untuk menggulingkan Kaisar Suci dan melind"
+"But this is super useful for something
+like in a UI or in a database,","Tapi ini sangat berguna untuk sesuatu seperti di antarmuka pengguna atau di basis data,"
+"so we have to convert it to something that
+it understands.",kita perlu mengonversinya menjadi sesuatu yang dia bisa memahami.
+"stuff? Like what's this? It doesn't know
+what that is,","stuff? Seperti apa itu? Tidak tahu apa itu,"
+Tencent Penguin Pictures,Tianqi Ling虎图库
+"That's because the messages are saved like
+this, and OpenAI is like, what's all this","Itu karena pesan disimpan seperti ini, dan OpenAI bertanya-tanya, ""Ini semua tentang apa?"""
+Rating 0.0,Rating 0.0
+"to something that would work on the OpenAI
+API.",untuk sesuatu yang dapat berjalan di API OpenAI.
+Select Video Server,Pilih Server Video
+"accepting. This is why in our previous
+example we had to convert the messages
+from Cloudflare",menerima. Itulah sebabnya dalam contoh sebelumnya kita harus mengonversi pesan dari Cloudflare.
+Dailymotion,Dailymotion
+"like images and stuff like that and video
+and sound and stuff that multimodal agents
+are","seperti gambar dan hal-hal sejenisnya, serta video dan suara dan hal-hal yang berkaitan dengan agen multimodala"
+Jika server,Jika server
+Surprise Me!,Surpriskan Saya!
+FANSUB DONGHUA SUBTITLE INDONESIA,FANSUB DONGHUA SUBTITLE INDONESIA
+ANICHIN.DATE,ANICHIN.DATE
+"KENAK BLOK, ANTISIPASI BLOK JANGAN LUPA DIBOOKMARK DOMAIN INI","Kenak Blok, Antisipasi Blok Jangan Lupa Dibookmark Domain Ini"
+ANICHIN.TEAM,ANICHIN.TEAM
+Jika web Error silahkan buka web,Jika web Error silahkan buka web
+Anichin.Watch,Anichin.Watch
+Released on,Rilis pada
+"July 18, 2026","Juli 18, 2026"
+Wajib di baca,Wajib Dibaca
+"which is kind of becoming the standard
+because you have different types of parts",yang mulai menjadi standar karena ada berbagai jenis komponen
+"Eps 01 - Tales of Demons and Gods Season 10 Episode 01 Subtitle Indonesia - July 18, 2026",Eps 01 - Cerita Para Setan dan Dewa Musim 10 Episode 01 Subtitle Bahasa Indonesia - 18 Juli 2026
+"and it adds more things like an ID, and
+they have this parts thing,","dan ia menambahkan lebih banyak hal seperti ID, serta memiliki bagian-bagian tertentu,"
+"Don't do that. But the AI SDK message
+protocol is built on top of that,","Jangan melakukan itu, tapi protokol pesan untuk SDK AI dibangun di atasnya."
+Episode 87,Episod 87
+Azure Legacy,Azure Legacy
+"I definitely prompt injected my friend
+just to tell him how bad it was.",Saya pasti memasukkan prompt ke teman saya hanya untuk menginformasikan betapa buruknya pengalaman itu.
+"So, you know, you have things like that,
+but you also can do things like mock
+conversations and evals","Jadi, Anda tahu, ada hal-hal seperti itu,"
+"and stuff like that. So you can also
+gaslight an AI to thinking that it did
+something it didn't do",dan hal-hal lain. Jadi Anda juga dapat
+"and watch it spiral, which is kind of
+cool.","dan melihatnya jatuh, yang agak keren"
+Episode 534,Episod 534
+"I was doing chatbots everywhere and
+getting prompt injected on WhatsApp.",Saya telah melakukan percobaan dengan chatbot di berbagai platform dan ada kali ketika prompt disisipkan ke dalam percakapan di WhatsApp.
+Against the Sky Supreme,Di Langit Yang Tertinggi
+"which is good and bad. So this is where
+prompt injection becomes a problem.","yang baik dan buruk. Jadi, ini adalah tempat di mana injeksi prompt menjadi masalah."
+Episode 625,Episod 625
+Supreme God Emperor,Pemimpin Tunggal Yang Maha Esa
+"It's stateless, so you could fabricate a
+message history,","Ini stateless, jadi Anda bisa membuat riwayat pesan sendiri."
+"This is why all the messages have to be
+sent every single time.",Ini sebabnya semua pesan harus dikirim setiap kali.
+Episode 200,Episod 200
+"a GPU somewhere that says here is
+everything that I've seen so far.",sebuah GPU di sana yang menyatakan ini adalah semua yang telah saya lihat sampai sekarang.
+Lingwu Continent,Continent Lingwu
+Episode 45,Episod 45
+Lord of the Ancient God Grave,Tuhan dari Makam Dewa Kuno
+Episode 468,Episode 468
+A Good Day to Ascend,Hari Baik untuk Naik Derajat
+Episode 04,Episode 04
+The Supreme Dantian,Dantian Puncak
+Episode 14,Episode 14
+Crowned In A Hundred Days,Dipenghormati dalam Seratus Hari
+Episode 10,Episode 10
+Soul Land 2: The Unrivaled Tang Sect,Tanah Hantu 2: Sekte Tang Tidak Terkalahkan
+Episode 163,Episode 163
+Aliens Among Immortals,Penyandang di antara Para Ksatria
+"it did generate that. There is no state
+saved on",itu telah dihasilkan. Tidak ada state yang disimpan.
+"didn't generate that. As far as it can
+tell,","tidak menghasilkan itu. Sejauh yang bisa diketahuinya,"
+Episode 05,Episod 5
+Tales of Demons and Gods Season 10,Tales of Demons and Gods Musim 10
+It doesn't know that it,Tidak tahu bahwa itu
+"The AI doesn't know that you premade an
+array of messages including its own
+responses",AI tidak tahu bahwa Anda telah membuat array pesan yang mencakup juga responsnya sendiri.
+"The AI doesn't know that this was a faked
+conversation.",AI tidak tahu bahwa ini adalah percakapan yang disimulasikan.
+Episode 362,Episod 362
+100.000 Years of Refining Qi,100.000 Tahun Pengasahan Qi
+"as you'll see when we write evals, because
+the AI doesn't know.","sebagaimana yang akan Anda lihat ketika menulis evaluasi, karena AI tidak tahu."
+"The sweet thing about this is that this
+can be totally faked,","Manisnya dari ini adalah bahwa ini bisa digosipkan sepenuhnya,"
+Episode 184,Episod 184
+A Record of A Mortal’s Journey to Immortality,Sebuah Catatan Perjalanan Seorang Manusia menuju Kecerdasan
+Model access key deleted.,Model access key dihapus.
+Episode 32,Episod 32
+Delete access key,Hapus kunci akses
+and assistant is the response from the AI.,dan asisten adalah respons dari AI.
+"just like an array of messages. So I kind
+of talked about it before.",mirip dengan array pesan. Saya sudah membahasnya sebelumnya.
+"If you've taken the agent course or any
+other LLM agent course here at Frontend
+Masters or elsewhere",Jika Anda telah mengikuti kursus agen atau kursus agen LLM lainnya di Frontend Masters atau tempat lain
+"you definitely know about this, but","pasti Anda tahu tentang hal ini,"
+"you basically just get an array of
+objects.",tetapi dasarnya Anda hanya mendapatkan array objek.
+"There's typically a role associated with
+it, so that role will either be something
+like user or","Biasanya ada peran yang terkait dengannya, jadi peran tersebut akan menjadi sesuatu seperti user atau"
+assistant. Those are the two main ones.,assistant. Itu dua peran utama.
+"For obvious reasons, user is going to be
+you, the user, or the person sending the
+message,",Dari
+Deleting this key means any external applications using it will no longer be able to access the model endpoint with this credential.,Menghapus kunci ini berarti aplikasi luar yang menggunakan kunci tersebut tidak akan lagi dapat mengakses titik akhir model dengan kredensial ini.
+and it ended up being,dan akhirnya menjadi
+Beyond Time’s Gaze,Di Luar Pandangan Waktu
+Episode 93,Episod 93
+Confirm you want to delete this access key by entering its name below.,Konfirmasikan bahwa Anda ingin menghapus kunci akses ini dengan memasukkan nama kunci akses di bawah ini.
+"They were the first ones to create an API
+of like this is how developers should
+interact with an LLM","Mereka adalah yang pertama membuat API seperti ini, dan ini adalah bagaimana pengembang seharusnya berinteraksi dengan LLM."
+the standard on the message protocol.,protokol pesan yang standar.
+Tales of Herding Gods,Kisah Penghuni Dewa
+Delete model access key,Hapus akses model
+32 minutes ago,32 menit yang lalu
+"so there's, that's another way to do it.
+But the reason I bring that up is because
+they also have",jadi itu adalah cara lain untuk melakukannya. Tapi saya menyebutkannya karena mereka juga memiliki

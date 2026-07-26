@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS translation_cache (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     text_hash TEXT NOT NULL,
     mode TEXT NOT NULL,
+    model TEXT NOT NULL DEFAULT '',
     original_text TEXT NOT NULL,
     translated_text TEXT NOT NULL,
     created_at TEXT DEFAULT CURRENT_TIMESTAMP
@@ -21,8 +22,8 @@ CREATE TABLE IF NOT EXISTS translation_cache (
 """
 
 _CREATE_INDEX_SQL = """
-CREATE UNIQUE INDEX IF NOT EXISTS idx_hash_mode
-ON translation_cache (text_hash, mode)
+CREATE UNIQUE INDEX IF NOT EXISTS idx_hash_mode_model
+ON translation_cache (text_hash, mode, model)
 """
 
 
@@ -49,6 +50,15 @@ class TranslationCacheService:
         await cls._connection.execute("PRAGMA journal_mode=WAL")
         await cls._connection.execute("PRAGMA busy_timeout=5000")
         await cls._connection.execute(_CREATE_TABLE_SQL)
+
+        # Migrate old schema: add model column if missing
+        try:
+            await cls._connection.execute(
+                "ALTER TABLE translation_cache ADD COLUMN model TEXT NOT NULL DEFAULT ''"
+            )
+        except aiosqlite.OperationalError:
+            pass  # Column already exists
+
         await cls._connection.execute(_CREATE_INDEX_SQL)
         await cls._connection.commit()
 
@@ -62,46 +72,43 @@ class TranslationCacheService:
             )
         return cls._connection
 
-    # ------------------------------------------------------------------
-    # Public API
-    # ------------------------------------------------------------------
-
-    async def get(self, text: str, mode: str) -> str | None:
-        """Return the cached translation for *text* + *mode*, or ``None``."""
+    async def get(self, text: str, mode: str, model: str = "") -> str | None:
+        """Return the cached translation for *text* + *mode* + *model*, or ``None``."""
         text_hash = self._hash(text)
         cursor = await self._conn().execute(
-            "SELECT translated_text FROM translation_cache WHERE text_hash = ? AND mode = ?",
-            (text_hash, mode),
+            "SELECT translated_text FROM translation_cache WHERE text_hash = ? AND mode = ? AND model = ?",
+            (text_hash, mode, model),
         )
         row = await cursor.fetchone()
         return row[0] if row else None
 
-    async def set(self, text: str, mode: str, translated_text: str) -> None:
-        """Store a translation result, replacing any existing entry for the same hash+mode."""
+    async def set(self, text: str, mode: str, translated_text: str, model: str = "") -> None:
+        """Store a translation result, replacing any existing entry for the same hash+mode+model."""
         text_hash = self._hash(text)
         await self._conn().execute(
             """
-            INSERT OR REPLACE INTO translation_cache (text_hash, mode, original_text, translated_text)
-            VALUES (?, ?, ?, ?)
+            INSERT OR REPLACE INTO translation_cache (text_hash, mode, model, original_text, translated_text)
+            VALUES (?, ?, ?, ?, ?)
             """,
-            (text_hash, mode, text, translated_text),
+            (text_hash, mode, model, text, translated_text),
         )
+        await self._conn().commit()
 
-    async def set_batch(self, entries: list[tuple[str, str, str]]) -> None:
+    async def set_batch(self, entries: list[tuple[str, str, str, str]]) -> None:
         """Store multiple translations in a single transaction.
 
-        Each entry is (text, mode, translated_text).
+        Each entry is (text, mode, translated_text, model).
         """
         if not entries:
             return
         await self._conn().executemany(
             """
-            INSERT OR REPLACE INTO translation_cache (text_hash, mode, original_text, translated_text)
-            VALUES (?, ?, ?, ?)
+            INSERT OR REPLACE INTO translation_cache (text_hash, mode, model, original_text, translated_text)
+            VALUES (?, ?, ?, ?, ?)
             """,
             [
-                (self._hash(text), mode, text, translated_text)
-                for text, mode, translated_text in entries
+                (self._hash(text), mode, model, text, translated_text)
+                for text, mode, translated_text, model in entries
             ],
         )
         await self._conn().commit()

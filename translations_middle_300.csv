@@ -1,0 +1,417 @@
+﻿original_text,translated_text
+Use this when the user asks you to create,Gunakan saat pengguna meminta Anda untuk membuat
+"draw, or design a new","gambar, atau desain baru"
+diagram. And then you could,dan kemudian Anda bisa diagram.
+"say, even hint at like what it should
+return,","sejauh apa itu seharusnya dikembalikan, even memberi sedikit petunjuk tentang apa yang harusnya dikembalikan."
+"although we are in control of what it
+returns because we",walaupun kita dalam kendali apa yang dikembalikan karena kami sekali lagi
+"create the execute function, but we can
+hint at what it would return to the user,","Buat fungsi eksekusi, tapi kita bisa memberi sedikit gambaran apa yang akan dikembalikan kepada pengguna."
+"depending on the reason, structured
+outputs or not. So again,","tergantung pada alasan, keluaran yang strukturi atau tidak. Jadi sekali lagi,"
+"it depends. Return all elements,","tergantung. Kembalikan semua elemen,"
+"needed, including shapes, text labels","diperlukan, termasuk bentuk-bentuk, label teks"
+and arrow lines connecting them,garis penggerak menghubungkan mereka
+"OK, and you can put",Anda bisa memasukkan
+"more. I think I even have more in here,
+like I go on for quite a while,","Lebih lagi, saya bahkan memiliki lebih banyak di sana, seperti saya berlanjut cukup lama,"
+"on this. And the reason I did that is
+because",Ini. Dan alasan saya melakukan itu adalah karena
+"I noticed that when you get into making
+agents and stuff,",Saya注意到當您開始製作 代理人和stuff時，
+"like one of the first things you do is you
+just want to put a whole novel in these
+tool",Seperti satu dari hal pertama yang kamu lakukan adalah ingin menempatkan seluruh sebuah novel di dalam alat tersebut.
+"descriptions. Because everybody just wants
+to be a professional beggar when","karena semua hanya ingin menjadi pedagang profesional saat Note: The sentence seems incomplete and lacks context, so I've provided the most natural translation for the given text."
+"it comes to, that's what I call it.","Itu saja, itu yang saya sebut."
+"I just basically just call prompts like
+begging at this point because that's all
+you can really do.",Saya hanya memanggil prompt seperti mengajukan sekarang karena itu semua yang Anda bisa lakukan.
+"You can be like, can you please stop doing
+that or can you please ask for permission
+before you spend","Bisa seperti, bisa nggak kamu nggak usah ngebuat itu lagi atau bisa nggak kamu minta izin sebelum kamu beliannya"
+before you use the credit,sebelum Anda menggunakan kredit
+"card, the credit card tool next time? Like
+you're just begging.","Kartu kredit, alat kartu kredit selanjutnnya? Seperti kamu hanya meminta."
+"So like if you're doing that, it's
+probably not the right tool to or the
+right improvement technique","Jika Anda sedang melakukan itu, kemungkinan itu bukan alat yang tepat atau teknik perbaikan yang benar."
+And then now we have,Maka sekarang kita memiliki
+"our input schema. So input schema, this is
+going to be a,","schema kita. Jadi, input schema ini akan berbentuk sebagai, Schema kita. Inputnya akan berbentuk sebagai,"
+"Zod object, that basically the goal of
+this tool,","Objek Zod, yang sebenarnya tujuannya adalah tool ini."
+"the way it's going to work is we want our
+AI to return valid Excalidraw elements
+because the Frontend",Kita ingin AI kita untuk mengembalikan elemen-elemen Excalidraw yang valid karena Frontend.
+"can just insert them on the canvas on the
+Frontend.",tambahkan saja di canvas pada Frontend.
+"Like there's no state stored in the
+database anywhere for your canvas.",Tidak ada state yang disimpan di database untuk kanvas Anda.
+"If you refresh the page, the canvas gets
+erased. It's just on the browser locally
+running.","Jika kamu meng-refresh halaman, gambar di canvas akan hilang. Hanya berjalan lokal di browser saja."
+"So we need to return, a valid canvas JSON
+data so we can insert",Kita perlu mengembalikan data JSON yang valid untuk canvas agar bisa diinsert.
+"that on the UI on the Frontend. So,","Pada UI pada Frontend. Jadi,"
+that's basically the goal here.,itu adalah tujuan utama di sini.
+"And then we also are going to allow this
+generate diagram to take in",Maka kita juga akan memungkinkan ini generasi diagram untuk mengambil akan inputnya
+input schema of other elements,schema lain dari elemen-elemennya
+"that it could reference if it needed to,
+maybe bring them over somehow or build on
+top of them,","yang bisa merujuknya jika perlu, mungkin membawanya datang atau membangun atas mereka."
+"maybe merge them, who knows.","Bersama-sama saja mereka, siapa yang tahu."
+"Like we're just going to put the schema
+here as a way to let the AI know that
+like,","Kami hanya akan menyertakan skema di sini sebagai cara untuk memberitahu AI bahwa seperti,"
+"hey, if they do call the generate diagram
+and there's already a diagram,","hey, jika mereka memanggil untuk menghasilkan diagram dan sudah ada sebuah diagram,"
+"maybe you can pass that diagram in and
+then we can do something with it.",mungkin Anda bisa memberikan diagram tersebut dan kita bisa lakukan sesuatu dengan itu.
+"We can try to merge it. It depends on what
+we want to do with the",Kita bisa coba untuk menggabungkannya. Tergantung pada apa yang aku ingin lakukan dengan itu
+"execute function. We're going to keep it
+super naive and we're going to do nothing
+with it, pretty much","Silakan jalankan fungsi. Kami akan tetap sangat sederhana dan tidak akan melakukan apa-apa dengan itu, seolah-olah tidak ada yang perlu dilakukan."
+"and you're going to see the consequences
+of that.",dan Anda akan melihat konsekuensinya.
+But this is just a,Ini hanyalah (text_to_translate)
+"Zod version of the TypeScript schema that
+we just made. So,","Versi Zod dari skema TypeScript yang baru kita buat. Jadi,"
+"you don't have to type all that out. The
+most important thing with these tools with
+the AI SDK is",Tidak perlu mengisi semua itu. Yang paling penting dengan alat-alat ini dan SDK AI adalah
+"that they, if you have an input schema, it
+must be an object.","Mereka harus memiliki skema masukan, itu harus sebuah objek."
+"And typically what I like to do, I just
+have like one top level thing.","Biasanya apa yang saya lakukan, saya hanya punya satu hal di tingkat atas."
+I'm going to call it elements.,Elements
+And it's just going to be an array of a,Itu hanyalah sebuah array dari sebuah
+"another object, which is just",objek lain yang hanyalah
+"going to be the Zod version of the
+elements that we already made in
+TypeScript.",akan menjadi versi Zod dari elemen-elemen yang sudah kita buat dalam TypeScript.
+So I'm just going to bring those over.,Saya hanya akan membawa mereka disini.
+"I said, you're more than welcome to copy
+notes if you want to.","Saya katakan, Anda dihargai untuk bisa mengcopy catatan jika Anda mau."
+It's totally fine. Let me just grab those.,Tentu saja. Saya hanya akan mengambil tersebut.
+So we got that. And,Kami mendapatkan itu. Dan
+"again, there's no right or wrong here.",Tidak ada yang benar atau salah di sini.
+"I literally went through Excalidraw and
+got",Saya benar-benar melalui Excalidraw dan dapatkan
+"the exact single syntax for all the
+different shapes and stuff that they have,","syntax yang tepat untuk semua bentuk dan hal-hal yang mereka miliki,"
+"and I brought them over. So I was trying
+to be really precise about that.",Dan saya membawanya. Jadi saya berusaha sangat teliti tentang itu.
+"You could choose not to. We're going to
+have to improve all this stuff anyway.",Anda bisa memilih tidak untuk itu. Kami akan harus meningkatkan semua ini sejauhnya.
+"There we go. The important thing here
+though is that we want this to be",Baiklah. Pentingnya di sini adalah bahwa kita ingin ini untuk menjadi
+optional in a way.,optional dalam cara itu.
+"And the way it actually works with OpenAI
+to make things optional,","Dan cara kerjanya dengan OpenAI untuk membuat sesuatu menjadi opsional,"
+you actually have to make fields nullable.,Anda sebenarnya harus membuat field menjadi nullable.
+"So I think the correct way is like you
+have to come here and you say like
+nullable like this",Saya pikir cara yang benar adalah seperti Anda harus datang sini dan Anda mengatakan seperti nullable begitu.
+and then that way it's,dan kemudian itu saja.
+"optional, and then it'll just put null if
+it doesn't want it.",Lalu hanya akan menyebabkan null jika tidak ingin.
+"Whereas I know Zod does have the .optional
+thing here like this","Sebagai saya tahu bahwa Zod memiliki hal seperti ini, misalnya dengan .optional."
+I think OpenAI pretty much,OpenAI sebenarnya
+"ignores this. But I'm going to put it
+anyway, but I'm pretty sure it ignores
+this.",Tolong sertakan teks yang perlu di yang Anda berikan tidak ada dalam format yang dapat diubah.
+"I think the correct way, which we'll find
+out when we do another tool, you have to
+put nullable on","Saya pikir cara yang benar, yang akan kita temukan ketika kita membuat alat lainnya, anda harus menambahkan nullable pada Note: ""nullable"" dalam konteks ini mungkin merujuk kepada kata kunci atau istilah dalam bahasa pemrograman tertentu. J"
+"this stuff. But again, we're doing the
+naive way, none of this matters right now.","Ini semua. Tapi sekali lagi, kita melakukan cara yang sangat sederhana, tidak ada masalah ini sekarang."
+"The important thing here though is we can
+put a describe, like this","Baik di sini penting adalah kita bisa menyertakan deskripsi, seperti ini"
+"and we can just, we","kami hanya bisa, kami"
+"can describe this schema or this array as
+like,",tersebut bisa dijelaskan seperti atau seperti
+"hey, this is a, let me see","hallo, ini adalah sebuah, biarkan saya lihat"
+"oh, am I on the","oh, saya di sini?"
+right? Hold on. Get to the right.,Tunggu sebentar. Go ke yang benar.
+"Oh my God, are you not collapsing?","Oh Tuhan, kamu tidak meledak kan?"
+"Oh, that's all right. Where are you?",Tentu saja. Anda di mana?
+"Yeah, OK, I'm on the right. So you can put
+here,","Ya, OK, Anda bisa menyimpan di sini,"
+array of Excalidraw elements to,array of Excalidraw elemen ke
+"hint to the LLM what this array of objects
+is about.","Terjemahan dari teks tersebut ke Bahasa Indonesia yang natural, jelas, dan mudah dipahami adalah: Berdasarkan array objek ini apa maksudnya?"
+"And you could put these describe methods
+on any leaf in the schema to better",Dan Anda bisa memasukkan metode ini deskripsinya pada任何葉子在模式中以更好的方式
+"hint to the LLM. Like for instance, if you
+wanted to say,","Hint untuk LLM. Seperti misalnya jika Anda ingin mengatakan,"
+"you know, what's a good example?","Tentu, apa contoh yang baik?"
+"I think I pretty much already have
+describe on everything. But like for
+instance, for these points,","Saya sudah seakan-akan memang sudah menggambarkan semuanya. Tapi seperti untuk poin-poin ini,"
+"maybe the LLM doesn't know what points
+are, so you say, hey,","mungkin LLM tidak tahu apa itu titik, jadi kamu bilang, heh,"
+"these points are an array of X, Y points,
+so it knows that that's what it is.","Ini adalah array titik-titik X dan Y, jadi itu tahu bahwa itu yang dimaksud."
+"Otherwise it'll try to, it'll have to
+figure it out, right?","Sedangkan itu akan mencoba untuk, harus memahaminya, kan?"
+"So you're just leaving hints. These
+describe blocks, these describe methods
+are just leaving hints for","Kamu hanya memberikan petunjuk. Ini merujuk pada blok-blok, ini merujuk pada metode-metode adalah cuma memberikan petunjuk untuk"
+"every single thing that you think needs a
+hint. Cool.",setiap sesuatu yang kamu pikir membutuhkan petunjuk. Cool.
+"And then the last thing we need, for this,","Maka yang terakhir yang kita butuhkan untuk ini, adalah,"
+"we have our description, we have our input
+schema.","kita memiliki deskripsi kita, kita memiliki skema masukan."
+Now we just need the execute.,Selesaikan saja.
+"So the execute is the actual function that
+we're going to run.",Tugas utama adalah menjalankan fungsi yang sebenarnya.
+"In this case, it's just going to be a
+pass-through. We're not really going to do
+anything.","Pada kasus ini, hanya akan berlangsung sebagai transfer langsung. Kami tidak benar-benar akan melakukan sesuatu."
+"We're going to get an object as the only
+input, right?","Kita akan mendapatkan sebuah objek sebagai input saja, kan?"
+"We're going to get this object as the
+input to the execute.",Kami akan mendapatkan objek ini sebagai input untuk eksekusi.
+"So whatever shape we described here,
+that's what we get here as the argument to
+this execute function","Sejauh apa yang kita deskripsikan di sini, itu adalah argumen yang kita dapatkan untuk fungsi ini."
+So I'm just going to destructure.,Saya hanya akan memecah struktur.
+"In my case, I have elements.","Dalam kasus saya, saya memiliki elemen."
+"So I'm going to destructure that, and it's
+just a pass-through.","Saya akan memecah struktur tersebut, dan itu hanya melewati."
+I'm just going to return elements.,Hanya kembalikan elemen-elemen tersebut.
+"So whatever the LLM generates as far as
+the elements,","Sejauh apa yang dilakukan oleh LLM dalam hal elemen-elemen,"
+"that it thinks needs to be created, we're
+just going to return them,","yang itu perlu dibuat, kita hanya akan kembalikan mereka,"
+"right? So we did something kind of clever
+here,","Tentu, kami melakukan sesuatu yang cukup cerdik di sini, right?"
+"right? I don't know if people noticed it.
+If you've built agents before, you might
+have like,","Tahu ga kalau orang-orang perhatikan itu? Jika kamu sudah pernah bikin agent, mungkin seperti, (right?) Saya nggak tahu sih orang-orang liat ga."
+"oh, OK, it's just a little hack.","Oh, hanya tweak kecil."
+"What we did with the input schema, I tried
+to throw y'all off, but I don't think
+anybody caught it","Apapun yang kita lakukan dengan skema input, saya mencoba untuk membuat kalian bingung, tapi saya pikir tidak ada orang yang menangkapnya."
+"If you ask the LLM like, hey","Jika Anda bertanya ke LLM seperti, heyo"
+I'm going to be strict,I'm going to be strict
+"about like the arguments that you can pass
+me, OpenAI,","seperti argumen yang bisa kamu pasang untukku, OpenAI,"
+"has told us that they guarantee that if
+you give it a schema,","kabar telah diberitahukan bahwa mereka memberikan jaminan bahwa jika anda memberikan sebuah skema,"
+"it will follow that schema. OK, so that's
+a guarantee thing.","itu akan mengikuti skema tersebut. OK, jadi itu adalah perjanjian."
+"It's supposed to do that, right? So let's
+assume that's correct.","Ya itu yang dimaksud, kan? Jadi kita asumsikan sudah benar."
+"If I force a schema, then when I run a
+function,","Jika saya mengimplementasikan sebuah skema, maka ketika saya menjalankan fungsi,"
+"what I'm, and I'm just passing it through,
+what I'm really doing is just like give me","apa saya, dan saya hanya mengalihkannya melalui, apa yang saya sebenarnya lakukan hanyalah memberikan saya"
+"structured output. My function doesn't
+actually do anything. I just return what
+you gave me.",Fungsi saya tidak sebenarnya melakukan apa pun. Saya hanya kembalikan yang Anda berikan.
+"But what I really cared about is about you
+following the schema.",Tapi yang saya benar-benar peduli adalah Anda mengikuti skema.
+"That's what I cared about. So by creating
+a tool with a schema,","Itu yang saya pikir penting. Jadi dengan membuat suatu alat dengan skema,"
+"I'm basically saying, hey, when you use
+this tool, you can't use it unless you
+give me something that","Ih, ketika Anda menggunakan tool ini, Anda tidak bisa menggunakan nya kecuali Anda memberi saya sesuatu yang"
+"follows this. And OpenAI says if you give
+it a schema, it'll for sure follow it and
+it'll be guaranteed","ikuti ini. Dan OpenAI mengatakan jika Anda memberinya skema, itu pasti akan ikuti dan dipastikan."
+"to be that shape. OK, cool, now I'm just
+going to return that.","Buatlah bentuk itu saja. OK, oke, sekarang saya hanya akan mengembalikannya."
+"It's just a way of guaranteeing a shape of
+something, whereas if I didn't do this,","Ini adalah cara untuk memastikan bentuk dari sesuatu. Sementara jika saya tidak melakukan ini,"
+"there would be more complicated ways to
+get,","akan ada cara-cara yang lebih rumit untuk mendapatkan,"
+"structured output. So it's just me trying
+to get a structured output.",Saya mencoba untuk mendapatkan output yang struktur.
+"That's why it's just a pass-through,
+right? If you have a tool that has an","It's just a pass-through, right? If you have a tool that has an"
+"input schema, any compatible model must
+follow that schema.","schema input, model yang kompatibel harus berikuti skema tersebut."
+"So this function is guaranteed to be
+called with, and if this schema is based
+off of Excalidraw,","Fungsi ini dijamin akan dipanggil dengan, dan jika skema ini berdasarkan pada Excalidraw,"
+then it's guaranteed to pass and generate,terjamin untuk lulus dan menghasilkan
+"Excalidraw-compatible elements that we
+then just return back to,","Elemen Ekscalidraw yang kemudian hanya kita kembalikan ke,"
+"the LLM. So you might be thinking like,
+oh, we might be adding more context than
+we need.","Jadi Anda mungkin berpikir seperti itu, 'oh, kita mungkin memberikan lebih banyak konteks dari yang dibutuhkan. '"
+"We added the same elements twice. Yeah, we
+are. It's pretty bad.","Kami menambahkan elemen-elemen yang sama dua kali. Ya, kita memang melakukan itu. Ini sangat buruk."
+Se satu catatan adalah ketika,Satu catatan adalah ketika
+"Kita akan membuat tools ini demo bagus, so we may, we're going to make these tools demo well,","Kita akan membuat tools ini demo yang baik, jadi kita akan membuatnya berjalan dengan baik."
+ubah diagram. Mereka sangat sederhana dan tabu.,Ubah diagram. Mereka sangat sederhana dan tabu.
+Mari kita lanjutkan. Mari kita buat ini agen.,Mari kita lanjutkan. Mari kita buat ini agen.
+"API kunci OpenAI. Oh my God, saya tertipu oleh itu.","API kunci OpenAI. Oh my God, saya tertipu oleh itu."
+"OpenAI API key, like, oh my goodness.","API kunci OpenAI, seperti, oh my goodness."
+Kodifikasikan beberapa aturan sehingga menjadi hal dalam TypeScript.,Kodifikasikan beberapa aturan sehingga menjadi hal dalam TypeScript.
+"untukmu, tapi mari kita tulis beberapa tipe, ya?","untukmu, tapi mari kita tulis beberapa tipe, ya?"
+elemen dalam Excalidraw.,Elemen dalam Excalidraw.
+jenis-jenis seperti padat. Oh ya,jenis-jenis seperti padat. Oh ya
+"Hachur, saya bahkan tidak tahu.","Hachur, saya bahkan tidak tahu."
+Seperti tampak sangat kasar bertujuan untuk alasan tertentu.,Seolah sangat kasar ditujukan untuk alasan tertentu.
+Masukkan sudut dan ID kelompok. Nomor sudut.,Masukkan nomor sudut dan ID kelompok. Nomor sudut.
+ID kelompok. Telah dihapus. Kelompok ini kurang,Kelompok telah dihapus. Kelompok ini kurang
+Type seperti string.,Type seperti string.
+"Kita memiliki elemen persegi panjang, elemen elips.","Kita memiliki elemen persegi panjang, elemen elips."
+"elemen pasir berlian, elemen teks, elemen tandai, elemen garis,","elemen pasir berlian, elemen teks, elemen tanda, elemen garis,"
+Kami telah mendapatkan semua elemen lainnya.,Kami telah mendapatkan semua elemen lainnya.
+Mari kita bawa tipe-tipe tersebut.,Mari kita bawa jenis-jenis tersebut.
+"Misalnya, jika kamu hanya suka latihan typing dan ingin meningkatkan kata per menitmu,","Jika kamu hanya suka latihan typing dan ingin meningkatkan kata per menitmu,"
+"Baiklah, saya akan membawa mereka disini.","Baiklah, saya akan membawa mereka."
+Kami telah mendapatkan tipe-tipe kita.,Kami telah mendapatkan jenis-jenis kita.
+Vercel memiliki sebuah paket bernama AI.,Vercel memiliki sebuah paket bernama AI.
+"seperti skema basis data, tapi kamu bisa lakukan saat runtime.","seperti skema database, tapi kamu bisa lakukan saat runtime."
+"Tool pertama, seperti yang saya sebutkan, akan adalah The first tool, as I mentioned before, will be the","Tool pertama, seperti yang saya sebutkan, akan adalah Tool pertama, seperti yang saya sebutkan sebelumnya."
+"Ya, akan menghasilkan sebuah diagram. Kemudian hanya pikirkan itu selama satu saat.","Ya, akan membuat sebuah diagram. Pikirkan itu saja selama satu saat."
+"Tentu saja, jadi alat ini sangat primitif, tapi seperti ketika Anda baru pertama kali membuat agen,","Tentu saja, mesin ini sangat sederhana, seperti saat Anda pertama kali membuat asisten."
+"Tentu saja, kita akan lihat kemudian.","Tentu saja, kita akan lihat kemudian."
+"So you can put whatever you want. I think di catatan saya sudah menghasilkan yang lengkap,","Jadi Anda bisa menulis apa saja. Saya pikir sudah cukup lengkap dalam catatan saya,"
+"Excalidraw elemen. Kemudian saya katakan,","Eksalidraw elemen. Kemudian saya katakan,"
+"Jadi saya seperti, pakai ini.","Saya seperti, pakai ini."
+"gambar, atau desain baru","gambar, atau desain baru"
+"tergantung. Kembalikan semua elemen,","tergantung. Kembalikan semua elemen,"
+"diperlukan, termasuk bentuk-bentuk, label teks","diperlukan, termasuk bentuk-bentuk dan label teks"
+garis penggerak menghubungkan mereka,Garis penggerak menghubungkan mereka.
+Anda bisa memasukkan,Anda bisa memasukkan
+Saya注意到當您開始製作 代理人和stuff時，,Saya注意到當您開始製作 代理人和stuff時，
+"karena semua hanya ingin menjadi pedagang profesional saat Note: The sentence seems incomplete and lacks context, so I've provided the most natural translation for the given text.",sesemua hanya ingin menjadi pedagang profesional
+"Kartu kredit, alat kartu kredit selanjutnnya? Seperti kamu hanya meminta.","Kartu kredit, alat pembayaran kartu kredit selanjutnnya? Seperti kamu hanya meminta."
+Maka sekarang kita memiliki,Kemudian sekarang kita memiliki
+schema lain dari elemen-elemennya,schema lain dari elemen-elemennya
+"Bersama-sama saja mereka, siapa yang tahu.","Mereka berdua saja, siapa yang tahu."
+Ini hanyalah (text_to_translate),Ini hanyalah (text_to_translate)
+"Mereka harus memiliki skema masukan, itu harus sebuah objek.","Mereka harus memiliki skema masukan, itu harus sebuah objek."
+objek lain yang hanyalah,objek lain juga saja
+Saya hanya akan membawa mereka disini.,Saya hanya akan membawanya disini.
+Anda sebenarnya harus membuat field menjadi nullable.,Field tersebut sebenarnya harus dibuat menjadi nullable.
+OpenAI sebenarnya,OpenAI sebenarnya
+"kami hanya bisa, kami","kami hanya bisa, kami"
+"oh, saya di sini?","Oh, saya di sini?"
+"Oh Tuhan, kamu tidak meledak kan?","Oh Tuhan, kamu tidak meledakkan?"
+array of Excalidraw elemen ke,array of Excalidraw elemen ke
+setiap sesuatu yang kamu pikir membutuhkan petunjuk. Cool.,Setiap sesuatu yang kamu pikir membutuhkan petunjuk. Cocok.
+"kita memiliki deskripsi kita, kita memiliki skema masukan.","Kami memiliki deskripsi kami, kami memiliki skema masukan."
+Selesaikan saja.,Selesaikan saja.
+Saya hanya akan memecah struktur.,Anda hanya akan memecah struktur.
+"Dalam kasus saya, saya memiliki elemen.",Saya memiliki elemen.
+Hanya kembalikan elemen-elemen tersebut.,INPUT telah dikembalikan tanpa perubahan.
+"Tahu ga kalau orang-orang perhatikan itu? Jika kamu sudah pernah bikin agent, mungkin seperti, (right?) Saya nggak tahu sih orang-orang liat ga.","Tahu ga kalau orang-orang perhatikan itu? Kalau kamu udah pernah bikin agent, mungkin kayak gitu, (right?) Gue nggak tahu sih orang-orang liatin ga."
+"Oh, hanya tweak kecil.",Hanya tweak kecil.
+"kabar telah diberitahukan bahwa mereka memberikan jaminan bahwa jika anda memberikan sebuah skema,","kabar telah diberitahukan bahwa mereka memberikan jaminan bahwa jika Anda memberikan sebuah skema,"
+"Jika saya mengimplementasikan sebuah skema, maka ketika saya menjalankan fungsi,","Jika saya mengimplementasikan sebuah skema, maka ketika saya menjalankan fungsi,"
+"It's just a pass-through, right? If you have a tool that has an","Hanya melewati saja, kan? Kalau kamu punya alat yang memiliki (text_to_translate)"
+You'll need to install the dependencies:,Anda akan memerlukan untuk menginstal dependensi:
+"7 hours, 10 minutes","7 jam, 10 menit"
+What's changed in v2?,Penasaran apa yang berubah di versi 2?
+"Version two shifts from an introductory agent build to production‑oriented agent engineering. It adds evals and telemetry, robust agent loops, file system and web search tools, context window management, code execution, and human‑in‑the‑loop approvals.","Versi kedua berpindah dari pembuatan agen awal untuk pengembangan yang oriented ke produksi. Ia menambahkan penilaian dan telemetry, loop agen yang kuat, alat tools sistem file dan pencarian web, pemeliharaan jendela konteks"
+or comfort with Node.js and the command line. TypeScript and LLM experience are helpful but not required.,"Berinteraksi dengan mudah dengan Node.js dan perintah baris. Pengalaman dengan TypeScript dan LLM diinginkan, tapi tidak wajib."
+4.8 rating,4.8 bintang
+"Scott is remarkably well-spoken. Complex concepts are broken down into clear, manageable steps.",Scott sangat baik dalam berbicara. Konsep yang kompleks dibagi menjadi langkah-langkah yang jelas dan mudah dipahami.
+Sheikh Shapon,Shah Shapon
+"Published: January 20, 2026","Published: Januari 20, 2026"
+Course Notes,Nota Pelajaran
+Section Duration: 13 minutes,Durasi Babak: 13 menit
+00:00:00 - 00:03:51,00:00:00 - 00:03:51 (text yang asli dalam bahasa Inggris)
+"Scott Moss introduces the course by showcasing AI agents through a simple browser-controlling agent built from natural language commands, emphasizing how an SDK handles the heavy lifting while the focus remains on tools and frameworks for building reliable agents.","Scott Moss memperkenalkan kursusnya dengan menunjukkan agen-agen kecerdasan buatan melalui agen yang dikontrol browser sederhana yang dibangun dari perintah bahasa natural, menyentuhkan bagaimana SDK mengambil beban berat s"
+CLI Agent Demo,CLI Agent Demo
+00:03:52 - 00:13:04,00:03:52 - 00:13:04
+"Scott explains how the course will cover building agents from scratch, covering the tool loop, decision frameworks, and iterative improvements, then demonstrates a personal agent that can make API calls, search the web, write files, and use approval mechanisms.","Scott menjelaskan bagaimana kursus ini akan membahas tentang pembuatan agen dari awal, termasuk loop alat, mekanisme keputusan, dan peningkatan iteratif. Kemudian dia menunjukkan sebuah agent pribadi yang dapat mengirim panggilan"
+Agent Basics,Dasar Agent
+Section Duration: 14 minutes,Durasi Babak: 14 menit
+Intro to AI Agents,Intro ke Agent AI
+00:13:05 - 00:21:51,00:13:05 - 00:21:51
+"Scott explains agents as LLMs that use reasoning frameworks and tools to adapt at runtime, contrasting them with rigid workflows and noting key limitations where agents may not perform well.","Scott menjelaskan agen sebagai LLM yang menggunakan framework dan alat untuk mengadaptasi secara runtime, menonjolkan perbedaannya dengan workflow yang rigid, dan menyebutkan beberapa keterbatasan di mana agen mungkin tidak bekerja dengan baik."
+Create an Agent with OpenAI SDK,Buat Sebuah Agent dengan SDK OpenAI
+00:21:52 - 00:28:04,00:21:52 - 00:28:04
+"Scott walks through creating a simple ""Hello World"" LLM, covering environment setup, basic imports, and a function to interact with the model. He demonstrates running prompts in the terminal to show how easily an LLM can generate text.","Scott melalui pembuatan sebuah ""Halo Dunia"" LLM yang sederhana, mencakup penyiapan lingkungan, impor dasar, dan fungsi untuk berinteraksi dengan model. Dia menunjukkan bagaimana cara menjalankan prompt di terminal untuk menunjukkan"
+Section Duration: 20 minutes,Durasi Babak: 20 menit
+What is Tool Calling?,Penggunaan Tools/Calling Tools?
+00:28:05 - 00:33:17,00:28:05 - 00:33:17 (atribut output)
+"Scott explains tool calling, showing how LLMs can interact with the outside world through custom functions and execution. He demonstrates defining a tool and emphasizes its importance for giving agents context and enabling tasks beyond basic text generation.","Scott menjelaskan penggunaan alat, menunjukkan bagaimana LLM dapat berinteraksi dengan dunia luar melalui fungsi dan eksekusi yang dikustomisasi. Dia menunjukkan cara mendefinisikan alat dan memfokuskan pentingnya hal itu untuk"
+Create an Agent Tool Call,Membuat Pengenalan Mesin Calls
+00:33:18 - 00:48:17,00:33:18 - 00:48:17
+"Scott shows how to create a new tool using a helper function and Zod for schema validation, including a description, input schema, and an execute function that returns the current date and time.","Scott menunjukkan cara membuat sebuah alat baru menggunakan fungsi bantuan dan Zod untuk validasi skema, termasuk deskripsi, skema input, dan fungsi eksekusi yang mengembalikan tanggal dan waktu saat ini."
+"Section Duration: 1 hour, 49 minutes",Durasi Babak: 1 jam 49 menit
+Understanding Evals,Mengerti Evaluasi
+00:48:18 - 01:03:37,00:48:18 - 01:03:37
+"Scott explains single-turn evals, which track metrics from one agent pass, highlighting their importance for testing non-deterministic AI. He also contrasts offline and online evals, emphasizing their role in guiding improvements and informed decisions.","Scott menjelaskan evaluasi tunggal yang melacak metrik dari satu langkah agen, menyoroti pentingnya mereka untuk menguji kecerdasan buatan tidak deterministik. Dia juga membandingkan evaluasi offline dan online, menyatakan perannya dalam membimbing pening"
+Web Search & Context Management,Pengelolaan Penyimpanan Mesin Pencari Web
+Section Duration: 55 minutes,Durasi Babak: 55 menit
+Web Search for Agents,Pencarian Web untuk Agent
+05:11:07 - 05:25:07,05:11:07 - 05:25:07
+"Scott covers web search for agents, showing how LLMs can access online information while managing context and grounding outputs in truth. He discusses using native tools, handling costs and limits, and balancing efficiency with model context constraints.","Scott mengcover pencarian di web untuk agen, menunjukkan bagaimana LLMs bisa mengakses informasi online sambil mengelola konteks dan memastikan keluaran dalam kebenaran. Dia membahas penggunaan alat native, penanganan biaya dan batasan"
+Strategies for Managing Context,Strategi untuk Mengelola Konteks
+05:25:08 - 05:35:15,05:25:08 - 05:35:15
+"Scott explores strategies for managing context, including summarization, eviction, sliding windows, sub-agents, and RAG. He explains how RAG uses vector search to dynamically add relevant information for efficient LLM use.","Scott meneliti strategi untuk mengelola konteks, termasuk penarikan ringkasan, pengungahan, jendela yang bergerak, sub-agents, dan RAG. Ia menjelaskan bagaimana RAG menggunakan pencarian vektor untuk dinamis men"
+Creating a Web Search Tool,Membuat Alat Pencari Situs Web
+05:35:16 - 05:40:24,05:35:16 - 05:40:24
+"Scott demonstrates adding a web search tool, showing how to integrate it with existing tools and trigger compaction when token usage is high. He tests the tool by asking questions and verifying search result accuracy.","Scott menunjukkan bagaimana cara menambahkan alat pencarian web, bagaimana integrasinya dengan alat-alat yang sudah ada, dan bagaimana pengompaksiannya ketika penggunaan token tinggi. Dia menguji alat tersebut dengan bertanya-tanya dan memver"
+Model Token Limits,Limit Batas Token Model
+05:40:25 - 05:47:42,05:40:25 - 05:47:42
+"Scott explains building a custom compaction system, covering token counting, usage limits, and context window management. He discusses recursive compaction, potential data loss, and strategies for balancing performance and detail.","Scott men . Dia juga membahas kompresi rekursif, potensi kehilangan data, dan strategi untuk mengimb"
+"Scott explains giving an AGI agent terminal access, allowing it to run commands, install packages, and perform tasks efficiently. He also highlights safety considerations, emphasizing supervision to prevent unintended actions.","Scott menjelaskan memberikan akses terminal kepada agen AGI, yang memungkinkan ia untuk menjalankan perintah, menginstal paket, dan melakukan tugas dengan efisien. Dia juga menekankan aspek-aspek keamanan, menyebutkan supervisi"
+Sandboxed Execution,Pengambilan Konteks Terbatas
+06:13:08 - 06:25:03,06:13:08 - 06:25:03
+"Scott explains sandboxing to run code safely, covering methods like VMs, Docker, and services like Daytona. He demonstrates creating a shell command tool in JavaScript and tests it by running commands through the AI.","Scott menjelaskan sandboxing untuk menjalankan kode dengan aman, menyebut metode seperti VMs, Docker, dan layanan seperti Daytona. Dia menunjukkan cara membuat alat perintah shell dalam JavaScript dan mengujiinya dengan menjalankan perintah melaluinya AI."
+Code Execution Tool,Kode Eksekusi Tools
+06:25:04 - 06:33:07,06:25:04 - 06:33:07
+Scott discusses code execution as a tool like shell commands but avoids implementing it due to safety and complexity. He emphasizes building higher-level tools to streamline workflows and improve AGI functionality.,"Scott membahas eksekusi kode sebagai alat seperti perintah terminal, tetapi dia tidak menerapkannya karena keamanan dan kompleksitasnya. Dia menekankan pembuatan alat tingkat lebih tinggi untuk mengoptimalkan proses kerja dan meningkatkan fungsi AG"
+Human Guidance & Approvals,Pesan dan Persetujuan
+Section Duration: 22 minutes,Durasi Babak: 22 menit
+Human in the Loop,Human in the Loop
+06:33:08 - 06:40:32,06:33:08 - 06:40:32
+"Scott explains reinforcement learning with human feedback, highlighting the role of deterministic approvals in runtime actions. He emphasizes the human-in-the-loop as key for trustworthy AI and maximizing productivity gains.","Scott menjelaskan pembelajaran mekanis dengan feedback manusia, menyentuh peran izin yang deterministik dalam tindakan runtime. Dia menekankan posisi manusia di dalam loop sebagai kunci untuk kepercayaan AI dan peningkatan produktivitas."
+Approval Flow Architectures,Arkus Arsitektur Proses Persetujuan
+06:40:33 - 06:46:13,06:40:33 - 06:46:13
+"Scott explains synchronous and asynchronous approval flows, showing how asynchronous flows allow tasks to be paused and resumed efficiently. He covers various approval methods, highlighting the flexibility and resource savings of asynchronous approaches.","Scott menjelaskan aliran persetujuan berurutan dan tidak berurutan, menunjukkan bagaimana aliran tidak berurutan memungkinkan tugas untuk dihentikan dan dipulihkan dengan efisien. Dia membahas metode persetujuan yang ber"
+Evals Telemetry with Laminar,Evaluasi Lanterior dengan Laminar
+01:03:38 - 01:10:11,01:03:38 - 01:10:11
+"Scott explains synthetic data and creating use cases to test agent performance, covering data collection and evaluation. He also demonstrates using Open Telemetry with Laminar for improved observability and metrics.","Scott menjelaskan tentang data sintetis dan membuat skenario pengujian untuk menguji kinerja mesin, termasuk pengumpulan dan evaluasi data. Dia juga menunjukkan bagaimana menggunakan Open Telemetry dengan Laminar untuk observabilitas yang lebih baik dan indikator"
+Adding Laminar Tracing,Menerapkan Tracing Laminar
+01:10:12 - 01:17:27,01:10:12 - 01:17:27
+"Scott explains setting up observability for message generation, showing how to import components, initialize functions, and enable telemetry. He highlights the importance of offline evaluations and flushing telemetry events to ensure data is sent correctly.","Scott menjelaskan bagaimana cara mempersiapkan observabilitas untuk pengiriman pesan, menunjukkan bagaimana mengimpor komponen, memulai fungsi, dan mengaktifkan telemetry. Dia menyampaikan pentingnya evaluasi offline dan me-flush event-te"
+Single-Turn Eval Executor,TEXT_TO_TRANSLATE
+01:17:28 - 01:42:27,01:17:28 - 01:42:27
+Scott explains creating evals using data files with input-output pairs to test AI tool selection and improve tool descriptions. He walks through making mock tools and a single-turn executor that uses conversation history for dynamic evaluation.,Scott menjelaskan cara membuat evaluasi menggunakan file data dengan pasangan input dan output untuk menguji pemilihan alat AI dan memperbaiki deskripsi alat. Dia membahas bagaimana membuat alat mock dan executor satu langkah yang menggunakan riwayat pembicaraan untuk evaluasi din
+Evaluators,Penilaian
+01:42:28 - 01:47:36,01:42:28 - 01:47:36
+"Scott discusses evaluators, which score tool outputs against expected results, noting that deterministic JSON is easier to quantify than text. He demonstrates a tool selection score evaluator that compares expected and chosen tools to calculate precision.","Scott membahas penilaian evaluator yang memberikan skor kepada hasil alat berdasarkan hasil yang diharapkan, menyebutkan bahwa JSON deterministik lebih mudah untuk dikuantitaskan dibandingkan teks. Dia menunjukkan evaluator skor pemilihan alat yang memband"
+Running Evaluations,Evaluasi Berjalan
+01:47:37 - 02:07:16,01:47:37 - 02:07:16
+"Scott walks through writing an evaluation, covering scores, mocked data, and executors. He demonstrates creating an evaluation file for file tools, setting up an executor with single-turn mocks, and using evaluators to convert outputs into quantitative scores.","Scott melalui penulisan sebuah evaluasi yang mencakup skor, data yang diuji, dan pemimpin. Dia menunjukkan cara membuat file evaluasi untuk alat file, merancang seorang pemimpin dengan uji tunggal, dan menggunakan evaluators untuk mengonvers"
+Analyze Eval Results,Analisis Hasil Evaluasi
+02:07:17 - 02:38:21,02:07:17 - 02:38:21
+"Scott covers running and interpreting evaluations, including average scores and analyzing individual runs to understand agent behavior. He discusses naming strategies for experiments, examining successes and failures, forming hypotheses for improvement, and emphasizes the essential role of human expertise in the iterative evaluation process.","Scott mengurus pengisian dan interpretasi evaluasi, termasuk skor rata-rata dan analisis run individu untuk memahami perilaku agent. Dia membahas strategi penamaan untuk eksperimen, mengeksplorasi keberhasilan dan kegagalan,"
+Agent Loop,Agent Loop
+Section Duration: 46 minutes,Durasi Babak: 46 menit
+Agent Loop Overview,Overview Agent Loop
+02:38:22 - 02:46:20,02:38:22 - 02:46:20
+"Scott explains the agent loop, showing how it manages tasks with uncertain steps and adapts to changing requirements. He demonstrates creating the loop, handling LLM responses, stop conditions, and streaming tokens for smoother interaction.","Scott menjelaskan siklus agen, menunjukkan bagaimana siklus tersebut mengatur tugas dengan langkah yang tidak pasti dan beradaptasi terhadap kebutuhan yang berubah. Dia menunjukkan cara membuat siklus tersebut, menghandle respons LLM, kondisi pengec"
+Coding an Agent Loop,Membuat Loop Anak儡
+02:46:21 - 03:10:28,02:46:21 - 03:10:28
+"Scott demonstrates filtering messages to keep the LLM focused, setting up chat history, and streaming text generation. He shows how to handle tool calls and append responses to maintain the conversation flow.","Scott menunjukkan cara memfilter pesan untuk menjaga LLM fokus, merencanakan riwayat percakapan, dan mengirimkan teks secara real-time. Dia menunjukkan bagaimana cara menghandle panggilan alat dan menambah respons untuk mempertahankan alur"
+Running an Agent Loop,Mengelola Loop Antronik
+03:10:29 - 03:24:43,03:10:29 - 03:24:43
+"Scott demonstrates executing tool calls sequentially, updating the UI to show progress, and pushing results into the messages array to maintain conversation flow. He also highlights presenting results in a user-friendly way for non-technical users.","Scott menunjukkan cara menjalankan panggilan alat secara berurutan, memperbarui UI untuk menunjukkan kemajuan, dan menyisihkan hasil ke dalam array pesan untuk mempertahankan alir percakapan. Dia juga menonjolkan cara menghadir"
+Multi-Turn Evals,TEXT_TO_TRANSLATE
+03:24:44 - 03:39:28,03:24:44 - 03:39:28
+"Scott explains multi-turn evaluation, where the agent runs with message history and tools to judge outputs. He highlights its role in assessing complex tasks, user experience, and using language models to evaluate unstructured outputs.","Scott menjelaskan evaluasi berpusat lebih dari satu langkah, di mana agen bekerja dengan riwayat pesan dan alat untuk menilai output. Dia menyatakan perannya dalam mengukur tugas kompleks, pengalaman pengguna, dan menggunakan model bahasa untuk men"
+Coding a System Prompt,Membuat Sebuah Promt Sistem
+03:39:29 - 03:47:49,03:39:29 - 03:47:49
+"Scott demonstrates creating an evaluator by defining a schema for the judge, including output structure, score constraints, and reasoning. He shows using the AI SDK’s generate function to produce structured outputs, similar to setting up tool call inputs.","Scott menunjukkan bagaimana membuat evaluator dengan merumuskan skema untuk hakim, termasuk struktur output, batasan skor, dan penalaran. Dia menunjukkan menggunakan fungsi generate dari AI SDK untuk menghasilkan output yang terstruktur, seperti setting input untuk pang"
+Coding a User Message,Membuat Pesan Pengguna
+03:47:50 - 04:01:41,03:47:50 - 04:01:41
+"Scott walks through building a multi-turn executor with mocks, structuring messages, and collecting tool calls and results for evaluation. He emphasizes experimentation and fine-tuning to optimize prompts and model performance.","Scott melalui pembuatan sebuah executor berbentuk banyak langkah dengan menggunakan mock, struktur pesan, dan menyimpan panggilan alat dan hasil untuk evaluasi. Ia menekankan pada eksperimen dan fine-tuning untuk memaksimalkan prompt dan performa model."
+Coding the Eval,Mengkodekan Penilaian

@@ -1,9 +1,9 @@
-import json
 from unittest.mock import AsyncMock
 import pytest
 from app.services.cache_service import TranslationCacheService
 from app.services.translator_service import TranslatorService
 from app.schemas.translate import OllamaOptionsPayload, TranslateItem
+
 
 @pytest.mark.asyncio
 async def test_cache_service_crud():
@@ -37,16 +37,18 @@ async def test_cache_service_crud():
     stats = await cache.get_stats()
     assert stats["total_entries"] == 0
 
+
 @pytest.mark.asyncio
 async def test_translator_service_cache_hit(mock_ollama_client):
-    cache = TranslationCacheService()
-    await cache.set("Open the door", "translate", "Buka pintu")
-    
     service = TranslatorService()
+    cache = TranslationCacheService()
+    await cache.set("Open the door", "translate", "Buka pintu", service.model)
+    
     result = await service.translate("Open the door", "translate")
     
     assert result == "Buka pintu"
     mock_ollama_client.generate.assert_not_called()
+
 
 @pytest.mark.asyncio
 async def test_translator_service_cache_miss(mock_ollama_client):
@@ -58,44 +60,39 @@ async def test_translator_service_cache_miss(mock_ollama_client):
     assert result == "Buka jendela"
     mock_ollama_client.generate.assert_called_once()
     
-    # Verify it was saved to cache
+    # Verify it was saved to cache with correct model
     cache = TranslationCacheService()
-    cached = await cache.get("Open the window", "translate")
+    cached = await cache.get("Open the window", "translate", service.model)
     assert cached == "Buka jendela"
+
 
 @pytest.mark.asyncio
 async def test_translator_service_skip_indonesian(mock_ollama_client):
     service = TranslatorService()
-    # Teks bahasa Indonesia yang jelas
     indonesian_text = "Saya sedang belajar bahasa Indonesia dengan bantuan komputer ini."
     result = await service.translate(indonesian_text, "translate")
     
     assert result == indonesian_text
     mock_ollama_client.generate.assert_not_called()
 
+
 @pytest.mark.asyncio
 async def test_translator_service_sanitize_rules(mock_ollama_client):
-    # Mock return value containing leak patterns/tags
     mock_ollama_client.generate.return_value = "<text_to_translate>Halo Dunia</text_to_translate> Aturan: Jangan ubah kode."
     
     service = TranslatorService()
     result = await service.translate("Hello World 1", "translate")
-    assert result == "Hello World 1"  # Should fall back due to prompt leak marker
+    assert result == "Hello World 1"  # _sanitize returns None for leak → translate returns original
     
-    # Let's test the tags removal with a clean translation
     mock_ollama_client.generate.return_value = "<text_to_translate>Halo Dunia</text_to_translate>"
     result = await service.translate("Hello World 2", "translate")
     assert result == "Halo Dunia"
 
+
 @pytest.mark.asyncio
 async def test_batch_translate_success(mock_ollama_client):
-    # Mock successful JSON batch return
-    mock_ollama_client.generate.return_value = json.dumps({
-        "results": [
-            {"id": "1", "translated_text": "Satu"},
-            {"id": "2", "translated_text": "Dua"}
-        ]
-    })
+    # Mock numbered list batch return (new format)
+    mock_ollama_client.generate.return_value = "[1] Satu\n[2] Dua"
     
     service = TranslatorService()
     items = [
@@ -106,18 +103,19 @@ async def test_batch_translate_success(mock_ollama_client):
     
     assert results == {"1": "Satu", "2": "Dua"}
     
-    # Verify both stored in cache
+    # Verify both stored in cache with correct model
     cache = TranslationCacheService()
-    assert await cache.get("One", "translate") == "Satu"
-    assert await cache.get("Two", "translate") == "Dua"
+    assert await cache.get("One", "translate", service.model) == "Satu"
+    assert await cache.get("Two", "translate", service.model) == "Dua"
+
 
 @pytest.mark.asyncio
-async def test_batch_translate_fallback_on_invalid_json(mock_ollama_client):
-    # Ollama returns malformed JSON
+async def test_batch_translate_fallback_on_invalid_output(mock_ollama_client):
+    """When model output has no numbered list, falls back to individual translation."""
     mock_ollama_client.generate.side_effect = [
-        "invalid json response here",  # Batch call
-        "Satu",                        # Individual fallback 1
-        "Dua"                          # Individual fallback 2
+        "some random text without numbered format",  # Batch call
+        "Satu",                                      # Individual fallback 1
+        "Dua",                                       # Individual fallback 2
     ]
     
     service = TranslatorService()
@@ -129,12 +127,13 @@ async def test_batch_translate_fallback_on_invalid_json(mock_ollama_client):
     
     assert results == {"1": "Satu", "2": "Dua"}
 
+
 @pytest.mark.asyncio
-async def test_batch_translate_fallback_on_missing_id(mock_ollama_client):
-    # Ollama returns JSON with only one item translated
+async def test_batch_translate_fallback_on_missing_item(mock_ollama_client):
+    """When model returns fewer items than expected, missing ones fall back individually."""
     mock_ollama_client.generate.side_effect = [
-        json.dumps({"results": [{"id": "1", "translated_text": "Satu"}]}),  # Batch call
-        "Dua"                                                               # Individual fallback for item 2
+        "[1] Satu",  # Batch call returns only 1 of 2 items
+        "Dua",        # Individual fallback for item 2
     ]
     
     service = TranslatorService()
@@ -145,6 +144,7 @@ async def test_batch_translate_fallback_on_missing_id(mock_ollama_client):
     results = await service.translate_batch(items, "translate")
     
     assert results == {"1": "Satu", "2": "Dua"}
+
 
 def test_api_health_endpoint(test_client):
     response = test_client.get("/api/v1/health")
@@ -154,23 +154,19 @@ def test_api_health_endpoint(test_client):
         "message": "Mars Web Translator AI server is running"
     }
 
+
 def test_api_cache_endpoints(test_client):
-    # Clear cache first
     response = test_client.delete("/api/v1/cache/clear")
     assert response.status_code == 200
     assert response.json()["status"] == "ok"
     
-    # Get stats
     response = test_client.get("/api/v1/cache/stats")
     assert response.status_code == 200
     assert response.json()["total_entries"] == 0
 
+
 def test_api_batch_translate_endpoint(test_client, mock_ollama_client):
-    mock_ollama_client.generate.return_value = json.dumps({
-        "results": [
-            {"id": "abc", "translated_text": "Terjemahan Sukses"}
-        ]
-    })
+    mock_ollama_client.generate.return_value = "[1] Terjemahan Sukses"
     
     payload = {
         "mode": "translate",
@@ -188,11 +184,10 @@ def test_api_batch_translate_endpoint(test_client, mock_ollama_client):
 
 
 # ================================================================
-# Tests for OllamaOptionsPayload — new configurable params
+# Tests for OllamaOptionsPayload
 # ================================================================
 
 def test_ollama_options_payload_defaults():
-    """OllamaOptionsPayload should accept all None (use server-side defaults)."""
     opts = OllamaOptionsPayload()
     assert opts.num_ctx is None
     assert opts.num_predict is None
@@ -202,7 +197,6 @@ def test_ollama_options_payload_defaults():
 
 
 def test_ollama_options_payload_subtitle_preset():
-    """Fast subtitle preset values should be accepted."""
     opts = OllamaOptionsPayload(
         num_ctx=512,
         num_predict=64,
@@ -217,7 +211,6 @@ def test_ollama_options_payload_subtitle_preset():
 
 @pytest.mark.asyncio
 async def test_translator_service_passes_options_to_ollama(mock_ollama_client):
-    """TranslatorService.translate() should forward options to OllamaClient.generate()."""
     mock_ollama_client.generate.return_value = "Terjemahan opsi"
 
     opts = OllamaOptionsPayload(num_ctx=512, num_predict=64, temperature=0.0, top_p=0.8, keep_alive="15m")
@@ -225,7 +218,6 @@ async def test_translator_service_passes_options_to_ollama(mock_ollama_client):
     result = await service.translate("Options forward test", "translate", options=opts)
 
     assert result == "Terjemahan opsi"
-    # Verify generate was called with the expected options dict
     call_kwargs = mock_ollama_client.generate.call_args
     assert call_kwargs is not None
     passed_options = call_kwargs.kwargs.get("options") or {}
@@ -235,10 +227,7 @@ async def test_translator_service_passes_options_to_ollama(mock_ollama_client):
 
 
 def test_api_batch_translate_with_ollama_options(test_client, mock_ollama_client):
-    """Batch translate endpoint should accept and forward ollama_options payload."""
-    mock_ollama_client.generate.return_value = json.dumps({
-        "results": [{"id": "x1", "translated_text": "Terjemahan dengan opsi"}]
-    })
+    mock_ollama_client.generate.return_value = "[1] Terjemahan dengan opsi"
 
     payload = {
         "mode": "translate",
@@ -255,4 +244,3 @@ def test_api_batch_translate_with_ollama_options(test_client, mock_ollama_client
     assert response.status_code == 200
     res_data = response.json()
     assert res_data["results"][0]["translated_text"] == "Terjemahan dengan opsi"
-
