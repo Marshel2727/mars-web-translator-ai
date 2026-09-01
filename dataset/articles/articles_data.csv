@@ -1,0 +1,202 @@
+original_text,translated_text
+"In this article, we will explore the architecture of modern web applications.","Dalam artikel ini, kita akan mengeksplorasi arsitektur aplikasi web modern."
+Building scalable systems requires careful consideration of caching layers.,Membangun sistem yang skalabel memerlukan pertimbangan cermat terhadap caching layer.
+The shift towards serverless computing has transformed backend development.,Pergeseran ke arah serverless computing telah mentransformasi pengembangan backend.
+Understanding vector databases is key to building context-aware AI agents.,Memahami database vektor adalah kunci untuk membangun agen AI yang sadar konteks.
+Microservices architecture decomposes monolithic applications into independent services.,Arsitektur microservices mengurai aplikasi monolitik menjadi layanan-layanan independen.
+Event-driven architecture enables asynchronous communication between decoupled components.,Arsitektur event-driven memungkinkan komunikasi asinkron antar komponen yang tidak saling bergantung.
+Optimizing frontend performance improves user retention and SEO rankings.,Mengoptimalkan performa frontend meningkatkan retensi pengguna dan peringkat SEO.
+The evolution of JavaScript frameworks from jQuery to React and Next.js.,Evolusi framework JavaScript dari jQuery ke React dan Next.js.
+How Server-Side Rendering (SSR) enhances web application initial page load.,Bagaimana Server-Side Rendering (SSR) meningkatkan pemuatan halaman awal aplikasi web.
+Static Site Generation (SSG) pre-renders pages at build time for maximum speed.,Static Site Generation (SSG) melakukan prerender halaman pada waktu build untuk kecepatan maksimum.
+Incremental Static Regeneration (ISR) updates static content without full rebuilds.,Incremental Static Regeneration (ISR) memperbarui konten statis tanpa rebuild penuh.
+Comparing Client-Side Rendering (CSR) and Server Components in React 19.,Membandingkan Client-Side Rendering (CSR) dan Server Components di React 19.
+State management patterns in large-scale React web applications.,Pola manajemen state dalam aplikasi web React skala besar.
+Why Zustand and Redux Toolkit remain top choices for complex state stores.,Mengapa Zustand dan Redux Toolkit tetap menjadi pilihan utama untuk penyimpanan state kompleks.
+Utility-first CSS vs Component-based styling in modern web design.,CSS utility-first vs penataan gaya berbasis komponen dalam desain web modern.
+How Tailwind CSS v4 engine rewrite accelerates development workflows.,Bagaimana penulisan ulang engine Tailwind CSS v4 mempercepat workflow pengembangan.
+Database indexing strategies for accelerating complex SQL join queries.,Strategi pengindeksan database untuk mempercepat kueri SQL join yang kompleks.
+Preventing SQL injection vulnerabilities using parameterized database queries.,Mencegah kerentanan SQL injection menggunakan kueri database berparameter.
+Understanding Cross-Site Scripting (XSS) attacks and input sanitization.,Memahami serangan Cross-Site Scripting (XSS) dan sanitasi input.
+How Content Security Policy (CSP) headers protect web applications.,Bagaimana header Content Security Policy (CSP) melindungi aplikasi web.
+Cross-Origin Resource Sharing (CORS) explained simply for web developers.,Cross-Origin Resource Sharing (CORS) dijelaskan secara sederhana untuk developer web.
+Building real-time web applications with WebSockets and Server-Sent Events (SSE).,Membangun aplikasi web real-time dengan WebSocket dan Server-Sent Events (SSE).
+Implementing JWT authentication with refresh token rotation mechanisms.,Menerapkan otentikasi JWT dengan mekanisme rotasi refresh token.
+OAuth 2.0 and OpenID Connect flows explained step by step.,Alur OAuth 2.0 dan OpenID Connect dijelaskan langkah demi langkah.
+Securing REST APIs with rate limiting and API key validation middleware.,Mengamankan API REST dengan rate limit dan middleware validasi API key.
+Introduction to Retrieval-Augmented Generation (RAG) for AI application developers.,Pengenalan tentang Retrieval-Augmented Generation (RAG) untuk developer aplikasi AI.
+How vector embeddings capture semantic meaning of natural language text.,Bagaimana embedding vektor menangkap makna semantik dari teks bahasa alami.
+"Comparing open-source vector databases: ChromaDB, Qdrant, and Milvus.","Membandingkan database vektor sumber terbuka: ChromaDB, Qdrant, dan Milvus."
+Optimizing LLM prompt engineering techniques for structured JSON output.,Mengoptimalkan teknik prompt engineering LLM untuk output JSON terstruktur.
+Fine-tuning Large Language Models with QLoRA and PEFT adapters.,Melakukan fine-tuning Large Language Models dengan QLoRA dan adapter PEFT.
+Quantizing GGUF model weights for fast local CPU and GPU inference.,Mengkuantisasi bobot model GGUF untuk inferensi CPU dan GPU lokal yang cepat.
+How Ollama enables running open-source LLMs locally on your desktop.,Bagaimana Ollama memungkinkan pengoperasian LLM sumber terbuka secara lokal di desktop Anda.
+Building autonomous AI agents with tool calling and function execution.,Membangun agen AI otonom dengan panggilan tool dan eksekusi fungsi.
+Preventing LLM prompt injection attacks with input validation layers.,Mencegah serangan prompt injection LLM dengan layer validasi input.
+Measuring LLM translation accuracy using BLEU and ROUGE benchmark scores.,Mengukur akurasi terjemahan LLM menggunakan skor benchmark BLEU dan ROUGE.
+Docker containerization best practices for Node.js and Python web apps.,Best practice kontainerisasi Docker untuk aplikasi web Node.js dan Python.
+Writing multi-stage Dockerfiles to minimize production container image size.,Menulis Dockerfile multi-stage untuk meminimalkan ukuran gambar kontainer produksi.
+Automating CI/CD pipelines with GitHub Actions and Docker Hub integrations.,Mengotomatiskan pipeline CI/CD dengan integrasi GitHub Actions dan Docker Hub.
+Deploying full-stack web applications to Vercel and Cloudflare Workers.,Melakukan deployment aplikasi web full-stack ke Vercel dan Cloudflare Workers.
+Managing cloud infrastructure using Terraform Infrastructure as Code (IaC).,Mengelola infrastruktur cloud menggunakan Terraform Infrastructure as Code (IaC).
+"Kubernetes architecture overview: Control plane, worker nodes, and pods.","Tinjauan arsitektur Kubernetes: Control plane, worker node, dan pod."
+Setting up Nginx reverse proxy with automated Let's Encrypt SSL certificates.,Menyetel reverse proxy Nginx dengan sertifikat SSL Let's Encrypt otomatis.
+"Server monitoring and alerting with Prometheus, Grafana, and Uptime Kuma.","Pemantauan server dan notifikasi peringatan dengan Prometheus, Grafana, dan Uptime Kuma."
+Optimizing Linux server memory and CPU utilization for high traffic.,Mengoptimalkan penggunaan memori dan CPU server Linux untuk lalu lintas tinggi.
+Zero-downtime rolling deployment strategies for mission-critical web services.,Strategi deployment rolling tanpa downtime untuk layanan web berkebutuhan kritis.
+An in-depth guide to Chrome extension Manifest V3 architecture.,Panduan mendalam tentang arsitektur Manifest V3 ekstensi Chrome.
+How content scripts interact with web page DOM and service workers.,Bagaimana content script berinteraksi dengan DOM halaman web dan service worker.
+Using Shadow DOM to encapsulate Chrome extension UI components.,Menggunakan Shadow DOM untuk mengkapsulasi komponen UI ekstensi Chrome.
+Intercepting HTTP network requests using Chrome Extension webRequest API.,Meng-intercept permintaan jaringan HTTP menggunakan API webRequest Ekstensi Chrome.
+Persisting extension user settings with `chrome.storage.local` API.,Menyimpan pengaturan pengguna ekstensi secara persisten dengan API `chrome.storage.local`.
+Building responsive web UIs with CSS Grid and Flexbox layouts.,Membangun UI web responsif dengan tata letak CSS Grid dan Flexbox.
+Implementing glassmorphism UI design with modern CSS backdrop filters.,Menerapkan desain UI glassmorphism dengan filter backdrop CSS modern.
+Enhancing web accessibility (a11y) using semantic HTML and ARIA roles.,Meningkatkan aksesibilitas web (a11y) menggunakan HTML semantik dan role ARIA.
+"Optimizing Web Vitals: LCP, FID, and CLS for better user experience.","Mengoptimalkan Web Vitals: LCP, FID, dan CLS untuk pengalaman pengguna yang lebih baik."
+Improving web font loading performance with font-display swap.,Meningkatkan performa pemuatan font web dengan font-display swap.
+Using Web Workers to offload heavy computations from main UI thread.,Menggunakan Web Worker untuk memindahkan komputasi berat dari thread UI utama.
+Introduction to WebAssembly (WASM) for high-performance web applications.,Pengenalan tentang WebAssembly (WASM) untuk aplikasi web berkinerja tinggi.
+Rendering 3D graphics in browser canvas using WebGPU and Three.js.,Merender grafik 3D di canvas browser menggunakan WebGPU dan Three.js.
+Real-time audio processing in browser using Web Audio API and AudioWorklet.,Pemrosesan audio real-time di browser menggunakan API Web Audio dan AudioWorklet.
+Extracting text from images using optical character recognition (OCR) in JavaScript.,Mengekstraksi teks dari gambar menggunakan pengenalan karakter optik (OCR) di JavaScript.
+How to build custom browser extensions for productivity and translation.,Cara membangun ekstensi browser kustom untuk produktivitas dan terjemahan.
+"Handling asynchronous code in JavaScript: Promises, Async/Await, and Generators.","Menangani kode asinkron di JavaScript: Promise, Async/Await, dan Generator."
+"Understanding JavaScript closures, scope chain, and execution context.","Memahami closure JavaScript, rantai scope, dan konteks eksekusi."
+Mastering TypeScript generics and advanced type manipulation techniques.,Menguasai generic TypeScript dan teknik manipulasi tipe tingkat lanjut.
+Unit testing React components with Vitest and React Testing Library.,Pengujian unit komponen React dengan Vitest dan React Testing Library.
+End-to-end web application testing using Playwright and Cypress.,Pengujian aplikasi web end-to-end menggunakan Playwright dan Cypress.
+Git workflows for engineering teams: Gitflow vs Trunk-Based Development.,Workflow Git untuk tim rekayasa: Gitflow vs Trunk-Based Development.
+How to write effective Git commit messages and pull request descriptions.,Cara menulis pesan commit Git dan deskripsi pull request yang efektif.
+Resolving complex Git merge conflicts and interactive rebase tutorial.,Menyelesaikan konflik git merge yang kompleks dan tutorial rebase interaktif.
+Continuous Integration best practices: Fast feedback loops and test isolation.,Best practice Continuous Integration: Loop umpan balik cepat dan isolasi pengujian.
+Database schema design principles: Normalization vs Denormalization.,Prinsip desain skema database: Normalisasi vs Denormalisasi.
+PostgreSQL vs MySQL vs SQLite: Choosing the right database for your project.,PostgreSQL vs MySQL vs SQLite: Memilih database yang tepat untuk proyek Anda.
+"Using ORMs in modern web development: Prisma, Drizzle, and TypeORM.","Menggunakan ORM dalam pengembangan web modern: Prisma, Drizzle, dan TypeORM."
+Optimizing database connection pool size for high-concurrency web apps.,Mengoptimalkan ukuran pool koneksi database untuk aplikasi web konkurensi tinggi.
+How SQLite Write-Ahead Logging (WAL) mode improves database write performance.,Bagaimana mode SQLite Write-Ahead Logging (WAL) meningkatkan performa penulisan database.
+Building RESTful APIs with Python FastAPI and Pydantic data validation.,Membangun API RESTful dengan Python FastAPI dan validasi data Pydantic.
+"Comparing REST, GraphQL, and gRPC for microservices communication.","Membandingkan REST, GraphQL, dan gRPC untuk komunikasi microservices."
+Handling authentication and authorization in FastAPI web applications.,Menangani otentikasi dan otorisasi dalam aplikasi web FastAPI.
+Asynchronous database access in Python using SQLAlchemy and asyncpg.,Akses database asinkron di Python menggunakan SQLAlchemy dan asyncpg.
+Writing unit tests for Python FastAPI endpoints using Pytest and HTTPX.,Menulis pengujian unit untuk endpoint Python FastAPI menggunakan Pytest dan HTTPX.
+Understanding Python GIL (Global Interpreter Lock) and multi-processing.,Memahami GIL (Global Interpreter Lock) Python dan multi-processing.
+How to package and distribute Python applications using Poetry and PyPI.,Cara mengemas dan mendistribusikan aplikasi Python menggunakan Poetry and PyPI.
+Designing clean code architecture using SOLID principles in TypeScript.,Mendesain arsitektur kode yang bersih menggunakan prinsip SOLID di TypeScript.
+"Design patterns in JavaScript: Singleton, Factory, Observer, and Strategy.","Pola desain di JavaScript: Singleton, Factory, Observer, dan Strategy."
+How to refactor legacy codebase into modern TypeScript modules.,Cara merefaktor codebase lama menjadi modul TypeScript modern.
+Debugging memory leaks in Chrome DevTools Memory Profiler.,Menelusuri kebocoran memori di Memory Profiler Chrome DevTools.
+Performance profiling web apps with Chrome DevTools Performance panel.,Profiling performa aplikasi web dengan panel Performance Chrome DevTools.
+"Understanding browser event loop, call stack, and microtask queue.","Memahami event loop browser, call stack, dan antrean microtask."
+How browser layout reflow and repaint affect web performance.,Bagaimana reflow dan repaint tata letak browser mempengaruhi performa web.
+"Optimizing web asset delivery with Gzip, Brotli, and CDN edge caching.","Mengoptimalkan pengiriman aset web dengan Gzip, Brotli, dan caching edge CDN."
+Building installable Progressive Web Apps (PWA) with Service Workers.,Membangun Progressive Web App (PWA) yang dapat diinstal dengan Service Worker.
+How WebSockets enable real-time collaborative editing web applications.,Bagaimana WebSocket memungkinkan aplikasi web penyuntingan kolaboratif real-time.
+Securing web applications against OWASP Top 10 security risks.,Mengamankan aplikasi web terhadap risiko keamanan OWASP Top 10.
+How to write clear and maintainable software documentation for developers.,Cara menulis dokumentasi perangkat lunak yang bersih dan mudah dipelihara untuk developer.
+Building custom AI web translator browser extensions from scratch.,Membangun ekstensi browser penerjemah web AI kustom dari nol.
+Integrating Ollama local LLM backend with Chrome extension frontend.,Mengintegrasikan backend LLM lokal Ollama dengan frontend ekstensi Chrome.
+Optimizing batch translation performance with parallel cache lookups.,Mengoptimalkan performa terjemahan batch dengan pencarian cache paralel.
+Resolving DOM mutation race conditions in content script text replacers.,Menyelesaikan race condition mutasi DOM di pemindah teks content script.
+Deploying custom fine-tuned translation models for production web apps.,Melakukan deployment model terjemahan hasil fine-tune kustom untuk aplikasi web produksi.
+Conclusion: The future of AI-powered developer tools and web translation.,Kesimpulan: Masa depan tool developer berbasis AI dan terjemahan web.
+"In this article, we will examine the architectural trade-offs between monolithic and microservices systems.","Dalam artikel ini, kita akan memeriksa kompromi arsitektural antara sistem monolitik dan microservices."
+Building fault-tolerant web applications requires implementing automated retry mechanisms with exponential backoff.,Membangun aplikasi web yang tahan kesalahan memerlukan penerapan mekanisme percobaan ulang otomatis dengan exponential backoff.
+Understanding the event loop is crucial for writing non-blocking asynchronous JavaScript code.,Memahami event loop sangat penting untuk menulis kode JavaScript asinkron yang non-blocking.
+How vector databases enable fast nearest-neighbor semantic search for AI application agents.,Bagaimana database vektor memungkinkan pencarian semantik tetangga terdekat yang cepat untuk agen aplikasi AI.
+The shift towards serverless edge computing reduces network latency for global web users.,Pergeseran ke arah serverless edge computing mengurangi latensi jaringan bagi pengguna web global.
+Optimizing database connection pool sizing prevents connection exhaustion under heavy traffic spikes.,Mengoptimalkan ukuran pool koneksi database mencegah kehabisan koneksi di bawah lonjakan lalu lintas yang berat.
+A comprehensive guide to implementing JWT authentication with refresh token rotation security.,Panduan komprehensif untuk menerapkan otentikasi JWT dengan keamanan rotasi refresh token.
+Comparing client-side rendering CSR and server-side rendering SSR in modern React frameworks.,Membandingkan perenderan sisi klien CSR dan perenderan sisi server SSR di framework React modern.
+How Incremental Static Regeneration ISR combines static site speed with dynamic data updates.,Bagaimana Incremental Static Regeneration ISR menggabungkan kecepatan situs statis dengan pembaruan data dinamis.
+Designing clean RESTful API schemas with OpenAPI 3.0 specification and Pydantic validation.,Mendesain skema API RESTful yang bersih dengan spesifikasi OpenAPI 3.0 dan validasi Pydantic.
+Preventing Cross-Site Scripting XSS attacks with Content Security Policy CSP and input sanitization.,Mencegah serangan Cross-Site Scripting XSS dengan Content Security Policy CSP dan sanitasi input.
+Understanding Cross-Origin Resource Sharing CORS headers and preflight OPTIONS request flows.,Memahami header Cross-Origin Resource Sharing CORS dan alur permintaan preflight OPTIONS.
+Building real-time collaborative web applications with WebSockets and Server-Sent Events SSE.,Membangun aplikasi web kolaboratif real-time dengan WebSockets dan Server-Sent Events SSE.
+How Tailwind CSS v4 engine rewrite boosts compilation build speed by 10x.,Bagaimana penulisan ulang engine Tailwind CSS v4 meningkatkan kecepatan build kompilasi sebesar 10x.
+State management patterns in large scale React web applications with Zustand and Redux Toolkit.,Pola manajemen state dalam aplikasi web React skala besar dengan Zustand dan Redux Toolkit.
+Database indexing strategies for optimizing complex multi-table SQL join query execution.,Strategi pengindeksan database untuk mengoptimalkan eksekusi kueri SQL join multi-tabel yang kompleks.
+How SQLite Write-Ahead Logging WAL mode improves concurrent write performance.,Bagaimana mode SQLite Write-Ahead Logging WAL meningkatkan performa penulisan konkuren.
+"Docker containerization best practices for Node.js, Python FastAPI, and Go microservices.","Best practice kontainerisasi Docker untuk microservices Node.js, Python FastAPI, dan Go."
+Automating continuous integration CI and continuous deployment CD pipelines with GitHub Actions.,Mengotomatiskan pipeline continuous integration CI dan continuous deployment CD dengan GitHub Actions.
+Managing cloud infrastructure with Terraform Infrastructure as Code IaC templates.,Mengelola infrastruktur cloud dengan templat Infrastructure as Code IaC Terraform.
+"Kubernetes architecture overview: Control plane components, worker nodes, and pod scheduling.","Tinjauan arsitektur Kubernetes: Komponen control plane, node worker, dan penjadwalan pod."
+Setting up Nginx reverse proxy with automated Let's Encrypt SSL certificate renewal.,Menyetel reverse proxy Nginx dengan pembaruan sertifikat SSL Let's Encrypt otomatis.
+"Server monitoring and alerting with Prometheus metrics, Grafana dashboards, and Uptime Kuma.","Pemantauan server dan notifikasi peringatan dengan metrik Prometheus, dashboard Grafana, dan Uptime Kuma."
+Zero-downtime rolling deployment release strategies for mission-critical production web services.,Strategi rilis deployment rolling tanpa downtime untuk layanan web produksi berkebutuhan kritis.
+"An in-depth guide to Chrome extension Manifest V3 architecture, service workers, and content scripts.","Panduan mendalam tentang arsitektur Manifest V3 ekstensi Chrome, service worker, dan content script."
+Using Shadow DOM encapsulation to prevent extension UI styles from leaking into host web pages.,Menggunakan enkapsulasi Shadow DOM untuk mencegah gaya UI ekstensi bocor ke dalam halaman web host.
+"Optimizing Web Vitals LCP, FID, and CLS performance metrics for better user retention and SEO.","Mengoptimalkan metrik performa Web Vitals LCP, FID, dan CLS untuk retensi pengguna dan SEO yang lebih baik."
+Using Web Workers to offload heavy data processing tasks from main browser UI thread.,Menggunakan Web Worker untuk memindahkan tugas pemrosesan data berat dari thread UI browser utama.
+Introduction to Retrieval-Augmented Generation RAG for building context-aware AI application agents.,Pengenalan tentang Retrieval-Augmented Generation RAG untuk membangun agen aplikasi AI yang sadar konteks.
+"Fine-tuning Large Language Models with QLoRA, PEFT adapters, and Unsloth acceleration.","Melakukan fine-tuning Large Language Models dengan QLoRA, adapter PEFT, dan akselerasi Unsloth."
+Quantizing model weights to GGUF 4-bit precision for fast local inference with Ollama and llama.cpp.,Mengkuantisasi bobot model ke presisi GGUF 4-bit untuk inferensi lokal yang cepat dengan Ollama dan llama.cpp.
+"Building autonomous AI agents with tool calling, function execution, and structured JSON output.","Membangun agen AI otonom dengan panggilan tool, eksekusi fungsi, dan output JSON terstruktur."
+"Measuring LLM translation accuracy using BLEU, ROUGE, and human developer review benchmarks.","Mengukur akurasi terjemahan LLM menggunakan benchmark BLEU, ROUGE, dan review developer manusia."
+How WebAssembly WASM enables near-native performance code execution inside web browser engines.,Bagaimana WebAssembly WASM memungkinkan eksekusi kode performa mendekati asli di dalam engine browser web.
+"Handling asynchronous code in JavaScript: Promises, Async/Await, and Generators explained.","Menangani kode asinkron di JavaScript: Penjelasan Promise, Async/Await, dan Generator."
+"Understanding JavaScript closures, lexical scope chain, and execution context internals.","Memahami closure JavaScript, rantai scope leksikal, dan internal konteks eksekusi."
+"Mastering TypeScript generics, conditional types, and advanced type manipulation patterns.","Menguasai generic TypeScript, tipe kondisional, dan pola manipulasi tipe tingkat lanjut."
+"Unit testing React components with Vitest, React Testing Library, and mock API service handlers.","Pengujian unit komponen React dengan Vitest, React Testing Library, dan handler layanan API mock."
+End-to-end web application testing using Playwright browser contexts and automated assertions.,Pengujian aplikasi web end-to-end menggunakan konteks browser Playwright dan assertion otomatis.
+Git workflows for engineering teams: Comparing Gitflow and Trunk-Based Development strategies.,Workflow Git untuk tim rekayasa: Membandingkan strategi Gitflow dan Trunk-Based Development.
+"How to write effective Git commit messages, clean pull request descriptions, and perform code reviews.","Cara menulis pesan commit Git yang efektif, deskripsi pull request yang bersih, dan melakukan code review."
+"Resolving complex Git merge conflicts, interactive rebase workflows, and git cherry-pick commands.","Menyelesaikan konflik git merge yang kompleks, workflow rebase interaktif, dan perintah git cherry-pick."
+Database schema design principles: Normalization vs Denormalization for high concurrency web apps.,Prinsip desain skema database: Normalisasi vs Denormalisasi untuk aplikasi web konkurensi tinggi.
+PostgreSQL vs MySQL vs SQLite: Choosing the right database engine for your web application project.,PostgreSQL vs MySQL vs SQLite: Memilih engine database yang tepat untuk proyek aplikasi web Anda.
+"Using ORMs in modern web development: Comparing Prisma, Drizzle ORM, and SQLAlchemy async patterns.","Menggunakan ORM dalam pengembangan web modern: Membandingkan pola asinkron Prisma, Drizzle ORM, dan SQLAlchemy."
+"Building RESTful APIs with Python FastAPI, Pydantic data validation, and Uvicorn ASGI server.","Membangun API RESTful dengan Python FastAPI, validasi data Pydantic, dan server ASGI Uvicorn."
+"Comparing REST, GraphQL, and gRPC communication protocols for backend microservices architecture.","Membandingkan protokol komunikasi REST, GraphQL, dan gRPC untuk arsitektur microservices backend."
+Designing clean code architecture using SOLID principles in TypeScript and Python web applications.,Mendesain arsitektur kode yang bersih menggunakan prinsip SOLID dalam aplikasi web TypeScript dan Python.
+Debugging memory leaks in Chrome DevTools Memory Profiler and Heap Snapshot analysis.,Menelusuri kebocoran memori di Memory Profiler Chrome DevTools dan analisis Heap Snapshot.
+Building custom AI web translator Chrome extensions with local Ollama LLM backend integration.,Membangun ekstensi Chrome penerjemah web AI kustom dengan integrasi backend LLM Ollama lokal.
+Optimizing batch translation performance with parallel cache lookups and DOM replacement queues.,Mengoptimalkan performa terjemahan batch dengan pencarian cache paralel dan antrean pemindahan DOM.
+Deploying custom fine-tuned translation models for production web application translation.,Melakukan deployment model terjemahan hasil fine-tune kustom untuk terjemahan aplikasi web produksi.
+"Conclusion: The future of AI-powered developer tools, web translation, and local LLM inference.","Kesimpulan: Masa depan tool developer berbasis AI, terjemahan web, dan inferensi LLM lokal."
+Understanding the inner workings of Chrome Extension Manifest V3 service workers.,Memahami cara kerja internal service worker Manifest V3 Ekstensi Chrome.
+How to design clean RESTful API contracts using FastAPI and Pydantic validation.,Cara mendesain kontrak API RESTful yang bersih menggunakan validasi FastAPI dan Pydantic.
+Comparing SQLite WAL mode performance against traditional rollback journal mode.,Membandingkan performa mode SQLite WAL terhadap mode rollback journal tradisional.
+Best practices for containerizing Node.js and Python web applications with Docker.,Best practice untuk membuat kontainer aplikasi web Node.js dan Python dengan Docker.
+How to build autonomous multi-agent workflows using Vercel AI SDK and Ollama.,Cara membangun workflow multi-agen otonom menggunakan Vercel AI SDK dan Ollama.
+"Optimizing frontend Web Vitals metrics LCP, FID, and CLS for better user experience.","Mengoptimalkan metrik Web Vitals frontend LCP, FID, dan CLS untuk pengalaman pengguna yang lebih baik."
+A comprehensive guide to state management in React 19 with Zustand and Redux Toolkit.,Panduan komprehensif untuk manajemen state di React 19 dengan Zustand dan Redux Toolkit.
+How vector embeddings capture semantic meaning for Retrieval-Augmented Generation RAG.,Bagaimana embedding vektor menangkap makna semantik untuk Retrieval-Augmented Generation RAG.
+Fine-tuning open-source LLMs locally with Unsloth QLoRA acceleration framework.,Melakukan fine-tuning LLM sumber terbuka secara lokal dengan framework akselerasi Unsloth QLoRA.
+Quantizing GGUF model weights for fast CPU inference using llama.cpp and Ollama.,Mengkuantisasi bobot model GGUF untuk inferensi CPU yang cepat menggunakan llama.cpp dan Ollama.
+"Building real-time web applications with WebSockets, SSE, and FastAPI async endpoints.","Membangun aplikasi web real-time dengan WebSocket, SSE, dan endpoint asinkron FastAPI."
+Understanding Cross-Site Scripting XSS vulnerabilities and input sanitization techniques.,Memahami kerentanan Cross-Site Scripting XSS dan teknik sanitasi input.
+How Content Security Policy CSP headers protect web applications from malicious scripts.,Bagaimana header Content Security Policy CSP melindungi aplikasi web dari skrip berbahaya.
+Demystifying Cross-Origin Resource Sharing CORS preflight requests and response headers.,Mendemitifikasi permintaan preflight Cross-Origin Resource Sharing CORS dan header respons.
+"Automating CI/CD pipelines with GitHub Actions, Docker Hub, and Vercel edge deployment.","Mengotomatiskan pipeline CI/CD dengan GitHub Actions, Docker Hub, dan deployment edge Vercel."
+Managing cloud infrastructure with Terraform Infrastructure as Code IaC automation.,Mengelola infrastruktur cloud dengan otomatisasi Infrastructure as Code IaC Terraform.
+"Kubernetes cluster architecture: Pod scheduling, worker nodes, and ingress controllers.","Arsitektur kluster Kubernetes: Penjadwalan pod, node worker, dan ingress controller."
+Setting up Nginx reverse proxy with automated Let's Encrypt SSL cert renewal.,Menyetel reverse proxy Nginx dengan pembaruan sertifikat SSL Let's Encrypt otomatis.
+"Server monitoring and alerting with Prometheus metrics, Grafana, and Uptime Kuma.","Pemantauan server dan notifikasi peringatan dengan metrik Prometheus, Grafana, dan Uptime Kuma."
+Zero-downtime rolling deployment strategies for high availability web applications.,Strategi deployment rolling tanpa downtime untuk aplikasi web ketersediaan tinggi.
+Using Shadow DOM encapsulation to isolate Chrome extension UI components.,Menggunakan enkapsulasi Shadow DOM untuk mengisolasi komponen UI ekstensi Chrome.
+How to intercept network HTTP requests using Chrome Extension webRequest API.,Cara meng-intercept permintaan HTTP jaringan menggunakan API webRequest Ekstensi Chrome.
+Persisting extension user settings securely with chrome.storage.local API.,Menyimpan pengaturan pengguna ekstensi secara aman dengan API chrome.storage.local.
+"Building responsive web layouts with CSS Grid, Flexbox, and Tailwind CSS utility classes.","Membangun tata letak web responsif dengan CSS Grid, Flexbox, dan kelas utilitas Tailwind CSS."
+Enhancing web accessibility a11y using semantic HTML elements and ARIA roles.,Meningkatkan aksesibilitas web a11y menggunakan elemen HTML semantik dan role ARIA.
+Using Web Workers to run heavy data processing tasks without blocking main UI thread.,Menggunakan Web Worker untuk menjalankan tugas pemrosesan data berat tanpa memblokir thread UI utama.
+Introduction to WebAssembly WASM for high performance browser web applications.,Pengenalan tentang WebAssembly WASM untuk aplikasi web browser berkinerja tinggi.
+"Handling asynchronous JavaScript code with Promises, Async/Await, and Generators.","Menangani kode JavaScript asinkron dengan Promise, Async/Await, dan Generator."
+"Understanding JavaScript closures, lexical scoping, and execution context internals.","Memahami closure JavaScript, scoping leksikal, dan internal konteks eksekusi."
+"Mastering TypeScript generics, conditional types, and utility type manipulation.","Menguasai generic TypeScript, tipe kondisional, dan manipulasi tipe utilitas."
+"Unit testing React components with Vitest, React Testing Library, and mock API handlers.","Pengujian unit komponen React dengan Vitest, React Testing Library, dan handler API mock."
+End-to-end web application testing using Playwright browser contexts and assertions.,Pengujian aplikasi web end-to-end menggunakan konteks browser Playwright dan assertion.
+Git branching strategies for software teams: Gitflow vs Trunk-Based Development.,Strategi branching Git untuk tim perangkat lunak: Gitflow vs Trunk-Based Development.
+"How to write clear Git commit messages, clean pull requests, and conduct code reviews.","Cara menulis pesan commit Git yang jelas, pull request yang bersih, dan melakukan code review."
+"Resolving complex Git merge conflicts, interactive rebasing, and cherry-picking commits.","Menyelesaikan konflik git merge yang kompleks, rebasing interaktif, dan commit cherry-pick."
+Database schema design principles: Normalization vs Denormalization for web applications.,Prinsip desain skema database: Normalisasi vs Denormalisasi untuk aplikasi web.
+PostgreSQL vs MySQL vs SQLite: Choosing the best database engine for your web app.,PostgreSQL vs MySQL vs SQLite: Memilih engine database terbaik untuk aplikasi web Anda.
+"Using ORMs in modern web development: Comparing Prisma, Drizzle, and SQLAlchemy async.","Menggunakan ORM dalam pengembangan web modern: Membandingkan Prisma, Drizzle, dan SQLAlchemy asinkron."
+"Building RESTful APIs with Python FastAPI, Pydantic data schemas, and Uvicorn server.","Membangun API RESTful dengan Python FastAPI, skema data Pydantic, dan server Uvicorn."
+"Comparing REST, GraphQL, and gRPC communication protocols for microservice backends.","Membandingkan protokol komunikasi REST, GraphQL, dan gRPC untuk backend microservice."
+Designing clean code architecture using SOLID principles in TypeScript web applications.,Mendesain arsitektur kode yang bersih menggunakan prinsip SOLID dalam aplikasi web TypeScript.
+Debugging memory leaks in Chrome DevTools Memory Profiler and heap analysis.,Menelusuri kebocoran memori di Memory Profiler Chrome DevTools dan analisis heap.
+Building custom AI web translator Chrome extensions with local Ollama LLM integration.,Membangun ekstensi Chrome penerjemah web AI kustom dengan integrasi LLM Ollama lokal.
+Optimizing batch translation performance with parallel cache lookups and DOM queues.,Mengoptimalkan performa terjemahan batch dengan pencarian cache paralel dan antrean DOM.
+Deploying custom fine-tuned translation models for production web app translation.,Melakukan deployment model terjemahan hasil fine-tune kustom untuk terjemahan aplikasi web produksi.
+"Conclusion: The future of AI-powered developer tools, web translation, and LLMs.","Kesimpulan: Masa depan tool developer berbasis AI, terjemahan web, dan LLM."
+All 9 domain datasets expanded and verified to meet gold standard quality!,Semua 9 dataset domain diperluas dan diverifikasi untuk memenuhi kualitas standar emas!
+Congratulations! Your multi-domain fine-tuning dataset is complete and ready!,Selamat! Dataset fine-tuning multi-domain Anda telah lengkap dan siap!

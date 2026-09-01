@@ -1,0 +1,205 @@
+original_text,translated_text
+Docker container built from multi-stage Dockerfile to minimize image size.,Kontainer Docker dibangun dari Dockerfile multi-stage untuk meminimalkan ukuran gambar.
+GitHub Actions workflow triggered on push to main branch.,Workflow GitHub Actions dipicu saat push ke branch main.
+Continuous Integration (CI) pipeline ran linter and unit test suite.,Pipeline Continuous Integration (CI) menjalankan linter dan pengujian unit.
+Continuous Deployment (CD) pipeline deployed app to Vercel production.,Pipeline Continuous Deployment (CD) melakukan deployment aplikasi ke produksi Vercel.
+Cloudflare Workers deployed serverless edge function globally.,Cloudflare Workers melakukan deployment fungsi edge serverless secara global.
+Configure reverse proxy Nginx server for SSL certificate termination.,Konfigurasikan server reverse proxy Nginx untuk terminasi sertifikat SSL.
+Automate SSL certificate renewal using Let's Encrypt Certbot tool.,Otomatiskan pembaruan sertifikat SSL menggunakan tool Let's Encrypt Certbot.
+Perform zero-downtime rolling deployment for new software release.,Lakukan deployment rolling tanpa downtime untuk rilis perangkat lunak baru.
+Kubernetes deployment managing 3 replica pods across cluster nodes.,Deployment Kubernetes mengelola 3 pod replika di seluruh node kluster.
+Helm chart configured for automated database deployment.,Chart Helm dikonfigurasi untuk deployment database otomatis.
+Terraform script provisions AWS EC2 instance and S3 storage bucket.,Skrip Terraform memprovisi instans AWS EC2 dan bucket penyimpanan S3.
+Ansible playbook configured Nginx reverse proxy and firewall rules.,Playbook Ansible mengkonfigurasi reverse proxy Nginx dan aturan firewall.
+Monitor server CPU utilization metrics in real time with Grafana dashboard.,Pantau metrik penggunaan CPU server secara real-time dengan dashboard Grafana.
+Prometheus scrapes metrics endpoint every 15 seconds.,Prometheus mengambil metrik dari endpoint setiap 15 detik.
+Configure Uptime Kuma for automated HTTP ping health checks.,Konfigurasikan Uptime Kuma untuk pemeriksaan kesehatan ping HTTP otomatis.
+Slack alert notification sent when server memory usage exceeds 90%.,Notifikasi peringatan Slack dikirim ketika penggunaan memori server melebihi 90%.
+Log rotation configured to retain 14 days of compressed access logs.,Rotasi log dikonfigurasi untuk menyimpan 14 hari file log akses terkompresi.
+View live container logs using `docker logs -f app_container`.,Lihat log kontainer langsung menggunakan `docker logs -f app_container`.
+Execute bash command inside running container with `docker exec -it app bash`.,Jalankan perintah bash di dalam kontainer yang berjalan dengan `docker exec -it app bash`.
+Stop and remove all idle containers using `docker system prune`.,Hentikan dan hapus semua kontainer yang menganggur menggunakan `docker system prune`.
+Set environment secret variables securely in GitHub Secrets.,Setel variabel rahasia lingkungan secara aman di GitHub Secrets.
+SSH key authentication configured for secure remote server login.,Autentikasi kunci SSH dikonfigurasi untuk login server jarak jauh yang aman.
+Disable password login on SSH server configuration file `/etc/ssh/sshd_config`.,Nonaktifkan login kata sandi pada file konfigurasi server SSH `/etc/ssh/sshd_config`.
+Configure UFW firewall to open ports 80 and 443 for web traffic.,Konfigurasikan firewall UFW untuk membuka port 80 dan 443 untuk lalu lintas web.
+Fail2ban automatically blocks IP addresses after 5 failed login attempts.,Fail2ban memblokir alamat IP secara otomatis setelah 5 percobaan login yang gagal.
+Database backup script runs daily via cron job at 02:00 AM.,Skrip pencadangan database berjalan setiap hari via cron job pada pukul 02:00.
+Restore PostgreSQL database from SQL dump file using `pg_restore`.,Pulihkan database PostgreSQL dari file SQL dump menggunakan `pg_restore`.
+Container health check verified database readiness before launching web service.,Pemeriksaan kesehatan kontainer memverifikasi kesiapan database sebelum meluncurkan layanan web.
+Configure Redis master-replica replication for high availability.,Konfigurasikan replikasi master-replika Redis untuk ketersediaan tinggi.
+Load balancer distributes incoming HTTP requests evenly across backend servers.,Load balancer mendistribusikan permintaan HTTP yang masuk secara merata di seluruh server backend.
+Set up DNS CNAME record to point subdomain to Vercel deployment URL.,Setel rekaman CNAME DNS untuk mengarah ke URL deployment Vercel.
+Cloudflare CDN edge caching reduces origin server bandwidth consumption.,Caching edge CDN Cloudflare mengurangi konsumsi bandwidth server asal.
+Purge Cloudflare CDN cache after publishing new production release.,Bersihkan cache CDN Cloudflare setelah mempublikasikan rilis produksi baru.
+Bypass CDN caching for dynamic REST API endpoints.,Lewati caching CDN untuk endpoint API REST yang dinamis.
+"Set HTTP cache control header to `public, max-age=31536000, immutable`.","Setel header kontrol cache HTTP ke `public, max-age=31536000, immutable`."
+Verify SSL certificate validity using `openssl x509 -in cert.pem -text`.,Verifikasi validitas sertifikat SSL menggunakan `openssl x509 -in cert.pem -text`.
+TLS 1.3 encryption handshake completed in 15ms.,Handshake enkripsi TLS 1.3 selesai dalam 15md.
+Configure CORS policy to allow specific domain origin requests.,Konfigurasikan kebijakan CORS untuk mengizinkan permintaan origin domain tertentu.
+Systemd service file configured to restart application on crash.,File layanan Systemd dikonfigurasi untuk memulai ulang aplikasi saat crash.
+Check systemd service status using `systemctl status mars-server`.,Periksa status layanan systemd menggunakan `systemctl status mars-server`.
+Linux kernel memory killer terminated high RAM process.,Memory killer kernel Linux menghentikan proses pengguna RAM tinggi.
+Increase swap space allocation to prevent out-of-memory server crashes.,Tingkatkan alokasi ruang swap untuk mencegah crash server akibat kehabisan memori.
+Mount persistent storage volume to Docker container `/app/data` directory.,Mount volume penyimpanan persisten ke direktori `/app/data` kontainer Docker.
+Network latency between AWS regions measured at 45ms.,Latensi jaringan antar wilayah AWS terukur pada 45md.
+Vercel serverless function execution timed out after 15 seconds.,Eksekusi fungsi serverless Vercel kehabisan waktu setelah 15 detik.
+AWS Lambda function triggered by Amazon S3 object upload event.,Fungsi AWS Lambda dipicu oleh peristiwa unggah objek Amazon S3.
+Configure IAM roles and policies with least privilege access.,Konfigurasikan peran dan kebijakan IAM dengan akses izin terkecil.
+Store database connection password in AWS Secrets Manager.,Simpan kata sandi koneksi database di AWS Secrets Manager.
+CloudWatch alarm triggered when HTTP 5xx error rate exceeds 1%.,Alarm CloudWatch dipicu ketika tingkat kesalahan HTTP 5xx melebihi 1%.
+Deploy application to staging server prior to production release.,Melakukan deployment aplikasi ke server staging sebelum rilis produksi.
+Automated rollback triggered when staging health check fails.,Rollback otomatis dipicu ketika pemeriksaan kesehatan staging gagal.
+Docker Compose volume persists SQLite database across container restarts.,Volume Docker Compose mempertahankan database SQLite di seluruh restart kontainer.
+Optimize Dockerfile layer caching by ordering commands efficiently.,Optimalkan caching layer Dockerfile dengan mengurutkan perintah secara efisien.
+Use `.dockerignore` file to exclude `node_modules` and local build artifacts.,Gunakan file `.dockerignore` untuk mengecualikan `node_modules` dan artifak build lokal.
+Container environment variable `NODE_ENV` set to `production`.,Variabel lingkungan kontainer `NODE_ENV` disetel ke `production`.
+Build multi-architecture Docker image for x86_64 and ARM64 processors.,Bangun gambar Docker multi-arsitektur untuk prosesor x86_64 dan ARM64.
+Push Docker image to GitHub Container Registry (GHCR).,Push gambar Docker ke GitHub Container Registry (GHCR).
+Pull latest production image tag using `docker pull ghcr.io/repo/app:latest`.,Tarik tag gambar produksi terbaru menggunakan `docker pull ghcr.io/repo/app:latest`.
+Kubernetes ingress controller routes domain traffic to backend service.,Ingress controller Kubernetes mengarahkan lalu lintas domain ke layanan backend.
+ConfigMap supplies application settings to Kubernetes pods.,ConfigMap menyuplai pengaturan aplikasi ke pod Kubernetes.
+Secret object stores base64-encoded credentials in Kubernetes cluster.,Objek Secret menyimpan kredensial berformat base64 di kluster Kubernetes.
+Horizontal Pod Autoscaler (HPA) scales pod replicas based on CPU load.,Horizontal Pod Autoscaler (HPA) menykala replika pod berdasarkan beban CPU.
+Kubernetes node affinity rules pin database pod to dedicated storage node.,Aturan node affinity Kubernetes menyematkan pod database ke node penyimpanan khusus.
+Liveness probe checks if container is still running correctly.,Liveness probe memeriksa apakah kontainer masih berjalan dengan benar.
+Readiness probe verifies if container is ready to accept user traffic.,Readiness probe memverifikasi apakah kontainer siap menerima lalu lintas pengguna.
+Startup probe defers liveness check until application initialization completes.,Startup probe menunda pemeriksaan liveness hingga inisialisasi aplikasi selesai.
+Pod restart policy set to `Always` in deployment specification.,Kebijakan restart pod disetel ke `Always` dalam spesifikasi deployment.
+Kubernetes cluster upgraded to latest patch version without downtime.,Kluster Kubernetes diperbarui ke versi patch terbaru tanpa downtime.
+Infrastructure as Code (IaC) templates version controlled in Git.,Templat Infrastructure as Code (IaC) dikontrol versinya di Git.
+"Terraform plan displays 3 resources to add, 1 to change, 0 to destroy.","Terraform plan menampilkan 3 sumber daya untuk ditambahkan, 1 untuk diubah, 0 untuk dihapus."
+Apply Terraform configuration using `terraform apply -auto-approve`.,Terapkan konfigurasi Terraform menggunakan `terraform apply -auto-approve`.
+Store Terraform state file remotely in S3 bucket with DynamoDB state locking.,Simpan file state Terraform secara remote di bucket S3 dengan locking state DynamoDB.
+Destroy Terraform resources using `terraform destroy` command.,Hapus sumber daya Terraform menggunakan perintah `terraform destroy`.
+Ansible dry-run execution checks playbook syntax without modifying server.,Eksekusi dry-run Ansible memeriksa sintaksis playbook tanpa mengubah server.
+Linux `cron` daemon executes periodic backup script every midnight.,Daemon `cron` Linux mengeksekusi skrip pencadangan berkala setiap tengah malam.
+Use `top` or `htop` to monitor active process CPU utilization.,Gunakan `top` atau `htop` untuk memantau penggunaan CPU proses yang aktif.
+Check disk space usage using `df -h` command.,Periksa penggunaan ruang disk menggunakan perintah `df -h`.
+Check memory utilization breakdown using `free -m` command.,Periksa rincian penggunaan memori menggunakan perintah `free -m`.
+List active listening ports using `netstat -tulnp` or `ss -tulnp`.,Daftarkan port listening aktif menggunakan `netstat -tulnp` atau `ss -tulnp`.
+Test remote port accessibility using `nc -zv host 8000`.,Tes aksesibilitas port remote menggunakan `nc -zv host 8000`.
+Check DNS resolution using `dig domain.com` or `nslookup domain.com`.,Periksa resolusi DNS menggunakan `dig domain.com` atau `nslookup domain.com`.
+Trace network routing path using `traceroute domain.com`.,Lacak jalur rute jaringan menggunakan `traceroute domain.com`.
+Check HTTP response headers using `curl -I https://domain.com`.,Periksa header respons HTTP menggunakan `curl -I https://domain.com`.
+Send POST request payload using `curl -X POST -H 'Content-Type: application/json' -d '{}'`.,Kirim payload permintaan POST menggunakan `curl -X POST -H 'Content-Type: application/json' -d '{}'`.
+Web server returned HTTP status 502 Bad Gateway.,Server web mengembalikan status HTTP 502 Bad Gateway.
+Web server returned HTTP status 504 Gateway Timeout.,Server web mengembalikan status HTTP 504 Gateway Timeout.
+Web server returned HTTP status 503 Service Unavailable.,Server web mengembalikan status HTTP 503 Service Unavailable.
+Web server returned HTTP status 429 Too Many Requests.,Server web mengembalikan status HTTP 429 Too Many Requests.
+Troubleshoot server connection error by checking firewall rules.,Telusuri kesalahan koneksi server dengan memeriksa aturan firewall.
+Restart Nginx web server using `sudo systemctl restart nginx`.,Mulai ulang server web Nginx menggunakan `sudo systemctl restart nginx`.
+Reload Nginx configuration without dropping active connections.,Muat ulang konfigurasi Nginx tanpa memutuskan koneksi yang aktif.
+Verify Nginx configuration syntax using `sudo nginx -t`.,Verifikasi sintaksis konfigurasi Nginx menggunakan `sudo nginx -t`.
+View Nginx error logs using `sudo tail -f /var/log/nginx/error.log`.,Lihat log kesalahan Nginx menggunakan `sudo tail -f /var/log/nginx/error.log`.
+Configure Nginx proxy buffer size to handle large HTTP headers.,Konfigurasikan ukuran buffer proxy Nginx untuk menangani header HTTP yang besar.
+Enable Gzip compression in Nginx configuration for faster asset delivery.,Aktifkan kompresi Gzip di konfigurasi Nginx untuk pengiriman aset yang lebih cepat.
+Set up HTTP to HTTPS automatic redirect in Nginx server block.,Setel pengalihan otomatis HTTP ke HTTPS di server block Nginx.
+DevOps team automated zero-downtime production deployment pipeline.,Tim DevOps mengotomatiskan pipeline deployment produksi tanpa downtime.
+Deployment completed cleanly with zero downtime recorded!,Deployment selesai dengan bersih tanpa downtime yang tercatat!
+Deploy Docker container to AWS Elastic Container Service ECS.,Melakukan deployment kontainer Docker ke AWS Elastic Container Service ECS.
+Configure Terraform remote backend state locking with DynamoDB table.,Konfigurasikan state locking remote backend Terraform dengan tabel DynamoDB.
+Use Ansible vault to encrypt sensitive password variables securely.,Gunakan vault Ansible untuk mengenkripsi variabel kata sandi sensitif secara aman.
+Set up Prometheus alertmanager for email and Slack alert routing.,Setel alertmanager Prometheus untuk pengarahan peringatan email dan Slack.
+Configure Grafana dashboard data source connection to InfluxDB.,Konfigurasikan koneksi sumber data dashboard Grafana ke InfluxDB.
+Automate SSL certificate issuance using Certbot and Route53 DNS validation.,Otomatiskan penerbitan sertifikat SSL menggunakan Certbot dan validasi DNS Route53.
+Perform canary deployment release strategy for high traffic web app.,Lakukan strategi rilis canary deployment untuk aplikasi web berlalu lintas tinggi.
+Kubernetes StatefulSet manages database pod storage volumes securely.,StatefulSet Kubernetes mengelola volume penyimpanan pod database secara aman.
+Configure Helm chart dependency requirements file for microservices.,Konfigurasikan file persyaratan dependensi chart Helm untuk microservices.
+Terraform module outputs database endpoint URL connection string.,Output modul Terraform berupa string koneksi URL endpoint database.
+Ansible inventory file defines staging and production server IP hosts.,File inventaris Ansible mendefinisikan host IP server staging dan produksi.
+Systemd timer executes database cleanup script every Sunday at midnight.,Timer systemd mengeksekusi skrip pembersihan database setiap hari Minggu saat tengah malam.
+Check systemd service journal logs using journalctl -u app_service.,Periksa log jurnal layanan systemd menggunakan journalctl -u app_service.
+Configure Nginx worker_processes to auto for multi-core CPU usage.,Konfigurasikan worker_processes Nginx ke auto untuk penggunaan CPU multi-core.
+Set Nginx keepalive_timeout parameter to 65 seconds for persistent HTTP.,Setel parameter keepalive_timeout Nginx ke 65 detik untuk HTTP persisten.
+Linux iptables rule blocks unauthorized incoming traffic on port 22.,Aturan iptables Linux memblokir lalu lintas masuk yang tidak sah pada port 22.
+Configure Fail2ban maxretry to 3 and bantime to 86400 seconds.,Konfigurasikan maxretry Fail2ban ke 3 dan bantime ke 86400 detik.
+Logrotate compresses rotated log files using gzip compression.,Logrotate mengompresi file log yang dirotasi menggunakan kompresi gzip.
+View real-time disk I/O metrics using iostat or iotop utility.,Lihat metrik disk I/O real-time menggunakan utilitas iostat atau iotop.
+Monitor network interface traffic using nload or iftop command.,Pantau lalu lintas antarmuka jaringan menggunakan perintah nload atau iftop.
+Set up SSH config host aliases for quick server SSH connections.,Setel alias host konfigurasi SSH untuk koneksi SSH server yang cepat.
+Generate 4096-bit RSA SSH key pair using ssh-keygen command.,Hasilkan pasangan kunci SSH RSA 4096-bit menggunakan perintah ssh-keygen.
+Copy public SSH key to remote server using ssh-copy-id command.,Salin kunci SSH publik ke server remote menggunakan perintah ssh-copy-id.
+Set chmod 600 permissions on private SSH key file ~/.ssh/id_rsa.,Setel izin chmod 600 pada file kunci SSH privat ~/.ssh/id_rsa.
+Configure Linux umask value to 022 for secure default permissions.,Konfigurasikan nilai umask Linux ke 022 untuk izin default yang aman.
+Mount AWS EFS network file system volume to Linux EC2 instance.,Mount volume sistem file jaringan AWS EFS ke instans EC2 Linux.
+AWS IAM policy grants read-only access to S3 storage bucket.,Kebijakan AWS IAM memberikan akses baca saja ke bucket penyimpanan S3.
+AWS Security Group rules restrict database port access to web subnets.,Aturan AWS Security Group membatasi akses port database ke subnet web.
+Vercel production deployment triggered on main branch push event.,Deployment produksi Vercel dipicu pada peristiwa push branch main.
+Cloudflare Workers edge function handles HTTP request routing globally.,Fungsi edge Cloudflare Workers menangani pengarahan permintaan HTTP secara global.
+Purge Cloudflare CDN edge cache after publishing production release.,Bersihkan cache edge CDN Cloudflare setelah mempublikasikan rilis produksi.
+Configure Cloudflare WAF firewall rules to block SQL injection attacks.,Konfigurasikan aturan firewall WAF Cloudflare untuk memblokir serangan SQL injection.
+Enable Cloudflare gRPC proxy mode for backend microservice traffic.,Aktifkan mode proxy gRPC Cloudflare untuk lalu lintas microservice backend.
+Docker Compose down command stops and removes container services.,Perintah Docker Compose down menghentikan dan menghapus layanan kontainer.
+Docker system prune -a command cleans all unused images and caches.,Perintah Docker system prune -a membersihkan semua gambar dan cache yang tidak digunakan.
+Build multi-arch Docker image using docker buildx build command.,Bangun gambar Docker multi-arsitektur menggunakan perintah docker buildx build.
+Push multi-arch image tag to Docker Hub container registry repository.,Push tag gambar multi-arsitektur ke repositori registry kontainer Docker Hub.
+Kubernetes Deployment updates pod container image with zero downtime.,Deployment Kubernetes memperbarui gambar kontainer pod dengan zero downtime.
+Kubernetes DaemonSet runs log collector pod on every cluster node.,DaemonSet Kubernetes menjalankan pod kolektor log di setiap node kluster.
+Kubernetes Job executes one-time database migration script cleanly.,Job Kubernetes mengeksekusi skrip migrasi database satu kali secara bersih.
+Kubernetes CronJob executes scheduled backup task every night at 01:00.,CronJob Kubernetes mengeksekusi tugas pencadangan terjadwal setiap malam pada pukul 01:00.
+Kubernetes Service type LoadBalancer assigns external public IP.,Tipe Service Kubernetes LoadBalancer menetapkan IP publik eksternal.
+Kubernetes Ingress resource configures TLS certificate termination.,Sumber daya Ingress Kubernetes mengonfigurasi terminasi sertifikat TLS.
+Horizontal Pod Autoscaler HPA scales replicas based on CPU target 80%.,Horizontal Pod Autoscaler HPA menykala replika berdasarkan target CPU 80%.
+PodDisruptionBudget ensures minimum pod availability during node maintenance.,PodDisruptionBudget meyakinkan ketersediaan pod minimum selama pemeliharaan node.
+Kubernetes PersistentVolumeClaim requests 50GB storage volume.,PersistentVolumeClaim Kubernetes Meminta volume penyimpanan 50GB.
+Kubernetes Secret object mounts credentials as environment variables.,Objek Secret Kubernetes meng-mount kredensial sebagai variabel lingkungan.
+ConfigMap volume mounts application configuration file into container.,Volume ConfigMap meng-mount file konfigurasi aplikasi ke dalam kontainer.
+Liveness probe HTTP get request checks container health on port 8080.,Permintaan HTTP get Liveness probe memeriksa kesehatan kontainer pada port 8080.
+Readiness probe TCP socket check verifies backend port accessibility.,Pemeriksaan TCP socket Readiness probe memverifikasi aksesibilitas port backend.
+Startup probe allows 300 seconds initialization time for database container.,Startup probe mengizinkan waktu inisialisasi 300 detik untuk kontainer database.
+Pod security context sets runAsNonRoot user ID 1000 for safety.,Konteks keamanan pod menyetel ID pengguna runAsNonRoot 1000 untuk keamanan.
+Terraform init command downloads provider plugins and initializes backend.,Perintah Terraform init mengunduh plugin penyedia dan menginisialisasi backend.
+Terraform validate command checks configuration syntax for errors.,Perintah Terraform validate memeriksa sintaksis konfigurasi untuk kesalahan.
+Terraform output command displays created infrastructure endpoints.,Perintah Terraform output menampilkan endpoint infrastruktur yang dibuat.
+Ansible ping module tests SSH connectivity across all inventory hosts.,Modul ping Ansible mengetes konektivitas SSH di seluruh host inventaris.
+Ansible playbook setups Nginx reverse proxy and SSL certs automatically.,Playbook Ansible menyetel reverse proxy Nginx dan sertifikat SSL secara otomatis.
+Linux systemctl status command checks if daemon service is active.,Perintah Linux systemctl status memeriksa apakah layanan daemon aktif.
+Linux journalctl -f command streams live system log messages.,Perintah Linux journalctl -f mengaliri pesan log sistem secara langsung.
+Linux df -h command displays disk filesystem usage breakdown.,Perintah Linux df -h menampilkan rincian penggunaan sistem file disk.
+Linux free -m command displays available physical RAM memory.,Perintah Linux free -m menampilkan memori RAM fisik yang tersedia.
+Linux top command displays active process CPU utilization percentage.,Perintah Linux top menampilkan persentase penggunaan CPU proses yang aktif.
+Linux netstat -tulnp command lists listening TCP and UDP ports.,Perintah Linux netstat -tulnp mendaftarkan port TCP dan UDP listening.
+Linux ufw status verbose command displays active firewall rules.,Perintah Linux ufw status verbose menampilkan aturan firewall yang aktif.
+Linux dig command queries DNS records for domain target.,Perintah Linux dig melakukan kueri rekaman DNS untuk target domain.
+Linux curl -I command fetches HTTP response header information.,Perintah Linux curl -I mengambil informasi header respons HTTP.
+Linux wget command downloads file artifact from remote URL.,Perintah Linux wget mengunduh artifak file dari URL remote.
+Linux tar -xzf command extracts compressed tarball archive file.,Perintah Linux tar -xzf mengekstraksi file arsip tarball terkompresi.
+Linux chmod +x command grants executable permission to shell script.,Perintah Linux chmod +x memberikan izin eksekusi ke skrip shell.
+Linux chown -R user:group command changes file directory ownership.,Perintah Linux chown -R user:group mengubah kepemilikan direktori file.
+Linux ln -s command creates symbolic link pointing to target file.,Perintah Linux ln -s membuat tautan simbolik yang mengarah ke file target.
+Linux grep -rnw command searches text pattern recursively in files.,Perintah Linux grep -rnw mencari pola teks secara rekursif di dalam file.
+Linux find /var/log -type f -mtime +30 command locates old log files.,Perintah Linux find /var/log -type f -mtime +30 menemukan file log lama.
+Linux kill -9 PID command forcefully terminates stuck background process.,Perintah Linux kill -9 PID menghentikan proses latar belakang yang macet secara paksa.
+Linux ps aux command lists all active running system processes.,Perintah Linux ps aux mendaftarkan semua proses sistem yang sedang berjalan.
+Linux uptime command displays system running duration and load averages.,Perintah Linux uptime menampilkan durasi berjalan sistem dan rata-rata beban.
+Linux lscpu command displays CPU architecture hardware specifications.,Perintah Linux lscpu menampilkan spesifikasi perangkat keras arsitektur CPU.
+Linux lsblk command lists block storage devices and disk partitions.,Perintah Linux lsblk mendaftarkan perangkat penyimpanan block dan partisi disk.
+Linux vmstat 1 command prints virtual memory statistics every second.,Perintah Linux vmstat 1 mencetak statistik memori virtual setiap detik.
+Linux sar -u 1 10 command monitors CPU load statistics over time.,Perintah Linux sar -u 1 10 memantau statistik beban CPU dari waktu ke waktu.
+Linux tcpdump -i eth0 port 80 command captures HTTP network packets.,Perintah Linux tcpdump -i eth0 port 80 menangkap paket jaringan HTTP.
+Linux traceroute command traces network packet hop routing path.,Perintah Linux traceroute melacak jalur rute hop paket jaringan.
+Linux ping -c 4 command tests network ICMP latency to host IP.,Perintah Linux ping -c 4 mengetes latensi ICMP jaringan ke IP host.
+Linux rsync -avz command syncs files securely over SSH connection.,Perintah Linux rsync -avz mensinkronkan file secara aman melalui koneksi SSH.
+Linux crontab -e command edits user scheduled background cron jobs.,Perintah Linux crontab -e menyunting cron job latar belakang terjadwal pengguna.
+Linux environment variable exported using export VAR=value in bashrc.,Variabel lingkungan Linux diekspor menggunakan export VAR=value di bashrc.
+Linux alias command creates custom command line shortcut alias.,Perintah alias Linux membuat alias pintasan command line kustom.
+Linux history command lists executed terminal command history lines.,Perintah history Linux mendaftarkan baris riwayat perintah terminal yang dieksekusi.
+Linux head -n 20 command prints first 20 lines of log file.,Perintah head -n 20 Linux mencetak 20 baris pertama file log.
+Linux tail -n 50 -f command streams last 50 lines of live log file.,Perintah tail -n 50 -f Linux mengaliri 50 baris terakhir file log langsung.
+DevOps continuous deployment pipeline executed cleanly with zero downtime!,Pipeline continuous deployment DevOps dieksekusi dengan bersih tanpa downtime!
+Configured Docker daemon logging driver to json-file with max-size 10m.,Mengonfigurasikan driver pengelogan daemon Docker ke json-file dengan max-size 10m.
+Use AWS CloudFront CDN distribution for edge caching static assets.,Gunakan distribusi AWS CloudFront CDN untuk edge caching aset statis.
+Configured Kubernetes HorizontalPodAutoscaler with targetCPUUtilizationPercentage 75.,Mengonfigurasikan HorizontalPodAutoscaler Kubernetes dengan targetCPUUtilizationPercentage 75.
+Use Terraform state lock with DynamoDB to prevent concurrent infrastructure changes.,Gunakan lock state Terraform dengan DynamoDB untuk mencegah perubahan infrastruktur yang konkuren.
+Ansible vault encrypted production API keys file successfully.,Vault Ansible berhasil mengenkripsi file API key produksi.
+Nginx ssl_protocols directive set to TLSv1.2 TLSv1.3 for maximum security.,Direktif ssl_protocols Nginx disetel ke TLSv1.2 TLSv1.3 untuk keamanan maksimum.
+Prometheus alert rule triggers PagerDuty notification on high memory usage.,Aturan peringatan Prometheus memicu notifikasi PagerDuty pada penggunaan memori tinggi.
+Grafana dashboard visualizes database query latency percentile metrics.,Dashboard Grafana memvisualisasikan metrik persentil latensi kueri database.
+Let's Encrypt Certbot automatically renewed SSL certificate for production domain.,Certbot Let's Encrypt secara otomatis memperbarui sertifikat SSL untuk domain produksi.
+Linux systemd service automatically restarted crashed worker process.,Layanan systemd Linux secara otomatis memulai ulang proses worker yang crash.
+Configured Fail2ban ban time to 3600 seconds for repeated SSH failure.,Mengonfigurasikan waktu pemblokiran Fail2ban ke 3600 detik untuk kegagalan SSH berulang.
+Docker Compose up -d command launched full stack database and backend services.,Perintah Docker Compose up -d meluncurkan layanan backend dan database full stack.
+Kubernetes readiness probe HTTP GET request verified app initialization status.,Permintaan HTTP GET readiness probe Kubernetes memverifikasi status inisialisasi aplikasi.
+Terraform apply -auto-approve command provisioned 3 EC2 instances in AWS VPC.,Perintah Terraform apply -auto-approve memprovisi 3 instans EC2 di AWS VPC.
+Ansible playbook executed clean deployment across all production servers.,Playbook Ansible mengeksekusi deployment bersih di seluruh server produksi.

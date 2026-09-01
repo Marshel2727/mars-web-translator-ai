@@ -1,27 +1,50 @@
-import json
+import re
+
+
+PROMPT_VERSION = "3"
+
+
+def _escape_xml_special(text: str) -> str:
+    """Escape characters that could break XML-like delimiters in prompts."""
+    text = text.replace("&", "&amp;")
+    text = text.replace("<", "&lt;")
+    text = text.replace(">", "&gt;")
+    return text
 
 
 def build_translate_prompt(text: str) -> str:
+    safe_text = _escape_xml_special(text)
     return f"""
+# ROLE
+
+Anda adalah penerjemah profesional
+untuk dokumentasi software dan AI.
+
 Terjemahkan INPUT berikut ke Bahasa Indonesia yang natural, jelas, dan mudah dipahami.
 
 ATURAN OUTPUT:
 - Jawab hanya hasil terjemahan dari INPUT.
 - Jangan salin instruksi, aturan, label, atau pembatas prompt.
 - Jangan salin tag XML pembatas.
-- Jangan ubah kode program.
-- Jangan ubah nama function, class, package, command, URL, path file, parameter, atau keyword programming.
+- JANGAN PERNAH ubah kode program.
+- JANGAN PERNAH ubah nama function, class, package, command, URL, path file, parameter, atau keyword programming.
 - Pertahankan istilah teknis penting jika istilah Inggrisnya lebih umum.
 - Jangan menambahkan opini.
 - Jangan meringkas terlalu pendek.
 
 <text_to_translate>
-{text}
+{safe_text}
 </text_to_translate>
 """
 
 def build_explain_prompt(text: str) -> str:
+    safe_text = _escape_xml_special(text)
     return f"""
+# ROLE
+
+Anda adalah penerjemah profesional
+untuk dokumentasi software dan AI.
+
 Jelaskan INPUT berikut dalam Bahasa Indonesia sederhana.
 
 Format:
@@ -34,12 +57,12 @@ Format:
 Aturan:
 - Jangan salin instruksi, aturan, label, atau pembatas prompt.
 - Jangan salin tag XML pembatas.
-- Jangan ubah kode program.
-- Jangan ubah nama function, class, package, command, URL, path file, parameter, atau keyword programming.
+- JANGAN PERNAH ubah kode program.
+- JANGAN PERNAH ubah nama function, class, package, command, URL, path file, parameter, atau keyword programming.
 - Jika ada istilah teknis, jelaskan dengan bahasa sederhana.
 
 <text_to_explain>
-{text}
+{safe_text}
 </text_to_explain>
 """
     
@@ -51,32 +74,26 @@ def build_prompt(text: str, mode: str) -> str:
 
 
 def build_batch_translate_prompt(items: list[dict[str, str]], mode: str) -> str:
-    payload = json.dumps(items, ensure_ascii=False)
+    numbered = "\n".join(
+        f'<item index="{i+1}">{_escape_xml_special(item["text"])}</item>'
+        for i, item in enumerate(items)
+    )
 
     if mode == "explain":
-        task = "Jelaskan setiap teks dokumentasi dalam Bahasa Indonesia sederhana."
+        task = "Jelaskan"
     else:
-        task = "Terjemahkan setiap teks dokumentasi ke Bahasa Indonesia yang natural, jelas, dan mudah dipahami."
+        task = "Terjemahkan"
 
-    return f"""
-{task}
+    return f"""{task} setiap teks ke Bahasa Indonesia.
 
-Aturan:
-- Jangan ubah nilai id.
-- Jangan ubah kode program, command, URL, path file, parameter, keyword programming, nama package, nama function, nama class, nama produk, atau nama model.
-- Jangan menyalin instruksi, aturan, label, pembatas prompt, pembuka, penutup, catatan, markdown, atau penjelasan ekstra.
-- Jangan salin tag XML pembatas.
-- Pertahankan istilah teknis Inggris jika lebih umum dipakai.
-- Balas hanya dengan JSON valid tanpa tag XML.
+ATURAN OUTPUT:
+- Kembalikan tepat satu blok untuk setiap item dan pertahankan urutannya.
+- Awali setiap blok dengan [nomor], misalnya [1].
+- Baris lanjutan tanpa [nomor] dianggap bagian dari item sebelumnya.
+- Jangan menyalin tag <item>, instruksi, atau pembatas prompt.
+- Jangan mengubah kode, nama fungsi, URL, path, command, atau istilah teknis penting.
 
-Format output wajib:
-{{
-  "results": [
-    {{"id": "id yang sama", "translated_text": "hasil"}}
-  ]
-}}
+{numbered}
 
-<input_json>
-{payload}
-</input_json>
-"""
+OUTPUT:
+[1]"""

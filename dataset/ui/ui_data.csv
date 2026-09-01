@@ -1,0 +1,210 @@
+original_text,translated_text
+Click here to learn more.,Klik di sini untuk mempelajari lebih lanjut.
+Save changes,Simpan perubahan
+Are you sure you want to delete this item?,Apakah Anda yakin ingin menghapus item ini?
+An unexpected error occurred. Please try again later.,Terjadi kesalahan yang tidak terduga. Silakan coba lagi nanti.
+Sign in with Google,Masuk dengan Google
+Search documentation...,Cari dokumentasi...
+Dark mode enabled,Mode gelap diaktifkan
+Copy to clipboard,Salin ke papan klip
+Copied!,Tersalin!
+"Loading, please wait...","Memuat, harap tunggu..."
+Settings saved successfully.,Pengaturan berhasil disimpan.
+Invalid email address or password.,Alamat email atau kata sandi tidak valid.
+Password must be at least 8 characters long.,Kata sandi harus terdiri dari minimal 8 karakter.
+Field is required.,Bidang ini wajib diisi.
+File size exceeds the maximum limit of 10MB.,Ukuran file melebihi batas maksimum 10MB.
+Your changes have been saved.,Perubahan Anda telah disimpan.
+Cancel operation,Batalkan operasi
+Confirm deletion,Konfirmasi penghapusan
+Download latest release,Unduh rilis terbaru
+Upload file,Unggah file
+Drag and drop files here or click to browse.,Seret dan lepas file di sini atau klik untuk menelusuri.
+Connection lost. Reconnecting...,Koneksi terputus. Menghubungkan kembali...
+Failed to fetch data from API endpoint.,Gagal mengambil data dari endpoint API.
+Cross-Origin Resource Sharing (CORS) blocked the request.,Cross-Origin Resource Sharing (CORS) memblokir permintaan tersebut.
+The model prompt was truncated due to token limits.,Prompt model terpotong karena batas token.
+Stream response finished successfully.,Respon stream berhasil diselesaikan.
+State updated successfully.,State berhasil diperbarui.
+Component rendered in 12ms.,Komponen dirender dalam 12 md.
+Read our <a href='/docs'>documentation</a> for more details.,Baca <a href='/docs'>dokumentasi</a> kami untuk rincian lebih lanjut.
+Check out the <code>package.json</code> file.,Periksa file <code>package.json</code>.
+So today we're going to build a web application from scratch.,Jadi hari ini kita akan membangun aplikasi web dari nol.
+Let's dive into the code and see how it works.,Mari kita langsung ke kodenya dan lihat cara kerjanya.
+Make sure to subscribe and hit the notification bell!,Pastikan untuk berlangganan dan tekan lonceng notifikasi!
+Welcome back! Please enter your details.,Selamat datang kembali! Silakan masukkan detail Anda.
+Remember me on this device,Ingat saya di perangkat ini
+Forgot your password?,Lupa kata sandi Anda?
+Reset password,Atur ulang kata sandi
+Account created successfully.,Akun berhasil dibuat.
+Please check your inbox to verify your email.,Silakan periksa kotak masuk Anda untuk memverifikasi email Anda.
+No results found for your search query.,Tidak ada hasil yang ditemukan untuk kata kunci pencarian Anda.
+Session expired. Please log in again.,Sesi telah berakhir. Silakan masuk kembali.
+Network request failed with status code 500.,Permintaan jaringan gagal dengan kode status 500.
+Internal Server Error,Kesalahan Server Internal
+Page not found (404),Halaman tidak ditemukan (404)
+Access denied. You do not have permission to view this page.,Akses ditolak. Anda tidak memiliki izin untuk melihat halaman ini.
+Service temporarily unavailable.,Layanan tidak dapat diakses untuk sementara.
+Too many requests. Please wait a few minutes before retrying.,Terlalu banyak permintaan. Silakan tunggu beberapa menit sebelum mencoba lagi.
+API key is missing or invalid.,API key tidak ada atau tidak valid.
+Model generation completed in 1.4 seconds.,"Generasi model selesai dalam 1,4 detik."
+Temperature parameter controls the randomness of responses.,Parameter temperature mengontrol acaknya respon.
+Tokens per second: 45.2,"Token per detik: 45,2"
+Active model: llama3-8b-instruct,Model aktif: llama3-8b-instruct
+Clear translation history,Hapus riwayat terjemahan
+Restore original text,Kembalikan teks asli
+Auto-translate web pages on load,Terjemahkan halaman web secara otomatis saat dimuat
+Select target language,Pilih bahasa tujuan
+Source code is available on GitHub.,Kode sumber tersedia di GitHub.
+Open source AI web translator extension.,Ekstensi penerjemah web AI sumber terbuka.
+"Build fast, scalable web applications using React and Next.js.",Bangun aplikasi web yang cepat dan skalabel menggunakan React dan Next.js.
+Tailwind CSS allows utility-first styling.,Tailwind CSS memungkinkan penataan gaya berbasis utilitas.
+TypeScript provides static type checking for JavaScript.,TypeScript menyediakan pemeriksaan tipe statis untuk JavaScript.
+Use <code>npm install</code> to install project dependencies.,Gunakan <code>npm install</code> untuk menginstal dependensi proyek.
+Run <code>npm run dev</code> to start the development server.,Jalankan <code>npm run dev</code> untuk menjalankan server pengembangan.
+Database connection pool initialized.,Pool koneksi database telah diinisialisasi.
+Caching query results in Redis for faster retrieval.,Menyimpan hasil kueri di Redis untuk pengambilan yang lebih cepat.
+SQLite WAL mode improves concurrent write performance.,Mode SQLite WAL meningkatkan performa penulisan bersamaan.
+Backing up database tables...,Mencadangkan tabel database...
+Migration executed successfully.,Migrasi berhasil dieksekusi.
+All 15 tests passed cleanly.,Semua 15 pengujian lulus dengan bersih.
+Running automated integration test suite...,Menjalankan pengujian integrasi otomatis...
+Fixing race conditions in asynchronous code.,Memperbaiki kondisi race condition dalam kode asinkron.
+Optimizing DOM query selectors for better performance.,Mengoptimalkan selector kueri DOM untuk performa yang lebih baik.
+Subtitles automatically generated by AI model.,Subtitle dibuat secara otomatis oleh model AI.
+"In this video, we will learn how to fine-tune Large Language Models.","Dalam video ini, kita akan belajar cara melakukan fine-tune pada Large Language Models."
+"First, prepare your training dataset in JSONL format.","Pertama, siapkan dataset pelatihan Anda dalam format JSONL."
+Make sure your dataset is clean and free of hallucinations.,Pastikan dataset Anda bersih dan bebas dari halusinasi.
+LoRA adaptation allows efficient model training with less VRAM.,Adaptasi LoRA memungkinkan pelatihan model yang efisien dengan VRAM lebih sedikit.
+Save checkpoint after every 100 training steps.,Simpan checkpoint setelah setiap 100 langkah pelatihan.
+Loss value decreased from 2.4 to 0.15.,"Nilai loss berkurang dari 2,4 menjadi 0,15."
+Evaluation loss indicates model generalization capability.,Loss evaluasi menunjukkan kemampuan generalisasi model.
+Exporting fine-tuned model weights to GGUF format.,Mengekspor bobot model hasil fine-tune ke format GGUF.
+Quantizing model weights to 4-bit precision.,Mengkuantisasi bobot model ke presisi 4-bit.
+Deploying custom model to Ollama runtime server.,Mendeploy model kustom ke server runtime Ollama.
+Thank you for watching! Leave a comment below if you have any questions.,Terima kasih telah menonton! Tinggalkan komentar di bawah jika Anda memiliki pertanyaan.
+Don't forget to star the repository if you find this project helpful!,Jangan lupa memberi bintang pada repositori jika Anda merasa proyek ini bermanfaat!
+Check the documentation for more configuration options.,Periksa dokumentasi untuk opsi konfigurasi lebih lanjut.
+Toggle dark theme,Alihkan tema gelap
+Switch to full screen mode,Beralih ke mode layar penuh
+Keyboard shortcut for translation: Alt + T,Pintasan papan ketik untuk terjemahan: Alt + T
+View original source text,Lihat teks sumber asli
+Translation completed in 250 milliseconds.,Terjemahan selesai dalam 250 milidetik.
+Retry failed network request,Coba lagi permintaan jaringan yang gagal
+Show detailed error logs,Tampilkan log kesalahan terperinci
+Hide advanced settings,Sembunyikan pengaturan tingkat lanjut
+Default system prompt updated.,Prompt sistem default diperbarui.
+Extension permissions updated successfully.,Izin ekstensi berhasil diperbarui.
+Translating visible text in current viewport...,Menerjemahkan teks yang terlihat di viewport saat ini...
+Background translation process started.,Proses terjemahan latar belakang dimulai.
+Task finished with zero errors.,Tugas selesai dengan nol kesalahan.
+Click here to learn more about application features.,Klik di sini untuk mempelajari lebih lanjut tentang fitur aplikasi.
+Save changes before closing settings window.,Simpan perubahan sebelum menutup jendela pengaturan.
+Are you sure you want to delete this account permanently?,Apakah Anda yakin ingin menghapus akun ini secara permanen?
+An unexpected network error occurred. Please try again.,Terjadi kesalahan jaringan yang tidak terduga. Silakan coba lagi.
+Sign in with Google to access your dashboard.,Masuk dengan Google untuk mengakses dashboard Anda.
+Search documentation and API guides...,Cari dokumentasi dan panduan API...
+Dark mode enabled for comfortable nighttime reading.,Mode gelap diaktifkan untuk kenyamanan membaca di malam hari.
+Copy code snippet to clipboard with one click.,Salin cuplikan kode ke papan klip dengan satu klik.
+Copied to clipboard successfully!,Tersalin ke papan klip dengan sukses!
+"Loading data, please wait a moment...","Memuat data, harap tunggu sebentar..."
+Settings updated successfully.,Pengaturan berhasil diperbarui.
+Invalid email address or password entered.,Alamat email atau kata sandi yang dimasukkan tidak valid.
+Password must contain at least 8 characters.,Kata sandi harus berisi minimal 8 karakter.
+Required field cannot be left blank.,Bidang wajib ini tidak boleh dikosongkan.
+File upload exceeds maximum 10MB size limit.,Unggah file melebihi batas ukuran maksimum 10MB.
+Your draft changes have been auto-saved.,Perubahan draf Anda telah disimpan secara otomatis.
+Cancel current operation and return.,Batalkan operasi saat ini dan kembali.
+Confirm permanent deletion of selected items.,Konfirmasi penghapusan permanen item yang dipilih.
+Download latest release build bundle.,Unduh bundle build rilis terbaru.
+Upload avatar image file.,Unggah file gambar avatar.
+Drag and drop files here to attach.,Seret dan lepas file di sini untuk melampirkan.
+Network connection lost. Retrying...,Koneksi jaringan terputus. Mencoba lagi...
+Failed to fetch response from API server.,Gagal mengambil respons dari server API.
+CORS request blocked by server policy.,Permintaan CORS diblokir oleh kebijakan server.
+Model prompt token limit exceeded.,Batas token prompt model terlampaui.
+Stream response finished cleanly.,Respons stream selesai dengan bersih.
+Component state updated successfully.,State komponen berhasil diperbarui.
+Component rendered in 12 milliseconds.,Komponen dirender dalam 12 milidetik.
+Read our documentation for technical details.,Baca dokumentasi kami untuk detail teknis.
+Check the package.json file dependencies.,Periksa dependensi file package.json.
+Welcome back! Enter your login details.,Selamat datang kembali! Masukkan detail login Anda.
+Remember me on this browser session.,Ingat saya di sesi browser ini.
+Forgot your password? Reset here.,Lupa kata sandi Anda? Atur ulang di sini.
+Reset password link sent to inbox.,Tautan atur ulang kata sandi dikirim ke kotak masuk.
+Account setup completed successfully.,Penyetelan akun berhasil diselesaikan.
+Please verify your email address.,Silakan verifikasi alamat email Anda.
+No search results found matching query.,Tidak ada hasil pencarian yang cocok dengan kueri.
+User session expired. Please sign in again.,Sesi pengguna telah berakhir. Silakan masuk kembali.
+Internal Server Error 500 encountered.,Terjadi Kesalahan Server Internal 500.
+Page not found 404.,Halaman 404 tidak ditemukan.
+Access denied. Admin permissions required.,Akses ditolak. Izin admin diperlukan.
+Service temporarily undergoing maintenance.,Layanan sedang menjalani pemeliharaan sementara.
+Rate limit exceeded. Please wait 60 seconds.,Batas rate limit terlampaui. Silakan tunggu 60 detik.
+API key invalid or expired.,API key tidak valid atau telah kedaluwarsa.
+Model generation completed in 1.2 seconds.,"Generasi model selesai dalam 1,2 detik."
+Temperature parameter controls response randomness.,Parameter temperature mengontrol acaknya respons.
+Tokens per second throughput: 52.4,"Throughput token per detik: 52,4"
+Active LLM model set to qwen2.5:7b.,Model LLM aktif disetel ke qwen2.5:7b.
+Clear local search history cache.,Hapus cache riwayat pencarian lokal.
+Restore original text with single click.,Kembalikan teks asli dengan satu klik.
+Auto-translate web pages on navigation.,Terjemahkan halaman web secara otomatis saat navigasi.
+Select primary target language.,Pilih bahasa tujuan utama.
+Source code repository hosted on GitHub.,Repositori kode sumber dihosting di GitHub.
+Open-source AI web translator extension.,Ekstensi penerjemah web AI sumber terbuka.
+Build web app using React 19 and Next.js 15.,Bangun aplikasi web menggunakan React 19 dan Next.js 15.
+Tailwind CSS utility-first styling engine.,Engine penataan gaya utility-first Tailwind CSS.
+TypeScript static type checking enabled.,Pemeriksaan tipe statis TypeScript diaktifkan.
+Use npm install to fetch project packages.,Gunakan npm install untuk mengambil paket proyek.
+Run npm run dev to start dev server.,Jalankan npm run dev untuk memulai dev server.
+Database connection pool initialized cleanly.,Pool koneksi database diinisialisasi dengan bersih.
+Redis caching layer active for fast retrieval.,Layer cache Redis aktif untuk pengambilan yang cepat.
+SQLite WAL mode improves write performance.,Mode SQLite WAL meningkatkan performa penulisan.
+Backup database tables daily.,Cadangkan tabel database setiap hari.
+Database migration executed successfully.,Migrasi database berhasil dieksekusi.
+All 25 integration tests passed cleanly.,Semua 25 pengujian integrasi lulus dengan bersih.
+Running automated unit test suite.,Menjalankan suite pengujian unit otomatis.
+DOM race condition fixed in text replacer.,Race condition DOM diperbaiki di pemindah teks.
+Optimizing DOM selectors for speed.,Mengoptimalkan selector DOM untuk kecepatan.
+Subtitles generated automatically by AI.,Subtitle dihasilkan secara otomatis oleh AI.
+Fine-tune Large Language Model on dataset.,Lakukan fine-tuning Large Language Model pada dataset.
+Prepare training dataset in JSONL format.,Siapkan dataset pelatihan dalam format JSONL.
+Ensure dataset is clean and hallucination-free.,Pastikan dataset bersih dan bebas halusinasi.
+LoRA adapter training saves VRAM memory.,Pelatihan adapter LoRA menghemat memori VRAM.
+Checkpoint saved after every 100 steps.,Checkpoint disimpan setelah setiap 100 langkah.
+Training loss decreased to 0.12.,"Loss pelatihan berkurang menjadi 0,12."
+Validation loss shows good generalization.,Loss validasi menunjukkan generalisasi yang baik.
+Export fine-tuned model weights to GGUF.,Ekspor bobot model hasil fine-tune ke GGUF.
+Quantize model weights to 4-bit precision.,Kuantisasi bobot model ke presisi 4-bit.
+Deploy model to Ollama runtime server.,Melakukan deployment model ke server runtime Ollama.
+Leave a comment if you have questions.,Tinggalkan komentar jika Anda memiliki pertanyaan.
+Star repository on GitHub if helpful.,Beri bintang pada repositori di GitHub jika bermanfaat.
+Check documentation for configuration options.,Periksa dokumentasi untuk opsi konfigurasi.
+Toggle dark theme mode.,Alihkan mode tema gelap.
+Enter full screen view mode.,Masuk ke mode tampilan layar penuh.
+Shortcut Alt + T triggers translation.,Pintasan Alt + T memicu terjemahan.
+View original page source text.,Lihat teks sumber halaman asli.
+Translation finished in 180ms.,Terjemahan selesai dalam 180md.
+Retry failed network HTTP request.,Coba lagi permintaan HTTP jaringan yang gagal.
+Show detailed error stack trace logs.,Tampilkan log stack trace kesalahan terperinci.
+Hide advanced configuration settings.,Sembunyikan pengaturan konfigurasi tingkat lanjut.
+System prompt updated successfully.,System prompt berhasil diperbarui.
+Extension permissions granted by user.,Izin ekstensi diberikan oleh pengguna.
+Translating visible viewport text.,Menerjemahkan teks viewport yang terlihat.
+Background queue processing started.,Pemrosesan antrean latar belakang dimulai.
+Switch layout mode to compact view.,Alihkan mode tata letak ke tampilan kompak.
+Enable notification badges in top navigation bar.,Aktifkan lencana notifikasi di bilah navigasi atas.
+Customize keyboard shortcuts in user preferences.,Sesuaikan pintasan papan ketik di preferensi pengguna.
+Filter active table rows by status column.,Filter baris tabel aktif berdasarkan kolom status.
+Sort items alphabetically or by creation date.,Urutkan item secara alfabetis atau berdasarkan tanggal pembuatan.
+Collapse sidebar navigation menu panel.,Ciutkan panel menu navigasi sidebar.
+Expand sub-menu options for detailed view.,Perluas opsi sub-menu untuk tampilan terperinci.
+Toggle password visibility in login form field.,Alihkan visibilitas kata sandi di bidang formulir login.
+Display interactive tooltip on icon hover event.,Tampilkan tooltip interaktif saat peristiwa hover ikon.
+Auto-save form input draft every 30 seconds.,Simpan otomatis draf input formulir setiap 30 detik.
+Display modal dialog prompt for user confirmation.,Tampilkan dialog modal prompt untuk konfirmasi pengguna.
+Show floating action button at bottom right corner.,Tampilkan tombol tindakan mengambang di sudut kanan bawah.
+Highlight active page tab in navigation header.,Sorot tab halaman aktif di header navigasi.
+Select primary color accent from palette picker.,Pilih aksen warna utama dari pemilih palet.
+Upload user profile header image attachment.,Unggah lampiran gambar header profil pengguna.
+Display status badge for verified user accounts.,Tampilkan lencana status untuk akun pengguna terverifikasi.

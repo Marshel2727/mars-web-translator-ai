@@ -1,0 +1,1074 @@
+original_text,translated_text
+14:33:33 UTC+7,14:33:33 WIB
+Build a Custom GPT That Catches What You Miss,Bangun GPT Kustom yang Menangkap Apa yang Anda Lewatkan
+Continuous deployment,Penerapan berkelanjutan
+Episode 93,Episod 93
+">> Scott Moss: There was a person that also wanted you to
+clarify how the environment variables",>> Scott Moss: Ada orang yang juga ingin Anda menjelaskan bagaimana variabel lingkungan
+Set `backdrop-filter: blur(16px)` for modern glassmorphism UI effect.,Setel `backdrop-filter: blur(16px)` untuk efek UI glassmorphism modern.
+Design for Developers,Desain untuk Pengembang
+Temperature parameter set to 0.0 for deterministic evaluation runs.,"Parameter temperature disetel ke 0,0 untuk eksekusi evaluasi yang deterministik."
+Use `asyncio.gather()` to run multiple asynchronous tasks concurrently.,Gunakan `asyncio.gather()` untuk menjalankan beberapa tugas asinkron secara bersamaan.
+W3.CSS Tutorial,Tutorial W3.CSS
+Friday,Jumat
+Model Token Limits,Limit Batas Token Model
+Episode 534,Episod 534
+Branch,Cabang
+Restoring original text...,Mengembalikan teks asli...
+Check out the <code>package.json</code> file.,Periksa file <code>package.json</code>.
+Delete Objects,Hapus Objek
+Continuous integration,Integrasi berkelanjutan
+Logging,Pencatatan
+Import the hook using `import { useState } from 'react';`.,Impor hook menggunakan `import { useState } from 'react';`.
+"Getting into bot development with whatsapp-web.js is thrilling, but there are certain prerequisites you should be aware of. To construct a bot using whatsapp-web.js, it's crucial to have a good understanding of JavaScript. While it's possible to begin with limited JavaScript and programming knowledge, attempting to create a bot without a solid grasp of the language may result in frustration. You may encounter challenges with basic tasks, find it difficult to solve simple problems, and end up feeling discouraged.","Membangun bot dengan whatsapp-web.js dapat menyenangkan, tetapi ada beberapa persyaratan yang harus Anda ketahui. Untuk membuat bot menggunakan whatsapp-web.js, penting untuk memiliki pemahaman yang baik tentang JavaScript. Meskipun mungkin mulai dengan pengetahuan JavaScript dan pengetahuan dasar pengembangan, mencoba membuat bot tanpa pemahaman yang kuat akan dapat menyebabkan frustrasi. Anda mungkin menghadapi tantangan dalam tugas dasar, menemui kesulitan dalam memecahkan masalah sederhana, dan akhirnya merasa putus asa."
+Everything You'll Need to Know About Git,Semua yang Harus Anda Ketahui Tentang Git
+# Legislative Planning,# Perencanaan Legislasi
+How browser layout reflow and repaint affect web performance.,Bagaimana reflow dan repaint tata letak browser mempengaruhi performa web.
+Provide an,Berikan sebuah
+15:25:14 UTC+7,15:25:14 WIB
+Select target language,Pilih bahasa tujuan
+Rate limiting,Pembatasan laju
+Agent Overview,Pendahuluan tentang Agen
+Frame images:,Gambar kerangka:
+WithinUsAI/Earth_Climate_25k,WithinUs
+Messages,Pesan
+Session Saved,Session Tersimpan
+"Scott builds out the messages UI. Message bubbles will appear as parts from the streaming response are received. When parts begin with a ""tool-"" prefix, a ToolStatus component is instantiated and updated with the current status of the tool.","Scott mengembangkan tampilan pesan. Balon pesan akan muncul saat bagian-bagian dari respons streaming diterima. Jika bagian tersebut dimulai dengan prefix ""tool-"", maka komponen ToolStatus diinisialisasi dan diperbarui dengan status alat yang terkini."
+January,Januari
+Basic,Dasar
+Platform Compatibility,Kompatibilitas Platform
+Rust library compiled to WASM target using `wasm-pack`.,Library Rust dikompilasi ke target WASM menggunakan `wasm-pack`.
+"Scott demonstrates creating an evaluator by defining a schema for the judge, including output structure, score constraints, and reasoning. He shows using the AI SDK’s generate function to produce structured outputs, similar to setting up tool call inputs.","Scott menunjukkan bagaimana membuat evaluator dengan merumuskan skema untuk hakim, termasuk struktur output, batasan skor, dan penalaran. Dia menunjukkan menggunakan fungsi generate dari AI SDK untuk menghasilkan output yang terstruktur, seperti setting input untuk pang"
+Set subtitle font family to clean sans-serif typography.,Setel family font subtitle ke tipografi sans-serif yang bersih.
+Scott spends a few minutes answering questions related to the chat UI functionality. He also dives a little deeper into the relationship between the Zod schemas and the agent loop.,Scott menghabiskan beberapa menit menjawab pertanyaan terkait fungsi antarmuka obrolan. Dia juga membahas lebih mendalam tentang hubungan antara skema Zod dan loop agen.
+🗂️ Struktur Direktori,Struktur Direktori
+Error code 522,Kode error 522
+// TODO: Handle potential network error when API is offline,// TODO: Tangani potensi kesalahan jaringan saat API offline
+Model changed to,Model aktif berhasil diubah ke
+February,Februari
+How to write effective Git commit messages and pull request descriptions.,Cara menulis pesan commit Git dan deskripsi pull request yang efektif.
+Episode 625,Episod 625
+Vote in polls,Menyampaikan suara dalam survei
+Verify SSL certificate validity using `openssl x509 -in cert.pem -text`.,Verifikasi validitas sertifikat SSL menggunakan `openssl x509 -in cert.pem -text`.
+Scott finishes the eval harness by implementing a loop that iterates over each test case and aggregates the results into an array. That array is written to a JSON file. Some additional performance calculations have been added to track the number of tests and the average test duration.,Scott menyelesaikan harness evaluasi dengan menerapkan loop yang mengiterasi setiap kasus uji dan menggabungkan hasilnya ke dalam array. Array tersebut ditulis ke dalam file JSON. Beberapa perhitungan performa tambahan telah ditambahkan untuk memantau jumlah kasus uji dan durasi rata-rata uji.
+CSRF protection token verified on every mutating HTTP request.,Token perlindungan CSRF diverifikasi pada setiap permintaan HTTP yang mengubah data.
+Mention users,Mengacu pada Pengguna
+Advanced Tools,Alat Lanjutan
+Terms of Use,Syarat Penggunaan
+That’s all it takes to start using Tavily’s basic features!,It hanya membutuhkan itu untuk mulai menggunakan fitur dasar Tavily!
+Let's check out the official documentation for more details.,Mari kita lihat dokumentasi resminya untuk detail lebih lanjut.
+CLI Reference,Referensi CLI
+Closure,Closure
+"Design patterns in JavaScript: Singleton, Factory, Observer, and Strategy.","Pola desain di JavaScript: Singleton, Factory, Observer, dan Strategy."
+Add group participants,Menambahkan Anggota ke Grup
+Yes,Ya
+Upstream Dataset,Dataset Sumber
+Object,Objek
+Failed to fetch response from API server.,Gagal mengambil respons dari server API.
+Quantizing GGUF model weights for fast local CPU and GPU inference.,Mengkuantisasi bobot model GGUF untuk inferensi CPU dan GPU lokal yang cepat.
+Donasi via Trakteer,Donasi melalui Trakteer
+Coding the Eval,Mengkodekan Penilaian
+Share this,Bagikan ini
+"Aug 11, 2026",11 Agustus 2026
+This action cannot be undone,Tindakan ini tidak dapat dibatalkan
+Hide subtitle overlay when video player is paused.,Sembunyikan hamparan subtitle saat pemutar video dijeda.
+"{'messages': [{'role': 'system', 'content': 'You are WithinUsAI Master Scholars Earth & Climate Science. Provide concise, factual answers.'}, {'role': 'user', 'content': 'Academic fact-check: TRUE/FALSE then corrected statement if needed: The water cycle includes evaporation, condensation, precipitation, and runoff.'}]...","{'messages': [{'role': 'system', 'content': 'Anda adalah Ahli Pengetahuan Dalam Diri AI Bumi & Ilmu Sains Kehidupan dan Iklim. Berikan jawaban yang singkat dan berdasarkan fakta.'}, {'role': 'user', 'content': 'Periksa fakta akademis: BENAR/SALAH kemudian pernyataan yang benar jika diperlukan: Siklus air mencakup uapuapan, penyusunan, penerbangan, dan aliran.'}]}"
+CREATING YOUR BOT,MENGGUNAKAN BOTS
+Code Pretraining,Pra-pemrograman Kode
+Streaming LLM response token by token using Server-Sent Events (SSE).,Mengalirkan respons LLM token demi token menggunakan Server-Sent Events (SSE).
+Server Cache,Cache Server
+Open,Buka
+Testing,Pengujian
+License,Lisensi
+Chat UI Q&A,Antarmuka Obrolan Tanya-Jawab
+Store Terraform state remotely in AWS S3 bucket with state locking.,Simpan state Terraform secara remote di bucket AWS S3 dengan state locking.
+Select Language,Pilih Bahasa
+Now we just need the execute.,Selesaikan saja.
+Export subtitle transcript file as SubRip or WebVTT format.,Ekspor file transkrip subtitle sebagai format SubRip atau WebVTT.
+"Depending on your preference, you can create a new project folder using the terminal.","Berdasarkan preferensi Anda, Anda dapat membuat folder proyek baru menggunakan terminal."
+That's literally all you need to do to get it working!,Cuma itu saja yang perlu dilakukan agar fiturnya langsung berjalan!
+Thank you for helping us improve subtitle translation quality!,Terima kasih telah membantu kami meningkatkan kualitas terjemahan subtitle!
+Evaluate translation quality using BLEU and ROUGE benchmark metrics.,Evaluasi kualitas terjemahan menggunakan metrik benchmark BLEU dan ROUGE.
+Episode 200,Episod 200
+Dataset card,Kartu dataset
+Scott wires up the messaging component to the chat panel UI. The button's disabled state is also configured based on the presence of input text or if a message response is currently streaming.,Scott menghubungkan komponen pesan ke tampilan panel obrolan. Status tombol juga dikonfigurasi berdasarkan adanya teks input atau apakah ada respons pesan yang sedang streaming.
+Show Less,Tampilkan Lebih Sedikit
+Failed to load models,Gagal memuat model
+Google App Store,Toko Aplikasi Google
+What They're Saying About The Learning Paths,Apa yang Mereka Katakan Tentang Jalur Belajar
+What is Tool Calling?,Penggunaan Tools/Calling Tools?
+"React is the most popular JavaScript framework. Build a real-world application from scratch with interactivity and dynamic data from a remote API. Even if React isn’t your framework of choice, you’ll learn a lot about building apps with a modern development workflow.","React adalah framework JavaScript yang paling populer. Bangun aplikasi dunia nyata dari awal dengan interaktivitas dan data dinamis dari API remote. Walaupun React bukanlah pilihan framework Anda, Anda akan banyak belajar tentang membangun aplikasi dengan alur kerja pengembangan modern."
+Cancel operation,Batalkan operasi
+Error: Connection refused.,Error: Koneksi ditolak.
+Variable,Variabel
+"We're going to get an object as the only
+input, right?","Kita akan mendapatkan sebuah objek sebagai input saja, kan?"
+Last Updated:,Terakhir diperbarui:
+Animate an image into a video with custom prompts,Animasi sebuah gambar menjadi video dengan prompt yang disesuaikan
+Migration executed successfully.,Migrasi berhasil dieksekusi.
+"Connections, flow direction","Koneksi, arah alir"
+It's totally fine. Let me just grab those.,Tentu saja. Saya hanya akan mengambil tersebut.
+try reloading the page and clicking again,Coba reload halaman web lalu klik lagi
+Easy to use,Gampang Digunakan
+No active tab found,Tidak ada tab aktif ditemukan
+5. JavaScript Performance,5. Kinerja JavaScript
+Everything looks clean and green. All tests passed!,Semuanya terlihat bersih. Semua pengujian berhasil lulus!
+", if you have that already installed.",", jika sudah terpasang."
+Forgot password?,Lupa kata sandi?
+Set `position: fixed` to pin floating UI tooltips.,Setel `position: fixed` untuk menyematkan tooltip UI yang mengambang.
+Navigate to the location of your choice on your machine and create a new folder named,Kunjungi lokasi pilihan Anda pada mesin Anda dan buat folder baru bernama
+Improving the Schemas,Memperbaiki Skema
+Stop and remove all idle containers using `docker system prune`.,Hentikan dan hapus semua kontainer yang menganggur menggunakan `docker system prune`.
+Episode 82,Episod 82
+Restore original page text with a single click.,Kembalikan teks halaman asli dengan satu klik.
+Cloudflare Agent,Agen Cloudflare
+(what the user might say),(apakah yang mungkin dikatakan oleh pengguna)
+Make sure to subscribe and hit the notification bell!,Pastikan untuk berlangganan dan tekan lonceng notifikasi!
+Against the Gods,Melawan Dewa-Dewa
+Memuat daftar model...,Memuat daftar model...
+50 watching,50 orang menyaksikan
+Manage Codebases with Popular and Flexible Build & Testing Tools,Mengelola Basis Kode dengan Alat
+Episode 03,Episod 03
+Just copy and paste this code snippet into your project.,Tinggal salin dan tempel cuplikan kode ini ke dalam proyek Anda.
+Mention groups,Mengacu ke grup
+Power Up Your JavaScript with Functional Programming,Tingkatkan JavaScript Anda dengan Pengaturan Fungsional
+Fable-5 traces,traces dari Fable-5
+Translate YouTube captions in real time as video plays.,Terjemahkan caption YouTube secara real-time saat video diputar.
+Asynchronous database access in Python using SQLAlchemy and asyncpg.,Akses database asinkron di Python menggunakan SQLAlchemy dan asyncpg.
+Get started,Mulai
+Encapsulation,Enkapsulasi
+Insert,Sisipkan
+Contributors:,Pembuat:
+"Set HTTP cache control header to `public, max-age=31536000, immutable`.","Setel header kontrol cache HTTP ke `public, max-age=31536000, immutable`."
+Client-Side Tools,Alat Sisi Klien
+First Input Delay (FID) measured at 8ms.,First Input Delay (FID) terukur pada 8md.
+Component,Komponen
+Redo,Ulangi
+Receive media (images/audio/video/documents),Menerima Media (Gambar/Musik/Video/Dokumen)
+State updated successfully.,State berhasil diperbarui.
+"100,000 LLM requests","100,000 permintaan LLM"
+I'm going to call it elements.,Elements
+Summer 2022,Musim Panas 2022
+Auto-converted,Oto-terkonversi
+You'll need to install the dependencies:,Anda akan memerlukan untuk menginstal dependensi:
+JavaScript Performance,Kinerja JavaScript
+Python File Handling,Pengelolaan File Python
+Let me explain the difference between client and server components.,Mari saya jelaskan perbedaan antara komponen klien dan server.
+Update available,Pembaruan tersedia
+Recommended Series,Rekomendasi Seri
+Use `const` for immutable variables and `let` for reassignable variables.,Gunakan `const` untuk variabel tak terubah dan `let` untuk variabel yang dapat ditetapkan ulang.
+See Pricing,Lihat Pembiayaan
+Authorization,Otorisasi
+The Improvement Loop,Loop Perbaikan
+Aliens Among Immortals,Penyandang di antara Para Ksatria
+Prevent translating code elements tagged with `<pre>` or `<code>`.,Cgah penerjemahan elemen kode yang ditandai dengan `<pre>` atau `<code>`.
+Static Site Generation (SSG) pre-renders pages at build time for maximum speed.,Static Site Generation (SSG) melakukan prerender halaman pada waktu build untuk kecepatan maksimum.
+Validation,Validasi
+Diagram Eval,Diagram Evaluasi
+Chat Experience,Pengalaman Obrolan
+"WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.","Tanpa WILAYAH ATURAN ATAU KETENTUAN APAPUN, TERSEDIA ATAU IMPLIMENASI SEMPIT."
+Confirm,Konfirmasi
+Apply,Terapkan
+Filter,Filter
+"Scott explains how the canvas will integrate with the AI experience. When a `tool-generateDiagram` or `tool-modifyDiagram` part reaches the output-available state, its output field contains the data we need to apply to the Excalidraw canvas via the API ref. The entire process will apply each tool output once, and messages will rerender every time a chunk arrives.","Scott menjelaskan bagaimana canvas akan terintegrasi dengan pengalaman AI. Saat bagian `tool-generateDiagram` atau `tool-modifyDiagram` mencapai status keluaran yang tersedia, field outputnya mengandung data yang kita butuhkan untuk diterapkan pada canvas Excalidraw melalui API ref. Seluruh proses akan menerapkan setiap output tool sebanyak satu kali, dan pesan akan dirender ulang setiap kali blok datang."
+"Discover the best ways to use pack offers with Experiences. Experiences are curated bundles of pack   partner products, GitHub tools, and other resources that are designed for you learn new skills and make the most   out of the Student Developer Pack and your journey in GitHub Education.","Temukan cara terbaik untuk menggunakan paket penawaran dengan Experiences. Experiences adalah koleksi yang diracik dari produk mitra pack, alat GitHub, dan sumber lainnya yang dirancang untuk membantu Anda mempelajari keterampilan baru dan mendapatkan manfaat"
+Urban Fantasy,Fantasi Kota
+Renegade Immortal,Imortal Pemberani
+Ruo Hong Culture,Budaya Ruo Hong
+Pass the <code>apiKey</code> parameter in the HTTP request headers.,Oper parameter <code>apiKey</code> di header permintaan HTTP.
+"{'messages': [{'role': 'system', 'content': 'You are WithinUsAI Master Scholars Earth & Climate Science. Provide concise, factual answers.'}, {'role': 'user', 'content': 'Academic fact-check: TRUE/FALSE then corrected statement if needed: Greenhouse gases absorb and re-emit infrared radiation, contributing to the green...","{'messages': [{'role': 'system', 'content': 'Anda adalah Ahli Pengetahuan Utama DalamAI Bumi & Ilmu Sains Klimatologi. Berikan jawaban yang singkat dan berdasarkan fakta.'}, {'role': 'user', 'content': 'Periksa pengetahuan akademis: BENAR/SALAH kemudian pernyataan yang benar jika diperlukan: Gas rumah kaca menyerap dan mengemisikan radiasi inframerah, kontribusi terhadap hijau...'}]"
+"Handling asynchronous code in JavaScript: Promises, Async/Await, and Generators.","Menangani kode asinkron di JavaScript: Promise, Async/Await, dan Generator."
+Build web app using React 19 and Next.js 15.,Bangun aplikasi web menggunakan React 19 dan Next.js 15.
+Prerequisite:,Prasyarat:
+Documentation,Dokumentasi
+Please check your inbox to verify your email.,Silakan periksa kotak masuk Anda untuk memverifikasi email Anda.
+Remove,Hapus
+ACK_DEVICE,KONFIRMASI_PERANGKAT
+Revert breaking changes back to previous stable release.,Kembalikan perubahan yang merusak kembali ke rilis stabil sebelumnya.
+Total time:,Waktu total:
+Package Chrome extension into `.zip` archive for Chrome Web Store.,Kemas ekstensi Chrome ke dalam arsip `.zip` untuk Chrome Web Store.
+Let's walk through an example together step by step.,Mari kita bahas sebuah contoh bersama-sama langkah demi langkah.
+State Management,Manajemen State
+Welcome back! Enter your login details.,Selamat datang kembali! Masukkan detail login Anda.
+Restore Original,Kembalikan ke Teks Asli
+🗂️ Directory Structure,🗂️ Struktur Direktori
+code-repositories,repositori-kode
+Commit,Commit
+Systemd service file configured to restart application on crash.,File layanan Systemd dikonfigurasi untuk memulai ulang aplikasi saat crash.
+Let's test this edge case to make sure our app doesn't crash.,Mari kita tes edge case ini untuk memastikan aplikasi kita tidak crash.
+Last week,Minggu lalu
+Mata Kuliah Pilihan,Mata Kuliah Opsional
+Save changes,Simpan perubahan
+"Scott implements the onChatMessage handler, which returns the UI message stream from the OpenAI SDK. The `wrangler.toml` Cloudflare Worker config is updated to support Durable Object binding, migration, and Node.js compatibility.","Scott menerapkan handler onChatMessage, yang mengembalikan aliran pesan UI dari SDK OpenAI. Konfigurasi wrangler.toml untuk Worker Cloudflare diperbarui untuk mendukung ikatan Durable Object, migrasi, dan kompatibilitas Node.js."
+Index created on `created_at` column to speed up sorting queries.,Indeks dibuat pada kolom `created_at` untuk mempercepat kueri pengurutan.
+Handling authentication and authorization in FastAPI web applications.,Menangani otentikasi dan otorisasi dalam aplikasi web FastAPI.
+Set up HTTP to HTTPS automatic redirect in Nginx server block.,Setel pengalihan otomatis HTTP ke HTTPS di server block Nginx.
+📊 Dataset Summary,📊 Ringkasan Dataset
+"(Node's package manager) that comes bundelt with every Node installation. However, you have the option to use either","(Manajer paket Node yang bawaan), yang datang bersama setiap instalasi Node. Namun, Anda memiliki pilihan untuk menggunakan salah satu dari"
+00:00:00 - 00:05:39,00:00:00 - 00:05:39 (in milidetik)
+Modalities:,Modalitas:
+21:48:35 UTC+7,21:48:35 WIB
+Downloads last month,Unduhan bulan lalu
+"Since the early days of the World Wide Web, there have been many versions of HTML:","Sejak awal era World Wide Web, telah ada banyak versi HTML:"
+Copy link,Salin tautan
+I think OpenAI pretty much,OpenAI sebenarnya
+"Use `window.addEventListener('DOMContentLoaded', callback)` to defer execution.","Gunakan `window.addEventListener('DOMContentLoaded', callback)` untuk menunda eksekusi."
+BUTTONS_RESPONSE,RESPONSE_KONTROL_PENGEMUDI
+Run a 1-bit 27B LLM locally in your browser on WebGPU,Jalankan LLM berbit 1 27B secara lokal di browser Anda dengan WebGPU
+Receive location,Menerima Lokasi
+Web search,Pencarian Web
+About,Tentang
+How to package and distribute Python applications using Poetry and PyPI.,Cara mengemas dan mendistribusikan aplikasi Python menggunakan Poetry and PyPI.
+Service Worker cache fallback served offline page when network is unavailable.,Fallback cache Service Worker menyajikan halaman offline ketika jaringan tidak tersedia.
+Ensure interactive elements are accessible using proper ARIA roles.,Pastikan elemen interaktif dapat diakses menggunakan role ARIA yang tepat.
+Project Tour,Panduan Projek
+Clean up speech filler words in generated caption output.,Bersihkan kata pengisi bicara di output caption yang dihasilkan.
+Completing the Computer Science Learning Path from Master.dev help me land a high paying job.,Lengkapi Jalur Belajar Ilmu Komputer dari Master.dev membantu saya mendapatkan pekerjaan dengan gaji tinggi.
+Test API Connection,Uji Koneksi API
+"Eps 01 - Tales of Demons and Gods Season 10 Episode 01 Subtitle Indonesia - July 18, 2026",Eps 01 - Cerita Para Setan dan Dewa Musim 10 Episode 01 Subtitle Bahasa Indonesia - 18 Juli 2026
+"✅ Foundations: JavaScript basics, and introductions to React, TypeScript, and Next.js","✅ Landasan: dasar-dasar JavaScript, serta pengenalan ke React, TypeScript, dan Next.js"
+Server returned HTTP status 429 Too Many Requests response.,Server mengembalikan respons status HTTP 429 Too Many Requests.
+Node.js Documentation,Dokumentasi Node.js
+Recursion,Rekursi
+Source Datasets,Data Sumber
+Let's run `npm run build` to compile our production assets.,Mari kita jalankan `npm run build` untuk mengompilasi aset produksi kita.
+Tales of Demons and Gods Season 10 Episode 04 Subtitle Indonesia,Cerita Dewa dan Raja Musim 10 Episode 4 Subtitle Indonesia
+"Learn CSS, from Laying Out Websites to Performant Animations","Belajar CSS, dari Penataan Situs Web hingga Animasi yang Efisien"
+Copy code snippet to clipboard with one click.,Salin cuplikan kode ke papan klip dengan satu klik.
+Request Metrics,Metrik Permintaan
+This month,Bulan ini
+and ask for help.,Edit halaman ini
+"Our modification now results in the QR code being displayed in the terminal upon startup. From that moment onward, the QR code will be regenerated every","Modifikasi kami sekarang menghasilkan tampilan QR di terminal saat startup. Dari saat itu, kode QR tersebut akan diperbarui setiap"
+Set `max_tokens` parameter to limit response length.,Setel parameter `max_tokens` untuk membatasi panjang respon.
+Revalidate stale static page content using Next.js on-demand ISR.,Revalidasi konten halaman statis yang usang menggunakan Next.js ISR on-demand.
+Tales of Demons and Gods Season 10 Episode 03 Subtitle Indonesia,Cerita Dewa dan
+OK,OK
+per month,per bulan
+Let me know in the comments if you want a deep dive on this topic.,Beri tahu saya di kolom komentar jika Anda ingin pembahasan mendalam tentang topik ini.
+Terms of Service,Syarat dan Ketentuan
+Polymorphism,Polimorfisme
+"First of all, make sure you have Node.js installed.","Pertama-tama, pastikan Anda sudah menginstal Node.js."
+Deleting this key means any external applications using it will no longer be able to access the model endpoint with this credential.,Menghapus kunci ini berarti aplikasi luar yang menggunakan kunci tersebut tidak akan lagi dapat mengakses titik akhir model dengan kredensial ini.
+Looking for older courses? Check out our,Mencari kursus lama? Cek di Arsip Kursus kami
+Ghost coder,Pengembang suram
+4.7 rating,4.7 bintang
+"Jul 18, 2026",18 Juli 2026
+Error handling,Pengelolaan error
+See More Reviews ↓,Lihat Ulasan Lebih Banyak ↓
+clearMessages(),hapusAtauTutupPesan
+📜 Changelog,📜 Riwayat Perubahan
+Reset password,Atur ulang kata sandi
+Loading model list...,Memuat daftar model...
+Thursday,Kamis
+Legendary Twins,Legenda Twin
+", you can press the up arrow on your keyboard to bring up the latest commands you've run. This will allow you to quickly run your bot again by pressing Enter.",", Anda bisa tekan tombol arah ke atas pada keyboard Anda untuk memunculkan perintah terakhir yang telah Anda jalankan. Ini akan memungkinkan Anda untuk menjalankan bot dengan cepat lagi dengan menekan Enter."
+Your Journey to World-Class Development Skills,Perjalanan Anda menuju Keterampilan Pengembangan Internasional Berkualitas
+Check the documentation for more configuration options.,Periksa dokumentasi untuk opsi konfigurasi lebih lanjut.
+Star repository on GitHub if helpful.,Beri bintang pada repositori di GitHub jika bermanfaat.
+Upload file,Unggah file
+I tried dozens of resources over the years and chose this one to have a yearly subscription.,Saya telah mencoba berbagai sumber selama bertahun-tahun dan memilih yang ini untuk memiliki langganan tahunan.
+MongoDB Store,Store MongoDB
+Remember me on this device,Ingat saya di perangkat ini
+Create new account,Buat akun baru
+CHAT_ARCHIVED,PESAN_ANAKAN_DILAPORKAN
+"{'messages': [{'role': 'system', 'content': 'You are WithinUsAI Master Scholars Earth & Climate Science. Provide concise, factual answers.'}, {'role': 'user', 'content': ""True or False (academics): The troposphere is the lowest layer of Earth's atmosphere where most weather occurs.""}]}","{'messages': [{'role': 'system', 'content': 'Anda adalah Ahli Penyandang Diri Besar WithinUsAI. Berikan jawaban yang singkat dan berdasarkan fakta.'}, {'role': 'user', 'content': ""Benar atau Salah (ilmu pengetahuan): Troposfer adalah lapisan atmosfer Bumi terendah di mana sebagian besar cuaca terjadi.""}]}"
+Anjana Vakil,Mata Kuliah Pilihan
+Overlay translated text on top of original image coordinates.,Lapiskan teks yang diterjemahkan di atas koordinat gambar asli.
+All Topic Paths,Semua Jalan Menuju Topik
+Docker Compose service defined with environment variables and volumes.,Layanan Docker Compose didefinisikan dengan variabel lingkungan dan volume.
+"Version two shifts from an introductory agent build to production‑oriented agent engineering. It adds evals and telemetry, robust agent loops, file system and web search tools, context window management, code execution, and human‑in‑the‑loop approvals.","Versi kedua berpindah dari pembuatan agen awal untuk pengembangan yang oriented ke produksi. Ia menambahkan penilaian dan telemetry, loop agen yang kuat, alat tools sistem file dan pencarian web, pemeliharaan jendela konteks"
+Scanning page for translation issues...,Memindai halaman untuk masalah terjemahan...
+"Once you've completed that step, you're all set to install whatsapp-web.js!","Kini setelah folder proyek Anda telah disiapkan, Anda dapat menginstal whatsapp-web.js. Untuk melakukan ini, buka terminal lagi di dalam folder tersebut dan jalankan perintah berikut:"
+"Let's refactor this messy code into clean, modular functions.",Mari kita refaktor kode yang berantakan ini menjadi fungsi yang bersih dan modular.
+Modelfile Reference,Referensi File Model
+Quantity,Jumlah
+Released on,Rilis pada
+Tomorrow,Besok
+Course Code,Kode Kursus
+Don't forget to star the repository if you find this project helpful!,Jangan lupa memberi bintang pada repositori jika Anda merasa proyek ini bermanfaat!
+How content scripts interact with web page DOM and service workers.,Bagaimana content script berinteraksi dengan DOM halaman web dan service worker.
+Example `package.json` file,"Setelah Anda menyelesaikan langkah ini, Anda siap untuk menginstal whatsapp-web.js!"
+Last month,Bulan lalu
+Episode 45,Episod 45
+Pydantic model validation error: `text` field must not be empty.,Kesalahan validasi model Pydantic: bidang `text` tidak boleh kosong.
+What They're Saying,Ulasan Pengguna
+Peerless Battle Spirit,Roh Perang Tak Terkalahkan
+Thank you for using Mars Web Translator AI!,Terima kasih telah menggunakan Mars Web Translator AI!
+Promo code,Kode promo
+Bibliothek:,Bibliothek: Pustaka:
+"Scott shares the agent between both the Cloudflare worker and the eval running in Node.js. Since both environments call the generateText/streamText methods with the same tools and use the same SYSTEM_PROMPT, they can drift and be counterproductive when using evals to measure reliability.","Scott membagikan agen antara Cloudflare worker dan eval yang berjalan di Node.js. Karena keduanya mengakses metode generateText/streamText dengan alat yang sama dan menggunakan prompt sistem yang sama, mereka bisa saling mempengaruhi dan menjadi tidak produktif ketika menggunakan eval untuk menilai keandalan."
+00:28:05 - 00:33:17,00:28:05 - 00:33:17 (atribut output)
+Leave a comment if you have questions.,Tinggalkan komentar jika Anda memiliki pertanyaan.
+Enterprise & Leadership,Bisnis dan Pemimpin
+22:22:51 UTC+7,22:22:51 WIB
+Copy,Salin
+What is an AI Engineer,Apa itu Pengembang AI
+Let's step through the code line by line to understand why it failed.,Mari kita periksa kodenya baris demi baris untuk memahami penyebab kegagalannya.
+greghavens/kimi-k3-coding-and-debugging-traces,greghavens/kimi-k3-tracing-pemrograman-dan-debugging
+Winter 2023,Musim Dingin 2023
+3. Vanilla JS: You Might Not Need a Framework,3. Vanilla JS: Mungkin Anda Tidak Memerlukan Framework
+Convert model to 4-bit GGUF format using `llama.cpp` quantize tool.,Konversi model ke format GGUF 4-bit menggunakan tool kuantisasi `llama.cpp`.
+End-to-end web application testing using Playwright and Cypress.,Pengujian aplikasi web end-to-end menggunakan Playwright dan Cypress.
+🔐 Preservation Fidelity,Kehadiran Enkripsi
+Free trial,Uji coba gratis
+~18.5M rows (showing the first 16.7M),~18.5Juta baris (menampilkan 16.7Juta pertama)
+Completed Javascript courses:,Mata kuliah JavaScript yang telah saya selesaikan:
+Pay close attention to how we structure our state management.,Perhatikan baik-baik bagaimana kita menata struktur manajemen state kita.
+UFW firewall configured to allow incoming traffic on ports 80 and 443.,Firewall UFW dikonfigurasi untuk mengizinkan lalu lintas masuk pada port 80 dan 443.
+Functional JavaScript,JavaScript Fungsional
+Turn Any Website into a Searchable Knowledge Base,Ubah Situs Web apa pun menjadi Bahan Pengetahuan yang Dapat Dilacak
+I personally prefer using Tailwind CSS for rapid prototyping.,Saya pribadi lebih suka menggunakan Tailwind CSS untuk prototyping cepat.
+Automating CI/CD pipelines with GitHub Actions and Docker Hub integrations.,Mengotomatiskan pipeline CI/CD dengan integrasi GitHub Actions dan Docker Hub.
+Coding with AI,Pemrograman dengan AI
+"Scott begins building the new client-side tools by first simplifying the element schemas so that add and update operations can share a common structure. He explains why nullable fields work better than optional fields for structured tool inputs with OpenAI and strict schema enforcement, since the model is better at returning explicit `null` values than omitting keys. Scott frames the schema work as a way to make the model’s contract clearer before the tools themselves are wired up.","Scott mulai membangun alat-alat klien baru dengan pertama-tama memperkirakan struktur elemen sehingga operasi penambahan dan pembaruan dapat menggunakan struktur yang sama. Dia menjelaskan mengapa field nullable bekerja lebih baik daripada field opsional untuk input alat yang terukur dengan OpenAI dan pengaturan skema yang ketat, karena model cenderung memberikan nilai `null` secara eksplisit daripada menghilangkan kunci-kunci tersebut. Scott mengepakkan kerja struktur data sebagai cara untuk memperjelas kontrak model sebelum alat-alat itu sendiri dihubungkan."
+Hide advanced settings,Sembunyikan pengaturan tingkat lanjut
+Download,Unduh
+Try again,Coba lagi
+I was troubleshooting this issue for hours yesterday.,Saya sempat pusing menelusuri masalah ini berjam-jam kemarin.
+Text Generation,Generasi Teks
+Use `git checkout -b feature-branch` to create a new branch.,Gunakan `git checkout -b feature-branch` untuk membuat branch baru.
+250210501029,Angkatan / Kelas
+Restore original text,Kembalikan teks asli
+Cancel,Batal
+"TRUE — The water cycle includes evaporation, condensation, precipitation, and runoff.","PROSES HIDROLOGI termasuk uap air, penghimpitan, penurunan hujan, dan aliran permukaan."
+Deploy Cloud Infrastructure at Any Scale,Deploy Infrastruktur Cloud pada Skala Apapun
+Fullstack to Backend,Fullstack ke Backend
+I haven't! I'm still obsessed with Call of Duty. Maybe that one could be my next video game.,Saya belum! Saya masih obsesi dengan Call of Duty. Mungkin itu bisa menjadi video game saya yang berikutnya.
+Check DNS resolution using `dig domain.com` or `nslookup domain.com`.,Periksa resolusi DNS menggunakan `dig domain.com` atau `nslookup domain.com`.
+Refresh,Muat Ulang
+Modalitas:,Modus:
+Running Evaluations,Evaluasi Berjalan
+Fine-tuning adapter merged into base model weights using PEFT library.,Adapter fine-tuning digabungkan ke bobot model dasar menggunakan library PEFT.
+Join Hugging Face,Bergabung dengan Hugging Face
+Micro Frontends Project,Proyek Micro Frontends
+Next,Selanjutnya
+Classes and objects are the two core concepts in object-oriented programming.,Klasemen dan objek adalah dua konsep inti dalam pemrograman berorientasi objek.
+Reset Languages,Reset Bahasa
+Search documentation...,Cari dokumentasi...
+BATTERY_CHANGED,PERMUKAMAN_PERUBAHAN
+Middleware,Middleware
+"Scott creates the eval harness and extracts the system prompt so it can be shared between the agent on the worker side of the application and the eval harness on the node side. The eval harness loads the golden dataset, runs each test case through the model directly (skipping the WebSocket and Durable Object layer), collects results, and writes them to a timestamped file.","Scott membuat evaluasi harness dan mengambil prompt sistem sehingga dapat dibagikan antara agen di sisi pekerja aplikasi dan eval harness di sisi node. Evaluasi harness memuat dataset golden, menjalankan setiap kasus uji langsung melalui model (lewatkan lapisan WebSocket dan Durable Object), mengumpulkan hasil, dan menulisnya ke dalam file yang dilabeli waktu."
+Back,Kembali
+21:33:45 UTC+7,21:33:45 WIB
+Don't have an account?,Belum punya akun?
+Waktu total:,Waktu yang dibutuhkan:
+15:10:33 UTC+7,15:10:33 WIB
+Error: Translation failed.,Error: Terjemahan gagal.
+", but you may name it whatever you wish.",", Anda bisa memberinya nama apa saja."
+"Scott explains giving an AGI agent terminal access, allowing it to run commands, install packages, and perform tasks efficiently. He also highlights safety considerations, emphasizing supervision to prevent unintended actions.","Scott menjelaskan memberikan akses terminal kepada agen AGI, yang memungkinkan ia untuk menjalankan perintah, menginstal paket, dan melakukan tugas dengan efisien. Dia juga menekankan aspek-aspek keamanan, menyebutkan supervisi"
+Actions,Aksi
+) to the default list of ignored files for AI comment scanning (,) ke daftar default file yang diabaikan untuk pemindaian komentar AI (
+You can see me play at the Boston diamond right in the city if Boston. It will be at 3pm eastern time.  Maybe you can bring Barnaby too?,Anda bisa lihat saya bermain di Diamond Boston di kota Boston jika ada pertandingan di Boston. Waktunya pukul 15.00 waktu Estimatif. Mungkin kamu bisa membawa Barnaby juga?
+Automatic subtitle detection for YouTube and streaming platforms.,Deteksi subtitle otomatis untuk YouTube dan platform streaming.
+Use this file to discover all available pages before exploring further.,Gunakan file ini untuk menemukan semua halaman yang tersedia sebelum mempelajari lebih lanjut.
+Page not found,Halaman tidak ditemukan
+can be fixed,bisa diperbaiki
+": For training on code content, use","Untuk pelatihan pada konten kode, gunakan"
+JavaScript Basics,Dasar-dasar JavaScript
+List active listening ports using `netstat -tulnp` or `ss -tulnp`.,Daftarkan port listening aktif menggunakan `netstat -tulnp` atau `ss -tulnp`.
+Build multi-architecture Docker image for x86_64 and ARM64 processors.,Bangun gambar Docker multi-arsitektur untuk prosesor x86_64 dan ARM64.
+Bearer token,Token Bearer
+Deployment,Penerapan
+Block/unblock contacts,Mengaktifkan/pendekatan kontak
+Indexing Queries,Indeks Pencarian
+🌐 Data Sources,🌐 Sumber Data
+What's changed in v2?,Penasaran apa yang berubah di versi 2?
+Upgrade to our Yearly membership today and save $78,Upgrade ke anggota tahunan kita hari ini dan hemat $78
+Format training dataset as ShareGPT JSONL format for instruction tuning.,Format dataset pelatihan sebagai format ShareGPT JSONL untuk instruction tuning.
+I'm going to create a new file named `utils.js`.,Saya bakal membuat file baru bernama `utils.js`.
+Success!,Berhasil!
+7 days ago,7 hari yang lalu
+Service temporarily unavailable.,Layanan tidak dapat diakses untuk sementara.
+Invoice,Faktur
+Method,Metode
+Select All,Pilih Semua
+Learning Paths,Jalur Belajar
+"Scott introduces RAG, or retrieval-augmented generation, as a way to handle model cutoff dates and documents that are too large to fit into a context window. He explains RAG with an open-book-test analogy, where the system looks up just the most relevant parts of a corpus instead of trying to load everything at once. Scott also warns that RAG is widely misunderstood, over-marketed, and much harder to get right than people often assume.","Scott mengintroduksi RAG, atau retrieval-augmented generation, sebagai cara untuk menangani tanggal batas model dan dokumen yang terlalu besar untuk dimasukkan ke dalam jendela konteks. Dia menjelaskan RAG dengan perumpamaan ujian dengan buku terbuka, di mana sistem hanya mencari bagian paling relevan dari corpus daripada mencoba memuat semuanya sekaligus. Scott juga mengingatkan bahwa RAG sering dipahami secara salah dan diperdagangkan terlalu banyak, serta jauh lebih sulit untuk diterapkan daripada yang sering diasumsikan oleh orang banyak."
+Let's add a loading spinner while waiting for the API response.,Mari kita tambahkan spinner pemuatan saat menunggu respons API.
+# Congress,# Kongres
+Add to wishlist,Tambahkan ke daftar keinginan
+"Niyas Skyrim ukar uñtataw edad media ukan anatatanxa. Kunjamti Call of Duty  uka muntxa kipkarakiw maynir munasma. COD ukanx atipiriñ muniritxa, ukampirus jank’akiw aynacht’añ yatxa!","Nias Skyrim menggambarkan karakter dengan media animasi yang canggih. Kunjungi Call of Duty untuk menikmati grafis kelas atas. COD memiliki tekstur grafis yang luar biasa, membuat tampilan semakin hidup!"
+multilingual,multi bahasa
+💾 Space Efficiency,Efisiensi Ruang
+to Parquet,menjadi Parquet
+Cosine similarity measures the semantic distance between two text embeddings.,Kemiripan kosinus mengukur jarak semantik antara dua embedding teks.
+Webhook,Webhook
+More information,Informasi Lanjut
+"Dec 02, 2024",02 Desember 2024
+Total Samples,Jumlah Sampel Total
+Location Path,Jalur Lokasi
+Next.js 15 announced with improved caching defaults and faster builds.,Next.js 15 diumumkan dengan default caching yang ditingkatkan dan build yang lebih cepat.
+Contact,Kontak
+Authentication Strategies,Strategi Pengakuan
+Active Parameters,Parameter Aktif
+NodeSchool learns you JavaScirpt and Node.js,NodeSchool yang belajar Anda tentang JavaScript dan Node.js
+Download any,Unduh apa saja
+Verify production build in staging environment prior to release.,Verifikasi build produksi di lingkungan staging sebelum rilis.
+Beyond Time’s Gaze,Di Luar Pandangan Waktu
+August,Agustus
+5 days ago,5 hari yang lalu
+128K tokens,128K token
+"I just had a rehearsal with my band. If you ever want to hear me play, let me know and I'll get you into one of our shows.","Saya baru saja berlatih bersama band saya. Jika kamu ingin mendengar saya memainkan musik, kirim pesan dan saya akan membawakanmu ke salah satu pertunjukan kami."
+Monitor training loss using TensorBoard or Weights & Biases.,Pantau training loss menggunakan TensorBoard atau Weights & Biases.
+Structured Outputs,Output Strukturi
+Readiness probe verifies if container is ready to accept user traffic.,Readiness probe memverifikasi apakah kontainer siap menerima lalu lintas pengguna.
+"Let's break down this concept into smaller, simpler steps.",Mari kita urai konsep ini menjadi langkah-langkah yang lebih kecil dan sederhana.
+"Vision models accept images alongside text so the model can describe, classify, and answer questions about what it sees.","Model-model visi menerima gambar bersamaan dengan teks sehingga model dapat menggambarkan, klasifikasi, dan menjawab pertanyaan tentang apa yang ia lihat."
+"Ukax walja amuyuniwa. Utam jak’an yatiqkasax irnaqañampix walja qullqi imataxa, mä machaq k’asku alastaxa. Kunjamakis machaq k’añaskuxa?","Ukuran akan diubah. Utamakan ukuran aslinya, tidak mengurangi atau memperbesar. Apakah Anda ingin mengecek ukuran yang baru?"
+Mean Median Mode,"Rata-rata, Median, Modus"
+and make a,dan membuatnya
+"August 18, 2026",18 Agustus 2026
+Add to cart,Tambahkan ke keranjang
+Monitor server CPU and RAM utilization metrics in real time.,Pantau metrik penggunaan CPU dan RAM server secara real-time.
+Quantizing FP16 weights to INT4 precision reduces memory usage by 75%.,Mengkuantisasi bobot FP16 ke presisi INT4 mengurangi penggunaan memori sebesar 75%.
+"Support VTT formatting tags like bold, italic, and color text.","Dukung tag format VTT seperti teks tebal, miring, dan berwarna."
+"Optional, take in any order","Opsional, dapat diambil dalam urutan apapun"
+Payment failed,Pembayaran gagal
+Martial Master,Guru Seni
+"Building a custom GPT to act as your technical acquisition editor provides an immediate, consistent, and drama-free QA pass for your work products.","Membangun GPT kustom untuk berperan sebagai editor pengambilan keputusan teknis Anda memberikan pengecekan kualitas mutlak (QA) yang segera, konsisten, dan bebas drama bagi produk kerja Anda."
+🎯 On-Demand Access,Akses On-Demand
+You can customize the styling to match your brand colors.,Anda bisa menyesuaikan penataan gaya agar cocok dengan warna brand Anda.
+OAuth 2.0 and OpenID Connect flows explained step by step.,Alur OAuth 2.0 dan OpenID Connect dijelaskan langkah demi langkah.
+Audio stream synchronized with video frames using HTML5 Media Source Extensions.,Stream audio disinkronkan dengan frame video menggunakan HTML5 Media Source Extensions.
+Environment variable,Variabel lingkungan
+File size exceeds the maximum limit of 10MB.,Ukuran file melebihi batas maksimum 10MB.
+Source Slug,Slug Sumber
+Your Path to Becoming a Career-Ready Web Developer!,Jalur Anda Menuju Menjadi Pengembang Web Siap Karir!
+Caching query results in Redis for faster retrieval.,Menyimpan hasil kueri di Redis untuk pengambilan yang lebih cepat.
+Jalur Belajar,Jalur Pelajaran
+"GitHub flow is a lightweight, branch-based workflow. In this Experience you'll learn the basics of the GitHub Flow including creating and making changes to branches within a repository, as well as creating and merging pull requests. The GitHub flow is useful for everyone, not just developers.","GitHub Flow adalah aliran yang ringan dan berbasis cabang. Dalam pengalaman ini, Anda akan belajar dasar-dasar GitHub Flow termasuk pembuatan dan perubahan pada cabang dalam repositori, serta pembuatan dan penyelesaian pull request. GitHub Flow berguna bagi semua orang, tidak hanya untuk developer."
+Info Batch,Informasi Batch
+13:08:11 UTC+7,13:08:11 WIB
+9 days ago,9 hari yang lalu
+13:08:30 UTC+7,13:08:30 WIB
+4. The Hard Parts of Asynchronous JavaScript.,4. Bagian Sulit dari JavaScript Asinkron.
+Status,Status
+Content script injected into active tab DOM using Chrome extension API.,Content script diinjeksikan ke DOM tab yang aktif menggunakan API ekstensi Chrome.
+Compile C++ code to WebAssembly using Emscripten toolchain.,Kompilasi kode C++ ke WebAssembly menggunakan toolchain Emscripten.
+Discord Server,Gulungan Discord
+"{'messages': [{'role': 'system', 'content': 'You are WithinUsAI Master Scholars Earth & Climate Science. Provide concise, factual answers.'}, {'role': 'user', 'content': ""Academic fact-check: TRUE/FALSE then corrected statement if needed: Earth's lithosphere is divided into tectonic plates that move relative to each ot...","{'messages': [{'role': 'system', 'content': 'Anda adalah Ahli Pengetahuan Utama AI Master Scholars Bumi dan Ilmu Lingkungan. Berikan jawaban yang singkat dan berdasarkan fakta.'}, {'role': 'user', 'content': ""Periksa pengetahuan akademis: BENAR/SALAH kemudian pernyataan yang benar jika diperlukan: Litosfer Bumi dibagi menjadi plafon tektogenik yang bergerak relatif terhadap satu...""}]"
+"Aug 20, 2026",20 Agustus 2026
+Contact support,Hubungi dukungan
+Bugfix for,Pembenahan bug untuk
+You don't need to score every row of every run. A representative sample (say all the modify cases plus a couple of hard create cases) is plenty to know whether your agent got prettier.,Anda tidak perlu menilai setiap baris dari setiap eksekusi. Sampel yang mewakili (misalnya semua kasus modify beserta beberapa kasus hard create) sudah cukup untuk mengetahui apakah agen Anda menjadi lebih indah.
+Each request costs,Setiap permintaan menghabiskan
+Use `top` or `htop` to monitor active process CPU utilization.,Gunakan `top` atau `htop` untuk memantau penggunaan CPU proses yang aktif.
+module in your terminal:,"Setelah paket tersebut dinaikkan, Anda harus memasangnya dan melemparkannya ke strategi sebagai berikut:"
+Find,Cari
+Messages UI,Tampilan Pesan UI
+Database connection pool size set to 20 maximum connections.,Ukuran pool koneksi database disetel ke maksimum 20 koneksi.
+Description,Deskripsi
+Free,Gratis
+Error: No active tab found.,Error: Tidak ada tab aktif yang ditemukan.
+PostgreSQL vs MySQL vs SQLite: Choosing the right database for your project.,PostgreSQL vs MySQL vs SQLite: Memilih database yang tepat untuk proyek Anda.
+Trust Center,Toko Percaya
+Spring 2023,Musim Semi 2023
+Web Assembly (Wasm),WebAssembly (Wasm)
+Prototype,Prototipe
+Mute/unmute chats,Matikan/aktifkan percakapan
+Order results by `created_at DESC` to fetch latest records.,Urutkan hasil berdasarkan `created_at DESC` untuk mengambil rekaman terbaru.
+Example usage,Contoh Penggunaan
+00:00:00 - 00:03:51,00:00:00 - 00:03:51 (text yang asli dalam bahasa Inggris)
+CHAT_REMOVED,PESAN_ANAKAN_DIHAPUSKAN
+Lanjutkan Penontonan,Lanjutkan Pengamatan
+All Learning Paths,Semua Jalur Belajar
+Understanding vector databases is key to building context-aware AI agents.,Memahami database vektor adalah kunci untuk membangun agen AI yang sadar konteks.
+🎉 Milestone Unlocked: A Journey in Frontend Engineering!,🎉 Batas Penting Terkunci: Perjalanan dalam Pemrograman Frontend!
+Enable Gzip compression in Nginx configuration for faster asset delivery.,Aktifkan kompresi Gzip di konfigurasi Nginx untuk pengiriman aset yang lebih cepat.
+Format,Format
+4.8 rating,4.8 bintang
+Backend Languages,Bahasa Backend
+No credit card required,Tidak perlu kartu kredit
+Hierarchical Clustering,Klustering Hierarkis
+"Scott explains agents as LLMs that use reasoning frameworks and tools to adapt at runtime, contrasting them with rigid workflows and noting key limitations where agents may not perform well.","Scott menjelaskan agen sebagai LLM yang menggunakan framework dan alat untuk mengadaptasi secara runtime, menonjolkan perbedaannya dengan workflow yang rigid, dan menyebutkan beberapa keterbatasan di mana agen mungkin tidak bekerja dengan baik."
+Software Engineer,Engineer
+Total file size:,Ukuran file total:
+What is the purpose of a system prompt in an AI chat agent?,Apakah tujuan dari promt sistem dalam seorang agen percakapan AI?
+"Wow that's coming up fast, how exciting! Summer weddings are my favourite since they're so pretty. How did you meet your boyfriend?","Wow itu berjalan cepat banget, bagaimana bisa menarik! Pernikahan di musim panas jadi favorit saya karena terlihat begitu cantik. Bagaimana kamu bertemu dengan pacar Anda?"
+Enhancing web accessibility (a11y) using semantic HTML and ARIA roles.,Meningkatkan aksesibilitas web (a11y) menggunakan HTML semantik dan role ARIA.
+"Dedicated cybersecurity category with attack/defense/exploit traces, red/blue team dialogues, and incident reports","Kategori keamanan jaringan yang ditegakkan dengan trase serangan/defensif/exploit, dialog tim merah/tim biru, dan laporan insiden"
+Episode 150,Episod 150
+Language detector balances detection threshold for ID and EN.,Detektor bahasa menyeimbangkan ambang batas deteksi untuk ID dan EN.
+Context Engineering,Konteks Pemrograman
+(compressed GitHub repos),(repo GitHub yang dikompresi)
+Create an Agent with OpenAI SDK,Buat Sebuah Agent dengan SDK OpenAI
+8.81k rows,8.81k baris
+Retrieve context,Ambil konteks
+Function,Fungsi
+Perform zero-downtime rolling deployment for new software release.,Lakukan deployment rolling tanpa downtime untuk rilis perangkat lunak baru.
+No,Tidak
+Sort,Urutkan
+Pod restart policy set to `Always` in deployment specification.,Kebijakan restart pod disetel ke `Always` dalam spesifikasi deployment.
+no lock-in,dengan memungkinkan Anda menggunakan provider lain bersama OpenCode juga.
+Status code,Kode status
+Building autonomous AI agents with tool calling and function execution.,Membangun agen AI otonom dengan panggilan tool dan eksekusi fungsi.
+Building the Agent,Membangun Agent
+Use the `npm install` command to install all required dependencies.,Gunakan perintah `npm install` untuk menginstal semua dependensi yang diperlukan.
+User feedback rating: 5.0 out of 5 stars.,Penilaian masukan pengguna: 5.0 dari 5 bintang.
+Laravel Fundamentals,Dasar-dasar Laravel
+Dependency,Dependensi
+"Split dataset into `train`, `val`, and `test` splits for evaluation.","Bagi dataset menjadi split `train`, `val`, dan `test` untuk evaluasi."
+"May 1, 2026","May 1, 2026 - 1 Mei 2026"
+"Honestly, this new feature saved me so much time!","Jujur, fitur baru ini menghemat banyak waktu saya!"
+Canvas Integration,Integrasi Canvas
+Build multi-platform Docker container image for x86_64 and ARM64.,Bangun gambar kontainer Docker multi-platform untuk x86_64 dan ARM64.
+Episode 362,Episod 362
+Setting up Nginx reverse proxy with automated Let's Encrypt SSL certificates.,Menyetel reverse proxy Nginx dengan sertifikat SSL Let's Encrypt otomatis.
+Cybersecurity Researchers,Peneliti Keamanan Jaringan
+Programmatically control WhatsApp whether you're running user or business accounts.,"Kontrol Programmatic WhatsApp, Baik Anda Menggunakan Akun Pengguna Atau Bisnis."
+Your Bookmarks,Bookmark Anda
+Edit,Edit
+Magic Chef of Fire and Ice,Mesin Pemusnah Api dan Es
+"I have been.  Just the other day I started playing ""Kingdom Come: Deliverance.""  Have you heard of it?","Saya pernah. Baru-baru ini saya mulai bermain ""Kingdom Come: Deliverance."" Anda sudah pernah mendengarnyakah?"
+Installation on macOS,Instalasi pada macOS
+Thanks for sticking around until the end of the video!,Terima kasih sudah menyimak sampai akhir video!
+Scott reruns the eval script to establish a solid baseline before rewriting the system prompt. Establishing a baseline helps better understand the effect of downstream changes to the context.,Scott menjalankan ulang skrip eval untuk menetapkan baseline yang kuat sebelum merenovasi prompt sistem. Menetapkan baseline membantu memahami efek perubahan downstream terhadap konteks dengan lebih baik.
+Click the <code>Settings</code> tab to adjust API base URL.,Klik tab <code>Settings</code> untuk menyesuaikan URL dasar API.
+Welcome back! Please enter your details.,Selamat datang kembali! Silakan masukkan detail Anda.
+"Save my name, email, and website in this browser for the next time I comment.","Simpan nama saya, alamat surel, dan website saya dalam peramban ini untuk penggunaan berikutnya ketika saya membuat komentar."
+Discount,Diskon
+Log rotation configured to retain 7 days of log files.,Rotasi log dikonfigurasi untuk menyimpan 7 hari file log.
+Build the thing that builds the thing,Buat yang membuat apa yang dibuat
+Citation-grounded,Berbasis Penuturan
+Tax,Pajak
+Learn how with Intel,Pelajari dengan Intel
+Subtitle detected and ready to translate!,Subtitle ditemukan dan siap/sedang diterjemahkan!
+", and you need puppeteer to emulate the Chromium browser, there are a few additional steps you'll need to take.","Pertama-tama, Anda akan memerlukan paket-paket yang diperlukan oleh puppeteer, seperti library dan alat yang diperlukan untuk menjalankan browser Chromium tanpa GUI."
+AI Engineering Fundamentals,Dasar-Dasar Ingineran AI
+Approval Flow Architectures,Arkus Arsitektur Proses Persetujuan
+Remember me on this browser session.,Ingat saya di sesi browser ini.
+CORSMiddleware configured to allow requests from Chrome extension origin.,CORSMiddleware dikonfigurasi untuk mengizinkan permintaan dari origin ekstensi Chrome.
+Hitori No Shita: The Return of Tetsumaru,Hitori No Shita: Kembali Tetsumaru
+"Scott wires the new output-based scorers into the diagram eval so they run alongside the existing metrics. He explains that each scorer can decide when a test case qualifies, which keeps prompts without arrows or similar structures from being unfairly penalized. Scott uses this setup to reinforce the idea that durable evals should focus on the final artifact and survive changes to the underlying tool coverage.","Scott menghubungkan penilai berbasis output yang baru ke diagram eval sehingga berjalan bersamaan dengan metrik-metrik yang sudah ada. Dia menjelaskan bahwa setiap penilai dapat menentukan kapan kasus uji memenuhi syarat, yang membantu mencegah kasus uji tanpa panah atau struktur serupa dari diberi skor tidak adil. Scott menggunakan setup ini untuk menguatkan gagasan bahwa eval yang tahan lama harus fokus pada artefak akhir dan dapat bertahan melalui perubahan di bawah penutupan alat evaluasi."
+Build Rich Applications with the Powerful & Easy-to-Pickup Vue.js Framework,Buat Aplikasi Kaya Fitur dengan Framework Vue.js yang Kuat dan Mudah Dipelajari
+Auto-detect subtitles on YouTube and video streaming websites.,Deteksi otomatis subtitle di YouTube dan situs web streaming video.
+"Wait, why is this function returning undefined?","Tunggu, kenapa fungsi ini mengembalikan nilai undefined?"
+Read our <a href='/docs'>documentation</a> for more details.,Baca <a href='/docs'>dokumentasi</a> kami untuk rincian lebih lanjut.
+Oriental Martial Academy,Akademi Seni Bela Diri Oriens
+Pod restart policy set to Always in deployment manifest file.,Kebijakan restart pod disetel ke Always dalam file manifest deployment.
+"After installed Node, you can now run commands in your terminal. We recommend using","Setelah menyambungkan Node, Anda sekarang dapat menjalankan perintah di terminal Anda. Kami merekomendasikan menggunakan"
+Refund,Pengembalian dana
+22:15:27 UTC+7,22:15:27 WIB
+API Reference,Referensi API
+"Scott discusses what an AI engineer actually is, describing the work as broad, exploratory, and different from traditional software engineering because AI systems are often non-deterministic. He also frames AI engineering as building applications on top of foundation models and balancing natural language behavior with more structured engineering practices.","Scott membahas apa sebenarnya pengembang AI adalah, menggambarkan pekerjaannya sebagai luas, eksploratif, dan berbeda dari pengembangan software tradisional karena sistem AI seringkali tidak menentu. Dia juga memandang AI engineering sebagai pembangunan aplikasi di atas model dasar dan menjaga"
+How to refactor legacy codebase into modern TypeScript modules.,Cara merefaktor codebase lama menjadi modul TypeScript modern.
+No subtitles detected on this page,Tidak ada subtitle yang terdeteksi di halaman ini
+Replace,Ganti
+Why does my account show an additional user?,Mengapa akun saya menunjukkan pengguna tambahan?
+Advanced,Lanjutan
+"Just finished another section of the ""Design to Code"" path I'm taking on Master.dev 🥳 Topics talked about were layout, color theory, typography, images and performance. Great refresher that I didn't know I needed","Hampir selesai dengan bagian lain dari jalur ""Desain ke Kode"" yang saya ikuti di Master.dev 🥳 Topik-topik yang dibahas termasuk layout, teori warna, tipografi, gambar, dan kinerja. Sangat menyegarkan dan ternyata saya membutuhkannya."
+Failed to fetch data from API endpoint.,Gagal mengambil data dari endpoint API.
+Framework,Kerangka kerja
+Error: Cache initialization failed.,Error: Inisialisasi cache gagal.
+I am sure. I have not had the chance to drive one. I can't wait to buy my first car as traveling is at the top of my list of things to do. I would love nothing more than to take a cross country road trip and than expand internationally. I have to put all these languages I am learning to good use you know.,Saya yakin. Saya belum pernah mengemudi satu pun. Saya tidak sabar untuk membeli mobil pertama saya karena berpergian adalah prioritas utama dalam daftar hal yang ingin saya lakukan. Saya tidak akan lebih senang daripada bisa melakukan road trip lintas negara dan kemudian mengekspansi bisnis ke luar negeri. Saya harus memanfaatkan semua bahasa yang sedang saya pelajari tahu-tahu.
+QR-Code generation,Pembuatan QR Code
+Click here to continue,Klik di sini untuk melanjutkan
+Hardware support,Pengakuan perangkat keras
+"Time to time I recommend Master.dev, but the Professional Learning Path was especially great one.","Saya sering merekomendasikan Master.dev, tetapi Jalur Pembelajaran Profesional terasa sangat baik."
+Subtitle translation service initialized and ready to run!,Layanan terjemahan subtitle diinisialisasi dan siap dijalankan!
+"It's a little bit like Skyrim if it were set in the actual Middle Ages and no magic.  Since you like Fallout, I think you will like it.  I wish I was better at COD, but I just die so fast!","Ini agak mirip dengan Skyrim jika itu terjadi di abad pertengahan sebenarnya tanpa magis. Karena kamu suka Fallout, saya rasa kamu akan menyukainya. Sayang sekali saya tidak lebih baik dalam COD, tapi saya hanya mati terlalu cepat!"
+Full-text search,pencarian teks lengkap
+Docker container built from multi-stage Dockerfile to minimize image size.,Kontainer Docker dibangun dari Dockerfile multi-stage untuk meminimalkan ukuran gambar.
+"Why did this happen? Well, let me explain.","Kenapa hal ini bisa terjadi? Nah, mari saya jelaskan."
+"Thanks for watching, and happy coding!","Terima kasih telah menonton, dan selamat koding!"
+Interface,Antarmuka
+Increase swap space allocation to prevent out-of-memory server crashes.,Tingkatkan alokasi ruang swap untuk mencegah crash server akibat kehabisan memori.
+Languages:,Bahasa:
+Listening for messages,Menunggu pesan masuk
+Data Studio,Studio Data
+Inheritance,Pewarisan
+Setup via Terminal,Setup melalui Terminal
+acceptGroupV4Invite(inviteInfo),terimaUndanganGrupV4(inviteInfo)
+"Scott begins building an agent from scratch. Zod Schemas. is teaching students how to build an AI agent from scratch using TypeScript, starting with installing dependencies and adding an OpenAI API key. The main exercise involves creating TypeScript types in a schema.ts file that describe Excalidraw diagram elements like rectangles, ellipses, arrows, and text. He explains that the two tools they'll build — Generate Diagram and Modify Diagram — are intentionally naive and simple so students can improve them over time. He has students write the first type manually to get familiar with the structure, then recommends copying over the rest to save time.","Scott mulai membangun agen dari awal. Zod Schemas sedang mengajarkan siswa bagaimana membangun agen AI dari awal menggunakan TypeScript, dimulai dengan instalasi dependensi dan menambahkan kunci API OpenAI. Latihan utama melibatkan pembuatan tipe-tipe TypeScript dalam file schema.ts yang mendeskripsikan elemen-elemen diagram Excalidraw seperti persegi panjang, elips, panah, dan teks. Dia menjelaskan bahwa dua alat yang akan dibangun — Generate Diagram dan Modify Diagram — dirancang sengaja dengan cara yang sederhana sehingga siswa dapat memperbaiki dan meningkatkannya seiring waktu. Dia mengharuskan siswa menulis tipe pertama secara manual untuk terbiasa dengan strukturnya, kemudian merekomendasikan salin bagian-bagian lainnya untuk menghemat waktu."
+Form validation errors are displayed next to relevant input fields.,Kesalahan validasi formulir ditampilkan di samping bidang input yang relevan.
+Summer 2023,Musim Panas 2023
+About GitHub Desktop,Tentang GitHub Desktop
+We're going to build a full-stack web app using Next.js and Tailwind.,Kita bakal membangun aplikasi web full-stack menggunakan Next.js dan Tailwind.
+"Eps 04 - Tales of Demons and Gods Season 10 Episode 04 Subtitle Indonesia - July 25, 2026",Eps 04 - Cerita Dewa dan Raja Musim 10 Episode 4 Subtitle Indonesia - 25 Juli 2026
+"Set retry count to `3` for transient HTTP status codes (502, 503, 504).","Setel jumlah percobaan ulang ke `3` untuk kode status HTTP sementara (502, 503, 504)."
+All checks passed successfully. Your pull request is ready to merge.,Semua checks berhasil. Pull request Anda siap untuk digabungkan.
+CODE_RECEIVED,TANGGAL_DITERIMA
+"{'messages': [{'role': 'system', 'content': 'You are WithinUsAI Master Scholars Earth & Climate Science. Provide concise, factual answers.'}, {'role': 'user', 'content': 'True or False (academics): The stratosphere is the lowest atmospheric layer where most weather occurs.'}]}","{'messages': [{'role': 'system', 'content': 'Anda adalah Ahli Penyelidik Utama AI WithinUsAI Alam Bumi dan Ilmu Lingkungan. Berikan jawapan yang singkat dan berdasarkan fakta.'}, {'role': 'user', 'content': 'Benar atau Palsu (ilmuwan): Stratosfer adalah lapisan atmosfer terendah di mana sebagian besar cuaca berlaku.'}]}"
+/* Initializes the SQLite connection pool with busy timeout */,/* Menginisialisasi pool koneksi SQLite dengan busy timeout */
+Active model: llama3-8b-instruct,Model aktif: llama3-8b-instruct
+Check for .env only when the file exists.,Periksa file .env hanya ketika file tersebut ada.
+Learn how with Fireworks AI,Pelajari dengan Fireworks AI
+Server not connected,Server tidak terhubung
+Artificial Intelligence,Kecerdasan Buatan
+Deploy web application to production server using Docker container.,Melakukan deployment aplikasi web ke server produksi menggunakan kontainer Docker.
+"Kevin walks through updating the navigation by adding a hamburger menu button and providing accessibility context through alt text, hidden text, and aria attributes. He emphasizes the importance of considering accessibility when adding interactive elements to a website.","Kevinn menjelang mengupdate navigasi dengan menambahkan tombol menu hamburgers dan memberikan konteks aksesibilitas melalui alt teks, teks tersembunyi, dan atribut aria. Ia menyentil pentingnya mempertimbangkan aksesibilitas saat"
+15:19:26 UTC+7,15:19:26 WIB
+Failed,Gagal
+Copyright,Hak cipta
+Index scan optimized query performance from 500ms down to 4ms.,Pemindaian indeks mengoptimalkan performa kueri dari 500md menjadi 4md.
+You can easily override the default CSS utility classes.,Anda bisa dengan mudah menimpa kelas utilitas CSS default.
+"Optimizing web asset delivery with Gzip, Brotli, and CDN edge caching.","Mengoptimalkan pengiriman aset web dengan Gzip, Brotli, dan caching edge CDN."
+Serializing the Canvas with TOON,Serializing the Canvas dengan TOON
+Module,Modul
+Please enter a valid email address,Masukkan alamat email yang valid
+Discord community,komunitas Discord
+Award-Winning Marketing Websites,Website Pemenang Penghargaan dalam Bidang Pemasaran
+Pipeline,Pipeline
+cancelPairingCode(),membatalkanKodePemutaran
+Content Collections,Koleksi Konten
+November,November
+Building real-time web applications with WebSockets and Server-Sent Events (SSE).,Membangun aplikasi web real-time dengan WebSocket dan Server-Sent Events (SSE).
+Resources & Downloads,Sumber Daya & Unduhan
+20 days ago,20 hari yang lalu
+Episode 184,Episod 184
+Let's inspect the network tab in Google Chrome DevTools.,Mari kita periksa tab jaringan di Google Chrome DevTools.
+Release notes,Catatan rilis
+Episode 20,Episod 20
+December,Desember
+"Scott wraps up the course by pointing to next-step topics like human-in-the-loop approvals, durable execution, planning modes, handoffs, and deterministic workflows. He argues that approvals should be enforced architecturally outside the agent loop, while durable execution enables pausing and resuming long-running agent flows. Scott finishes by emphasizing the production importance of a data flywheel, telemetry, real user feedback, and disciplined eval-driven iteration as the core of AI engineering work.","Scott menutup kursus dengan menyebutkan topik-topik langkah selanjutnya seperti persetujuan human-in-the-loop, eksekusi yang tahan lama, mode perencanaan, penyerahan, dan alur kerja deterministik. Dia berargumen bahwa persetujuan harus diberlakukan secara arsitektural di luar loop agen, sementara eksekusi yang tahan lama memungkinkan pausing dan resuming aliran agen yang berjalan selama berjam-jam. Scott menekankan pentingnya flywheel data, telemetri, umpan balik pengguna nyata, dan iterasi disiplin berdasarkan evaluasi dalam menjadi inti dari kerja teknis AI."
+Click here to learn more about application features.,Klik di sini untuk mempelajari lebih lanjut tentang fitur aplikasi.
+Password must be at least 8 characters,Kata sandi harus minimal 8 karakter
+Redirect HTTP traffic to HTTPS automatically in Nginx server block.,Alihkan lalu lintas HTTP ke HTTPS secara otomatis di server block Nginx.
+per year,per tahun
+"When I began my web development journey, I just learned basic concepts and moved into learning frameworks like React and Next. Closures, Hoisting, and promises did not quite click for me then. But as I delved deeper and deeper into React, I wanted to understand every bit and piece of JS. Master.dev made this journey smoother. Over the past year, I completed several of their JS workshops, and now I can confidently say I know Javascript.","Saat saya memulai perjalanan pengembangan web, saya hanya mempelajari konsep dasar dan pindah untuk belajar framework seperti React dan Next. Penutupan, Hoisting, dan promise tidak benar-benar jelas bagi saya pada saat itu. Namun, semakin dalam saya masuk ke React, saya ingin memahami setiap aspek dari JavaScript. Master.dev membuat perjalanan ini lebih mulus. Selama tahun terakhir, saya menyelesaikan beberapa workshop JS mereka, dan sekarang saya dapat dengan yakin mengatakan bahwa saya menguasai JavaScript."
+How It Works,CARA KERJA
+Push changes to remote repository using `git push origin main`.,Push perubahan ke repositori jarak jauh menggunakan `git push origin main`.
+Notice how fast the page re-renders now?,Perhatikan betapa cepatnya halaman ini melakukan render ulang sekarang?
+10K - 100K,10.000 - 100.000
+Expand Your Abilities to the Server and Master the Fullstack,Luaskan Kemampuan Anda ke Server dan Menguasai Fullstack
+Share,Bagikan
+scorer functions in,fungsi penilai
+Troubleshooting Regressions,Penyelesaian Masalah Regression
+Your email address will not be published.,Alamat email Anda tidak akan dipublikasikan.
+Browse 2M+ models,Navigasi 2J+ model
+Translate Visible Text,Terjemahkan Teks yang Terlihat
+Using Shadow DOM to encapsulate Chrome extension UI components.,Menggunakan Shadow DOM untuk mengkapsulasi komponen UI ekstensi Chrome.
+imagefolder,foldergambar
+AUTHENTICATION_FAILURE,KONEKSI_GAGAL
+Run your bot,Jalankan bot Anda
+"Start by gaining a deep understanding of the JavaScript language’s inner workings. Will’s course emphasizes in-depth knowledge and technical communication, two skills necessary for becoming a high-performing engineer.","Mulailah dengan memperdalam pemahaman Anda tentang mekanisme dalam bahasa pemrograman JavaScript. Kursus Will menekankan pengetahuan mendalam dan komunikasi teknis, dua keterampilan yang diperlukan untuk menjadi insinyur yang berperforma tinggi."
+Domain Specialists,Spesialis Bidang
+Export database records to CSV format using Python `csv.writer`.,Ekspor rekaman database ke format CSV menggunakan Python `csv.writer`.
+Set up DNS CNAME record to point subdomain to Vercel deployment URL.,Setel rekaman CNAME DNS untuk mengarah ke URL deployment Vercel.
+16:40:24 UTC+7,16:40:24 WIB
+Let's verify our database connection string before launching the app.,Mari kita verifikasi string koneksi database kita sebelum meluncurkan aplikasi.
+28 days ago,28 hari yang lalu
+Syarat dan Ketentuan,Syarat & Ketentuan
+Introduction to Retrieval-Augmented Generation (RAG) for AI application developers.,Pengenalan tentang Retrieval-Augmented Generation (RAG) untuk developer aplikasi AI.
+Chat Panel UI,Panel Obrolan UI
+React to messages,Balas pesan React pada pesan
+"Once the installation is complete, you can use Node.js and npm in your terminal.","Setelah instalasi selesai, Anda bisa menggunakan Node.js dan npm pada terminal Anda."
+Installing Node on Windows works just like any other program.,Instalasi Node pada Windows bekerja seperti program lainnya.
+Checking subtitle files...,Memeriksa keberadaan file subtitle di halaman...
+Martial Arts,Seni Bela Diri
+"Scott defines context engineering as deciding what goes into the model's context window, in what shape, on every turn. In the case of the Excalidraw application, context engineering can include rewriting the system prompt to be more thorough and serializing the canvas state into the system prompt at request time.","Scott mendefinisikan engineering konteks sebagai menentukan apa yang dimasukkan ke dalam jendela konteks model, dalam bentuk apa, pada setiap putaran. Dalam kasus aplikasi Excalidraw, engineering konteks dapat termasuk merenovasi prompt sistem menjadi lebih rinci dan serialisasi state canvas ke dalam prompt sistem saat waktu permintaan."
+"Optimizing Web Vitals: LCP, FID, and CLS for better user experience.","Mengoptimalkan Web Vitals: LCP, FID, dan CLS untuk pengalaman pengguna yang lebih baik."
+14:25:30 UTC+7,14:25:30 WIB
+Squash commits into a single clean commit message before merging.,Squash commit menjadi satu pesan commit yang bersih sebelum melakukan merge.
+Open in new tab,Buka di tab baru
+JSONL Data Shards,Data Potongan dalam Format JSONL
+Utility-first CSS vs Component-based styling in modern web design.,CSS utility-first vs penataan gaya berbasis komponen dalam desain web modern.
+Check if element exists using `document.querySelector('#target') !== null`.,Periksa apakah elemen ada menggunakan `document.querySelector('#target') !== null`.
+Your draft changes have been auto-saved.,Perubahan draf Anda telah disimpan secara otomatis.
+Installation on Linux,Instalasi pada Linux
+Saturday,Sabtu
+As a local site,untuk melayaninya dengan VitePress di
+instruction-tuning,tuning-instruksi
+Oto-terkonversi,Otomatis konversi
+ChatGPT for any role,ChatGPT untuk setiap peran
+Remote Stores,Stok Jauh
+Forgot your password?,Lupa kata sandi Anda?
+Kubernetes pod replica set automatically scales up during traffic peak.,Replika pod Kubernetes menykala secara otomatis saat beban lalu lintas tinggi.
+✅ Verified,✅ Terverifikasi
+Make sure your dataset is clean and free of hallucinations.,Pastikan dataset Anda bersih dan bebas dari halusinasi.
+Use `Array.prototype.map()` to transform data elements in place.,Gunakan `Array.prototype.map()` untuk mentransformasi elemen data secara langsung.
+General,Umum
+archiveChat(),arsitektriPesan
+Introduction to WebAssembly (WASM) for high-performance web applications.,Pengenalan tentang WebAssembly (WASM) untuk aplikasi web berkinerja tinggi.
+Linear Regression,Regresi Linear
+Episode 83,Episod 83
+Deduplicate overlapping subtitle cues to keep screen clean.,Daftar ulang cue subtitle yang tumpang tindih untuk menjaga layar tetap bersih.
+RAG with Upstash,RAG dengan Upstash
+Build,Bangun
+Access denied. You do not have permission to view this page.,Akses ditolak. Anda tidak memiliki izin untuk melihat halaman ini.
+All 73 sources with full attribution,Semua 73 sumber dengan atribusi lengkap
+How to write clear and maintainable software documentation for developers.,Cara menulis dokumentasi perangkat lunak yang bersih dan mudah dipelihara untuk developer.
+Swap space allocation prevents out-of-memory server crash events.,Alokasi ruang swap mencegah peristiwa crash server akibat kehabisan memori.
+Contributors,Kontributor
+Options,Opsi
+deaafrizal/shortnurl-tutor,deaafrizal/pengajar_shortnurl-tutorial
+"{'messages': [{'role': 'system', 'content': 'You are WithinUsAI Master Scholars Earth & Climate Science. Provide concise, factual answers.'}, {'role': 'user', 'content': 'Academic fact-check: TRUE/FALSE then corrected statement if needed: The stratosphere is the lowest atmospheric layer where most weather occurs.'}]}","{'messages': [{'role': 'system', 'content': 'Anda adalah Ahli Penyelidik Utama AI WithinUsAI. Berikan jawapan yang singkat dan berdasarkan fakta.'}, {'role': 'user', 'content': 'Periksa fakta akademik: BENAR/SALAH kemudian pernyataan yang betul jika diperlukan: Stratosfer adalah lapisan atmosfer terendah di mana sebagian besar cuaca berlaku.'}]}"
+Let me know if you run into any issues during setup.,Beri tahu saya jika Anda mengalami masalah selama penyetelan.
+🎯 The Numbers That Matter,Taruhan Utama
+(requires Google Chrome),(memerlukan Google Chrome)
+Put your algorithm knowledge into practice! Apply critical thinking skills as you work through challenges requiring algorithmic solutions.,Latukan pengetahuan algoritma Anda dalam praktik! Terapkan keterampilan berpikir kritis saat Anda mengatasi tantangan yang memerlukan solusi algoritma.
+Season Anichin,Musim Anichin
+Measuring LLM translation accuracy using BLEU and ROUGE benchmark scores.,Mengukur akurasi terjemahan LLM menggunakan skor benchmark BLEU dan ROUGE.
+Surprise Me!,Surpriskan Saya!
+Sign In,Masuk
+Dashboard,Dasbor
+Docker containerization best practices for Node.js and Python web apps.,Best practice kontainerisasi Docker untuk aplikasi web Node.js dan Python.
+32 minutes ago,32 menit yang lalu
+Center subtitle text at bottom of video viewport screen.,Tempatkan teks subtitle di tengah di bagian bawah layar viewport video.
+Dataset format converted to ShareGPT JSONL format for multi-turn training.,Format dataset dikonversi ke format ShareGPT JSONL untuk pelatihan multi-turn.
+Show More,Tampilkan Lebih Banyak
+Optimizing Linux server memory and CPU utilization for high traffic.,Mengoptimalkan penggunaan memori dan CPU server Linux untuk lalu lintas tinggi.
+"Scott discusses evaluators, which score tool outputs against expected results, noting that deterministic JSON is easier to quantify than text. He demonstrates a tool selection score evaluator that compares expected and chosen tools to calculate precision.","Scott membahas penilaian evaluator yang memberikan skor kepada hasil alat berdasarkan hasil yang diharapkan, menyebutkan bahwa JSON deterministik lebih mudah untuk dikuantitaskan dibandingkan teks. Dia menunjukkan evaluator skor pemilihan alat yang memband"
+changeLabels(labelIds),ubahLabel(labelIds)
+Receive messages,Menerima Pesan
+Building RESTful APIs with Python FastAPI and Pydantic data validation.,Membangun API RESTful dengan Python FastAPI dan validasi data Pydantic.
+Drag and drop files here or click to browse.,Seret dan lepas file di sini atau klik untuk menelusuri.
+"After installing these dependencies, you can proceed with installing whatsapp-web.js and puppeteer as usual. When puppeteer installs, it will download a version of Chromium suitable for headless environments.","Setelah menginstalkan dependensi tersebut, Anda bisa melanjutkan dengan menginstal whatsapp-web.js dan puppeteer seperti biasa. Ketika puppeteer berhasil diinstal, ia akan mendownload versi Chromium yang sesuai untuk lingkungan tanpa jendela."
+Don't forget to star the repository if you found this helpful!,Jangan lupa memberi bintang pada repositori jika Anda merasa ini bermanfaat!
+Response body,Badan respons
+Select Video Server,Pilih Server Video
+Home,Beranda
+Computer Science,Ilmu Komputer
+Files and versions,File dan versi
+Retrieval-Augmented Generation,Penghasilan yang Ditingkatkan dengan Pengambilan Informasi
+Sign in with Google to access your dashboard.,Masuk dengan Google untuk mengakses dashboard Anda.
+CPU fallback activated when GPU memory is exhausted.,Fallback CPU diaktifkan ketika memori GPU habis.
+Your changes have been saved,Perubahan Anda telah disimpan
+You can deploy this app to Vercel with just one click.,Anda bisa melakukan deployment aplikasi ini ke Vercel hanya dengan satu klik.
+Convert array of items into JSON string using `JSON.stringify(items)`.,Konversi array item menjadi string JSON menggunakan `JSON.stringify(items)`.
+Batch translation of 50 subtitle cues completed in 1.5 seconds.,"Terjemahan batch 50 cue subtitle selesai dalam 1,5 detik."
+"{'messages': [{'role': 'system', 'content': 'You are WithinUsAI Master Scholars Earth & Climate Science. Provide concise, factual answers.'}, {'role': 'user', 'content': ""Academic fact-check: TRUE/FALSE then corrected statement if needed: The troposphere is the lowest layer of Earth's atmosphere where most weather occu...","{'messages': [{'role': 'system', 'content': 'Anda adalah Ahli Pengetahuan Utama AI WithinUsAI Fokus Bumi dan Ilmu Lingkungan. Berikan jawaban yang singkat dan berdasarkan fakta.'}, {'role': 'user', 'content': ""Periksa pengetahuan akademis: BENAR/SALAH kemudian pernyataan yang diperbaiki jika diperlukan: Troposfer adalah lapisan atmosfer Bumi terendah di mana kebanyakan cuaca berlangsung...""}]"
+Setup essentials,Persiapan dasar
+Preset Lists,Daftar Preset
+Frontier model distillations,Distilasi model terdepan
+"Subtitle translator works on YouTube, Vimeo, and Netflix video players.","Penerjemah subtitle bekerja di pemutar video YouTube, Vimeo, dan Netflix."
+Returns a `Promise` that resolves to a boolean value.,Mengembalikan `Promise` yang menyelesaikan nilai boolean.
+Instructional Designer,Desainer Kurikulum
+Details,Detail
+% completed,% Selesai
+Drag and drop files here to attach.,Seret dan lepas file di sini untuk melampirkan.
+"Scott shows how to add serialized canvas state into the agent’s context by building a system-prompt helper that appends the current canvas under a Markdown heading. He explains that the browser can send custom data alongside a chat message, so the canvas state can travel with the user’s prompt rather than living in a database. Scott then updates both the server and client flow so the streaming agent receives the canvas context when a message is sent.",Scott menunjukkan cara menambahkan state canvas yang telah diserialisasi ke dalam konteks agen dengan membangun helper sistem-prompt yang menambahkan canvas saat ini di bawah judul Markdown. Dia men canvas ketika pesan dikirimkan.
+Connect to the world of blockchains through Blockchair’s professional APIs — supports most major cryptocurrencies.,Koneksi ke dunia blockchain melalui API profesional Blockchair — mendukung mayoritas cryptocurrency utama.
+Perfect World,Dunia Idaman
+No results found,Tidak ada hasil ditemukan
+"Aug 25, 2026",25 Agustus 2026
+Model Trainers,Pelat
+Download latest release,Unduh rilis terbaru
+We would have to drop,Kami harus menghapus
+Real-time audio processing in browser using Web Audio API and AudioWorklet.,Pemrosesan audio real-time di browser menggunakan API Web Audio dan AudioWorklet.
+Prometheus scrapes server CPU and RAM metrics every 10 seconds.,Prometheus mengambil metrik CPU dan RAM server setiap 10 detik.
+Make sure your environment variables are configured properly.,Pastikan variabel lingkungan Anda telah dikonfigurasi dengan benar.
+Liveness probe checks if container is still running correctly.,Liveness probe memeriksa apakah kontainer masih berjalan dengan benar.
+Claude coding,Kode ClaudeCoding
+"Scott explains reinforcement learning with human feedback, highlighting the role of deterministic approvals in runtime actions. He emphasizes the human-in-the-loop as key for trustworthy AI and maximizing productivity gains.","Scott menjelaskan pembelajaran mekanis dengan feedback manusia, menyentuh peran izin yang deterministik dalam tindakan runtime. Dia menekankan posisi manusia di dalam loop sebagai kunci untuk kepercayaan AI dan peningkatan produktivitas."
+Codecademy with it's interactive JavaScript course,Pelajaran interaktif JavaScript dari Codecademy
+"Through their incredible courses, I’ve completed the Sitecore UI journey, which covered:","Melalui kursus hebat mereka, saya telah menyelesaikan perjalanan antarmuka Sitcore, yang mencakup:"
+"Scott walks through building a multi-turn executor with mocks, structuring messages, and collecting tool calls and results for evaluation. He emphasizes experimentation and fine-tuning to optimize prompts and model performance.","Scott melalui pembuatan sebuah executor berbentuk banyak langkah dengan menggunakan mock, struktur pesan, dan menyimpan panggilan alat dan hasil untuk evaluasi. Ia menekankan pada eksperimen dan fine-tuning untuk memaksimalkan prompt dan performa model."
+Iteration,Iterasi
+Cybersecurity Sources,Sumber Keamanan Cyber
+Automate SSL certificate renewal using Let's Encrypt Certbot daemon.,Otomatiskan pembaruan sertifikat SSL menggunakan daemon Let's Encrypt Certbot.
+"Scott sets up the vector database layer for RAG by choosing Upstash Vector and walking through how to create a free index. He explains the practical choices involved, including dense, sparse, and hybrid indexes, embedding models, vector dimensions, and similarity metrics like cosine. Scott presents the setup as an approachable way to get started with retrieval infrastructure without having to manage the vector system yourself.","Scott mengatur lapisan basis data vektor untuk RAG dengan memilih Upstash Vector dan membahas langkah-langkah untuk membuat indeks gratis. Dia menjelaskan pilihan praktis yang terlibat, termasuk indeks padat, encer, dan campuran, model embedding, dimensi vektor, serta metrik kesamaan seperti kosinus. Scott menyajikan pengaturan ini sebagai cara yang mudah dipahami untuk memulai dengan infrastruktur penarikan tanpa perlu mengelola sistem vektor sendiri."
+How vector embeddings capture semantic meaning of natural language text.,Bagaimana embedding vektor menangkap makna semantik dari teks bahasa alami.
+"Scott introduces the useAgent and useAgentChat React hooks. The Cloudflare Agents SDK provides these two hooks to handle the entire WebSocket connection and chat protocol. Scott also outlines the streaming response, how the model selects tools, and that each page load of the application will initiate a new chat session.","Scott mengintroduksi hooks React useAgent dan useAgentChat. SDK Cloudflare Agents menyediakan dua hooks ini untuk menangani seluruh koneksi WebSocket dan protokol obrolan. Scott juga menjelaskan respons streaming, bagaimana model memilih alat, dan bahwa setiap pengeloalan halaman aplikasi akan menginisiasi sesi obrolan baru."
+Configuration,Konfigurasi
+Join the community of machine learners!,Bergabung dengan komunitas pelearner mesin!
+Above Myriads,Di Atas Ratusan Juta
+"After the download is complete, open the downloaded file and follow the installer steps.","Setelah unduhan selesai, buka file yang telah diunduh dan ikuti langkah-langkah installer."
+Replying to messages,Mengirim balasan kepada pesan
+menjadi Parquet,dibecanakan menjadi Parquet
+Agentic coding,Kode agensi
+Upload,Unggah
+July,Juli
+"6/4/2024, 12:30:20 AM",Alae Eddine
+Stroke width,Lebar garis
+Surpriskan Saya!,Terkejutkan saya!
+Advanced Player,Pengguna Lanjutan
+"Jul 12, 2025",12 Juli 2025
+Session expired,Sesi telah berakhir
+Shrouding the Heavens,Menyelimuti Langit
+Extract subtitles from MP4 video file using FFmpeg.,Ekstrak subtitle dari file video MP4 menggunakan FFmpeg.
+Error: Maximum batch size exceeded.,Error: Ukuran batch maksimum terlampaui.
+Tool calling,Penggunaan Alat
+Choose an editor,Pilih editor
+Report an issue,Laporkan masalah
+Use this dataset,Gunakan dataset ini
+Central Aymara,Aymara Tengah
+"Scott explains the agent loop, showing how it manages tasks with uncertain steps and adapts to changing requirements. He demonstrates creating the loop, handling LLM responses, stop conditions, and streaming tokens for smoother interaction.","Scott menjelaskan siklus agen, menunjukkan bagaimana siklus tersebut mengatur tugas dengan langkah yang tidak pasti dan beradaptasi terhadap kebutuhan yang berubah. Dia menunjukkan cara membuat siklus tersebut, menghandle respons LLM, kondisi pengec"
+Get profile pictures,Ambil foto profil
+"Apr 4, 2026","Apr 4, 2026 - 4 April 2026"
+"Server monitoring and alerting with Prometheus, Grafana, and Uptime Kuma.","Pemantauan server dan notifikasi peringatan dengan Prometheus, Grafana, dan Uptime Kuma."
+Cache Items,Item Cache
+List listening network ports using netstat or ss utility.,Daftarkan port jaringan listening menggunakan utilitas netstat atau ss.
+"OK, and you can put",Anda bisa memasukkan
+Remember that you can always,Ingat bahwa Anda selalu bisa
+Translating visible text...,Menerjemahkan teks yang terlihat...
+Unsubscribe,Berhenti berlangganan
+"Feel free to open pull requests; we welcome contributions! However, for significant changes, it's best to open an issue beforehand. Make sure to review our","Buka pull request dengan cara yang Anda inginkan; kami menghargai kontribusi! Namun, untuk perubahan signifikan, terutama jika mempengaruhi fitur utama atau sistem secara keseluruhan, sebaiknya buka issue terlebih dahulu. Pastikan untuk membaca panduan kami."
+"Scott reruns the evals after adding canvas context and uses the results mainly as directional feedback rather than as definitive proof of quality. He explains that the current scores are still weak, so even if numbers improve, the team should be cautious about over-interpreting a single run. Scott also discusses the tradeoff between sending a serialized canvas versus a screenshot, noting that images can help in some cases but constrain you to multimodal models and can miss large canvases.","Scott menjalankan ulang evaluasi setelah menambahkan konteks canvas dan menggunakan hasilnya utamanya sebagai umpan balik arah bukan bukti definitif kualitas. Dia menjelaskan bahwa skor saat ini masih lemah, jadi meskipun angka-angka meningkat, tim harus berhati-hati dalam menerjemahkan hasil dari satu kali jalannya saja. Scott juga membahas perbandingan antara mengirimkan canvas yang serilasi versus tangkapan layar, menyebutkan bahwa gambar dapat membantu pada beberapa kasus tetapi membatasi Anda pada model multimodal dan bisa melewatkan canvas yang besar."
+New Courses,Kursus Baru
+Inspect HTTP response headers using curl -I command.,Periksa header respons HTTP menggunakan perintah curl -I.
+Episode 151,Episod 151
+"Scott introduces the idea of letting the agent see the current canvas and argues that raw JSON is a naive but expensive way to expose that state to an LLM. He compares JSON, XML, YAML, and TOON, and explains that TOON is more token-efficient and therefore better suited for structured context sent to the model. Scott then starts building a serializer to convert Excalidraw canvas data into a compact representation the agent can consume.","Scott mengintroduksi konsep memungkinkan agen melihat canvas yang saat ini terbuka dan berargumen bahwa JSON mentah adalah cara sederhana tetapi mahal untuk mengekspos keadaan tersebut kepada LLM. Dia membandingkan JSON, XML, YAML, dan TOON, dan men yang terstruktur yang dikirimkan kepada model. Scott kemudian mulai membangun sebuah serializer untuk mengonversi data canvas Excalidraw menjadi representasi yang kompak yang dapat dimengerti oleh agen."
+(or whatever you want) for your project. Next you'll need to open your terminal in your folder.,"(atau apa pun yang Anda inginkan) untuk proyek Anda. Selanjutnya, Anda akan membutuhkan untuk membuka terminal Anda di dalam folder tersebut."
+Installation on no-gui systems,Penginstalan pada sistem tanpa GUI (no-gui)
+"Scott demonstrates filtering messages to keep the LLM focused, setting up chat history, and streaming text generation. He shows how to handle tool calls and append responses to maintain the conversation flow.","Scott menunjukkan cara memfilter pesan untuk menjaga LLM fokus, merencanakan riwayat percakapan, dan mengirimkan teks secara real-time. Dia menunjukkan bagaimana cara menghandle panggilan alat dan menambah respons untuk mempertahankan alur"
+Cloudflare Agent Q&A and Summary,Pertanyaan dan Jawaban tentang Cloudflare Agent serta Ringkasan
+Popular Series,Serie Populer
+Demo of the Collection of Qwen Image Edit LoRAs,Demo Koleksinya dari Qwen Image Edit LoRAs
+Use this when the user asks you to create,Gunakan saat pengguna meminta Anda untuk membuat
+Fixed,Diperbaiki
+Scott gives a brief tour of the project repo. The application is an AI-assisted Excalidraw drawing app. The focus of the course will be building and improving that AI agent so it can generate diagrams from user prompts. All the notes for the lessons are also located in the repo and the notes website can be run with `npm run docs`.,Scott memberikan tour singkat tentang repositori proyek. Aplikasi ini adalah aplikasi menggambar yang dibantu oleh kecerdasan buatan (AI) berbasis Excalidraw. Fokus kursus akan terletak pada pembuatan dan perbaikan agen AI tersebut agar dapat menghasilkan diagram dari prompt pengguna. Semua catatan untuk pelajaran juga terdapat dalam repositori dan situs catatan dapat dijalankan dengan `npm run docs`.
+attachEventListeners(),menambahkanAtauMenghapusListenerEvent
+Use `WHERE mode = 'translate'` clause to filter cache queries.,Gunakan klausa `WHERE mode = 'translate'` untuk memfilter kueri cache.
+Agent Loop Overview,Overview Agent Loop
+Changelog,Log perubahan
+Episode 47,Episod 47
+"Eps 03 - Tales of Demons and Gods Season 10 Episode 03 Subtitle Indonesia - July 18, 2026",Episod 3 - Cerita Rakyat Setan dan Dewa Musim 10 Episode 3 Subtitle Bahasa Indonesia - 18 Juli 2026
+Clear translation history,Hapus riwayat terjemahan
+Edit this page,Edit halaman ini
+"7,090 repo pointers",7.090 pointer repositori
+"Functional programming enables you to write more predictable, bug-free code. Learn functional techniques with tools like map/reduce/filter, pure functions, and immutability.","Pemrograman fungsional memungkinkan Anda menulis kode yang lebih dapat diprediksi dan bebas dari kesalahan. Pelajari teknik-teknik fungsional dengan bantuan alat seperti map/reduce/filter, fungsi bersih, dan keimetuable."
+Deploying full-stack web applications to Vercel and Cloudflare Workers.,Melakukan deployment aplikasi web full-stack ke Vercel dan Cloudflare Workers.
+May,Mei
+Unit testing React components with Vitest and React Testing Library.,Pengujian unit komponen React dengan Vitest dan React Testing Library.
+"Scott runs the eval script to generate the scores. He then visits the Braintrust dashboard to review the results. Inputs and Outputs from each run can be inspected, and Briantrust provides some additional features for exploring the dataset.","Scott menjalankan skrip eval untuk menghasilkan skor. Kemudian, dia membuka dashboard Braintrust untuk memeriksa hasilnya. Input dan Output dari setiap eksekusi dapat diperiksa, serta Braintrust menyediakan beberapa fitur tambahan untuk mengeksplorasi dataset."
+Function calling allows LLMs to interact with external APIs and databases.,Panggilan fungsi memungkinkan LLM untuk berinteraksi dengan API luar dan database.
+Related Episodes,Episodes Terkait
+16:44:51 UTC+7,16:44:51 WIB
+". ""WhatsApp"" as well as related names, marks, emblems and images are registered trademarks of their respective owners. Also it is not guaranteed you will not be blocked by using this method. WhatsApp does not allow bots or unofficial clients on their platform, so this shouldn't be considered totally safe.",". ""WhatsApp"" serta nama, tanda merk, simbol dan gambar lainnya adalah merek dagang milik masing-masing pemilik. Juga tidak dijamin Anda tidak akan diblokir menggunakan metode ini. WhatsApp tidak memperbolehkan bot atau perangkat lunak non-official pada platform mereka, sehingga ini tidak dapat dipandang sebagai aman sepenuhnya."
+Use `chrome.tabs.sendMessage()` to communicate with content scripts.,Gunakan `chrome.tabs.sendMessage()` untuk berkomunikasi dengan content script.
+"I'm taking courses on the Master.dev Beginner learning path, and Brian Holt is great. His course website is informative and interactive.","Saya sedang mengikuti kursus di jalur belajar pemula dari Master.dev, dan Brian Holt sangat bagus. Situs web kursusnya informatif dan interaktif."
+eng_Latn-ayr_Latn,Bahasa Indonesia-Indonesia
+Action Drama,Drama Aksi
+🛠️ How to Use & Train,🛠️ Cara Menggunakan dan Melatih
+Aider v0.79.1,Aider versi 0.79.1
+"One key takeaway? Learning by doing is essential. While listening and watching are great, it’s the hands-on practice—building apps and experimenting with new features—that truly solidifies knowledge. That’s why I’ve been sharing posts and demos of my work along the way. 😊","Satu hal yang perlu diambil? Belajar dengan praktek adalah penting. Meskipun mendengarkan dan menonton sangat baik, latihan tangan—membangun aplikasi dan bermain-main dengan fitur baru—yang benar-benar memperkuat pengetahuan. Itulah sebabnya saya telah berbagi postingan dan demo dari pekerjaan saya sepanjang jalan. 😊"
+Version history,sejarah versi
+Scan complete!,Scan selesai!
+Access denied,Akses ditolak
+Notifications,Notifikasi
+Slice of Life,Hidup Sehari-hari
+"Eps 02 - Tales of Demons and Gods Season 10 Episode 02 Subtitle Indonesia - July 18, 2026",Epsiode 02 - Cerita Para Setan dan Dewa Musim 10 Episode 02 Subtitle Bahasa Indonesia - 18 Juli 2026
+October,Oktober
+Sign in with Google,Masuk dengan Google
+sentence_eng_Latn,kalimat_eng_Latn
+Managing cloud infrastructure using Terraform Infrastructure as Code (IaC).,Mengelola infrastruktur cloud menggunakan Terraform Infrastructure as Code (IaC).
+Use ChatGPT to jump-start August recess planning by uploading past schedules and asking for fresh district/state event ideas tied to current issues.,Gunakan ChatGPT untuk memulai perencanaan liburan bulan Agustus dengan mengunggah jadwal-jadwal yang pernah ada dan meminta ide acara baru di tingkat distrik atau negara yang terkait dengan isu-isu saat ini.
+Core Coursework,Kurikulum Inti
+Internal Server Error,Kesalahan Server Internal
+Error: Model not found.,Error: Model tidak ditemukan.
+Wednesday,Rabu
+Testing Fundamentals,Dasar Pengujian
+Merge,Gabungkan
+Please log in,Silakan masuk
+MongoDB Collection,Koleksi MongoDB
+Copied!,Tersalin!
+Readiness probe verifies container is ready to handle user traffic.,Readiness probe memverifikasi kontainer siap menangani lalu lintas pengguna.
+"Using ORMs in modern web development: Prisma, Drizzle, and TypeORM.","Menggunakan ORM dalam pengembangan web modern: Prisma, Drizzle, dan TypeORM."
+Render translated subtitles on top of video canvas overlay.,Render subtitle yang diterjemahkan di atas hamparan canvas video.
+Use <code>npm install</code> to install project dependencies.,Gunakan <code>npm install</code> untuk menginstal dependensi proyek.
+Let's dive into the code and see how it works.,Mari kita langsung ke kodenya dan lihat cara kerjanya.
+Sunday,Minggu
+"Scott walks through a few fundamental scoring concepts to understand when establishing evals. These include manual vs automated scorers, pass@k and pass^k, and capabilities vs regression evals.","Scott menjelaskan beberapa konsep skor dasar untuk memahami saat menetapkan evaluasi. Ini termasuk pembedaan antara pemangkas manual dan otomatis, pass@k dan pass^k, serta evaluasi kapabilitas versus evaluasi regresi."
+Already have an account?,Sudah memiliki akun?
+September,September
+"Okay, cool! How long do your band's shows usually last?  I just want to stay organized and plan out my schedule around it.","Baik, oke! Berapa lama durasi pertunj"
+Using Agent in Worker & Eval,Menggunakan Agens dalam Pekerja dan Evaluasi
+Export the function as default using `export default main;`.,Ekspor fungsi sebagai default menggunakan `export default main;`.
+# Procurement,Pengadaan
+Use `String.prototype.trim()` to strip leading and trailing whitespace.,Gunakan `String.prototype.trim()` untuk menghapus spasi di awal dan akhir.
+Help,Bantuan
+Debugging,Pen-debag-an
+Loss value decreased from 2.4 to 0.15.,"Nilai loss berkurang dari 2,4 menjadi 0,15."
+Create polls,Buat survei
+Catch you guys in the next tutorial! Bye!,Sampai jumpa teman-teman di tutorial berikutnya! Daa!
+"Each skill should do one thing well. Instead of a ""do everything"" skill, create separate skills for distinct tasks.","Setiap kemampuan harus melakukan satu hal dengan baik. Sebaliknya dari ""kemampuan untuk semua"", buat kemampuan terpisah untuk tugas yang berbeda."
+Conclusion: The future of AI-powered developer tools and web translation.,Kesimpulan: Masa depan tool developer berbasis AI dan terjemahan web.
+"Nope I've got the day off! I got up super early, but I have to admit that I will probably take a nap. Tell me more about these goats!","Tidak, saya libur hari ini! Saya bangun sangat pagi, tapi harus akui bahwa mungkin akan istirahat sebentar. Bisa ceritakan lebih lanjut tentang kambing-kambing tersebut?"
+About Microsoft Azure (for ages 13-17),Microsoft Azure (untuk usia 13-17)
+diagram viewer,pembaca diagram
+Support hardcoded burn-in subtitles for exported video files.,Dukung subtitle burn-in hardcode untuk file video yang diekspor.
+Course Details,Rincian Kursus
+"Scott investigates a regression in which the agent suddenly stops putting text inside shapes, treating the behavior change as a strong signal that the bug lies in deterministic code rather than the model itself. He narrows the issue down by smoke-testing different prompts, logging the model’s proposed elements, and confirming that the agent is actually returning the expected text data. Scott concludes that the problem is caused by cross-call binding logic in the client code and identifies a helper on the next branch that fixes it.","Scott meneliti sebuah regressi di mana agen tiba-tiba berhenti memasukkan teks ke dalam bentuk, menganggap perubahan perilaku sebagai sinyal kuat bahwa masalahnya terletak pada kode yang deterministik bukan model itu sendiri. Dia menyempitkan masalah dengan melakukan uji semprotan pada berbagai prompt, mencatat elemen yang disarankan oleh model, dan memastikan agen sebenarnya mengembalikan data teks yang diharapkan. Scott kesimpulan bahwa masalah disebabkan oleh logika pengikatan antar-pemanggilan dalam kode klien dan mengidentifikasi bantuan pada cabang berikutnya yang memperbaiki masalah tersebut."
+Lord of the Ancient God Grave,Tuhan dari Makam Dewa Kuno
+Continue Watching,Lanjutkan Penontonan
+"Amazing course. I learned a lot about improving agents, and what an AI engineer does. Very motivated to apply this knowledge in real projects!",Kursus hebat. Saya banyak belajar tentang memperbaiki agen dan apa yang dilakukan seorang insinyur AI. Sangat termotivasi untuk menerapkan pengetahuan ini dalam proyek nyata!
+to bind the,bind the
+Lingwu Continent,Continent Lingwu
+Run `python prepare_dataset.py` to generate train and test splits.,Jalankan `python prepare_dataset.py` untuk menghasilkan split train dan test.
+sentence_ayr_Latn,kalimat_ayr_Latn
+Are you sure you want to delete this?,Apakah Anda yakin ingin menghapus ini?
+Overview,Ringkasan
+Let's refactor this function to make it cleaner and more readable.,Mari kita refaktor fungsi ini agar lebih bersih dan mudah dibaca.
+Log rotation configured to retain 14 days of compressed access logs.,Rotasi log dikonfigurasi untuk menyimpan 14 hari file log akses terkompresi.
+Terraform plan previews resources to be created or modified.,Terraform plan mempratinjau sumber daya yang akan dibuat atau diubah.
+Click here to learn more.,Klik di sini untuk mempelajari lebih lanjut.
+Restore PostgreSQL database from SQL dump file using `pg_restore`.,Pulihkan database PostgreSQL dari file SQL dump menggunakan `pg_restore`.
+Configurable Processing,Pengolahan yang Dapat Diatur
+This is the default,Ini adalah defaultnya
+Scott summarizes the Cloudflare Agent loop and analyzes the JSON returned to the client by the LLM. He also provides more detail about how architecture behind Cloudflare workers and the edge runtime.,Scott merangkum loop Cloudflare Agent dan menganalisis JSON yang dikembalikan ke klien oleh LLM. Dia juga memberikan detail lebih lanjut tentang arsitektur di balik Cloudflare Workers dan runtime edge.
+56 hours of great instructors and brilliant content.,56 jam dengan instruktur hebat dan konten yang luar biasa.
+Let's test our edge cases to make sure our code is rock solid.,Mari kita tes edge case kita untuk memastikan kode kita benar-benar stabil.
+3 days ago,3 hari yang lalu
+". It's a free and open-source editor available for Windows, macOS, and Linux. Visual Studio Code offers a plethora of features, extensions, and a vibrant community, making it immensely popular and user-friendly.",". Ini adalah editor yang gratis dan terbuka untuk Windows, macOS, dan Linux. Visual Studio Code menawarkan ribuan fitur, ekstensi, dan komunitas yang hidup, membuatnya sangat populer dan mudah dipakai."
+Let me show you a cool trick to clean up your code.,Saya bakal tunjukkan trik keren untuk merapikan kode Anda.
+Backend System Design,Desain Sistem Backend
+Desainer Antarmuka Pengguna,Desainer Interface Pengguna
+Callback function memoized with `useCallback` hook to prevent re-renders.,Fungsi callback dimemoize dengan hook `useCallback` untuk mencegah render ulang.
+Coding an Agent,Mengkodekan Agen
+14:15:02 UTC+7,14:15:02 WIB
+Frontend Masters,Dokumentasi Pengembang
+TRUE — The troposphere is the lowest layer of Earth's atmosphere where most weather occurs.,TRU—Lapisan troposfer adalah lapisan atmosfer Bumi yang paling rendah di mana sebagian besar cuaca terjadi.
+No VPC restrictions,Tanpa batasan VPC
+14:20:05 UTC+7,14:20:05 WIB
+"Scott explains tool calling, showing how LLMs can interact with the outside world through custom functions and execution. He demonstrates defining a tool and emphasizes its importance for giving agents context and enabling tasks beyond basic text generation.","Scott menjelaskan penggunaan alat, menunjukkan bagaimana LLM dapat berinteraksi dengan dunia luar melalui fungsi dan eksekusi yang dikustomisasi. Dia menunjukkan cara mendefinisikan alat dan memfokuskan pentingnya hal itu untuk"
+"Deploying static content is one thing. But to be a “fullstack engineer”, you need to understand server administration, SSH keys, DNS, and the full development-to-production CI/CD pipeline. Even if you just work on the frontend, these skills to allow you to effectively communicate with the server team and make better decisions about your code.","Mengdeploy konten statis adalah satu hal. Namun, untuk menjadi ""fullstack engineer"", Anda perlu memahami administrasi server, kunci SSH, DNS, dan seluruh pipeline CI/CD dari pengembangan hingga produksi. Bahkan jika Anda hanya bekerja pada bagian frontend, kemampuan ini memungkinkan Anda berkomunikasi dengan tim server secara efektif dan membuat keputusan yang lebih baik tentang kode Anda."
+I'm thrilled to announce that I've successfully completed the comprehensive Professional Learning Path by Master.dev! 🚀,Senang berbagi bahwa saya telah berhasil menyelesaikan jalur belajar profesional lengkap dari Master.dev! 🚀
+Monitor server CPU utilization metrics in real time with Grafana dashboard.,Pantau metrik penggunaan CPU server secara real-time dengan dashboard Grafana.
+Error: Request timeout.,Error: Permintaan habis waktu.
+Visual Studio Professional,Visual Studio Pro
+"What an incredible path, Learned a lot!","Jalanannya luar biasa sekali, banyak yang saya pelajari!"
+Translating video caption cue 1 out of 50...,Menerjemahkan cue caption video 1 dari 50...
+Set `DEBUG=true` in your `.env` file to enable verbose logging.,Setel `DEBUG=true` di file `.env` Anda untuk mengaktifkan pengelogan terperinci.
+Select voice accent and pitch for text-to-speech engine.,Pilih aksen suara dan nada untuk engine text-to-speech.
+"{'messages': [{'role': 'system', 'content': 'You are WithinUsAI Master Scholars Earth & Climate Science. Provide concise, factual answers.'}, {'role': 'user', 'content': ""True or False (academics): Earth's lithosphere is divided into tectonic plates that move relative to each other.""}]}","{'messages': [{'role': 'system', 'content': 'Anda adalah Ahli Penyandang Diri Besar WithinUsAI. Berikan jawaban singkat dan fakta.'}, {'role': 'user', 'content': ""Benar atau Salah (ilmu pengetahuan): Lithosfer Bumi dibagi menjadi plafon tektogenik yang bergerak relatif satu sama lain.""}]}"
+"Scott covers running and interpreting evaluations, including average scores and analyzing individual runs to understand agent behavior. He discusses naming strategies for experiments, examining successes and failures, forming hypotheses for improvement, and emphasizes the essential role of human expertise in the iterative evaluation process.","Scott mengurus pengisian dan interpretasi evaluasi, termasuk skor rata-rata dan analisis run individu untuk memahami perilaku agent. Dia membahas strategi penamaan untuk eksperimen, mengeksplorasi keberhasilan dan kegagalan,"
+Preferences,Preferensi
+Thank you for watching! Leave a comment below if you have any questions.,Terima kasih telah menonton! Tinggalkan komentar di bawah jika Anda memiliki pertanyaan.
+Episode 87,Episod 87
+Password must be at least 8 characters long.,Kata sandi harus terdiri dari minimal 8 karakter.
+Upgraded from,Pembaruan dari
+Code of Conduct,Etika Kode
+ACK_PLAYED,KONFIRMASI_DINIHAL
+Cybersecurity Data Size,Ukuran Data Keamanan Cyber
+Submit,Kirim
+Welcome back!,Selamat datang kembali!
+Extract raw audio stream from video file for speech recognition.,Ekstrak stream audio mentah dari file video untuk pengenalan suara.
+"Scott explains sandboxing to run code safely, covering methods like VMs, Docker, and services like Daytona. He demonstrates creating a shell command tool in JavaScript and tests it by running commands through the AI.","Scott menjelaskan sandboxing untuk menjalankan kode dengan aman, menyebut metode seperti VMs, Docker, dan layanan seperti Daytona. Dia menunjukkan cara membuat alat perintah shell dalam JavaScript dan mengujiinya dengan menjalankan perintah melaluinya AI."
+Loading...,Memuat...
+", you can press",", Anda dapat menekan"
+Coding Agent Researchers,Peneliti Agens Coding
+"Now, let's test this in the browser and see what happens.","Sekarang, mari kita tes di browser dan lihat hasilnya."
+Bookmarks,Penanda
+Professional CSS: Build a Website from Scratch,CSS Profesional: Bangun Situs Web
+16:12:58 UTC+7,16:12:58 WIB
+TypeScript has become a standard in many professional development environments. A fundamental understanding of TypeScript will give you the tools to work in and evolve large code bases.,TypeScript telah menjadi standar di banyak lingkungan pengembangan profesional. Memahami dasar-dasar TypeScript akan memberikan Anda alat untuk bekerja dan mengembangkan basis kode yang besar.
+Excellent course! Really liked the workflows for known repeated paths. Deterministic systems are the key to enterprise production AI!,Kursus hebat! Saya sangat suka dengan workflow untuk jalur yang sering terulang. Sistem deterministik adalah kunci dalam produksi AI perusahaan!
+Checking server...,Memeriksa server...
+"Eps 05 - Tales of Demons and Gods Season 10 Episode 05 Subtitle Indonesia - July 25, 2026",Eps 05 - Cerita Dewa dan Raja Musim 10 Episode 5 Subtitle Indonesia - 25 Juli 2026
+"Scott Moss, a Senior Software Engineer at Netflix, begins the course by framing AI engineering as a new discipline emerging across companies. He starts by previewing the project built throughout the course and discusses how it will be improved with evals, context engineering, and advanced strategies.","Scott Moss, seorang Senior Software Engineer di Netflix, memulai kursus ini dengan menggambarkan AI engineering sebagai disiplin baru yang mulai berkembang di berbagai perusahaan. Dia memulainya dengan memberikan preview proyek yang dibangun selama kursus dan membahas bagaimana proyek tersebut akan ditingkatkan dengan evaluasi, pengembangan konteks, dan strategi lanjutan."
+Keep in mind that this feature is still in experimental mode.,Perlu diingat bahwa fitur ini masih dalam mode eksperimental.
+Delete access key,Hapus kunci akses
+Please wait...,Mohon tunggu...
+Smooth CSS transitions applied with `transition-all duration-300 ease-in-out`.,Transisi CSS yang mulus diterapkan dengan `transition-all duration-300 ease-in-out`.
+Runtime,Waktu jalur
+10M - 100M,10 MB - 100 MB
+Posted by: admin,Ditulis oleh: admin
+June,Juni
+Save,Simpan
+Parse VTT timestamps and cue text into structured JavaScript objects.,Parse stempel waktu VTT dan teks cue ke dalam objek JavaScript terstruktur.
+Don't forget to push your code to GitHub when you're done.,Jangan lupa untuk push kode Anda ke GitHub setelah selesai.
+Scoring Overview,Pendahuluan Penilaian
+Rendering 3D graphics in browser canvas using WebGPU and Three.js.,Merender grafik 3D di canvas browser menggunakan WebGPU dan Three.js.
+"As for code editors, you have the freedom to choose any editor you prefer. However, we recommend","Sebagai untuk editor kode, Anda memiliki kebebasan untuk memilih mana yang Anda suka. Namun, kami merekomendasikan"
+Kurikulum Inti,Kurikulum Utama
+Hands down best AI course out there!,"Hands down, ini adalah kursus AI terbaik yang ada!"
+Matias Gonzalez,Matías González
+optional in a way.,optional dalam cara itu.
+Here's the base code to get you started:,Berikut adalah kode dasar untuk membantu Anda memulai:
+Team Sports,Tim Olahraga
+Quick start,Panduan Cepat
+Swallowed Star: Battle of the Primordial Star,Swallowed Star: Battle of the Primordial Star - Bintang Diselimuti: Pertempuran Bintang Primitif
+Monday,Senin
+"Scott focuses on improving eval fidelity by making the server-side simulator more closely match what Excalidraw does in the real product. He explains that because the client-side Excalidraw packages are not easy to reuse on the server, the course uses a custom shim, and any mismatch there can distort eval results. Scott’s goal in this lesson is to align those two realities so the agent sees the same kinds of bound-element relationships during evals that it would see in production.","Scott fokus pada peningkatan akurasi evaluasi dengan membuat simulasi sisi server lebih mirip dengan apa yang dilakukan Excalidraw dalam produk nyata. Dia menjelaskan bahwa karena paket Excalidraw sisi klien sulit untuk direpakai di sisi server, kursus ini menggunakan shim kustom, dan setiap ketidakcocokan di sini dapat mengubah hasil evaluasi. Tujuan Scott dalam pelajaran ini adalah untuk menyamakan kedua realitas tersebut sehingga agen melihat hubungan yang sama antara elemen terikat selama evaluasi seperti yang akan dilihatnya dalam produksi."
+OCR engine extracted text from image file using Tesseract.js.,Engine OCR mengekstraksi teks dari file gambar menggunakan Tesseract.js.
+Initialize your project,Mulai proyek Anda
+Close,Tutup
+"As you can see, the data is coming back from the server as expected.","Seperti yang Anda lihat, datanya kembali dari server sesuai harapan."
+Course Notes,Nota Pelajaran
+Previous,Sebelumnya
+"You're shaming us mortals with that routine!  I rolled out of bed, grabbed a cup of coffee, and watched the goats frolic while the sun came up.  Are you working today?","Anda mengejutkan kita hamba-hamba biasa dengan rutinitas itu! Saya bangun dari tempat tidur, ambil secangkir kopi, dan menonton seekor seekor kambing bermain sambil matahari terbit. Anda bekerja hari inikah?"
+Log Out,Keluar
+Segment audio recording into chunks for parallel transcription.,Bagi rekaman audio menjadi potongan untuk transkripsi paralel.
+"Scott walks through writing an evaluation, covering scores, mocked data, and executors. He demonstrates creating an evaluation file for file tools, setting up an executor with single-turn mocks, and using evaluators to convert outputs into quantitative scores.","Scott melalui penulisan sebuah evaluasi yang mencakup skor, data yang diuji, dan pemimpin. Dia menunjukkan cara membuat file evaluasi untuk alat file, merancang seorang pemimpin dengan uji tunggal, dan menggunakan evaluators untuk mengonvers"
+API key is missing or invalid.,API key tidak ada atau tidak valid.
+"That's pretty cool, right?","Cukup keren, bukan?"
+15:26:40 UTC+7,15:26:40 WIB
+Reset,Atur Ulang
+Fine-tuning Large Language Models with QLoRA and PEFT adapters.,Melakukan fine-tuning Large Language Models dengan QLoRA dan adapter PEFT.
+Create TypeScript-based Web Applications with a Framework Led by Google,Buat Aplikasi Web Berbasis TypeScript dengan Framework yang Diciptakan oleh Google
+Web Dev Simplified,Sederhanakan Pengembangan Web
+Set up domain DNS A records to point to server public IP address.,Setel rekaman DNS A domain untuk mengarah ke alamat IP publik server.
+Super recommended.,Sangat disarankan.
+Course Archive,Arsip Kursus
+# Government,# Pemerintah
+Next month,Bulan depan
+Set up automated alert notifications for server downtime events.,Setel notifikasi peringatan otomatis untuk peristiwa downtime server.
+No action yet,Belum ada aksi
+Your Path to Becoming a Senior Web Developer!,Jalur Anda Menuju Menjadi Pengembang Web Senior!
+Using Web Workers to offload heavy computations from main UI thread.,Menggunakan Web Worker untuk memindahkan komputasi berat dari thread UI utama.
+Dokumentasi Pengembang,Dokumentasi Pengguna
+Deploy fine-tuned model to Ollama runtime server for local inference.,Melakukan deployment model hasil fine-tune ke server runtime Ollama untuk inferensi lokal.
+You can inspect the payload to see what data is being sent.,Anda bisa memeriksa payload untuk melihat data apa yang sedang dikirim.
+Manusagents/GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-and-more-Distillation-Dataset,Manusagents/GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-dan-lebih-banyak-daftar-pengurusan
+"Yao Shen Ji 10th Season atau Tales of Demon and God 10th Season - Nie Li melakukan perjalanan ke Sekte Dewa Iblis, menjalin persahabatan baru, memulai perjalanan baru, dan bersumpah untuk menggulingkan Kaisar Suci dan melindungi Kota Kemuliaan!","Cerita Nenek Moyang Kaisar Ke-10 atau Kisah Nenek Moyang dan Dewa - Nie Li melakukan perjalanan ke Sekte Dewa Iblis, menjalin persahabatan baru, memulai perjalanan baru, dan bersumpah untuk menggulingkan Kaisar Suci dan melind"
+"Requests pass through security, privacy, and content validation layers that block PII leakage, prompt injection, and malicious sources.","Pesan melalui lapisan keamanan, privasi, dan validasi konten yang memblokir perampasan PII, prompt injection, dan sumber berbahaya"
+Episode 279,Episod 279
+"addOrRemoveLabels(labelIds, chatIds)","tambahAtauHapusLabel(labelIds, chatIds)"
+Constant,Konstanta
+Use `random.seed(42)` to ensure reproducible dataset splits.,Gunakan `random.seed(42)` untuk memastikan split dataset yang dapat direproduksi.
+Restore database from backup dump file using command line utility.,Pulihkan database dari file dump cadangan menggunakan utilitas command line.
+Parameter,Parameter
+Adjust audio speech synthesis rate for text-to-speech voice.,Sesuaikan tingkat kecepatan sintesis suara audio untuk suara text-to-speech.
+Searching order by alphabet name A to Z.,Mencari berdasarkan nama abjad dari A sampai Z.
+I am an educator and would like to use Datadog in my curriculum.,Saya adalah pendidik dan ingin menggunakan Datadog dalam kurikulum saya.
+Update now,Perbarui sekarang
+💎 Value to the Open-Source AI Community,💎 Nilai bagi Masyarakat Sumber Terbuka AI
+Server connected,Server terhubung
+"Scott walks through creating a simple ""Hello World"" LLM, covering environment setup, basic imports, and a function to interact with the model. He demonstrates running prompts in the terminal to show how easily an LLM can generate text.","Scott melalui pembuatan sebuah ""Halo Dunia"" LLM yang sederhana, mencakup penyiapan lingkungan, impor dasar, dan fungsi untuk berinteraksi dengan model. Dia menunjukkan bagaimana cara menjalankan prompt di terminal untuk menunjukkan"
+Dataset Viewer,Penampil Dataset
+Number of rows:,Jumlah baris:
+Learn more about Mobile App Development,Pelajari lebih lanjut tentang Pembangunan Aplikasi Mobile
+Penuh Stack,Stack Penuh
+Analyze Eval Results,Analisis Hasil Evaluasi
+02:12:35 - 02:24:27,02:1
+March,Maret
+Remember me,Ingat saya
+I've been using this tool for months and it works like a charm.,Saya sudah memakai tool ini berbulan-bulan dan kinerjanya sangat memuaskan.
+"I've had an extensive amount of enjoyment learning from Will Sentance, Kyle Simpson, Maximiliano Firtman, Jen Kramer, Jem Young, Mike North, Anjana Vakil, and Brian Holt; Their enthusiasm and in-depth knowledge made the entire process both fun and highly informative.","Saya memiliki banyak kesenangan dalam belajar dari Will Sentance, Kyle Simpson, Maximiliano Firtman, Jen Kramer, Jem Young, Mike North, Anjana Vakil, dan Brian Holt; Enthusiasme dan pengetahuan mendalam mereka membuat seluruh proses ini menyenangkan dan sangat informatif."
+Let me quickly refresh the page to see the updated changes.,Saya bakal refresh halaman dengan cepat untuk melihat perubahannya.
+Check for Chinese characters using regex `/[\\u4e00-\\u9fff]/`.,Periksa karakter Cina menggunakan regex `/[\\u4e00-\\u9fff]/`.
+Kick group participants,Mengeluarkan Anggota dari Grup
+Explore AI Apps,Explore Aplikasi AI
+Follow a clear path and master the tools used by top developers.,Ikuti jalur yang jelas dan kuasai alat-alat yang digunakan oleh pengembang terbaik.
+"Scott demonstrates executing tool calls sequentially, updating the UI to show progress, and pushing results into the messages array to maintain conversation flow. He also highlights presenting results in a user-friendly way for non-technical users.","Scott menunjukkan cara menjalankan panggilan alat secara berurutan, memperbarui UI untuk menunjukkan kemajuan, dan menyisihkan hasil ke dalam array pesan untuk mempertahankan alir percakapan. Dia juga menonjolkan cara menghadir"
+Check HTTP response headers using `curl -I https://domain.com`.,Periksa header respons HTTP menggunakan `curl -I https://domain.com`.
+Something went wrong,Terjadi kesalahan
+ChatGPT for marketing,ChatGPT untuk pemasaran
+Python Glossary,Glosarium Python
+"Tavily Crawl combines both mapping and extraction operations, so the cost is the sum of both:","Tavily Crawl memadukan kedua operasi petikan dan ekstraksi, sehingga biaya adalah jumlah dari keduanya:"
+Archive Files (tar.gz),Arsip Berkas (tar.gz)
+"approveGroupMembershipRequests(groupId, options)","setujuiPermintaanAnggotaGrup(groupId, options)"
+Library,Pustaka
+Menu,Menu
+Payload,Muatan
+Add the `aria-label` attribute to improve web accessibility.,Tambahkan atribut `aria-label` untuk meningkatkan aksesibilitas web.
+Context Engineering Overview,Pendahuluan tentang Konteks Engineering
+Structured Variables,Struktur Variabel
+Querying vector database for top 5 most relevant context documents.,Melakukan kueri pada database vektor untuk 5 dokumen konteks paling relevan.
+15:41:34 UTC+7,15:41:34 WIB
+Copy to clipboard,Salin ke papan klip
+All Content,Semua Isi Konten
+Wajib di baca,Wajib Dibaca
+"{'messages': [{'role': 'system', 'content': 'You are WithinUsAI Master Scholars Earth & Climate Science. Provide concise, factual answers.'}, {'role': 'user', 'content': 'True or False (academics): Greenhouse gases absorb and re-emit infrared radiation, contributing to the greenhouse effect.'}]}","Gas rumah kaca menyerap dan mengembalikan radiasi inframerah, kontribusi pada efek rumah kaca."
+Episode 233,Episod 233
+Run npm run dev to start dev server.,Jalankan npm run dev untuk memulai dev server.
+Authors,Penulis
+Yesterday,Kemarin
+Subtotal,Subtotal
+Keep learning. Keep leveling up.,Teruslah belajar. Teruslah naik kelas.
+Email Address,Alamat Email
+@ Chat Experience,@ Pengalaman Obrolan
+Statistics,Statistik
+Notice how smooth the animation feels on high refresh rate displays.,Perhatikan betapa mulusnya animasi ini terasa pada layar refresh rate tinggi.
+Utility Classes,Kelas Utility
+"Oh my God, are you not collapsing?","Oh Tuhan, kamu tidak meledak kan?"
+More,Lebih Banyak
+CONTACT_CARD_MULTI,KARTU_PENGGALANGAN_BERBAGAI
+Handling Attachments,Mengelola Lampiran
+"Functional-Light JavaScript, v3","JavaScript Fungsi Ringan, versi 3"
+Less,Lebih Sedikit
+Extensions,Ekstensi
+Where 73 open-source minds converge into one unified stream of intelligence,Di sinilah 73 pikiran terbuka-sumber berkonvergensi menjadi satu aliran kecerdasan yang terpadu
+Studio Data,Studi Data
+Establish a Baseline,Establisahkan Batas Dasar

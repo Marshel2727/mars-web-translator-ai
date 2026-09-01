@@ -1,0 +1,205 @@
+original_text,translated_text
+"Hey everyone, welcome back to the channel!","Halo semuanya, selamat datang kembali di channel ini!"
+"So in this video, we're going to fix a tricky bug in our React app.","Jadi di video kali ini, kita bakal memperbaiki bug yang cukup membingungkan di aplikasi React kita."
+"Alright, let's open up the terminal and run the dev server.","Oke, mari kita buka terminal dan jalankan dev server."
+"If you're stuck, don't worry, just drop a comment down below.","Kalau Anda mengalami kendala, jangan khawatir, tinggal tulis komentar di bawah."
+"Wait, why is this function returning undefined?","Tunggu, kenapa fungsi ini mengembalikan nilai undefined?"
+"Honestly, this new feature saved me so much time!","Jujur, fitur baru ini menghemat banyak waktu saya!"
+Let's take a quick look at how this works under the hood.,Mari kita lihat sebentar bagaimana cara kerjanya di balik layar.
+"Before we move on, make sure to hit that subscribe button!","Sebelum kita lanjut, pastikan untuk menekan tombol subscribe!"
+I was troubleshooting this issue for hours yesterday.,Saya sempat pusing menelusuri masalah ini berjam-jam kemarin.
+Does that make sense to you guys?,Apakah penjelasan ini cukup jelas untuk teman-teman?
+Let me show you a cool trick to clean up your code.,Saya bakal tunjukkan trik keren untuk merapikan kode Anda.
+"First of all, make sure you have Node.js installed.","Pertama-tama, pastikan Anda sudah menginstal Node.js."
+"If you haven't checked out the previous tutorial, go watch it first.","Kalau Anda belum nonton tutorial sebelumnya, tonton itu dulu ya."
+That's literally all you need to do to get it working!,Cuma itu saja yang perlu dilakukan agar fiturnya langsung berjalan!
+"Now, let's test this in the browser and see what happens.","Sekarang, mari kita tes di browser dan lihat hasilnya."
+"Oops, looks like we forgot to import the component!","Waduh, sepertinya kita lupa mengimpor komponennya!"
+Don't panic if you see this error message on your screen.,Jangan panik kalau melihat pesan kesalahan ini di layar Anda.
+This is actually a very common mistake among beginners.,Ini sebenarnya kesalahan yang sangat sering terjadi bagi pemula.
+Let's step through the code line by line to understand why it failed.,Mari kita periksa kodenya baris demi baris untuk memahami penyebab kegagalannya.
+You can find the full source code link in the description.,Anda bisa menemukan tautan kode sumber lengkapnya di deskripsi.
+So what we're going to do here is create a simple custom hook.,Jadi yang bakal kita lakukan di sini adalah membuat hook kustom sederhana.
+Notice how fast the page re-renders now?,Perhatikan betapa cepatnya halaman ini melakukan render ulang sekarang?
+"That's pretty cool, right?","Cukup keren, bukan?"
+Let's refactor this function to make it cleaner and more readable.,Mari kita refaktor fungsi ini agar lebih bersih dan mudah dibaca.
+I personally prefer using Tailwind CSS for rapid prototyping.,Saya pribadi lebih suka menggunakan Tailwind CSS untuk prototyping cepat.
+"Wait a minute, this variable isn't being used anywhere.","Tunggu sebentar, variabel ini tidak digunakan di mana pun."
+Let me quickly refresh the page to see the updated changes.,Saya bakal refresh halaman dengan cepat untuk melihat perubahannya.
+"If you enjoy this kind of content, consider giving this video a like!","Jika Anda menyukai konten seperti ini, jangan lupa berikan like pada video ini!"
+"Alright, that solves our first issue. Now onto the next one.","Oke, itu menyelesaikan masalah pertama kita. Sekarang lanjut ke yang berikutnya."
+You don't need to memorize all these syntax details.,Anda tidak perlu menghafal semua detail sintaksis ini.
+Just copy and paste this code snippet into your project.,Tinggal salin dan tempel cuplikan kode ini ke dalam proyek Anda.
+Let's see if this fixes our layout bug on mobile screens.,Mari kita lihat apakah ini memperbaiki bug tata letak di layar ponsel.
+I've been using this tool for months and it works like a charm.,Saya sudah memakai tool ini berbulan-bulan dan kinerjanya sangat memuaskan.
+Make sure to save your file before running the build command.,Pastikan untuk menyimpan file Anda sebelum menjalankan perintah build.
+"Let's break down this concept into smaller, simpler steps.",Mari kita urai konsep ini menjadi langkah-langkah yang lebih kecil dan sederhana.
+"Why did this happen? Well, let me explain.","Kenapa hal ini bisa terjadi? Nah, mari saya jelaskan."
+"As you can see, the data is coming back from the server as expected.","Seperti yang Anda lihat, datanya kembali dari server sesuai harapan."
+This approach is much more scalable in the long run.,Pendekatan ini jauh lebih skalabel untuk jangka panjang.
+Let's quickly check the server logs to see what's going on.,Mari kita periksa log server dengan cepat untuk melihat apa yang sedang terjadi.
+Everything looks clean and green. All tests passed!,Semuanya terlihat bersih. Semua pengujian berhasil lulus!
+"So, to summarize what we learned today...","Jadi, untuk merangkum apa yang kita pelajari hari ini..."
+"If you have any questions, feel free to leave a comment.","Jika Anda memiliki pertanyaan, jangan ragu untuk meninggalkan komentar."
+Thanks for sticking around until the end of the video!,Terima kasih sudah menyimak sampai akhir video!
+Catch you guys in the next tutorial! Bye!,Sampai jumpa teman-teman di tutorial berikutnya! Daa!
+Let's jump straight into the coding part.,Mari kita langsung masuk ke bagian penulisan kode.
+I'm going to create a new file named `utils.js`.,Saya bakal membuat file baru bernama `utils.js`.
+Pay close attention to how we structure our state management.,Perhatikan baik-baik bagaimana kita menata struktur manajemen state kita.
+"This might look a bit intimidating at first glance, but it's actually simple.","Ini mungkin terlihat agak rumit pada pandangan pertama, tapi sebenarnya sederhana."
+Let's test our edge cases to make sure our code is rock solid.,Mari kita tes edge case kita untuk memastikan kode kita benar-benar stabil.
+"If you encounter a CORS error, here is how you fix it.","Jika Anda mengalami kesalahan CORS, begini cara memperbaikinya."
+Let's restart our dev server to apply the configuration update.,Mari kita mulai ulang dev server untuk menerapkan pembaruan konfigurasi.
+This library makes working with APIs so much easier.,Library ini membuat kerja dengan API jadi jauh lebih mudah.
+Let's inspect the network tab in Google Chrome DevTools.,Mari kita periksa tab jaringan di Google Chrome DevTools.
+You can inspect the payload to see what data is being sent.,Anda bisa memeriksa payload untuk melihat data apa yang sedang dikirim.
+Let me know in the comments if you want a deep dive on this topic.,Beri tahu saya di kolom komentar jika Anda ingin pembahasan mendalam tentang topik ini.
+Don't forget to push your code to GitHub when you're done.,Jangan lupa untuk push kode Anda ke GitHub setelah selesai.
+This is a game changer for web developers.,Ini benar-benar mengubah peta permainan bagi developer web.
+Let's walk through an example together step by step.,Mari kita bahas sebuah contoh bersama-sama langkah demi langkah.
+Keep in mind that this feature is still in experimental mode.,Perlu diingat bahwa fitur ini masih dalam mode eksperimental.
+Always sanitize user inputs to prevent security vulnerabilities.,Selalu sanitasi input pengguna untuk mencegah kerentanan keamanan.
+Now let's see how this performs on slower network connections.,Sekarang mari kita lihat performanya pada koneksi jaringan yang lebih lambat.
+This CSS property handles responsive image scaling automatically.,Properti CSS ini menangani penskalaan gambar responsif secara otomatis.
+Let's wrap this component inside a Suspense boundary.,Mari kita bungkus komponen ini di dalam batas Suspense.
+Notice how smooth the animation feels on high refresh rate displays.,Perhatikan betapa mulusnya animasi ini terasa pada layar refresh rate tinggi.
+This simple optimization reduced our bundle size by half.,Optimasi sederhana ini memangkas ukuran bundle kita hingga separuhnya.
+Let me show you how to handle authentication tokens securely.,Saya bakal tunjukkan cara menangani token otentikasi secara aman.
+We're going to build a full-stack web app using Next.js and Tailwind.,Kita bakal membangun aplikasi web full-stack menggunakan Next.js dan Tailwind.
+"If you're enjoying this series, hit that subscribe button!","Jika Anda menikmati seri ini, tekan tombol subscribe itu!"
+Let's check out the official documentation for more details.,Mari kita lihat dokumentasi resminya untuk detail lebih lanjut.
+This parameter controls the maximum number of items returned.,Parameter ini mengontrol jumlah maksimum item yang dikembalikan.
+You can customize the styling to match your brand colors.,Anda bisa menyesuaikan penataan gaya agar cocok dengan warna brand Anda.
+Let's add some error boundaries to catch runtime exceptions.,Mari kita tambahkan error boundary untuk menangkap pengecualian runtime.
+This reduces latency and speeds up user interactions significantly.,Ini mengurangi latensi dan mempercepat interaksi pengguna secara signifikan.
+Let me know if you run into any issues during setup.,Beri tahu saya jika Anda mengalami masalah selama penyetelan.
+That's all for today's video. See you in the next one!,Sekian untuk video hari ini. Sampai jumpa di video berikutnya!
+Let's open up our code editor and get started.,Mari kita buka editor kode kita dan mulai.
+Make sure your environment variables are configured properly.,Pastikan variabel lingkungan Anda telah dikonfigurasi dengan benar.
+This approach keeps our codebase clean and maintainable.,Pendekatan ini menjaga codebase kita tetap bersih dan mudah dipelihara.
+Let's run `npm run build` to compile our production assets.,Mari kita jalankan `npm run build` untuk mengompilasi aset produksi kita.
+You can deploy this app to Vercel with just one click.,Anda bisa melakukan deployment aplikasi ini ke Vercel hanya dengan satu klik.
+Let me walk you through how the algorithm works under the hood.,Mari saya jelaskan bagaimana algoritma ini bekerja di balik layar.
+This keyboard shortcut saves me so much typing time.,Pintasan papan ketik ini menghemat banyak waktu mengetik saya.
+Always check the browser console for any hidden error messages.,Selalu periksa konsol browser untuk melihat pesan kesalahan yang tersembunyi.
+"Let's refactor this messy code into clean, modular functions.",Mari kita refaktor kode yang berantakan ini menjadi fungsi yang bersih dan modular.
+This hook allows us to manage local component state effortlessly.,Hook ini memungkinkan kita mengelola state komponen lokal dengan mudah.
+Make sure your API key is kept private and never exposed publicly.,Pastikan API key Anda dijaga kerahasiaannya dan tidak pernah dipublikasikan.
+Let me demonstrate how to set up WebSocket live updates.,Saya bakal demonstrasikan cara menyetel pembaruan live WebSocket.
+This improves accessibility for users relying on screen readers.,Ini meningkatkan aksesibilitas bagi pengguna yang mengandalkan pembaca layar.
+Let's verify our database connection string before launching the app.,Mari kita verifikasi string koneksi database kita sebelum meluncurkan aplikasi.
+This query runs in less than 5 milliseconds thanks to indexing.,Kueri ini berjalan kurang dari 5 milidetik berkat pengindeksan.
+Let me explain the difference between client and server components.,Mari saya jelaskan perbedaan antara komponen klien dan server.
+This technique prevents memory leaks when components unmount.,Teknik ini mencegah kebocoran memori saat komponen di-unmount.
+Let's add a loading spinner while waiting for the API response.,Mari kita tambahkan spinner pemuatan saat menunggu respons API.
+You can easily override the default CSS utility classes.,Anda bisa dengan mudah menimpa kelas utilitas CSS default.
+Let's test this edge case to make sure our app doesn't crash.,Mari kita tes edge case ini untuk memastikan aplikasi kita tidak crash.
+This makes our user interface feel super responsive and snappy.,Ini membuat antarmuka pengguna kita terasa sangat responsif dan cepat.
+Let me know your thoughts in the comment section below!,Beri tahu saya pendapat Anda di kolom komentar di bawah!
+Don't forget to star the repository if you found this helpful!,Jangan lupa memberi bintang pada repositori jika Anda merasa ini bermanfaat!
+"Thanks for watching, and happy coding!","Terima kasih telah menonton, dan selamat koding!"
+"Welcome to another coding tutorial! In this video, we're building a full stack web application.","Selamat datang di tutorial koding lainnya! Di video ini, kita akan membangun aplikasi web full stack."
+"If you're new to the channel, don't forget to hit the subscribe button!","Jika Anda baru di channel ini, jangan lupa untuk menekan tombol berlangganan!"
+Let's jump straight into VS Code and start writing our code.,Mari kita langsung melompat ke VS Code dan mulai menulis kode kita.
+I'm going to clone the GitHub repository onto my local machine.,Saya akan mengkloning repositori GitHub ini ke mesin lokal saya.
+"First, let's open up our terminal and run npm install.","Pertama, mari buka terminal kita dan jalankan npm install."
+Now let's start up our local development server with npm run dev.,Sekarang mari jalankan dev server lokal kita dengan npm run dev.
+"As you can see on screen, our web app is running smoothly on localhost 3000.","Seperti yang bisa Anda lihat di layar, aplikasi web kita berjalan lancar di localhost 3000."
+Let's inspect the network request tab in Chrome DevTools.,Mari kita periksa tab permintaan jaringan di Chrome DevTools.
+Notice how the API returns a JSON response payload with a 200 OK status.,Perhatikan bagaimana API mengembalikan payload respons JSON dengan status 200 OK.
+Let's add a quick console.log to debug the state changes.,Mari kita tambahkan console.log cepat untuk menelusuri perubahan state.
+Now let's refactor this function to make it much cleaner and more readable.,Sekarang mari kita refaktor fungsi ini agar jauh lebih bersih dan mudah dibaca.
+This custom React hook handles all our data fetching logic automatically.,Hook React kustom ini menangani seluruh logika pengambilan data kita secara otomatis.
+Let's test this edge case and see what happens when the network goes offline.,Mari kita tes edge case ini dan lihat apa yang terjadi saat jaringan offline.
+Look at how fast the page renders thanks to Next.js server components!,Lihat betapa cepatnya halaman dirender berkat Server Components Next.js!
+I'll leave a link to the complete source code in the description box below.,Saya akan menyertakan tautan ke kode sumber lengkap di kotak deskripsi di bawah.
+Drop a comment down below if you encounter any bugs or issues.,Tulis komentar di bawah jika Anda menemukan bug atau masalah apa pun.
+"If you enjoyed this video, please leave a thumbs up and share it with your developer friends!","Jika Anda menikmati video ini, silakan berikan jempol dan bagikan dengan teman-teman developer Anda!"
+Thanks for watching and I'll see you in the next tutorial!,Terima kasih telah menonton dan sampai jumpa di tutorial berikutnya!
+Let's set up our Docker environment with a quick docker-compose.yml file.,Mari kita siapkan lingkungan Docker kita dengan file docker-compose.yml cepat.
+Watch how Docker automatically builds our container layer by layer.,Perhatikan bagaimana Docker secara otomatis membangun kontainer kita layer demi layer.
+Now let's push our updated code branch to GitHub.,Sekarang mari kita push branch kode kita yang diperbarui ke GitHub.
+Our GitHub Actions workflow is automatically running our unit test suite.,Workflow GitHub Actions kita secara otomatis menjalankan suite pengujian unit kita.
+All automated tests passed with flying colors!,Semua pengujian otomatis lulus dengan nilai sempurna!
+Now Vercel is deploying our app to production edge servers globally.,Sekarang Vercel sedang melakukan deployment aplikasi kita ke server edge produksi secara global.
+Let me know in the comments what tutorial topic you want me to cover next!,Beri tahu saya di kolom komentar topik tutorial apa yang Anda ingin saya bahas selanjutnya!
+Make sure to hit the notification bell so you never miss an update!,Pastikan untuk menekan lonceng notifikasi agar Anda tidak ketinggalan pembaruan!
+Let's break down how this algorithm works under the hood step by step.,Mari kita bedah bagaimana cara kerja algoritma ini di balik layar langkah demi langkah.
+Here's a neat trick to optimize your CSS layouts with Tailwind utility classes.,Berikut adalah trik rapi untuk mengoptimalkan tata letak CSS Anda dengan kelas utilitas Tailwind.
+That's literally all it takes to build a custom AI agent in Python!,Cuma itu saja yang diperlukan untuk membangun agen AI kustom di Python!
+Stay tuned for part two of this series where we'll cover fine-tuning LLMs!,Tetap saksikan bagian kedua dari seri ini di mana kita akan membahas fine-tuning LLM!
+"In today's video, we're taking a look at the brand new features in React 19.","Di video hari ini, kita melihat fitur-fitur baru di React 19."
+Let's compare the performance between client rendering and server rendering.,Mari kita bandingkan performa antara perenderan klien dan perenderan server.
+I've been using this developer tool every day and it saves me hours of work.,Saya telah menggunakan tool developer ini setiap hari dan ini menghemat jam kerja saya.
+Let's write a unit test to verify our component state updates properly.,Mari kita tulis pengujian unit untuk memverifikasi pembaruan state komponen kita dengan benar.
+Here is the exact error message we get when the API rate limit is exceeded.,Berikut adalah pesan kesalahan persis yang kita dapatkan saat rate limit API terlampaui.
+Let's fix this CORS issue by adding the proper headers in our FastAPI backend.,Mari kita perbaiki masalah CORS ini dengan menambahkan header yang tepat di backend FastAPI kita.
+Notice how smooth the UI transition is when using Tailwind CSS animations.,Perhatikan betapa mulusnya transisi UI saat menggunakan animasi Tailwind CSS.
+Let's deploy our SQLite database with WAL mode enabled for faster writes.,Mari kita mendeploy database SQLite kita dengan mode WAL yang diaktifkan untuk penulisan lebih cepat.
+I hope you learned something new from this tutorial today!,Saya harap Anda mempelajari sesuatu yang baru dari tutorial hari ini!
+Don't forget to check out the links in the video description for full documentation.,Jangan lupa untuk memeriksa tautan di deskripsi video untuk dokumentasi lengkap.
+Let's dive right into the code without wasting any time!,Mari kita langsung masuk ke kode tanpa membuang waktu!
+"First, let's initialize a brand new Next.js project using create-next-app.","Pertama, mari inisialisasi proyek Next.js baru menggunakan create-next-app."
+We'll be using TypeScript for full type safety across our application.,Kita akan menggunakan TypeScript untuk keamanan tipe penuh di seluruh aplikasi kita.
+Let's install Zustand for lightweight global state management.,Mari kita menginstal Zustand untuk manajemen state global yang ringan.
+Watch how clean and simple this state store definition looks.,Perhatikan betapa bersih dan sederhananya definisi state store ini.
+Now let me show you how to connect your app to a local Ollama LLM server.,Sekarang izinkan saya menunjukkan cara menghubungkan aplikasi Anda ke server LLM Ollama lokal.
+We're going to send a prompt request and stream the generated response tokens.,Kita akan mengirim permintaan prompt dan mengalirkan token respons yang dihasilkan.
+This is honestly one of the coolest developer features released this year!,Ini jujur salah satu fitur developer paling keren yang dirilis tahun ini!
+"See you in the next tutorial, happy coding everyone!","Sampai jumpa di tutorial berikutnya, selamat berkoding semuanya!"
+Let's examine how the browser event loop handles asynchronous microtasks.,Mari kita periksa bagaimana event loop browser menangani microtask asinkron.
+Watch how the call stack executes functions in a last-in-first-out order.,Perhatikan bagaimana call stack mengeksekusi fungsi dalam urutan last-in-first-out.
+Here's why memory leaks happen if you forget to clean up event listeners.,Berikut alasan mengapa kebocoran memori terjadi jika Anda lupa membersihkan listener peristiwa.
+Let's open Chrome DevTools Memory Profiler and take a heap snapshot.,Mari buka Memory Profiler Chrome DevTools dan ambil heap snapshot.
+See this retainers tree? That's where our uncollected DOM node is hidden.,Lihat pohon retainer ini? Di sinilah node DOM kita yang tidak terambil tersembunyi.
+Fixing this memory leak immediately dropped our RAM usage from 500MB to 50MB!,Memperbaiki kebocoran memori ini secara langsung menurunkan penggunaan RAM kita dari 500MB menjadi 50MB!
+Always remember to unsubscribe from RxJS observables or clean up useEffect timers!,Selalu ingat untuk berhenti berlangganan dari observable RxJS atau membersihkan timer useEffect!
+That single line of code saved our app from crashing under heavy load!,Satu baris kode itu menyelamatkan aplikasi kita dari crash di bawah beban berat!
+"If this video helped you solve your bug, hit that like button right now!","Jika video ini membantu Anda menyelesaikan bug Anda, tekan tombol suka itu sekarang juga!"
+Check out my full playlist on advanced TypeScript patterns linked right here!,Lihat daftar putar lengkap saya tentang pola TypeScript tingkat lanjut yang ditautkan di sini!
+Let's configure our Nginx web server for SSL certificate termination.,Mari kita konfigurasikan server web Nginx kita untuk terminasi sertifikat SSL.
+Certbot makes SSL certificate renewal completely automatic with Let's Encrypt.,Certbot membuat pembaruan sertifikat SSL sepenuhnya otomatis dengan Let's Encrypt.
+Let's test our HTTP redirect to ensure all traffic goes over secure HTTPS.,Mari kita tes pengalihan HTTP kita untuk memastikan semua lalu lintas melalui HTTPS yang aman.
+"Look at our SSL Labs security rating, we got an A+ grade!","Lihat nilai keamanan SSL Labs kita, kita mendapatkan nilai A+!"
+Now our web server is production ready and fully secured against eavesdropping.,Sekarang server web kita siap produksi dan terlindungi sepenuhnya dari penyadapan.
+I'll post the Nginx configuration template on my blog linked in the description.,Saya akan memposting templat konfigurasi Nginx di blog saya yang ditautkan di deskripsi.
+Let me know if you want a dedicated video on Dockerizing Nginx servers!,Beri tahu saya jika Anda menginginkan video khusus tentang membuat kontainer server Nginx!
+Subscribe for more DevOps and web development tutorials every week!,Berlangganan untuk lebih banyak tutorial DevOps dan pengembangan web setiap minggu!
+Thanks for your support and keep building awesome software!,Terima kasih atas dukungan Anda dan tetap bangun perangkat lunak yang luar biasa!
+Peace out and see you next time!,Salam damai dan sampai jumpa lain kali!
+Today we're building a Chrome extension from scratch using Manifest V3.,Hari ini kita membangun ekstensi Chrome dari nol menggunakan Manifest V3.
+Let's set up our manifest.json file with background service worker permissions.,Mari kita siapkan file manifest.json kita dengan izin service worker latar belakang.
+We'll use content scripts to interact directly with web page DOM elements.,Kita akan menggunakan content script untuk berinteraksi secara langsung dengan elemen DOM halaman web.
+Watch how our content script intercepts text nodes and replaces them seamlessly.,Perhatikan bagaimana content script kita meng-intercept node teks dan menggantinya secara mulus.
+We're using Shadow DOM to isolate our extension UI styles from the page.,Kita menggunakan Shadow DOM untuk mengisolasi gaya UI ekstensi kita dari halaman.
+Now our extension tooltip looks pixel-perfect on any website!,Sekarang tooltip ekstensi kita terlihat sempurna secara piksel di situs web mana pun!
+Let's persist user settings using the chrome.storage.local API.,Mari kita simpan pengaturan pengguna secara persisten menggunakan API chrome.storage.local.
+Testing our extension live in Chrome developer mode works like a charm!,Mengetes ekstensi kita secara langsung di mode developer Chrome bekerja dengan sangat baik!
+I'll guide you through submitting your extension to the Chrome Web Store.,Saya akan memandu Anda menyerahkan ekstensi Anda ke Chrome Web Store.
+Leave any questions in the comments and I'll personally reply to every single one!,Tinggalkan pertanyaan di kolom komentar dan saya pribadi akan membalas setiap pertanyaan!
+"In this video tutorial, we will learn how to build an AI translation extension.","Di tutorial video ini, kita akan belajar cara membangun ekstensi terjemahan AI."
+Don't forget to star our open source project repository on GitHub!,Jangan lupa untuk memberi bintang pada repositori proyek sumber terbuka kami di GitHub!
+Let's look at the browser extension popup menu code implementation.,Mari kita lihat implementasi kode menu popup ekstensi browser.
+We're using Ollama LLM backend server running locally on port 11434.,Kita menggunakan server backend Ollama LLM yang berjalan secara lokal di port 11434.
+Watch how fast our text replacer content script translates web page text.,Perhatikan betapa cepatnya content script pemindah teks kita menerjemahkan teks halaman web.
+The DOM MutationObserver catches dynamic web content changes automatically.,MutationObserver DOM menangkap perubahan konten web dinamis secara otomatis.
+Let's test our translation model accuracy on technical software articles.,Mari kita tes akurasi model terjemahan kita pada artikel perangkat lunak teknis.
+"Notice how developer terms like React, Next.js, and Docker remain untranslated.","Perhatikan bagaimana istilah developer seperti React, Next.js, dan Docker tetap tidak diterjemahkan."
+This is exact target language quality expected by Indonesian developers!,Ini adalah kualitas bahasa tujuan tepat yang diharapkan oleh developer Indonesia!
+Leave a comment below if you want to see a deep dive tutorial on Chrome extensions!,Tinggalkan komentar di bawah jika Anda ingin melihat tutorial mendalam tentang ekstensi Chrome!
+Hit that like button and subscribe for more developer content!,Tekan tombol suka itu dan berlangganan untuk lebih banyak konten developer!
+See you all in the next video tutorial!,Sampai jumpa di tutorial video berikutnya!
+Welcome to part two of our AI developer tools tutorial series!,Selamat datang di bagian kedua dari seri tutorial tool developer AI kami!
+Today we're setting up Unsloth QLoRA fine-tuning for custom translation models.,Hari ini kita menyiapkan fine-tuning QLoRA Unsloth untuk model terjemahan kustom.
+Let's inspect our JSONL training dataset formatting requirements.,Mari kita periksa persyaratan format dataset pelatihan JSONL kita.
+Make sure your dataset contains high quality natural Indonesian target translations.,Pastikan dataset Anda berisi terjemahan tujuan bahasa Indonesia alami yang berkualitas tinggi.
+Our training loss dropped smoothly down to 0.10 after 3 epochs!,"Loss pelatihan kita berkurang dengan mulus menjadi 0,10 setelah 3 epoch!"
+Now let's convert our trained model weights into GGUF format for Ollama.,Sekarang mari kita konversi bobot model yang dilatih ke dalam format GGUF untuk Ollama.
+Testing our fine-tuned translation model on live documentation sites!,Mengetes model terjemahan hasil fine-tune kita di situs dokumentasi langsung!
+Look at that translation speed and natural developer phrasing!,Lihat kecepatan terjemahan dan pengungkapan developer yang alami itu!
+Thanks for following along with this tutorial series!,Terima kasih telah mengikuti seri tutorial ini!
+Happy coding and see you next time!,Selamat berkoding dan sampai jumpa lain kali!
+Let's write a python script to automate dataset cleaning and deduplication.,Mari kita tulis skrip python untuk mengotomatiskan pembersihan dan deduplikasi dataset.
+"Our aggressive v3 cleaning filters remove noise, artifacts, and mistranslations.","Filter pembersihan agresif v3 kita menghapus noise, artifak, dan kesalahan terjemahan."
+Check out our dataset stats summary file in the project directory.,Periksa file ringkasan statistik dataset kami di direktori proyek.
+All 9 domain categories now contain over 200 high quality pairs!,Semua 9 kategori domain sekarang berisi lebih dari 200 pasangan berkualitas tinggi!

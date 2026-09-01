@@ -1,0 +1,202 @@
+original_text,translated_text
+Create a new pull request to merge your feature branch into main.,Buat pull request baru untuk menggabungkan feature branch Anda ke main.
+The code review highlighted several potential edge cases in error handling.,Code review menyoroti beberapa potensi edge case dalam penanganan kesalahan.
+Resolve git merge conflicts before attempting to rebase.,Selesaikan konflik git merge sebelum mencoba melakukan rebase.
+Squash commits into a single clean commit message before merging.,Squash commit menjadi satu pesan commit yang bersih sebelum melakukan merge.
+The continuous integration pipeline automatically runs unit tests on every push.,Pipeline Continuous Integration (CI) secara otomatis menjalankan pengujian unit pada setiap push.
+All checks passed successfully. Your pull request is ready to merge.,Semua checks berhasil. Pull request Anda siap untuk digabungkan.
+Request code review from team members.,Minta code review dari anggota tim.
+Add inline comments explaining complex algorithm logic.,Tambahkan komentar inline yang menjelaskan logika algoritma yang kompleks.
+Revert breaking changes back to previous stable release.,Kembalikan perubahan yang merusak kembali ke rilis stabil sebelumnya.
+The repository has been updated with latest security patches.,Repositori telah diperbarui dengan patch keamanan terbaru.
+The application dynamically adjusts layout based on viewport width.,Aplikasi menyesuaikan tata letak secara dinamis berdasarkan lebar viewport.
+User preferred color scheme detected as dark mode.,Skema warna pilihan pengguna terdeteksi sebagai mode gelap.
+Smooth CSS transitions improve overall user experience.,Transisi CSS yang mulus meningkatkan pengalaman pengguna secara keseluruhan.
+Ensure interactive elements are accessible using proper ARIA roles.,Pastikan elemen interaktif dapat diakses menggunakan role ARIA yang tepat.
+The component automatically re-renders when state changes.,Komponen melakukan render ulang secara otomatis ketika state berubah.
+Prevent unnecessary re-renders by memoizing expensive function calls.,Cegah render ulang yang tidak perlu dengan mememoize panggilan fungsi yang berat.
+The loading skeleton provides immediate visual feedback while data loads.,Skeleton pemuatan memberikan umpan balik visual langsung saat data dimuat.
+Handle empty states gracefully with helpful user guidance.,Tangani state kosong dengan anggun melalui panduan pengguna yang bermanfaat.
+Display toast notifications for successful background operations.,Tampilkan notifikasi toast untuk operasi latar belakang yang berhasil.
+Form validation errors are displayed next to relevant input fields.,Kesalahan validasi formulir ditampilkan di samping bidang input yang relevan.
+The API server enforces rate limits to prevent service abuse.,Server API menerapkan batas rate limit untuk mencegah penyalahgunaan layanan.
+Database transactions ensure data consistency across multiple operations.,Transaksi database memastikan konsistensi data di beberapa operasi.
+Connection pooling reduces database latency under heavy load.,Connection pooling mengurangi latensi database di bawah beban berat.
+Background job workers process asynchronous tasks from Redis queue.,Background worker memproses tugas asinkron dari antrean Redis.
+WebSocket heartbeat signals maintain active persistent connection.,Sinyal heartbeat WebSocket mempertahankan koneksi persisten yang aktif.
+Serverless edge functions execute logic close to user location.,Fungsi serverless edge mengeksekusi logika di dekat lokasi pengguna.
+Cache hit ratio improved to 98% after enabling Redis caching layer.,Rasio cache hit meningkat menjadi 98% setelah mengaktifkan layer cache Redis.
+The API returns structured JSON responses with standard status codes.,API mengembalikan respons JSON terstruktur dengan kode status standar.
+Secure sensitive environment variables using secret management services.,Amankan variabel lingkungan yang sensitif menggunakan layanan secret management.
+Implement exponential backoff logic for transient network failures.,Terapkan logika exponential backoff untuk kegagalan jaringan sementara.
+Clear system instructions guide LLM behavior during translation tasks.,Instruksi sistem yang jelas mengarahkan perilaku LLM selama tugas terjemahan.
+Estimate token count before sending prompt payload to API endpoint.,Estimasi jumlah token sebelum mengirim payload prompt ke endpoint API.
+Stream LLM text output in real time for responsive user interaction.,Mengalirkan output teks LLM secara real-time untuk interaksi pengguna yang responsif.
+The AI agent automatically selected tool `search_web` to retrieve context.,Agen AI secara otomatis memilih tool `search_web` untuk mengambil konteks.
+Fine-tuning adapter model improved translation accuracy for technical terms.,Model adapter fine-tuning meningkatkan akurasi terjemahan untuk istilah teknis.
+The model maintains context window state across multi-turn conversations.,Model mempertahankan state jendela konteks di seluruh percakapan multi-turn.
+Format training dataset as ShareGPT JSONL format for instruction tuning.,Format dataset pelatihan sebagai format ShareGPT JSONL untuk instruction tuning.
+Quantize model weights to 4-bit precision to reduce VRAM memory usage.,Kuantisasi bobot model ke presisi 4-bit untuk mengurangi penggunaan memori VRAM.
+Evaluate translation quality using BLEU and ROUGE benchmark metrics.,Evaluasi kualitas terjemahan menggunakan metrik benchmark BLEU dan ROUGE.
+Deploy fine-tuned model to Ollama runtime server for local inference.,Melakukan deployment model hasil fine-tune ke server runtime Ollama untuk inferensi lokal.
+Unit tests verify individual function logic in isolation.,Pengujian unit memverifikasi logika fungsi individu secara terisolasi.
+Integration tests verify end-to-end data flow across modules.,Pengujian integrasi memverifikasi alur data end-to-end di seluruh modul.
+Mock external API dependencies to ensure deterministic test runs.,Mock dependensi API luar untuk memastikan eksekusi pengujian yang deterministik.
+Test coverage report indicates 95% line coverage.,Laporan cakupan pengujian menunjukkan 95% cakupan baris.
+Automated test suite executes cleanly without any failing assertions.,Suite pengujian otomatis mengeksekusi dengan bersih tanpa kegagalan Kode.
+Check code formatting compliance using automated linter tool.,Periksa kepatuhan format kode menggunakan tool linter otomatis.
+Fix static analysis lint warnings before opening pull request.,Perbaiki peringatan lint analisis statis sebelum membuka pull request.
+Build production bundle using optimized bundler configuration.,Bangun bundle produksi menggunakan konfigurasi bundler yang dioptimalkan.
+Asset minification reduces final JavaScript file size by 60%.,Minifikasi aset mengurangi ukuran file JavaScript akhir sebesar 60%.
+Verify production build in staging environment prior to release.,Verifikasi build produksi di lingkungan staging sebelum rilis.
+Update user profile details in account settings dashboard.,Perbarui detail profil pengguna di dashboard pengaturan akun.
+"Password must contain uppercase letters, numbers, and special symbols.","Kata sandi harus berisi huruf besar, angka, dan simbol khusus."
+Confirm new password matches original input entry.,Konfirmasi kata sandi baru cocok dengan entri input asli.
+Select primary target language from dropdown selection menu.,Pilih bahasa tujuan utama dari menu pilihan dropdown.
+Toggle automatic translation on page load setting.,Alihkan pengaturan terjemahan otomatis saat halaman dimuat.
+Clear translation search history from local browser storage.,Hapus riwayat pencarian terjemahan dari penyimpanan browser lokal.
+Restore original page text with a single click.,Kembalikan teks halaman asli dengan satu klik.
+Display translation progress bar during batch processing.,Tampilkan bilah progres terjemahan selama pemrosesan batch.
+Copy translated text snippet directly to clipboard.,Salin cuplikan teks yang diterjemahkan secara langsung ke papan klip.
+Report inaccurate translation to improve model performance.,Laporkan terjemahan yang tidak akurat untuk meningkatkan performa model.
+The Chrome extension operates cleanly across all major web browsers.,Ekstensi Chrome beroperasi dengan bersih di semua browser web utama.
+Content script monitors DOM text changes using MutationObserver API.,Content script memantau perubahan teks DOM menggunakan API MutationObserver.
+Service worker manages background network requests and caching logic.,Service worker mengelola permintaan jaringan latar belakang dan logika caching.
+Popup interface provides quick control options for active website.,Antarmuka popup menyediakan opsi kontrol cepat untuk situs web yang aktif.
+Options page allows configuring custom API base URL endpoints.,Halaman opsi memungkinkan konfigurasi endpoint URL dasar API kustom.
+Permissions granted to access active tab text content.,Izin diberikan untuk mengakses konten teks tab yang aktif.
+Extension updates automatically when new version is released.,Ekstensi diperbarui secara otomatis ketika versi baru dirilis.
+Lightweight extension design ensures minimal memory impact on browser.,Desain ekstensi yang ringan memastikan dampak memori yang minimal pada browser.
+Support dark theme UI styling for seamless visual integration.,Dukung penataan gaya UI tema gelap untuk integrasi visual yang mulus.
+Keyboard shortcuts enable rapid translation triggering.,Pintasan papan ketik memungkinkan pemici terjemahan yang cepat.
+Extract subtitle text track from HTML5 video element.,Ekstrak trek teks subtitle dari elemen video HTML5.
+Synchronize subtitle translation with video audio playback timing.,Sinkronkan terjemahan subtitle dengan penentuan waktu pemutaran audio video.
+Display dual language subtitles simultaneously on screen overlay.,Tampilkan subtitle dua bahasa secara bersamaan di hamparan layar.
+"Customizable subtitle font size, color, and background styling.","Ukuran font subtitle, warna, dan penataan gaya latar belakang yang dapat disesuaikan."
+Automatic subtitle detection for YouTube and streaming platforms.,Deteksi subtitle otomatis untuk YouTube dan platform streaming.
+Whisper Speech-to-Text generates high-accuracy caption timestamps.,Whisper Speech-to-Text menghasilkan stempel waktu caption berakurasi tinggi.
+Translate live audio stream speech directly to Indonesian text.,Terjemahkan ucapan stream audio langsung ke teks bahasa Indonesia secara langsung.
+Toggle subtitle visibility with video player controls.,Alihkan visibilitas subtitle dengan kontrol pemutar video.
+Download translated subtitle file in WebVTT format.,Unduh file subtitle yang diterjemahkan dalam format WebVTT.
+Adjust audio speech synthesis playback speed rate.,Sesuaikan tingkat kecepatan pemutaran sintesis suara audio.
+FastAPI backend processes batch translation requests efficiently.,Backend FastAPI memproses permintaan terjemahan batch secara efisien.
+Pydantic schema validates incoming HTTP request payload structure.,Skema Pydantic memvalidasi struktur payload permintaan HTTP yang masuk.
+SQLite WAL mode enables high concurrency read and write performance.,Mode SQLite WAL memungkinkan performa baca dan tulis dengan konkurensi tinggi.
+Module-level cache retains active model selection across calls.,Cache tingkat modul mempertahankan pilihan model aktif di seluruh panggilan.
+Retry logic automatically handles 502 Bad Gateway server errors.,Logika percobaan ulang secara otomatis menangani kesalahan server 502 Bad Gateway.
+Escape XML special characters to prevent prompt injection payload.,Escape karakter khusus XML untuk mencegah payload prompt injection.
+Language detector balances detection threshold for ID and EN.,Detektor bahasa menyeimbangkan ambang batas deteksi untuk ID dan EN.
+Parallel cache lookups execute concurrently using `asyncio.gather()`.,Pencarian cache paralel dieksekusi secara bersamaan menggunakan `asyncio.gather()`.
+Post-processor regex repairs truncated JSON response strings.,Regex post-processor memperbaiki string respons JSON yang terpotong.
+Batch cache commit saves database transactions in single disk write.,Commit cache batch menyimpan transaksi database dalam satu penulisan disk.
+Initialize git repository using `git init` command.,Inisialisasi repositori git menggunakan perintah `git init`.
+Stage modified files using `git add .` command.,Stage file yang diubah menggunakan perintah `git add .`.
+"Commit staged changes using `git commit -m \Commit message\""`.""","Commit perubahan yang distage menggunakan perintah `git commit -m \Pesan commit\""`."""
+Push local commits to remote GitHub repository.,Push commit lokal ke repositori GitHub jarak jauh.
+Fetch latest remote branch changes using `git fetch origin`.,Fetch perubahan branch remote terbaru menggunakan `git fetch origin`.
+Switch active working branch using `git checkout branch-name`.,Beralih branch kerja yang aktif menggunakan `git checkout nama-branch`.
+Merge feature branch into main branch cleanly.,Gabungkan feature branch ke branch main secara bersih.
+Create new git release tag using `git tag v1.0.0`.,Buat tag rilis git baru menggunakan `git tag v1.0.0`.
+Stash uncommitted local changes using `git stash` command.,Stash perubahan lokal yang belum dicommit menggunakan perintah `git stash`.
+Clone remote repository to local development directory.,Kloning repositori remote ke direktori pengembangan lokal.
+Deploy web application to production server using Docker container.,Melakukan deployment aplikasi web ke server produksi menggunakan kontainer Docker.
+Configure reverse proxy Nginx server for SSL certificate termination.,Konfigurasikan server reverse proxy Nginx untuk terminasi sertifikat SSL.
+Set up domain DNS A records to point to server public IP address.,Setel rekaman DNS A domain untuk mengarah ke alamat IP publik server.
+Automate SSL certificate renewal using Let's Encrypt Certbot tool.,Otomatiskan pembaruan sertifikat SSL menggunakan tool Let's Encrypt Certbot.
+Monitor server CPU and RAM utilization metrics in real time.,Pantau metrik penggunaan CPU dan RAM server secara real-time.
+Configure firewall rules to block unauthorized port access.,Konfigurasikan aturan firewall untuk memblokir akses port yang tidak sah.
+Backup database records daily to secure cloud storage.,Cadangkan rekaman database setiap hari ke penyimpanan cloud yang aman.
+Set up automated alert notifications for server downtime events.,Setel notifikasi peringatan otomatis untuk peristiwa downtime server.
+Scale backend instance instances horizontally based on traffic load.,Skala instans backend secara horizontal berdasarkan beban lalu lintas.
+Perform zero-downtime rolling deployment for new software release.,Lakukan deployment rolling tanpa downtime untuk rilis perangkat lunak baru.
+The AI agent understands natural technical language context.,Agen AI memahami konteks bahasa teknis yang alami.
+High-quality dataset improves translation fluency and accuracy.,Dataset berkualitas tinggi meningkatkan kefasihan dan akurasi terjemahan.
+Preserve code tokens intact without unwanted literal translation.,Pertahankan token kode tetap utuh tanpa terjemahan harfiah yang tidak diinginkan.
+Natural Indonesian phrasing ensures smooth reading experience for developers.,Pengungkapan bahasa Indonesia yang alami memastikan pengalaman membaca yang mulus bagi developer.
+Consistent technical terminology builds user trust in translation output.,Terminologi teknis yang konsisten membangun kepercayaan pengguna pada output terjemahan.
+Fine-tune Large Language Model on curated technical pair dataset.,Lakukan fine-tuning Large Language Model pada dataset pasangan teknis yang dikurasi.
+Evaluate fine-tuned model performance on separate evaluation test split.,Evaluasi performa model hasil fine-tune pada split pengujian evaluasi terpisah.
+Compare base model baseline against fine-tuned custom model.,Bandingkan baseline model dasar terhadap model kustom hasil fine-tune.
+Fine-tuned model produces 40% higher translation BLEU benchmark score.,Model hasil fine-tune menghasilkan skor benchmark BLEU terjemahan 40% lebih tinggi.
+Deploy custom Ollama model for production web translator extension.,Melakukan deployment model Ollama kustom untuk ekstensi penerjemah web produksi.
+"Enjoy fast, accurate, and natural technical translations!","Nikmati terjemahan teknis yang cepat, akurat, dan alami!"
+Parse incoming GraphQL query string into AST syntax tree.,Parse string kueri GraphQL yang masuk ke dalam pohon sintaksis AST.
+Execute GraphQL mutation request to update user preferences.,Jalankan permintaan mutasi GraphQL untuk memperbarui preferensi pengguna.
+Define GraphQL schema types using Schema Definition Language (SDL).,Definisikan tipe skema GraphQL menggunakan Schema Definition Language (SDL).
+GraphQL resolver function fetches data from underlying SQLite database.,Fungsi resolver GraphQL mengambil data dari database SQLite yang mendasarinya.
+Avoid N+1 query problem using DataLoader batching utility.,Hindari masalah kueri N+1 menggunakan utilitas batching DataLoader.
+REST API endpoint returns JSON representation of resource entity.,Endpoint API REST mengembalikan representasi JSON dari entitas sumber daya.
+GraphQL query requests only required data fields from server.,Kueri GraphQL hanya meminta bidang data yang diperlukan dari server.
+WebSocket protocol provides full-duplex communication over single TCP connection.,Protokol WebSocket menyediakan komunikasi full-duplex melalui koneksi TCP tunggal.
+HTTP/2 Server Push delivers critical CSS assets before client requests them.,HTTP/2 Server Push mengirimkan aset CSS krusial sebelum klien memintanya.
+Web transport API provides low-latency bidirectional data streams.,API Web transport menyediakan stream data dua arah dengan latensi rendah.
+Component state managed cleanly using React custom hooks.,State komponen dikelola dengan bersih menggunakan hook kustom React.
+Context API shares global state without prop drilling.,Context API membagikan state global tanpa prop drilling.
+Higher-Order Component (HOC) wraps base component with extra logic.,Higher-Order Component (HOC) membungkus komponen dasar dengan logika ekstra.
+Controlled form input component syncs value with local state.,Komponen input formulir terkontrol mensinkronkan nilai dengan state lokal.
+Uncontrolled input component accesses DOM node via `useRef` hook.,Komponen input tidak terkontrol mengakses node DOM melalui hook `useRef`.
+Custom React hook encapsulates reusable stateful logic.,Hook kustom React mengkapsulasi logika berstate yang dapat digunakan kembali.
+Server-side rendering (SSR) delivers HTML pre-rendered on server.,Server-side rendering (SSR) mengirimkan HTML yang telah dirender sebelumnya di server.
+Static Site Generation (SSG) builds pages at build time.,Static Site Generation (SSG) membangun halaman pada waktu build.
+Incremental Static Regeneration (ISR) updates static pages on-demand.,Incremental Static Regeneration (ISR) memperbarui halaman statis sesuai permintaan.
+Client-side rendering (CSR) hydrates web app dynamically in browser.,Client-side rendering (CSR) menghidrasi aplikasi web secara dinamis di browser.
+Database query execution time logged for performance monitoring.,Waktu eksekusi kueri database dicatat untuk pemantauan performa.
+Foreign key constraint maintains referential integrity across tables.,Batasan foreign key mempertahankan integritas referensial di seluruh tabel.
+Database transaction rolled back due to constraint violation.,Transaksi database di-rollback karena pelanggaran batasan.
+Index scan optimized query performance from 500ms down to 4ms.,Pemindaian indeks mengoptimalkan performa kueri dari 500md menjadi 4md.
+Database connection pool drained on server shutdown signal.,Pool koneksi database dikosongkan pada sinyal penghentian server.
+Full-text search query matches keywords across document contents.,Kueri pencarian teks penuh mencocokkan kata kunci di seluruh konten dokumen.
+SQLite database file encrypted using SQLCipher extension.,File database SQLite dienkripsi menggunakan ekstensi SQLCipher.
+Data migration script transforms database schema cleanly.,Script migrasi data mentransformasi skema database dengan bersih.
+Prisma schema generator generated TypeScript type definitions.,Generator skema Prisma menghasilkan definisi tipe TypeScript.
+All 150 dataset pairs validated cleanly against 10/10 glosarium standards!,Semua 150 pasangan dataset divalidasi secara bersih terhadap standar glosarium 10/10!
+Refactor legacy JavaScript codebase into modern TypeScript modules.,Merefaktor codebase JavaScript lama menjadi modul TypeScript modern.
+Implement custom React hook for managing local storage persistent state.,Terapkan hook React kustom untuk mengelola state persisten penyimpanan lokal.
+Use Zustand store action dispatchers for global state updates.,Gunakan dispatcher aksi store Zustand untuk pembaruan state global.
+Configure Redux Toolkit async thunk for fetching remote user data.,Konfigurasikan async thunk Redux Toolkit untuk mengambil data pengguna remote.
+Use Tailwind CSS utility classes for responsive mobile layout styling.,Gunakan kelas utilitas Tailwind CSS untuk penataan gaya tata letak seluler yang responsif.
+Set Prisma ORM client logging options to query and info levels.,Setel opsi pengelogan klien Prisma ORM ke tingkat kueri dan info.
+Configure Next.js App Router dynamic route parameter handlers.,Konfigurasikan handler parameter rute dinamis App Router Next.js.
+Use React 19 Server Actions for server-side form mutations.,Gunakan Server Actions React 19 untuk mutasi formulir sisi server.
+FastAPI path operation function validates Pydantic request schema.,Fungsi operasi jalur FastAPI memverifikasi skema permintaan Pydantic.
+SQLAlchemy async engine manages PostgreSQL connection pool.,Engine asinkron SQLAlchemy mengelola pool koneksi PostgreSQL.
+Pytest fixture provides mock database connection for unit testing.,Fixture Pytest menyediakan koneksi database mock untuk pengujian unit.
+Vitest test suite verifies React component render output accuracy.,Suite pengujian Vitest memverifikasi akurasi output render komponen React.
+Playwright browser context runs end-to-end user login flow tests.,Konteks browser Playwright menjalankan pengujian alur login pengguna end-to-end.
+Git rebase interactive mode combines multiple feature commits.,Mode interaktif git rebase mengombinasikan beberapa commit fitur.
+Docker multi-stage build pattern optimizes container layer caching.,Pola build multi-stage Docker mengoptimalkan caching layer kontainer.
+Vite dev server handles hot module replacement HMR instantly.,Dev server Vite menangani penggantian modul cepat HMR secara instan.
+TypeScript generic interface defines reusable API response types.,Antarmuka generic TypeScript mendefinisikan tipe respons API yang dapat digunakan kembali.
+ESLint rules enforce consistent code style and import ordering.,Aturan ESLint memaksakan gaya kode yang konsisten dan pengurutan impor.
+Prettier auto-formatter formats code syntax on editor file save.,Auto-formatter Prettier memformat sintaksis kode saat simpan file editor.
+pnpm workspace monorepo links internal package dependencies efficiently.,Monorepo workspace pnpm meyakinkan dependensi paket internal secara efisien.
+Declare a constant variable using `const` keyword in TypeScript.,Deklarasikan variabel konstanta menggunakan kata kunci `const` di TypeScript.
+Write a recursive function to compute Fibonacci sequence numbers.,Tulis fungsi rekursif untuk menghitung angka deret Fibonacci.
+Implement binary search algorithm with O(log n) time complexity.,Terapkan algoritma pencarian biner dengan kompleksitas waktu O(log n).
+Use `Array.prototype.reduce()` to aggregate elements into an object.,Gunakan `Array.prototype.reduce()` untuk mengumpulkan elemen ke dalam suatu objek.
+Catch unhandled promise rejections using global process event listener.,Tangkap penolakan promise yang tidak tertangani menggunakan listener peristiwa proses global.
+Configure `tsconfig.json` compiler options for strict null checks.,Konfigurasikan opsi kompilator `tsconfig.json` untuk pemeriksaan null yang ketat.
+Use `async` and `await` keywords for cleaner asynchronous control flow.,Gunakan kata kunci `async` dan `await` untuk alur kontrol asinkron yang lebih bersih.
+Create custom higher-order component HOC in React.,Buat komponen tingkat tinggi HOC kustom di React.
+Use `useRef` hook to store mutable values across renders without re-triggering render.,Gunakan hook `useRef` untuk menyimpan nilai mutable di seluruh render tanpa memicu render ulang.
+Optimize React component rendering performance using `React.memo`.,Optimalkan performa perenderan komponen React menggunakan `React.memo`.
+Destructure object properties directly in function parameter signature.,Destrukturisasi properti objek secara langsung di dalam signatur parameter fungsi.
+Use template literals with string interpolation for dynamic text generation.,Gunakan literal templat dengan interpolasi string untuk generasi teks dinamis.
+Implement debouncing logic for auto-complete input search handler.,Terapkan logika debouncing untuk handler pencarian input isian otomatis.
+Use `Set` data structure to instantly filter duplicate values from an array.,Gunakan struktur data `Set` untuk memfilter nilai duplikat dari array secara instan.
+Use `Map` object for fast key-value pair lookups with non-string keys.,Gunakan objek `Map` untuk pencarian pasangan key-value yang cepat dengan key non-string.
+Throw custom Error instance with descriptive error message and status code.,Lemparkan instans Error kustom dengan pesan kesalahan dan kode status yang deskriptif.
+Use `Object.freeze()` to make state objects immutable in JavaScript.,Gunakan `Object.freeze()` untuk membuat objek state menjadi tak terubah di JavaScript.
+Implement pub-sub event emitter pattern for decoupled module communication.,Terapkan pola pub-sub event emitter untuk komunikasi modul yang tidak saling bergantung.
+Use `WeakMap` for storing private metadata without memory leak risks.,Gunakan `WeakMap` untuk menyimpan metadata privat tanpa risiko kebocoran memori.
+Parse XML string into DOM document tree using `DOMParser` web API.,Parse string XML ke dalam pohon dokumen DOM menggunakan API web `DOMParser`.
+Serialize form data into URL-encoded string using `URLSearchParams`.,Serialisasi data formulir ke dalam string berformat URL-encoded menggunakan `URLSearchParams`.
+Use `IntersectionObserver` API for lazy loading images when scrolling into view.,Gunakan API `IntersectionObserver` untuk pemuatan lambat gambar saat di-scroll ke dalam tampilan.
+Use `ResizeObserver` API to track element dimensions changes dynamically.,Gunakan API `ResizeObserver` untuk melacak perubahan dimensi elemen secara dinamis.
+Use `PerformanceObserver` API to measure Web Vitals metric thresholds.,Gunakan API `PerformanceObserver` untuk mengukur ambang batas metrik Web Vitals.
+Use `Web Worker` thread for offloading heavy computation tasks off the main UI thread.,Gunakan thread `Web Worker` untuk memindahkan tugas komputasi berat dari thread UI utama.
+Use `BroadcastChannel` API for cross-tab communication between browser windows.,Gunakan API `BroadcastChannel` untuk komunikasi antar-tab di antara jendela browser.
+Use `requestAnimationFrame()` for smooth 60fps canvas animation rendering.,Gunakan `requestAnimationFrame()` untuk perenderan animasi canvas 60fps yang mulus.
+Use `structuredClone()` deep copy utility for complex object cloning.,Gunakan utilitas salinan dalam `structuredClone()` untuk pemkloningan objek kompleks.
+Use `Symbol()` primitive for creating unique object property identifiers.,Gunakan primitif `Symbol()` untuk membuat pengidentifikasi properti objek yang unik.
+Use `BigInt` for representing arbitrary precision integers exceeding Number.MAX_SAFE_INTEGER.,Gunakan `BigInt` untuk merepresentasikan integer presisi sembarang yang melebihi Number.MAX_SAFE_INTEGER.

@@ -1,0 +1,31 @@
+{
+  "version": "3.0",
+  "total_raw": 3669,
+  "total_curated": 276,
+  "after_clean": 1401,
+  "removed_by_clean": 2268,
+  "removed_reasons": {
+    "not_english_source": 1178,
+    "whitelist_violation": 47,
+    "truncated_source": 549,
+    "truncated": 111,
+    "transcript_fragment": 97,
+    "code_identifier": 47,
+    "indonesian_source": 17,
+    "same_text": 201,
+    "pipeline_artifact": 7,
+    "chinese_in_target": 10,
+    "pipeline_artifact_in_source": 2,
+    "structural_mismatch": 1,
+    "fabricated_numbers": 1
+  },
+  "after_dedup": 1391,
+  "train": 1071,
+  "val": 120,
+  "eval": 200,
+  "sources": {
+    "db": 662,
+    "csv": 3007,
+    "codebase_curated": 276
+  }
+}

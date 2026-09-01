@@ -30,7 +30,14 @@
         queuedNodeSet: new Set(),
         priorityNodeSet: new Set(),
         backgroundNodeSet: new Set(),
-        autoTranslateEnabled: !isCurrentPageBlocked(),
+        autoTranslatePreference: true,
+        autoTranslateEnabled: false,
+        maxBatchSize: constants.MAX_BATCH_SIZE,
+        activeModel: null,
+        translationProfile: null,
+        optionsFingerprint: "",
+        cacheContext: null,
+        apiBaseUrl: constants.API_BASE_URL,
         priorityTimer: null,
         backgroundTimer: null,
         isProcessingQueue: false,
@@ -46,7 +53,23 @@
         setApplyingState: (value) => {
             state.isApplyingTranslations = value;
         },
+        getCacheContext: () => state.cacheContext,
     });
+
+    globalThis.MarsTranslator.prefillCache = (originalText, translatedText) => {
+        textReplacer.setCachedTranslation(originalText, translatedText, state.cacheContext);
+    };
+
+    globalThis.MarsTranslator.updateTranslationProfile = (profile, model) => {
+        if (!profile || !model) return;
+        state.translationProfile = profile;
+        state.activeModel = model;
+        state.cacheContext = {
+            translationProfile: profile,
+            model,
+            optionsFingerprint: state.optionsFingerprint,
+        };
+    };
 
     const viewportTranslator = createViewportTranslator({
         state,
@@ -178,6 +201,12 @@
             sendResponse({ ok: true, message: "Teks asli telah dipulihkan" });
         }
 
+        if (message.type === messageTypes.MODEL_CHANGED) {
+            window.postMessage({ type: "MARS_CLEAR_SUBTITLE_CACHE" }, "*");
+            viewportTranslator.handleModelChange(message.model);
+            sendResponse({ ok: true, message: "Cache halaman disesuaikan dengan model aktif" });
+        }
+
         if (message.type === "SHOW_TRANSLATION_TOOLTIP") {
             showTranslationTooltip(message.text, message.mode);
             sendResponse({ ok: true });
@@ -185,10 +214,12 @@
     });
 
     // ===== Initialization =====
-    textReplacer.initializePersistentCache()
-        .catch((error) => {
+    Promise.all([
+        textReplacer.initializePersistentCache().catch((error) => {
             console.warn("Mars Translator gagal memuat cache:", error);
-        })
+        }),
+        loadRuntimeSettings(),
+    ])
         .finally(() => {
             if (isCurrentPageBlocked()) {
                 console.log("Mars Translator melewati halaman AI:", location.hostname);
@@ -196,6 +227,33 @@
 
             setupAutoTranslate();
         });
+
+    async function loadRuntimeSettings() {
+        try {
+            const data = await chrome.storage.sync.get(constants.SETTINGS_STORAGE_KEY);
+            applyRuntimeSettings(data[constants.SETTINGS_STORAGE_KEY] || {});
+        } catch (error) {
+            console.warn("Mars Translator gagal memuat pengaturan:", error);
+            applyRuntimeSettings({});
+        }
+    }
+
+    function applyRuntimeSettings(settings) {
+        const requestedBatchSize = Number.parseInt(settings.maxBatchSize, 10);
+        state.maxBatchSize = Number.isFinite(requestedBatchSize)
+            ? Math.max(1, Math.min(requestedBatchSize, constants.MAX_BATCH_SIZE))
+            : constants.MAX_BATCH_SIZE;
+        state.autoTranslatePreference = settings.autoTranslate !== false;
+        state.autoTranslateEnabled = state.autoTranslatePreference && !isCurrentPageBlocked();
+        state.activeModel = settings.selectedModel || state.activeModel;
+        state.apiBaseUrl = settings.apiBaseUrl || constants.API_BASE_URL;
+        const profileOptions = {};
+        if (settings.numCtx != null) profileOptions.numCtx = settings.numCtx;
+        if (settings.numPredict != null) profileOptions.numPredict = settings.numPredict;
+        if (settings.temperature != null) profileOptions.temperature = settings.temperature;
+        if (settings.topP != null) profileOptions.topP = settings.topP;
+        state.optionsFingerprint = JSON.stringify(profileOptions);
+    }
 
     function setupAutoTranslate() {
         if (!document.body) {
@@ -274,10 +332,37 @@
         for (const delay of [0, 250, 800, 1500, 3000]) {
             setTimeout(() => {
                 if (isCurrentPageBlocked()) return;
-                state.autoTranslateEnabled = true;
+                state.autoTranslateEnabled = state.autoTranslatePreference;
                 viewportTranslator.scheduleViewportTranslate(0);
                 viewportTranslator.scheduleBackgroundTranslate(250);
             }, delay);
         }
     }
+
+    chrome.storage.onChanged.addListener((changes, areaName) => {
+        const settingsChange = changes[constants.SETTINGS_STORAGE_KEY];
+        if (areaName !== "sync" || !settingsChange) return;
+
+        const previousModel = state.activeModel;
+        const previousOptions = state.optionsFingerprint;
+        const previousApiBase = state.apiBaseUrl;
+        applyRuntimeSettings(settingsChange.newValue || {});
+
+        const profileInputsChanged = (
+            state.activeModel !== previousModel ||
+            state.optionsFingerprint !== previousOptions ||
+            state.apiBaseUrl !== previousApiBase
+        );
+        if (profileInputsChanged) {
+            state.translationProfile = null;
+            state.cacheContext = null;
+            window.postMessage({ type: "MARS_CLEAR_SUBTITLE_CACHE" }, "*");
+            viewportTranslator.handleModelChange(state.activeModel);
+        } else if (state.autoTranslateEnabled) {
+            viewportTranslator.scheduleViewportTranslate(0);
+            viewportTranslator.scheduleBackgroundTranslate();
+        } else {
+            viewportTranslator.clearTimers();
+        }
+    });
 })();

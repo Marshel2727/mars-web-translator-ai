@@ -49,6 +49,13 @@ build/
 *.sqlite
 *.sqlite3
 *.db
+*.db-shm
+*.db-wal
+
+# Local AI model weights
+*.safetensors
+*.gguf
+/mars_translator_adapter/tokenizer.json
 
 # Codex/local agent metadata
 .agents/

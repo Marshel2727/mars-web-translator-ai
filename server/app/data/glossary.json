@@ -1,0 +1,216 @@
+{
+  "description": "Glossary koreksi pasca-terjemahan untuk istilah teknis & non-teknis",
+  "version": "1.0",
+  "corrections": [
+    {
+      "pattern": "\\bPengakuan perangkat keras\\b",
+      "replacement": "Dukungan perangkat keras",
+      "note": "Hardware support"
+    },
+    {
+      "pattern": "\\bGulungan Discord\\b",
+      "replacement": "Discord Server",
+      "note": "Discord Server"
+    },
+    {
+      "pattern": "\\bStrategi Pengakuan\\b",
+      "replacement": "Strategi Otentikasi",
+      "note": "Authentication Strategies"
+    },
+    {
+      "pattern": "\\bAuth Jauh\\b",
+      "replacement": "RemoteAuth",
+      "note": "RemoteAuth strategy"
+    },
+    {
+      "pattern": "\\bAuth Lokal\\b",
+      "replacement": "LocalAuth",
+      "note": "LocalAuth strategy"
+    },
+    {
+      "pattern": "\\bNo Auth Strategi\\b",
+      "replacement": "NoAuth Strategy",
+      "note": "NoAuth Strategy"
+    },
+    {
+      "pattern": "\\bStrategiAuthBase\\b",
+      "replacement": "BaseAuthStrategy",
+      "note": "BaseAuthStrategy class name"
+    },
+    {
+      "pattern": "\\bPenghubungan Bisnis\\b",
+      "replacement": "BusinessContact",
+      "note": "BusinessContact class"
+    },
+    {
+      "pattern": "\\bWilayah aturan\\b",
+      "replacement": "Warranties",
+      "note": "WITHOUT WARRANTIES"
+    },
+    {
+      "pattern": "\\batuan aturan\\b",
+      "replacement": "Warranties",
+      "note": "WITHOUT WARRANTIES (alternate mistranslation)"
+    },
+    {
+      "pattern": "\\bPenyimpanan\\b(?=\\s*(?:dan|serta|,)\\s*RAG)",
+      "replacement": "retrieval",
+      "note": "retrieval for RAG context (should not translate 'retrieval' in 'RAG')"
+    },
+    {
+      "pattern": "\\bVektor teks\\b",
+      "replacement": "text embedding",
+      "note": "text embeddings"
+    },
+    {
+      "pattern": "\\bMengacu pada\\b",
+      "replacement": "Mention",
+      "note": "Mention users"
+    },
+    {
+      "pattern": "\\bMengacu ke\\b",
+      "replacement": "Mention",
+      "note": "Mention groups"
+    },
+    {
+      "pattern": "\\bPenggunaan Alat\\b",
+      "replacement": "Tool Calling",
+      "note": "Tool calling feature name"
+    },
+    {
+      "pattern": "\\bMengaktifkan/pendekatan kontak\\b",
+      "replacement": "Blokir/buka blokir kontak",
+      "note": "Block/unblock contacts"
+    },
+    {
+      "pattern": "\\bMatikan/aktifkan percakapan\\b",
+      "replacement": "Bisukan/aktifkan suara chat",
+      "note": "Mute/unmute chats"
+    },
+    {
+      "pattern": "\\bAmbil foto profil\\b",
+      "replacement": "Ambil foto profil",
+      "note": "Get profile pictures (fix prefix)"
+    },
+    {
+      "pattern": "\\bBalas pesan React pada pesan\\b",
+      "replacement": "Reaksi pada pesan",
+      "note": "React to messages"
+    },
+    {
+      "pattern": "\\bMenyampaikan suara dalam survei\\b",
+      "replacement": "Voting dalam polling",
+      "note": "Vote in polls"
+    },
+    {
+      "pattern": "\\bBuat survei\\b",
+      "replacement": "Buat polling",
+      "note": "Create polls"
+    },
+    {
+      "pattern": "\\bPemrograman untuk Semua\\b",
+      "replacement": "Otomatisasi untuk Semua",
+      "note": "Automation for Everyone"
+    },
+    {
+      "pattern": "\\bPola Objek-Oriented\\b",
+      "replacement": "Pendekatan object-oriented",
+      "note": "Object-oriented approach"
+    },
+    {
+      "pattern": "\\bKontrol Programmatic\\b",
+      "replacement": "Kontrol secara terprogram",
+      "note": "Programmatically control"
+    },
+    {
+      "pattern": "\\bDitangani oleh\\b",
+      "replacement": "Dibangun di atas",
+      "note": "Built on"
+    },
+    {
+      "pattern": "\\bPendidikan\\b(?=\\s*tutorial\\s)",
+      "replacement": "Tutorial",
+      "note": "Tutorials (not 'Pendidikan')"
+    },
+    {
+      "pattern": "\\bKERTASANAKAN\\b",
+      "replacement": "CIPHERTEXT",
+      "note": "CIPHERTEXT constant"
+    },
+    {
+      "pattern": "\\bPERMUKAMAN_PERUBAHAN\\b",
+      "replacement": "BATTERY_CHANGED",
+      "note": "BATTERY_CHANGED enum"
+    },
+    {
+      "pattern": "\\bPESAN_ANAKAN_DILAPORKAN\\b",
+      "replacement": "CHAT_ARCHIVED",
+      "note": "CHAT_ARCHIVED enum"
+    },
+    {
+      "pattern": "\\bPESAN_ANAKAN_DIHAPUSKAN\\b",
+      "replacement": "CHAT_REMOVED",
+      "note": "CHAT_REMOVED enum"
+    },
+    {
+      "pattern": "\\bTANGGAL_DITERIMA\\b",
+      "replacement": "CODE_RECEIVED",
+      "note": "CODE_RECEIVED enum"
+    },
+    {
+      "pattern": "\\bKONFIRMASI_PERANGKAT\\b",
+      "replacement": "ACK_DEVICE",
+      "note": "ACK_DEVICE enum"
+    },
+    {
+      "pattern": "\\bPENUNGGUAN_KONFIRMASI\\b",
+      "replacement": "ACK_PENDING",
+      "note": "ACK_PENDING enum"
+    },
+    {
+      "pattern": "\\bKONFIRMASI_DINIHAL\\b",
+      "replacement": "ACK_PLAYED",
+      "note": "ACK_PLAYED enum"
+    },
+    {
+      "pattern": "\\bKONFIRMASI_SERVER\\b",
+      "replacement": "ACK_SERVER",
+      "note": "ACK_SERVER enum"
+    },
+    {
+      "pattern": "\\bPENULISAN_BERITA_PERINGATAN\\b",
+      "replacement": "BROADCAST_NOTIFICATION",
+      "note": "BROADCAST_NOTIFICATION enum"
+    },
+    {
+      "pattern": "\\bRESPONSE_KONTROL_PENGEMUDI\\b",
+      "replacement": "BUTTONS_RESPONSE",
+      "note": "BUTTONS_RESPONSE enum"
+    },
+    {
+      "pattern": "\\bMENGEKSPERIMENTASAKAN\\b",
+      "replacement": "AUTHENTICATING",
+      "note": "AUTHENTICATING enum"
+    },
+    {
+      "pattern": "\\bKARTU_PENGGALANGAN\\b",
+      "replacement": "CONTACT_CARD",
+      "note": "CONTACT_CARD enum"
+    },
+    {
+      "pattern": "\\bPustaka aplikasi\\b",
+      "replacement": "Pustaka klien",
+      "note": "A client library"
+    },
+    {
+      "pattern": "\\bOutput Strukturi\\b",
+      "replacement": "Structured Outputs",
+      "note": "Structured Outputs"
+    },
+    {
+      "pattern": "\\bPencarian Web\\b",
+      "replacement": "Web Search",
+      "note": "Web Search"
+    }
+  ]
+}

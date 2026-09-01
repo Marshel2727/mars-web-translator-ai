@@ -5,32 +5,63 @@
   <title>Mars Translator - Pengaturan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="options.css" />
 </head>
 <body>
   <div class="options-container">
     <div class="options-header">
       <span class="logo-icon">🪐</span>
-      <h1>Mars Translator — Pengaturan</h1>
+      <div>
+        <h1>Mars Translator — Pengaturan</h1>
+        <p class="header-subtitle">Konfigurasikan model, performa, dan cache terjemahan</p>
+      </div>
     </div>
 
+    <!-- === Koneksi Server === -->
     <div class="options-card">
-      <h2>Koneksi Server</h2>
+      <div class="card-title-row">
+        <span class="card-icon">🔌</span>
+        <h2>Koneksi Server</h2>
+      </div>
       <div class="form-group">
         <label for="apiBaseUrl">Server URL</label>
         <input type="url" id="apiBaseUrl" placeholder="http://127.0.0.1:8000" />
+        <span class="form-hint">Alamat backend FastAPI yang sedang berjalan.</span>
+      </div>
+      <div class="form-group">
+        <label for="apiToken">Token API</label>
+        <input type="password" id="apiToken" autocomplete="new-password" placeholder="Masukkan MARS_API_TOKEN" />
+        <span class="form-hint">Disimpan hanya di perangkat ini melalui chrome.storage.local dan tidak disinkronkan.</span>
+      </div>
+      <div class="button-group">
+        <button id="clearTokenBtn" class="btn btn-warning">Hapus Token Tersimpan</button>
       </div>
     </div>
 
+    <!-- === Terjemahan === -->
     <div class="options-card">
-      <h2>Terjemahan</h2>
+      <div class="card-title-row">
+        <span class="card-icon">🌐</span>
+        <h2>Terjemahan</h2>
+      </div>
       <div class="form-group">
         <label for="maxBatchSize">Ukuran Batch Maksimal</label>
-        <input type="number" id="maxBatchSize" min="1" max="50" placeholder="20" />
+        <input type="number" id="maxBatchSize" min="1" max="20" placeholder="20" />
+        <span class="form-hint">Jumlah teks yang dikirim sekaligus ke server per request.</span>
+      </div>
+      <div class="form-group">
+        <label for="modelSelect">Model Ollama Aktif</label>
+        <select id="modelSelect">
+          <option value="">Memuat model...</option>
+        </select>
+        <span class="form-hint">Model yang digunakan untuk menerjemahkan.</span>
       </div>
       <div class="form-group toggle-group">
-        <label for="autoTranslate">Auto-Translate saat halaman dimuat</label>
+        <div class="toggle-label-wrap">
+          <label for="autoTranslate">Auto-Translate saat halaman dimuat</label>
+          <span class="form-hint">Terjemahkan halaman secara otomatis tanpa klik tombol.</span>
+        </div>
         <label class="toggle-switch">
           <input type="checkbox" id="autoTranslate" />
           <span class="toggle-slider"></span>
@@ -38,8 +69,108 @@
       </div>
     </div>
 
+    <!-- === Parameter Model AI (Ollama Options) === -->
     <div class="options-card">
-      <h2>Cache</h2>
+      <div class="card-title-row">
+        <span class="card-icon">⚙️</span>
+        <h2>Parameter Model AI</h2>
+      </div>
+      <p class="card-description">
+        Atur parameter inferensi Ollama untuk menyesuaikan antara <strong>kecepatan</strong> dan <strong>kualitas</strong> terjemahan.
+        Untuk subtitle video atau teks pendek, kecilkan <code>num_ctx</code> dan <code>num_predict</code> agar jauh lebih cepat.
+      </p>
+
+      <div class="params-grid">
+
+        <!-- num_ctx -->
+        <div class="form-group param-group">
+          <label for="numCtx">
+            Context Window <code>num_ctx</code>
+          </label>
+          <div class="select-with-badge">
+            <select id="numCtx">
+              <option value="512">512 — Sangat cepat (subtitle)</option>
+              <option value="1024">1024 — Cepat (teks pendek)</option>
+              <option value="2048" selected>2048 — Seimbang (default)</option>
+              <option value="4096">4096 — Konteks lebih panjang</option>
+              <option value="8192">8192 — Dokumen panjang</option>
+              <option value="16384">16384 — Sangat panjang</option>
+              <option value="32768">32768 — Maksimal</option>
+            </select>
+            <span class="badge" id="numCtxBadge">2048 token</span>
+          </div>
+          <span class="form-hint">Jumlah token konteks yang diproses model. Lebih kecil = lebih cepat.</span>
+        </div>
+
+        <!-- num_predict -->
+        <div class="form-group param-group">
+          <label for="numPredict">
+            Max Output Token <code>num_predict</code>
+          </label>
+          <div class="range-wrap">
+            <input type="range" id="numPredict" min="16" max="512" step="16" value="128" />
+            <span class="range-value" id="numPredictValue">128</span>
+          </div>
+          <span class="form-hint">Batas panjang output model. Untuk subtitle, 64–128 sudah cukup.</span>
+        </div>
+
+        <!-- temperature -->
+        <div class="form-group param-group">
+          <label for="temperature">
+            Temperature <code>temperature</code>
+          </label>
+          <div class="range-wrap">
+            <input type="range" id="temperature" min="0.0" max="1.0" step="0.05" value="0.0" />
+            <span class="range-value" id="temperatureValue">0.00</span>
+          </div>
+          <span class="form-hint">Kreativitas model. 0 = deterministik & konsisten (direkomendasikan untuk terjemahan).</span>
+        </div>
+
+        <!-- top_p -->
+        <div class="form-group param-group">
+          <label for="topP">
+            Top P <code>top_p</code>
+          </label>
+          <div class="range-wrap">
+            <input type="range" id="topP" min="0.1" max="1.0" step="0.05" value="0.8" />
+            <span class="range-value" id="topPValue">0.80</span>
+          </div>
+          <span class="form-hint">Nucleus sampling. Nilai lebih rendah = output lebih terfokus.</span>
+        </div>
+
+        <!-- keep_alive -->
+        <div class="form-group param-group">
+          <label for="keepAlive">
+            VRAM Retention <code>keep_alive</code>
+          </label>
+          <select id="keepAlive">
+            <option value="0m">0m — Langsung bebaskan VRAM setelah selesai</option>
+            <option value="5m">5m — Simpan 5 menit</option>
+            <option value="15m">15m — Simpan 15 menit</option>
+            <option value="30m" selected>30m — Simpan 30 menit (default)</option>
+            <option value="1h">1h — Simpan 1 jam</option>
+            <option value="2h">2h — Simpan 2 jam</option>
+          </select>
+          <span class="form-hint">Berapa lama model tetap di VRAM setelah digunakan. Lebih lama = request berikutnya lebih cepat.</span>
+        </div>
+
+      </div>
+
+      <!-- Preset Quick-Pick -->
+      <div class="presets-bar">
+        <span class="presets-label">⚡ Quick Preset:</span>
+        <button class="preset-btn" data-preset="subtitle" id="presetSubtitle">Subtitle Video</button>
+        <button class="preset-btn" data-preset="balanced" id="presetBalanced">Seimbang</button>
+        <button class="preset-btn" data-preset="quality" id="presetQuality">Kualitas Tinggi</button>
+      </div>
+    </div>
+
+    <!-- === Cache === -->
+    <div class="options-card">
+      <div class="card-title-row">
+        <span class="card-icon">🗄️</span>
+        <h2>Cache</h2>
+      </div>
       <p class="card-description">Cache browser menyimpan hasil terjemahan di perangkat ini agar halaman yang sama tidak perlu diterjemahkan ulang.</p>
       <div class="button-group">
         <button id="clearBrowserCacheBtn" class="btn btn-warning">Hapus Cache Browser</button>
@@ -48,13 +179,14 @@
     </div>
 
     <div class="actions-bar">
-      <button id="saveBtn" class="btn btn-primary">Simpan Pengaturan</button>
-      <button id="resetBtn" class="btn btn-secondary">Reset ke Default</button>
+      <button id="saveBtn" class="btn btn-primary">💾 Simpan Pengaturan</button>
+      <button id="resetBtn" class="btn btn-secondary">↺ Reset ke Default</button>
     </div>
 
     <div class="toast" id="toast"></div>
   </div>
 
+  <script src="../shared/api.js"></script>
   <script src="options.js"></script>
 </body>
 </html>
