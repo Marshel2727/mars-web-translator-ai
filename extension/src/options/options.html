@@ -29,6 +29,14 @@
         <input type="url" id="apiBaseUrl" placeholder="http://127.0.0.1:8000" />
         <span class="form-hint">Alamat backend FastAPI yang sedang berjalan.</span>
       </div>
+      <div class="form-group">
+        <label for="apiToken">Token API</label>
+        <input type="password" id="apiToken" autocomplete="new-password" placeholder="Masukkan MARS_API_TOKEN" />
+        <span class="form-hint">Disimpan hanya di perangkat ini melalui chrome.storage.local dan tidak disinkronkan.</span>
+      </div>
+      <div class="button-group">
+        <button id="clearTokenBtn" class="btn btn-warning">Hapus Token Tersimpan</button>
+      </div>
     </div>
 
     <!-- === Terjemahan === -->
@@ -39,7 +47,7 @@
       </div>
       <div class="form-group">
         <label for="maxBatchSize">Ukuran Batch Maksimal</label>
-        <input type="number" id="maxBatchSize" min="1" max="50" placeholder="20" />
+        <input type="number" id="maxBatchSize" min="1" max="20" placeholder="20" />
         <span class="form-hint">Jumlah teks yang dikirim sekaligus ke server per request.</span>
       </div>
       <div class="form-group">
@@ -178,6 +186,7 @@
     <div class="toast" id="toast"></div>
   </div>
 
+  <script src="../shared/api.js"></script>
   <script src="options.js"></script>
 </body>
 </html>

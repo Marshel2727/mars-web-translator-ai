@@ -1,0 +1,205 @@
+original_text,translated_text
+Pass the <code>apiKey</code> parameter in the HTTP request headers.,Oper parameter <code>apiKey</code> di header permintaan HTTP.
+Call <code>fetchData()</code> asynchronously inside an <code>async</code> function.,Panggil <code>fetchData()</code> secara asinkron di dalam fungsi <code>async</code>.
+Use the `npm install` command to install all required dependencies.,Gunakan perintah `npm install` untuk menginstal semua dependensi yang diperlukan.
+Set `DEBUG=true` in your `.env` file to enable verbose logging.,Setel `DEBUG=true` di file `.env` Anda untuk mengaktifkan pengelogan terperinci.
+// TODO: Handle potential network error when API is offline,// TODO: Tangani potensi kesalahan jaringan saat API offline
+/* Initializes the SQLite connection pool with busy timeout */,/* Menginisialisasi pool koneksi SQLite dengan busy timeout */
+The `results` array contains a list of processed translation items.,Array `results` berisi daftar item terjemahan yang diproses.
+"If `status` code is `200`, the server returns a JSON object.","Jika kode `status` adalah `200`, server mengembalikan objek JSON."
+Returns a `Promise` that resolves to a boolean value.,Mengembalikan `Promise` yang menyelesaikan nilai boolean.
+The `<canvas>` element allows rendering dynamic 2D graphics.,Elemen `<canvas>` memungkinkan perenderan grafik 2D yang dinamis.
+Add the `aria-label` attribute to improve web accessibility.,Tambahkan atribut `aria-label` untuk meningkatkan aksesibilitas web.
+Import the hook using `import { useState } from 'react';`.,Impor hook menggunakan `import { useState } from 'react';`.
+The `onSubmit` event handler is triggered when the form is submitted.,Handler peristiwa `onSubmit` dipicu ketika formulir dikirimkan.
+Export the function as default using `export default main;`.,Ekspor fungsi sebagai default menggunakan `export default main;`.
+The `cache_service.py` module handles WAL mode configuration.,Modul `cache_service.py` menangani konfigurasi mode WAL.
+"Execute `git commit -m \Fix race condition\""` to save changes.""","Jalankan `git commit -m \Fix race condition\""` untuk menyimpan perubahan."""
+The `timeout` parameter defaults to `30000` milliseconds.,Parameter `timeout` secara default bernilai `30000` milidetik.
+Set `content-type` header to `application/json; charset=utf-8`.,Setel header `content-type` ke `application/json; charset=utf-8`.
+The `MutationObserver` instance monitors DOM character changes.,Instans `MutationObserver` memantau perubahan karakter DOM.
+Run `python prepare_dataset.py` to generate train and test splits.,Jalankan `python prepare_dataset.py` untuk menghasilkan split train dan test.
+The `originalTextMap` stores mapping between DOM nodes and original strings.,`originalTextMap` menyimpan pemetaan antara node DOM dan string asli.
+"If `response.ok` is false, throw a new `Error` with status text.","Jika `response.ok` bernilai false, lemparkan `Error` baru dengan teks status."
+The `get_active_model()` function retrieves current model configuration.,Fungsi `get_active_model()` mengambil konfigurasi model saat ini.
+Use `asyncio.gather()` to run multiple asynchronous tasks concurrently.,Gunakan `asyncio.gather()` untuk menjalankan beberapa tugas asinkron secara bersamaan.
+The `ollama_client.py` includes exponential backoff retry logic.,`ollama_client.py` menyertakan logika percobaan ulang exponential backoff.
+Parse raw JSON response string using `JSON.parse(data)`.,Parse string respon JSON mentah menggunakan `JSON.parse(data)`.
+The `<script>` tag must include the `defer` attribute.,Tag `<script>` harus menyertakan atribut `defer`.
+Use `const` for immutable variables and `let` for reassignable variables.,Gunakan `const` untuk variabel tak terubah dan `let` untuk variabel yang dapat ditetapkan ulang.
+The `manifest.json` defines Chrome extension permissions and content scripts.,`manifest.json` mendefinisikan izin ekstensi Chrome dan content script.
+Click the <code>Settings</code> tab to adjust API base URL.,Klik tab <code>Settings</code> untuk menyesuaikan URL dasar API.
+The `SELECT` query retrieves matching rows from SQLite table.,Kueri `SELECT` mengambil baris yang cocok dari tabel SQLite.
+Ensure `cors_origins` includes your frontend client URL.,Pastikan `cors_origins` menyertakan URL klien frontend Anda.
+The `middleware.py` catches uncaught exceptions and logs backtraces.,`middleware.py` menangkap pengecualian yang tidak tertangani dan mencatat backtrace.
+Set `max_tokens` parameter to limit response length.,Setel parameter `max_tokens` untuk membatasi panjang respon.
+The `useEffect` hook runs after every component render cycle.,Hook `useEffect` berjalan setelah setiap siklus render komponen.
+Catch asynchronous errors using `.catch(error => console.error(error))`.,Tangkap kesalahan asinkron menggunakan `.catch(error => console.error(error)`.
+The `localStorage` API persists key-value data in browser storage.,API `localStorage` menyimpan data key-value secara persisten di penyimpanan browser.
+Use `String.prototype.trim()` to strip leading and trailing whitespace.,Gunakan `String.prototype.trim()` untuk menghapus spasi di awal dan akhir.
+The `POST` request payload must match the Pydantic schema.,Payload permintaan `POST` harus cocok dengan skema Pydantic.
+Define route endpoints using `@router.post('/translate')` decorator.,Definisikan endpoint rute menggunakan dekorator `@router.post('/translate')`.
+The `service_worker.js` listens for messages from content scripts.,`service_worker.js` mendengarkan pesan dari content script.
+Convert array of items into JSON string using `JSON.stringify(items)`.,Konversi array item menjadi string JSON menggunakan `JSON.stringify(items)`.
+The `db.commit()` call flushes pending transactions to disk.,Panggilan `db.commit()` memicu transaksi tertunda ke disk.
+Check if element exists using `document.querySelector('#target') !== null`.,Periksa apakah elemen ada menggunakan `document.querySelector('#target') !== null`.
+The `isTranslatableNode()` method filters out script and style tags.,Metode `isTranslatableNode()` memfilter tag script dan style.
+"Use `window.addEventListener('DOMContentLoaded', callback)` to defer execution.","Gunakan `window.addEventListener('DOMContentLoaded', callback)` untuk menunda eksekusi."
+The `flex-direction: column` CSS property aligns items vertically.,Properti CSS `flex-direction: column` meyorongkan item secara vertikal.
+Set `position: fixed` to pin floating UI tooltips.,Setel `position: fixed` untuk menyematkan tooltip UI yang mengambang.
+The `z-index: 2147483647` ensures tooltip renders above all web elements.,`z-index: 2147483647` memastikan tooltip dirender di atas semua elemen web.
+"The `background-color` style property accepts hex, RGB, or HSL values.","Properti gaya `background-color` menerima nilai hex, RGB, atau HSL."
+Use `git checkout -b feature-branch` to create a new branch.,Gunakan `git checkout -b feature-branch` untuk membuat branch baru.
+Push changes to remote repository using `git push origin main`.,Push perubahan ke repositori jarak jauh menggunakan `git push origin main`.
+The `README.md` file provides installation and usage instructions.,File `README.md` menyediakan instruksi penginstalan dan penggunaan.
+Run unit tests using `pytest server/tests/` command.,Jalankan unit test menggunakan perintah `pytest server/tests/`.
+The `docker-compose.yml` orchestrates backend services and database.,`docker-compose.yml` mengorkestrasi layanan backend dan database.
+Set environment variables in `.env.local` file.,Setel variabel lingkungan di file `.env.local`.
+The `Uvicorn` server runs FastAPI application on port 8000.,Server `Uvicorn` menjalankan aplikasi FastAPI di port 8000.
+The `httpx.AsyncClient` handles outgoing asynchronous HTTP requests.,`httpx.AsyncClient` menangani permintaan HTTP asinkron yang keluar.
+"Set retry count to `3` for transient HTTP status codes (502, 503, 504).","Setel jumlah percobaan ulang ke `3` untuk kode status HTTP sementara (502, 503, 504)."
+The `temperature: 0.2` setting makes LLM outputs more deterministic.,Pengaturan `temperature: 0.2` membuat output LLM menjadi lebih deterministik.
+The `system_prompt` guides model behavior and translation format.,`system_prompt` mengarahkan perilaku model dan format terjemahan.
+Extract text content from HTML node using `node.textContent`.,Ekstrak konten teks dari node HTML menggunakan `node.textContent`.
+The `replace_file_content` tool modifies specific line ranges in files.,Tool `replace_file_content` mengubah rentang baris tertentu dalam file.
+Check for Chinese characters using regex `/[\\u4e00-\\u9fff]/`.,Periksa karakter Cina menggunakan regex `/[\\u4e00-\\u9fff]/`.
+The `viewport_translator.js` prioritizes visible elements over background text.,`viewport_translator.js` memprioritaskan elemen yang terlihat daripada teks latar belakang.
+The `batch_size: 50` parameter controls maximum items per translation request.,Parameter `batch_size: 50` mengontrol jumlah item maksimum per permintaan terjemahan.
+Use `Array.prototype.map()` to transform data elements in place.,Gunakan `Array.prototype.map()` untuk mentransformasi elemen data secara langsung.
+The `Set` data structure prevents duplicate node entries.,Struktur data `Set` mencegah entri node duplikat.
+The `Map` object maintains key-value pairs of DOM nodes and original text.,Objek `Map` mempertahankan pasangan key-value dari node DOM dan teks asli.
+Pass `options = { saveToCache: false }` to bypass cache storage.,Oper `options = { saveToCache: false }` untuk melewati penyimpanan cache.
+The `restoreOriginalText()` method reverts translated nodes back to original.,Metode `restoreOriginalText()` mengembalikan node yang diterjemahkan kembali ke asli.
+Listen for extension keyboard shortcuts in `background.js`.,Dengarkan pintasan papan ketik ekstensi di `background.js`.
+The `chrome.storage.local` API persists settings across browser restarts.,API `chrome.storage.local` menyimpan pengaturan secara persisten di seluruh restart browser.
+Use `chrome.tabs.sendMessage()` to communicate with content scripts.,Gunakan `chrome.tabs.sendMessage()` untuk berkomunikasi dengan content script.
+The `onMessage` listener processes requests sent from popup UI.,Listener `onMessage` memproses permintaan yang dikirim dari UI popup.
+Create custom tooltips with `document.createElement('div')`.,Buat tooltip kustom dengan `document.createElement('div')`.
+Set `backdrop-filter: blur(16px)` for modern glassmorphism UI effect.,Setel `backdrop-filter: blur(16px)` untuk efek UI glassmorphism modern.
+"The `font-family: 'Inter', sans-serif` provides clean typography.","`font-family: 'Inter', sans-serif` memberikan tipografi yang bersih."
+Add CSS animation `@keyframes marsTooltipFadeIn` for smooth entry.,Tambahkan animasi CSS `@keyframes marsTooltipFadeIn` untuk masuk yang mulus.
+The `activePageToken` invalidates outdated async translation batches.,`activePageToken` membatalkan batch terjemahan asinkron yang usang.
+Clear pending timers using `clearTimeout(state.priorityTimer)`.,Hapus timer yang tertunda menggunakan `clearTimeout(state.priorityTimer)`.
+The `isCurrentPageBlocked()` function checks blocked domains list.,Fungsi `isCurrentPageBlocked()` memeriksa daftar domain yang diblokir.
+Prevent translating code elements tagged with `<pre>` or `<code>`.,Cgah penerjemahan elemen kode yang ditandai dengan `<pre>` atau `<code>`.
+The `DOMPurify.sanitize()` method prevents XSS vulnerabilities.,Metode `DOMPurify.sanitize()` mencegah kerentanan XSS.
+Export database records to CSV format using Python `csv.writer`.,Ekspor rekaman database ke format CSV menggunakan Python `csv.writer`.
+The `sqlite3.connect()` function establishes connection to SQLite database.,Fungsi `sqlite3.connect()` membuat koneksi ke database SQLite.
+Use `WHERE mode = 'translate'` clause to filter cache queries.,Gunakan klausa `WHERE mode = 'translate'` untuk memfilter kueri cache.
+Order results by `created_at DESC` to fetch latest records.,Urutkan hasil berdasarkan `created_at DESC` untuk mengambil rekaman terbaru.
+The `pandas.read_csv()` function loads tabular data into a DataFrame.,Fungsi `pandas.read_csv()` memuat data tabular ke dalam DataFrame.
+"Split dataset into `train`, `val`, and `test` splits for evaluation.","Bagi dataset menjadi split `train`, `val`, dan `test` untuk evaluasi."
+"The `json.dumps(obj, ensure_ascii=False)` preserves Unicode characters.","`json.dumps(obj, ensure_ascii=False)` mempertahankan karakter Unicode."
+Use `random.seed(42)` to ensure reproducible dataset splits.,Gunakan `random.seed(42)` untuk memastikan split dataset yang dapat direproduksi.
+The `Unsloth` library accelerates LLM fine-tuning with QLoRA.,Library `Unsloth` mempercepat fine-tuning LLM dengan QLoRA.
+Configure `target_modules` for LoRA adapter projection layers.,Konfigurasikan `target_modules` untuk layer proyeksi adapter LoRA.
+Set `per_device_train_batch_size: 4` in training arguments.,Setel `per_device_train_batch_size: 4` di argumen pelatihan.
+Monitor training loss using TensorBoard or Weights & Biases.,Pantau training loss menggunakan TensorBoard atau Weights & Biases.
+Save fine-tuned adapter weights to `./mars-lora-adapter` folder.,Simpan bobot adapter hasil fine-tune ke folder `./mars-lora-adapter`.
+Convert model to 4-bit GGUF format using `llama.cpp` quantize tool.,Konversi model ke format GGUF 4-bit menggunakan tool kuantisasi `llama.cpp`.
+Create custom Ollama model using `ollama create mars-translator -f Modelfile`.,Buat model Ollama kustom menggunakan `ollama create mars-translator -f Modelfile`.
+Define custom React hook using `useCallback` for memoized handlers.,Definisikan hook React kustom menggunakan `useCallback` untuk handler yang dimemoize.
+Use `FastAPI` dependency injection for database session management.,Gunakan injeksi dependensi `FastAPI` untuk manajemen sesi database.
+Configure `Prisma` schema model relations with cascading deletes.,Konfigurasikan relasi model skema `Prisma` dengan penghapusan bertingkat.
+Set `Zustand` store middleware for local storage state persistence.,Setel middleware store `Zustand` untuk persistensi state penyimpanan lokal.
+Implement `Redux Toolkit` createAsyncThunk for API side effects.,Terapkan createAsyncThunk `Redux Toolkit` untuk efek samping API.
+Use `Tailwind` `@apply` directive inside custom component classes.,Gunakan direktif `@apply` `Tailwind` di dalam kelas komponen kustom.
+Set `Next.js` `revalidatePath` to purge static route cache on demand.,Setel `revalidatePath` `Next.js` untuk membersihkan cache rute statis secara on-demand.
+Use `React 19` `useActionState` hook for managing form submission states.,Gunakan hook `useActionState` `React 19` untuk mengelola state pengiriman formulir.
+Configure `Pydantic` `field_validator` for custom string validation.,Konfigurasikan `field_validator` `Pydantic` untuk validasi string kustom.
+Use `SQLAlchemy` async session manager for non-blocking database queries.,Gunakan manajer sesi asinkron `SQLAlchemy` untuk kueri database yang non-blocking.
+Set `Uvicorn` worker process count for handling concurrent requests.,Setel jumlah proses worker `Uvicorn` untuk menangani permintaan konkuren.
+Use `Docker` multi-stage build pattern to isolate compile dependencies.,Gunakan pola build multi-stage `Docker` untuk mengisolasi dependensi kompilasi.
+Configure `Nginx` `location` block for reverse proxying API traffic.,Konfigurasikan block `location` `Nginx` untuk melakukan reverse proxy lalu lintas API.
+Use `GitHub Actions` `cache` action to persist node_modules across builds.,Gunakan aksi `cache` `GitHub Actions` untuk menyimpan node_modules secara persisten di seluruh build.
+Set `Kubernetes` pod resource limits for memory and CPU allocation.,Setel batas sumber daya pod `Kubernetes` untuk alokasi memori dan CPU.
+Use `Helm` release values file to override environment default settings.,Gunakan file nilai rilis `Helm` untuk mengganti pengaturan default lingkungan.
+Configure `Prometheus` scrape config for target metric endpoints.,Konfigurasikan konfigurasi scrape `Prometheus` untuk endpoint metrik target.
+Use `Grafana` dashboard panel query variable for dynamic filtering.,Gunakan variabel kueri panel dashboard `Grafana` untuk pemfilteran dinamis.
+Set `Let's Encrypt` Certbot dry-run flag to test certificate renewal.,Setel flag dry-run Certbot `Let's Encrypt` untuk mengetes pembaruan sertifikat.
+Use `Ollama` Modelfile `PARAMETER` directive to set context length.,Gunakan direktif `PARAMETER` Modelfile `Ollama` untuk menyetel panjang konteks.
+Configure `ChromaDB` collection distance function to cosine similarity.,Konfigurasikan fungsi jarak koleksi `ChromaDB` ke kosinus similaritas.
+Use `LangChain` text splitter for segmenting long PDF documents into chunks.,Gunakan pemotong teks `LangChain` untuk membagi dokumen PDF panjang menjadi potongan.
+Set `LlamaIndex` vector store index retriever top_k parameter.,Setel parameter top_k retriever indeks penyimpanan vektor `LlamaIndex`.
+Use `Unsloth` FastLanguageModel for 2x faster QLoRA model fine-tuning.,Gunakan FastLanguageModel `Unsloth` untuk fine-tuning model QLoRA 2x lebih cepat.
+Configure `llama.cpp` main executable thread count for CPU inference.,Konfigurasikan jumlah thread eksekusi utama `llama.cpp` untuk inferensi CPU.
+Use `Manifest V3` `declarativeNetRequest` API for blocking network rules.,Gunakan API `declarativeNetRequest` `Manifest V3` untuk aturan pemblokiran jaringan.
+Set `Chrome` Extension background service worker module script type.,Setel tipe script modul service worker latar belakang Ekstensi `Chrome`.
+Use `Shadow DOM` `attachShadow({ mode: 'open' })` for encapsulated UI.,Gunakan `attachShadow({ mode: 'open' })` `Shadow DOM` untuk UI terenkapsulasi.
+Set `TextTrack` cue `snapToLines` property to false for pixel alignment.,Setel properti `snapToLines` cue `TextTrack` ke false untuk keselarasan piksel.
+Use `WebVTT` `<v Speaker>` voice span tags for multi-speaker captioning.,Gunakan tag voice span `<v Speaker>` `WebVTT` untuk captioning multi-pembicara.
+Configure `FFmpeg` `-vf subtitles` filter for hardcoded video burn-in.,Konfigurasikan filter `-vf subtitles` `FFmpeg` untuk burn-in video hardcode.
+Use `Whisper` `--language id` option for Indonesian speech transcription.,Gunakan opsi `--language id` `Whisper` untuk transkripsi suara bahasa Indonesia.
+Set `Pytest` `-k` flag to execute matching test function names.,Setel flag `-k` `Pytest` untuk mengeksekusi nama fungsi pengujian yang cocok.
+Use `Playwright` `page.waitForSelector()` for async DOM element readiness.,Gunakan `page.waitForSelector()` `Playwright` untuk kesiapan elemen DOM asinkron.
+Configure `Vitest` coverage report provider to v8 or istanbul.,Konfigurasikan penyedia laporan cakupan `Vitest` ke v8 atau istanbul.
+Use `Cypress` `cy.intercept()` to mock REST API network responses.,Gunakan `cy.intercept()` `Cypress` untuk memock respons API REST.
+Set `Git` `rebase.autoStash` config to true for automated working tree stash.,Setel konfigurasi `rebase.autoStash` `Git` ke true untuk stash pohon kerja otomatis.
+Use `git commit --amend` to update latest commit message description.,Gunakan `git commit --amend` untuk memperbarui deskripsi pesan commit terbaru.
+Configure `git config --global core.editor` to VS Code or Neovim.,Konfigurasikan `git config --global core.editor` ke VS Code atau Neovim.
+Use `SQLite` `PRAGMA journal_mode=WAL` for concurrent write operations.,Gunakan `PRAGMA journal_mode=WAL` `SQLite` untuk operasi penulisan konkuren.
+Set `PostgreSQL` `max_connections` parameter in postgresql.conf file.,Setel parameter `max_connections` `PostgreSQL` di file postgresql.conf.
+Use `Redis` `EXPIRE` command to set key time-to-live expiration.,Gunakan perintah `EXPIRE` `Redis` untuk menyetel masa kedaluwarsa key.
+Configure `MongoDB` compound index on status and createdAt fields.,Konfigurasikan indeks komposit `MongoDB` pada bidang status dan createdAt.
+Use `Elasticsearch` `match_phrase` query for exact phrase text search.,Gunakan kueri `match_phrase` `Elasticsearch` untuk pencarian teks frasa persis.
+Set `Meilisearch` searchable attributes list for fast document search.,Setel daftar atribut yang dapat dicari `Meilisearch` untuk pencarian dokumen cepat.
+Use `Qdrant` payload index for filtering vector search by payload metadata.,Gunakan indeks payload `Qdrant` untuk memfilter pencarian vektor berdasarkan metadata payload.
+Configure `ChromaDB` persistent client storage directory path.,Konfigurasikan jalur direktori penyimpanan klien persisten `ChromaDB`.
+Set `Ollama` `OLLAMA_NUM_PARALLEL` environment variable for parallel requests.,Setel variabel lingkungan `OLLAMA_NUM_PARALLEL` `OLLAMA` untuk permintaan paralel.
+Use `Vite` `define` option to expose environment build constants.,Gunakan opsi `define` `Vite` untuk mengekspos konstanta build lingkungan.
+Configure `Webpack` `splitChunks` optimization for vendor code splitting.,Konfigurasikan optimasi `splitChunks` `Webpack` untuk pemisahan kode vendor.
+Set `TypeScript` `strict: true` flag in tsconfig.json for maximum safety.,Setel flag `strict: true` `TypeScript` di tsconfig.json untuk keamanan maksimum.
+Use `ESLint` `@typescript-eslint` plugin for automated code linting.,Gunakan plugin `@typescript-eslint` `ESLint` untuk linting kode otomatis.
+Configure `Prettier` printWidth and singleQuote formatting options.,Konfigurasikan opsi format printWidth dan singleQuote `Prettier`.
+Use `pnpm` workspace protocol for managing multi-package monorepos.,Gunakan protokol workspace `pnpm` untuk mengelola monorepo multi-paket.
+Set `Turborepo` task pipeline dependencies in turbo.json file.,Setel dependensi pipeline tugas `Turborepo` di file turbo.json.
+Use `Nx` affected graph command to build modified workspace projects.,Gunakan perintah grafik terpengaruh `Nx` untuk membangun proyek workspace yang diubah.
+Configure `OpenTelemetry` SDK tracer provider for distributed tracing.,Konfigurasikan penyedia tracer SDK `OpenTelemetry` untuk pelacakan terdistribusi.
+Use `Jaeger` UI to trace request spans across backend microservices.,Gunakan UI `Jaeger` untuk melacak span permintaan di seluruh microservices backend.
+Set `Sentry` DSN client initializer for browser error monitoring.,Setel penginisialisasi klien DSN `Sentry` untuk pemantauan kesalahan browser.
+Use `Postman` collection runner for automated API endpoint testing.,Gunakan runner koleksi `Postman` untuk pengujian endpoint API otomatis.
+Configure `Swagger UI` OpenAPI 3.0 specification endpoint generator.,Konfigurasikan generator endpoint spesifikasi OpenAPI 3.0 `Swagger UI`.
+Use `Insomnia` environment variables for managing staging API keys.,Gunakan variabel lingkungan `Insomnia` untuk mengelola API key staging.
+Set `VS Code` settings.json auto format on save parameter.,Setel parameter format otomatis saat menyimpan di settings.json `VS Code`.
+Use `Neovim` `nvim-lspconfig` for configuring native language servers.,Gunakan `nvim-lspconfig` `Neovim` untuk mengkonfigurasi language server asli.
+Configure `Zed` editor telemetry and GPU rendering settings.,Konfigurasikan telemetri editor `Zed` dan pengaturan perenderan GPU.
+Use `Aider` git repository mode for automated multi-file code editing.,Gunakan mode repositori git `Aider` untuk penyuntingan kode multi-file otomatis.
+Set `Cursor` codebase indexing scope for AI contextual autocompletion.,Setel cakupan pengindeksan codebase `Cursor` untuk penyelesaian otomatis kontekstual AI.
+Use `Mars Web Translator` Chrome extension for real-time web translation.,Gunakan ekstensi Chrome `Mars Web Translator` untuk terjemahan web real-time.
+Configure `Mars Server` SQLite cache database connection string.,Konfigurasikan string koneksi database cache SQLite `Mars Server`.
+Set `prepare_dataset.py` v3 aggressive cleaning heuristics flag.,Setel flag heuristik pembersihan agresif v3 `prepare_dataset.py`.
+Use `organize_domains.py` to distribute pairs to domain subfolders.,Gunakan `organize_domains.py` untuk mendistribusikan pasangan ke subfolder domain.
+Execute `python prepare_dataset.py` to generate train and test splits.,Jalankan `python prepare_dataset.py` untuk menghasilkan split train dan test.
+Verify `stats.json` final output dataset pair count summary.,Verifikasi ringkasan jumlah pasangan dataset output akhir `stats.json`.
+Load `train.jsonl` master dataset file into Unsloth fine-tuning script.,Muat file master dataset `train.jsonl` ke dalam skrip fine-tuning Unsloth.
+Set `per_device_train_batch_size` to 4 for QLoRA model training.,Setel `per_device_train_batch_size` ke 4 untuk pelatihan model QLoRA.
+Convert fine-tuned model to 4-bit GGUF format using llama.cpp.,Konversi model hasil fine-tune ke format GGUF 4-bit menggunakan llama.cpp.
+Test fine-tuned translation model on `eval.jsonl` benchmark set.,Tes model terjemahan hasil fine-tune pada set benchmark `eval.jsonl`.
+Verify zero BLEU score regression on technical developer glossary terms.,Verifikasi nol regresi skor BLEU pada istilah glosarium developer teknis.
+Deploy fine-tuned translation model to production Ollama server.,Melakukan deployment model terjemahan hasil fine-tune ke server Ollama produksi.
+Congratulations! Your custom AI web translator model is live!,Selamat! Model penerjemah web AI kustom Anda sudah aktif!
+The API key must be included in the Authorization header as a Bearer token.,API key harus disertakan dalam header Authorization sebagai Bearer token.
+Configure the CORS middleware to whitelist trusted origin domains.,Konfigurasikan middleware CORS untuk memasukkan domain origin yang terpercaya ke whitelist.
+Use the `JSON.stringify()` method to convert JavaScript objects into JSON strings.,Gunakan metode `JSON.stringify()` untuk mengonversi objek JavaScript menjadi string JSON.
+The `fetch()` function returns a Promise that resolves to a Response object.,Fungsi `fetch()` mengembalikan Promise yang menyelesaikan objek Response.
+Set the HTTP status code to 201 Created upon successful resource creation.,Setel kode status HTTP ke 201 Created setelah pembuatan sumber daya berhasil.
+The `@app.get('/health')` decorator registers an HTTP GET endpoint.,Dekorator `@app.get('/health')` mendaftarkan endpoint HTTP GET.
+Use Pydantic `BaseModel` to define data schema validation rules.,Gunakan `BaseModel` Pydantic untuk mendefinisikan aturan validasi skema data.
+The `sqlite3_open()` function opens a database connection handle.,Fungsi `sqlite3_open()` membuka handle koneksi database.
+Set the `timeout` parameter to 30 seconds for long-running network requests.,Setel parameter `timeout` ke 30 detik untuk permintaan jaringan yang berjalan lama.
+Use `git pull --rebase` to fetch and integrate remote branch commits.,Gunakan `git pull --rebase` untuk mengambil dan mengintegrasikan commit branch remote.
+The `docker run -d` command executes a container in detached background mode.,Perintah `docker run -d` mengeksekusi kontainer dalam mode latar belakang terlepas.
+Use `npm run build` to compile production assets into the dist directory.,Gunakan `npm run build` untuk mengompilasi aset produksi ke dalam direktori dist.
+The `useEffect` clean-up function executes before component unmounting.,Fungsi pembersihan `useEffect` mengeksekusi sebelum unmounting komponen.
+Configure `next.config.js` to enable experimental React compiler features.,Konfigurasikan `next.config.js` untuk mengaktifkan fitur kompilator React eksperimental.
+The `aria-hidden='true'` attribute hides decorative elements from screen readers.,Atribut `aria-hidden='true'` menyembunyikan elemen dekoratif dari pembaca layar.
+Use `localStorage.setItem()` to persist user preferences across sessions.,Gunakan `localStorage.setItem()` untuk menyimpan preferensi pengguna secara persisten di seluruh sesi.
+The `window.matchMedia('(prefers-color-scheme: dark)')` checks OS theme preference.,`window.matchMedia('(prefers-color-scheme: dark)')` memeriksa preferensi tema OS.
+Set `Cache-Control: no-store` header to prevent browser response caching.,Setel header `Cache-Control: no-store` untuk mencegah caching respons browser.
+The `Content-Security-Policy` header mitigates XSS vulnerability risks.,Header `Content-Security-Policy` memigrasi risiko kerentanan XSS.
+Use `DOMPurify.sanitize()` to clean user input before rendering raw HTML.,Gunakan `DOMPurify.sanitize()` untuk membersihkan input pengguna sebelum merender HTML mentah.
+The `MutationObserver` disconnect method stops tracking DOM tree changes.,Metode disconnect `MutationObserver` menghentikan pelacakan perubahan pohon DOM.
+Use `webRequest` API to intercept outgoing extension HTTP headers.,Gunakan API `webRequest` untuk meng-intercept header HTTP ekstensi yang keluar.
+The `chrome.runtime.onMessage` listener handles extension inter-process messages.,Listener `chrome.runtime.onMessage` menangani pesan antar-proses ekstensi.
+Set `manifest_version: 3` in Chrome extension configuration file.,Setel `manifest_version: 3` di file konfigurasi ekstensi Chrome.
+Use `ShadowRoot.appendChild()` to attach element to Shadow DOM tree.,Gunakan `ShadowRoot.appendChild()` untuk melampirkan elemen ke pohon Shadow DOM.

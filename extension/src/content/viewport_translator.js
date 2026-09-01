@@ -19,7 +19,7 @@
             for (const node of nodes) {
                 if (!domScanner.isTranslatableNode(node, {}, state.originalTextMap)) continue;
 
-                const cachedTranslation = textReplacer.getCachedTranslation(node.nodeValue);
+                const cachedTranslation = textReplacer.getCachedTranslation(node.nodeValue, state.cacheContext);
                 if (cachedTranslation) continue;
 
                 if (queueSet.has(node)) continue;
@@ -38,8 +38,12 @@
             const queue = queueType === "priority" ? state.priorityQueue : state.backgroundQueue;
             const queueSet = queueType === "priority" ? state.priorityNodeSet : state.backgroundNodeSet;
             const batch = [];
+            const configuredBatchSize = Number.isFinite(state.maxBatchSize)
+                ? state.maxBatchSize
+                : MAX_BATCH_SIZE;
+            const batchSize = Math.max(1, Math.min(configuredBatchSize, MAX_BATCH_SIZE));
 
-            while (queue.length > 0 && batch.length < MAX_BATCH_SIZE) {
+            while (queue.length > 0 && batch.length < batchSize) {
                 const node = queue.shift();
                 queueSet.delete(node);
 
@@ -70,7 +74,7 @@
                 visibleOnly: true,
                 limit: MAX_PRIORITY_NODES_PER_SCAN,
             }, state.originalTextMap);
-            const cachedCount = textReplacer.applyCachedTranslations(nodes);
+            const cachedCount = textReplacer.applyCachedTranslations(nodes, state.cacheContext);
             const queuedCount = enqueueNodes(nodes, "priority");
 
             return cachedCount + queuedCount;
@@ -84,7 +88,7 @@
                 visibleOnly: false,
                 limit: MAX_BACKGROUND_NODES_PER_SCAN,
             }, state.originalTextMap);
-            const cachedCount = textReplacer.applyCachedTranslations(nodes);
+            const cachedCount = textReplacer.applyCachedTranslations(nodes, state.cacheContext);
             const queuedCount = enqueueNodes(nodes, "background");
 
             return cachedCount + queuedCount;
@@ -113,6 +117,16 @@
                 return 0;
             }
 
+            if (data.model) {
+                state.activeModel = data.model;
+            }
+            if (data.translation_profile && data.model) {
+                globalThis.MarsTranslator.updateTranslationProfile?.(
+                    data.translation_profile,
+                    data.model,
+                );
+            }
+
             let translatedCount = 0;
             state.isApplyingTranslations = true;
 
@@ -123,8 +137,16 @@
                 if (!saved.node.parentElement || !document.body.contains(saved.node.parentElement)) continue;
                 if (saved.node.nodeValue !== saved.originalText) continue;
 
-                textReplacer.applyTranslation(saved.node, saved.originalText, result.translated_text);
-                translatedCount += 1;
+                const applied = textReplacer.applyTranslation(
+                    saved.node,
+                    saved.originalText,
+                    result.translated_text,
+                    {
+                        cacheContext: state.cacheContext,
+                        markProcessed: true,
+                    },
+                );
+                if (applied) translatedCount += 1;
             }
 
             setTimeout(() => {
@@ -273,11 +295,28 @@
 
         function handlePageChange() {
             state.activePageToken += 1;
-            state.autoTranslateEnabled = true;
+            state.autoTranslateEnabled = state.autoTranslatePreference;
             clearTimers();
             resetQueues();
             scheduleViewportTranslate(PRIORITY_TRANSLATE_DELAY_MS);
             scheduleBackgroundTranslate(BACKGROUND_TRANSLATE_DELAY_MS);
+        }
+
+        function handleModelChange(model) {
+            const shouldTranslate = state.autoTranslateEnabled;
+            state.activePageToken += 1;
+            state.activeModel = model || null;
+            state.translationProfile = null;
+            state.cacheContext = null;
+            clearTimers();
+            resetQueues();
+            textReplacer.restoreOriginalText();
+            state.autoTranslateEnabled = shouldTranslate;
+
+            if (shouldTranslate) {
+                scheduleViewportTranslate(0);
+                scheduleBackgroundTranslate(BACKGROUND_TRANSLATE_DELAY_MS);
+            }
         }
 
         function wait(ms) {
@@ -286,6 +325,7 @@
 
         return {
             clearTimers,
+            handleModelChange,
             handlePageChange,
             restoreOriginalText,
             scheduleBackgroundTranslate,

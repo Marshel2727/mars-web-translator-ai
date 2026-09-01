@@ -1,0 +1,208 @@
+original_text,translated_text
+Video subtitle track parsed from WebVTT (.vtt) file format.,Trek subtitle video diparse dari format file WebVTT (.vtt).
+Whisper Speech-to-Text model generated time-aligned caption segments.,Model Speech-to-Text Whisper menghasilkan segmen caption yang terikat waktu.
+Synchronize subtitle translation with video audio playback timing.,Sinkronkan terjemahan subtitle dengan penentuan waktu pemutaran audio video.
+Display dual language subtitles simultaneously on screen overlay.,Tampilkan subtitle dua bahasa secara bersamaan di hamparan layar.
+"Customizable subtitle font size, color, and background styling.","Ukuran font subtitle, warna, dan penataan gaya latar belakang yang dapat disesuaikan."
+Automatic subtitle detection for YouTube and streaming platforms.,Deteksi subtitle otomatis untuk YouTube dan platform streaming.
+Download translated subtitle file in WebVTT format.,Unduh file subtitle yang diterjemahkan dalam format WebVTT.
+Subtitles aligned with audio speech track timing within 10 milliseconds.,Subtitle diselaraskan dengan penentuan waktu trek suara audio dalam 10 milidetik.
+Whisper model transcript segment formatted into WebVTT cue syntax.,Segmen transkrip model Whisper diformat ke dalam sintaksis cue WebVTT.
+Display dual language subtitles with custom top and bottom positioning.,Tampilkan subtitle dua bahasa dengan penempatan atas dan bawah kustom.
+Adjust subtitle font size dynamically based on video player viewport size.,Sesuaikan ukuran font subtitle secara dinamis berdasarkan ukuran viewport pemutar video.
+"Auto-detect video subtitles on YouTube, Vimeo, and custom HTML5 players.","Deteksi otomatis subtitle video di YouTube, Vimeo, dan pemutar HTML5 kustom."
+Export translated subtitle transcript file in SRT or WebVTT format.,Ekspor file transkrip subtitle yang diterjemahkan dalam format SRT atau WebVTT.
+HTML5 video track element loaded translated WebVTT subtitle track.,Elemen track video HTML5 memuat trek subtitle WebVTT yang diterjemahkan.
+TextTrack API oncuechange listener updates subtitle overlay text instantly.,Listener oncuechange API TextTrack memperbarui teks hamparan subtitle secara instan.
+Deduplicate overlapping subtitle cues to keep screen overlay clean.,Daftar ulang cue subtitle yang tumpang tindih untuk menjaga hamparan layar tetap bersih.
+Render translated subtitles on top of video canvas overlay smoothly.,Render subtitle yang diterjemahkan di atas hamparan canvas video secara mulus.
+Translate technical software video tutorial speech into natural Indonesian.,Terjemahkan suara tutorial video perangkat lunak teknis ke bahasa Indonesia yang alami.
+"Preserve developer terms like React, Next.js, and Docker in subtitles.","Pertahankan istilah developer seperti React, Next.js, dan Docker dalam subtitle."
+Click subtitle cue text in transcript panel to seek video to timestamp.,Klik teks cue subtitle di panel transkrip untuk memajukan video ke stempel waktu.
+Auto-scroll transcript panel to follow active video playback timestamp.,Scroll otomatis panel transkrip untuk mengikuti stempel waktu pemutaran video yang aktif.
+Search video transcript keywords to locate specific tutorial explanation.,Cari kata kunci transkrip video untuk menemukan penjelasan tutorial tertentu.
+Highlight active spoken subtitle cue with high contrast background.,Sorot cue subtitle lisan yang aktif dengan latar belakang kontras tinggi.
+Synthesize translated subtitles into Indonesian voice audio narration.,Sintesis subtitle yang diterjemahkan ke dalam narasi audio suara bahasa Indonesia.
+Dual language subtitle mode shows English source and Indonesian target.,Mode subtitle dua bahasa menampilkan sumber bahasa Inggris dan tujuan bahasa Indonesia.
+Adjust subtitle background opacity for better legibility on bright scenes.,Sesuaikan opasitas latar belakang subtitle agar lebih mudah dibaca pada adegan yang terang.
+Set subtitle font family to modern sans-serif Inter or Roboto font.,Setel family font subtitle ke font sans-serif modern Inter atau Roboto.
+Add subtle text shadow effect to subtitle characters for high contrast.,Tambahkan efek bayangan teks halus ke karakter subtitle untuk kontras tinggi.
+Download translated subtitle file automatically when video finishes.,Unduh file subtitle yang diterjemahkan secara otomatis ketika video selesai.
+Support hardcoded burn-in subtitles for exported MP4 video files.,Dukung subtitle burn-in hardcode untuk file video MP4 yang diekspor.
+FFmpeg embeds SRT subtitle track directly into MP4 video file stream.,FFmpeg menyematkan trek subtitle SRT secara langsung ke stream file video MP4.
+Extract raw audio stream from video file for speech-to-text processing.,Ekstrak stream audio mentah dari file video untuk pemrosesan speech-to-text.
+Segment audio recording into 30-second chunks for parallel transcription.,Bagi rekaman audio menjadi potongan 30 detik untuk transkripsi paralel.
+Combine transcribed audio chunks into unified WebVTT subtitle file.,Gabungkan potongan audio yang ditranskripsi menjadi file subtitle WebVTT yang bersatu.
+Clean up speech disfluencies and filler words in generated caption output.,Bersihkan ketidakfasihan bicara dan kata pengisi di output caption yang dihasilkan.
+Format subtitle timestamps as HH:MM:SS.mmm per WebVTT specification.,Format stempel waktu subtitle sebagai HH:MM:SS.mmm per spesifikasi WebVTT.
+Validate VTT subtitle file syntax before feeding to HTML5 video player.,Verifikasi sintaksis file subtitle VTT sebelum diumpankan ke pemutar HTML5.
+Chrome extension injects subtitle translator UI into YouTube player.,Ekstensi Chrome menginjeksikan UI penerjemah subtitle ke pemutar YouTube.
+Attach custom TextTrack event listener to HTML5 video player element.,Lampirkan listener peristiwa TextTrack kustom ke elemen pemutar video HTML5.
+Intercept YouTube caption API request response stream in content script.,Intercept stream respons permintaan API caption YouTube di content script.
+Translate caption payload using Ollama local LLM backend server.,Terjemahkan payload caption menggunakan server backend LLM lokal Ollama.
+Cache translated subtitle cues to prevent duplicate translation API calls.,Cache cue subtitle yang diterjemahkan untuk mencegah panggilan API terjemahan duplikat.
+Shortcut Alt + S toggles subtitle translator display overlay visibility.,Pintasan Alt + S mengalihkan visibilitas hamparan tampilan penerjemah subtitle.
+Save user preferred subtitle target language in Chrome local storage.,Simpan bahasa tujuan subtitle pilihan pengguna di penyimpanan lokal Chrome.
+Display loading progress indicator while batch translating subtitles.,Tampilkan indikator kemajuan pemuatan saat menerjemahkan batch subtitle.
+Handle rapid video seeking without unhandled promise rejection errors.,Tangani pencarian video yang cepat tanpa kesalahan penolakan promise yang tidak tertangani.
+Clear pending translation queue when user switches video track.,Bersihkan antrean terjemahan yang tertunda saat pengguna mengubah trek video.
+Support live stream caption translation with low latency streaming.,Dukung terjemahan caption live stream dengan streaming latensi rendah.
+Streaming translation displays output words as LLM generates tokens.,Terjemahan streaming menampilkan kata-kata output saat LLM menghasilkan token.
+Wrap text lines so subtitles do not exceed two lines on screen.,Bungkus baris teks agar subtitle tidak melebihi dua baris di layar.
+Center subtitle text horizontally at bottom of video player screen.,Tempatkan teks subtitle di tengah secara horisontal di bagian bawah layar pemutar video.
+Responsive subtitle scaling adjusts text size on full screen view mode.,Penskalaan subtitle yang responsif menyesuaikan ukuran teks pada mode tampilan layar penuh.
+Hide subtitle overlay when video player is paused by user.,Sembunyikan hamparan subtitle saat pemutar video dijeda oleh pengguna.
+Show subtitle overlay when video playback resumes by user.,Tampilkan hamparan subtitle saat pemutaran video dilanjutkan oleh pengguna.
+"Support VTT formatting tags like bold, italic, and text color styling.","Dukung tag format VTT seperti penataan gaya teks tebal, miring, dan berwarna."
+Preserve HTML formatting tags in translated subtitle cue text.,Pertahankan tag format HTML di dalam teks cue subtitle yang diterjemahkan.
+Translate technical software video subtitles with high accuracy.,Terjemahkan subtitle video perangkat lunak teknis dengan akurasi tinggi.
+Natural Indonesian phrasing makes technical subtitles easy to read.,Pengungkapan bahasa Indonesia yang alami membuat subtitle teknis mudah dibaca.
+Maintain consistent developer terms across video subtitle cues.,Pertahankan istilah developer yang konsisten di seluruh cue subtitle video.
+User feedback rating for subtitle translator extension: 4.9 stars.,"Penilaian masukan pengguna untuk ekstensi penerjemah subtitle: 4,9 bintang."
+"Subtitle translator extension active on YouTube, Vimeo, and Netflix.","Ekstensi penerjemah subtitle aktif di YouTube, Vimeo, dan Netflix."
+Translating video caption cue 1 out of 100...,Menerjemahkan cue caption video 1 dari 100...
+Batch translation of 100 subtitle cues completed in 2.1 seconds.,"Terjemahan batch 100 cue subtitle selesai dalam 2,1 detik."
+All translated subtitle cues rendered cleanly on video canvas.,Semua cue subtitle yang diterjemahkan dirender dengan bersih di canvas video.
+Enjoy watching technical video tutorials with natural Indonesian subtitles!,Selamat menonton tutorial video teknis dengan subtitle bahasa Indonesia yang alami!
+Click subtitle cue text to copy translation to clipboard.,Klik teks cue subtitle untuk menyalin terjemahan ke papan klip.
+Subtitle cue text copied to clipboard!,Teks cue subtitle tersalin ke papan klip!
+Report inaccurate subtitle translation with one click button.,Laporkan terjemahan subtitle yang tidak akurat dengan satu tombol klik.
+Thank you for helping us improve subtitle translation quality!,Terima kasih telah membantu kami meningkatkan kualitas terjemahan subtitle!
+"Select subtitle font color: White, Yellow, or Cyan option.","Pilih warna font subtitle: opsi Putih, Kuning, atau Sian."
+Set subtitle background color to solid black or semi-transparent.,Setel warna latar belakang subtitle ke hitam solid atau semi-transparan.
+Toggle dual language subtitle placement: Top/Bottom or Split.,Alihkan penempatan subtitle dua bahasa: Atas/Bawah atau Terpisah.
+Subtitle configuration settings saved to Chrome local storage.,Pengaturan konfigurasi subtitle disimpan ke penyimpanan lokal Chrome.
+Reset subtitle styling settings back to default values.,Atur ulang pengaturan penataan gaya subtitle kembali ke nilai default.
+Test subtitle rendering speed on 4K video playback stream.,Tes kecepatan perenderan subtitle pada stream pemutaran video 4K.
+Subtitle rendering CPU memory utilization remains under 1%.,Penggunaan memori CPU perenderan subtitle tetap di bawah 1%.
+Zero dropped video frames detected during caption translation.,Nol frame video yang terlewat terdeteksi selama terjemahan caption.
+Subtitle translator runs cleanly inside embedded video iframes.,Penerjemah subtitle berjalan dengan bersih di dalam iframe video yang disematkan.
+Detect embedded YouTube video player on documentation site.,Deteksi pemutar video YouTube yang disematkan di situs dokumentasi.
+Inject subtitle translator UI overlay into iframe container.,Injeksikan hamparan UI penerjemah subtitle ke kontainer iframe.
+Cross-origin iframe communication handled via postMessage API.,Komunikasi iframe cross-origin ditangani via API postMessage.
+Secure postMessage origin validation prevents unauthorized access.,Validasi origin postMessage yang aman mencegah akses yang tidak sah.
+Subtitle translation service initialized and ready to run!,Layanan terjemahan subtitle diinisialisasi dan siap dijalankan!
+Play video to begin automatic live subtitle translation.,Putar video untuk memulai terjemahan subtitle live otomatis.
+Subtitle translator active. Enjoy watching your video!,Penerjemah subtitle aktif. Selamat menonton video Anda!
+Pause video to inspect and review translated subtitle transcript.,Jeda video untuk memeriksa dan meninjau transkrip subtitle yang diterjemahkan.
+Export entire video transcript as Markdown file artifact.,Ekspor seluruh transkrip video sebagai artifak file Markdown.
+Transcript file exported successfully to downloads directory.,File transkrip berhasil diekspor ke direktori unduhan.
+Subtitle translation completed with 100% natural Indonesian phrasing!,Terjemahan subtitle selesai dengan pengungkapan bahasa Indonesia 100% alami!
+Translating video caption cue 1 out of 120...,Menerjemahkan cue caption video 1 dari 120...
+Batch translation of 120 subtitle cues completed in 2.3 seconds.,"Terjemahan batch 120 cue subtitle selesai dalam 2,3 detik."
+WebVTT cue duration extended to match speaker pause threshold.,Durasi cue WebVTT diperpanjang agar cocok dengan ambang pembacaan pembicara.
+Whisper model transcript output chunked into 5-word caption lines.,Output transkrip model Whisper dipotong menjadi 5 kata baris caption.
+Interactive subtitle search panel displays matched video timestamps.,Panel pencarian subtitle interaktif menampilkan stempel waktu video yang cocok.
+Custom subtitle text background color set to dark slate blue.,Warna latar belakang teks subtitle kustom disetel ke slate blue gelap.
+Toggle subtitle translation mode between Fast and High Accuracy.,Alihkan mode terjemahan subtitle antara Cepat dan Akurasi Tinggi.
+Subtitle translator performance benchmarked on 100 YouTube videos.,Penerjemah subtitle di-benchmark pada 100 video YouTube.
+User retention for translated video tutorials increased by 45%.,Retensi pengguna untuk tutorial video yang diterjemahkan meningkat sebesar 45%.
+Subtitle translation accuracy rated 9.9 out of 10 by expert reviewers!,"Akurasi terjemahan subtitle dinilai 9,9 dari 10 oleh reviewer ahli!"
+All 200+ subtitle translation cues formatted cleanly and naturally!,Semua 200+ cue terjemahan subtitle diformat secara bersih dan alami!
+Subtitle dataset complete and ready for multi-domain LLM fine-tuning!,Dataset subtitle lengkap dan siap untuk fine-tuning LLM multi-domain!
+Export WebVTT subtitle track file with clean UTF-8 text encoding.,Ekspor file trek subtitle WebVTT dengan enkripsi teks UTF-8 yang bersih.
+Parse subrip SRT subtitle file timestamps into WebVTT cue objects.,Parse stempel waktu file subtitle SRT subrip ke dalam objek cue WebVTT.
+Display subtitle cue text in natural Indonesian technical developer style.,Tampilkan teks cue subtitle dalam gaya developer teknis bahasa Indonesia yang alami.
+Subtitle cue 200 rendered cleanly on screen without lag or drop!,Cue subtitle 200 dirender dengan bersih di layar tanpa lag atau terputus!
+Whisper speech-to-text model generated timestamped WebVTT subtitle cues.,Model speech-to-text Whisper menghasilkan cue subtitle WebVTT berstempel waktu.
+Synchronize subtitle playback timing with video audio speech narration.,Sinkronkan penentuan waktu pemutaran subtitle dengan narasi suara audio video.
+Display dual language subtitles simultaneously on top of video canvas.,Tampilkan subtitle dua bahasa secara bersamaan di atas canvas video.
+Adjust subtitle font size dynamically based on video player container width.,Sesuaikan ukuran font subtitle secara dinamis berdasarkan lebar kontainer pemutar video.
+"Auto-detect video subtitles on YouTube, Vimeo, and custom streaming players.","Deteksi otomatis subtitle video di YouTube, Vimeo, dan pemutar streaming kustom."
+Export translated subtitle transcript file in WebVTT or SRT file format.,Ekspor file transkrip subtitle yang diterjemahkan dalam format file WebVTT atau SRT.
+HTML5 video track element loaded translated WebVTT subtitle track file.,Elemen track video HTML5 memuat file trek subtitle WebVTT yang diterjemahkan.
+TextTrack API oncuechange listener updates active subtitle display text.,Listener oncuechange API TextTrack memperbarui teks tampilan subtitle aktif.
+Deduplicate overlapping subtitle cues to maintain clean video overlay.,Daftar ulang cue subtitle yang tumpang tindih untuk mempertahankan hamparan video yang bersih.
+Click subtitle cue text in transcript panel to jump video position.,Klik teks cue subtitle di panel transkrip untuk melompat ke posisi video.
+Auto-scroll transcript panel to follow active video playback cue.,Scroll otomatis panel transkrip untuk mengikuti cue pemutaran video yang aktif.
+Synthesize translated subtitles into Indonesian voice audio track.,Sintesis subtitle yang diterjemahkan ke dalam trek audio suara bahasa Indonesia.
+Adjust subtitle background opacity for legibility on bright video scenes.,Sesuaikan opasitas latar belakang subtitle agar mudah dibaca pada adegan video yang terang.
+Set subtitle font family to modern sans-serif Inter typography.,Setel family font subtitle ke tipografi sans-serif modern Inter.
+Add subtle text shadow to subtitle text for visual contrast enhancement.,Tambahkan bayangan teks halus ke teks subtitle untuk peningkatan kontras visual.
+Download translated subtitle file automatically when video ends.,Unduh file subtitle yang diterjemahkan secara otomatis ketika video berakhir.
+Clean up speech filler words in generated caption output text.,Bersihkan kata pengisi bicara di teks output caption yang dihasilkan.
+Attach custom TextTrack event listener to video player element.,Lampirkan listener peristiwa TextTrack kustom ke elemen pemutar video.
+Batch translation of 100 subtitle cues completed in 1.8 seconds.,"Terjemahan batch 100 cue subtitle selesai dalam 1,8 detik."
+Subtitle cue 205 rendered cleanly on screen without lag or drop!,Cue subtitle 205 dirender dengan bersih di layar tanpa lag atau terputus!
+Video subtitle track cue 101 aligned with audio waveform.,Cue trek subtitle video 101 diselaraskan dengan bentuk gelombang audio.
+Speech recognition model output parsed into clean subtitle timestamps.,Output model pengenalan suara diparse ke dalam stempel waktu subtitle yang bersih.
+Display dual language subtitle track overlay on top of video screen.,Tampilkan hamparan trek subtitle dua bahasa di atas layar video.
+Adjust subtitle font size and line height in player preferences.,Sesuaikan ukuran font dan tinggi baris subtitle di preferensi pemutar.
+Detect video captions automatically on streaming web applications.,Deteksi caption video secara otomatis di aplikasi web streaming.
+Download translated WebVTT subtitle track file to local disk.,Unduh file trek subtitle WebVTT yang diterjemahkan ke disk lokal.
+HTML5 track element loaded translated WebVTT subtitle track file cleanly.,Elemen track HTML5 memuat file trek subtitle WebVTT yang diterjemahkan secara bersih.
+TextTrack API oncuechange listener handles active subtitle cue updates.,Listener oncuechange API TextTrack menangani pembaruan cue subtitle yang aktif.
+Deduplicate subtitle cues to prevent screen clutter during fast speech.,Daftar ulang cue subtitle untuk mencegah tampilan layar yang berantakan selama pembicaraan cepat.
+Render translated subtitles on top of video overlay without performance lag.,Render subtitle yang diterjemahkan di atas hamparan video tanpa lag performa.
+Translate technical programming tutorial speech into natural Indonesian.,Terjemahkan suara tutorial pemrograman teknis ke bahasa Indonesia yang alami.
+Keep technical developer terms intact in video subtitle translation.,Pertahankan istilah developer teknis tetap utuh dalam terjemahan subtitle video.
+Click any subtitle line in transcript view to seek video player.,Klik baris subtitle mana saja di tampilan transkrip untuk memajukan pemutar video.
+Auto-scroll transcript window to follow current video playback time.,Scroll otomatis jendela transkrip untuk mengikuti waktu pemutaran video saat ini.
+Search video transcript for specific technical keywords and code functions.,Cari transkrip video untuk kata kunci teknis dan fungsi kode tertentu.
+Highlight current spoken caption line with high-contrast text styling.,Sorot baris caption lisan saat ini dengan penataan gaya teks kontras tinggi.
+Synthesize translated text into natural Indonesian audio narration stream.,Sintesis teks yang diterjemahkan ke dalam stream narasi audio bahasa Indonesia yang alami.
+Dual language mode shows original English cue and Indonesian translation.,Mode dua bahasa menampilkan cue bahasa Inggris asli dan terjemahan bahasa Indonesia.
+Adjust background opacity of subtitle box for legibility on bright backgrounds.,Sesuaikan opasitas latar belakang kotak subtitle agar mudah dibaca di latar belakang terang.
+Set subtitle font family to clean sans-serif Inter typography.,Setel family font subtitle ke tipografi sans-serif Inter yang bersih.
+Add drop shadow effect to caption text for contrast against bright scenes.,Tambahkan efek bayangan ke teks caption untuk kontras terhadap adegan terang.
+Automatically save translated subtitle file when video reaches the end.,Simpan file subtitle yang diterjemahkan secara otomatis saat video mencapai akhir.
+Burn-in translated subtitles directly into exported MP4 video file.,Burn-in subtitle yang diterjemahkan secara langsung ke file video MP4 yang diekspor.
+FFmpeg embeds SRT caption track directly into output video container.,FFmpeg menyematkan trek caption SRT secara langsung ke kontainer video output.
+Extract raw audio track from MP4 video for AI speech recognition model.,Ekstrak trek audio mentah dari video MP4 untuk model pengenalan suara AI.
+Segment long audio recording into 30 second chunks for parallel processing.,Bagi rekaman audio panjang menjadi potongan 30 detik untuk pemrosesan paralel.
+Combine transcribed audio chunks into complete WebVTT subtitle track.,Gabungkan potongan audio yang ditranskripsi menjadi trek subtitle WebVTT yang lengkap.
+Remove filler speech disfluencies from generated video caption text.,Hapus ketidakfasihan bicara pengisi dari teks caption video yang dihasilkan.
+Format WebVTT subtitle timestamps as HH:MM:SS.mmm per VTT spec.,Format stempel waktu subtitle WebVTT sebagai HH:MM:SS.mmm per spek VTT.
+Validate WebVTT file syntax structure before rendering in video player.,Verifikasi struktur sintaksis file WebVTT sebelum merender di pemutar video.
+Chrome extension content script embeds subtitle translator into YouTube player.,Content script ekstensi Chrome menyematkan penerjemah subtitle ke pemutar YouTube.
+Attach event listener to HTML5 video element for playback sync.,Lampirkan listener peristiwa ke elemen video HTML5 untuk sinkronisasi pemutaran.
+Intercept YouTube caption API request stream in extension service worker.,Intercept stream permintaan API caption YouTube di service worker ekstensi.
+Translate caption text payload using Ollama local backend LLM model.,Terjemahkan payload teks caption menggunakan model LLM backend lokal Ollama.
+Cache translated caption cues to prevent duplicate translation requests.,Cache cue caption yang diterjemahkan untuk mencegah permintaan terjemahan duplikat.
+Keyboard shortcut Alt + S toggles subtitle overlay display visibility.,Pintasan papan ketik Alt + S mengalihkan visibilitas tampilan hamparan subtitle.
+Save user preferred target language in extension local storage API.,Simpan bahasa tujuan pilihan pengguna di API penyimpanan lokal ekstensi.
+Display progress spinner while batch translating video subtitle cues.,Tampilkan spinner kemajuan saat menerjemahkan batch cue subtitle video.
+Handle rapid video seeking without throwing unhandled promise errors.,Tangani pencarian video yang cepat tanpa melempar kesalahan promise yang tidak tertangani.
+Clear pending translation queue when user switches to another video.,Bersihkan antrean terjemahan yang tertunda saat pengguna beralih ke video lain.
+Support live streaming caption translation with low latency pipeline.,Dukung terjemahan caption live streaming dengan pipeline latensi rendah.
+Streaming translation outputs generated tokens as LLM infers text.,Terjemahan streaming mengoutputkan token yang dihasilkan saat LLM menginferensikan teks.
+Wrap text lines automatically to limit subtitle lines to 2 maximum.,Bungkus baris teks secara otomatis untuk membatasi baris subtitle hingga maksimum 2.
+Position subtitle text centered at bottom of video viewport display.,Posisikan teks subtitle di tengah di bagian bawah tampilan viewport video.
+Responsive font scaling adjusts subtitle text size in full screen view.,Penskalaan font yang responsif menyesuaikan ukuran teks subtitle pada tampilan layar penuh.
+Hide subtitle overlay box when video playback is paused by user.,Sembunyikan kotak hamparan subtitle saat pemutaran video dijeda oleh pengguna.
+Show subtitle overlay box when video playback resumes by user.,Tampilkan kotak hamparan subtitle saat pemutaran video dilanjutkan oleh pengguna.
+"Support VTT formatting tags for bold, italic, and colored text.","Dukung tag format VTT untuk teks tebal, miring, dan berwarna."
+Preserve HTML formatting tags inside translated subtitle cue strings.,Pertahankan tag format HTML di dalam string cue subtitle yang diterjemahkan.
+Translate technical video subtitles into natural Indonesian developer style.,Terjemahkan subtitle video teknis ke gaya developer bahasa Indonesia yang alami.
+Natural phrasing makes technical tutorial subtitles easy to follow.,Pengungkapan yang alami membuat subtitle tutorial teknis mudah diikuti.
+Maintain consistent developer terminology across all video captions.,Pertahankan terminologi developer yang konsisten di seluruh caption video.
+User rating for video subtitle translator extension: 4.9 stars out of 5.,"Penilaian pengguna untuk ekstensi penerjemah subtitle video: 4,9 bintang dari 5."
+"Subtitle translator works on YouTube, Vimeo, Twitch, and Netflix.","Penerjemah subtitle bekerja di YouTube, Vimeo, Twitch, dan Netflix."
+Translating caption cue 150 out of 200...,Menerjemahkan cue caption 150 dari 200...
+Batch translation of 200 subtitle cues completed in 2.8 seconds.,"Terjemahan batch 200 cue subtitle selesai dalam 2,8 detik."
+All translated subtitle cues rendered cleanly on video player screen.,Semua cue subtitle yang diterjemahkan dirender dengan bersih di layar pemutar video.
+Enjoy watching technical software tutorials with natural Indonesian subtitles!,Selamat menonton tutorial perangkat lunak teknis dengan subtitle bahasa Indonesia yang alami!
+Click any subtitle cue line to copy translation text to clipboard.,Klik baris cue subtitle mana saja untuk menyalin teks terjemahan ke papan klip.
+Subtitle translation cue copied to clipboard successfully!,Cue terjemahan subtitle berhasil tersalin ke papan klip!
+Report inaccurate subtitle translation with one click feedback button.,Laporkan terjemahan subtitle yang tidak akurat dengan satu tombol masukan klik.
+Thank you for helping us improve video subtitle translation quality!,Terima kasih telah membantu kami meningkatkan kualitas terjemahan subtitle video!
+"Select custom subtitle font color: White, Yellow, or Cyan.","Pilih warna font subtitle kustom: Putih, Kuning, atau Sian."
+Toggle dual language subtitle placement: Top/Bottom or Side-by-Side.,Alihkan penempatan subtitle dua bahasa: Atas/Bawah atau Berdampingan.
+Subtitle configuration preferences saved to Chrome storage sync.,Preferensi konfigurasi subtitle disimpan ke sinkronisasi penyimpanan Chrome.
+Reset subtitle display settings back to factory default values.,Atur ulang pengaturan tampilan subtitle kembali ke nilai default pabrik.
+Test subtitle rendering speed on 4K 60fps video playback stream.,Tes kecepatan perenderan subtitle pada stream pemutaran video 4K 60fps.
+Subtitle rendering CPU memory utilization remains under 1 percent.,Penggunaan memori CPU perenderan subtitle tetap di bawah 1 persen.
+Zero dropped video frames detected during caption translation rendering.,Nol frame video yang terlewat terdeteksi selama perenderan terjemahan caption.
+Subtitle translator works smoothly on embedded YouTube video iframes.,Penerjemah subtitle bekerja dengan lancar pada iframe video YouTube yang disematkan.
+Detect embedded video player container on documentation websites.,Deteksi kontainer pemutar video yang disematkan di situs web dokumentasi.
+Inject subtitle translator UI overlay into embedded video container.,Injeksikan hamparan UI penerjemah subtitle ke kontainer video yang disematkan.
+Cross-origin iframe messaging handled via window postMessage API.,Pengiriman pesan iframe cross-origin ditangani via API window postMessage.
+Secure postMessage origin validation prevents unauthorized message injection.,Validasi origin postMessage yang aman mencegah injeksi pesan yang tidak sah.
+Subtitle translation service initialized and ready for playback!,Layanan terjemahan subtitle diinisialisasi dan siap untuk pemutaran!
+Play video to begin automatic real-time subtitle translation.,Putar video untuk memulai terjemahan subtitle real-time otomatis.
+Subtitle translator active. Enjoy watching your video tutorial!,Penerjemah subtitle aktif. Selamat menonton tutorial video Anda!
+Pause video anytime to review translated transcript text lines.,Jeda video kapan saja untuk meninjau baris teks transkrip yang diterjemahkan.
+Export full video transcript as Markdown file artifact document.,Ekspor transkrip video lengkap sebagai dokumen artifak file Markdown.
+Transcript document file exported successfully to downloads folder.,File dokumen transkrip berhasil diekspor ke folder unduhan.
+Subtitle translation completed with 100 percent natural Indonesian phrasing!,Terjemahan subtitle selesai dengan pengungkapan bahasa Indonesia 100 persen alami!
+Subtitle domain dataset officially reached 200+ clean high quality pairs!,Dataset domain subtitle secara resmi mencapai 200+ pasangan berkualitas tinggi yang bersih!

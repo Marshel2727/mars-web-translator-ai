@@ -1,6 +1,9 @@
 import re
 
 
+PROMPT_VERSION = "3"
+
+
 def _escape_xml_special(text: str) -> str:
     """Escape characters that could break XML-like delimiters in prompts."""
     text = text.replace("&", "&amp;")
@@ -72,7 +75,8 @@ def build_prompt(text: str, mode: str) -> str:
 
 def build_batch_translate_prompt(items: list[dict[str, str]], mode: str) -> str:
     numbered = "\n".join(
-        f"[{i+1}] {item['text']}" for i, item in enumerate(items)
+        f'<item index="{i+1}">{_escape_xml_special(item["text"])}</item>'
+        for i, item in enumerate(items)
     )
 
     if mode == "explain":
@@ -82,7 +86,14 @@ def build_batch_translate_prompt(items: list[dict[str, str]], mode: str) -> str:
 
     return f"""{task} setiap teks ke Bahasa Indonesia.
 
+ATURAN OUTPUT:
+- Kembalikan tepat satu blok untuk setiap item dan pertahankan urutannya.
+- Awali setiap blok dengan [nomor], misalnya [1].
+- Baris lanjutan tanpa [nomor] dianggap bagian dari item sebelumnya.
+- Jangan menyalin tag <item>, instruksi, atau pembatas prompt.
+- Jangan mengubah kode, nama fungsi, URL, path, command, atau istilah teknis penting.
+
 {numbered}
 
-Output:
+OUTPUT:
 [1]"""

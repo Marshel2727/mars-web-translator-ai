@@ -1,25 +1,38 @@
 (function() {
-    // Hindari injeksi ganda
     if (window._marsSubtitleInterceptorInjected) return;
     window._marsSubtitleInterceptorInjected = true;
 
-    console.log("[Mars Translator] 🚀 Subtitle Interceptor diaktifkan di Main World.");
+    console.log("[Mars Translator] Subtitle Interceptor diaktifkan di Main World.");
 
     const originalFetch = window.fetch;
     const originalXHROpen = XMLHttpRequest.prototype.open;
     const originalXHRSend = XMLHttpRequest.prototype.send;
+    const originalXHRSetRequestHeader = XMLHttpRequest.prototype.setRequestHeader;
 
-    // --- Shared translation state ---
-    // pendingTranslations: kunci URL → resolve function dari Promise yang menunggu terjemahan
     const pendingTranslations = new Map();
-    // translationCache: kunci URL → hasil terjemahan yang sudah jadi (untuk request kedua/ketiga)
     const translationCache = new Map();
-    // translationInFlight: kunci URL → Promise yang sedang berjalan (agar tidak duplicate request ke LLM)
     const translationInFlight = new Map();
 
-    const TRANSLATION_TIMEOUT_MS = 30000;
+    const MAX_CACHE_SIZE = 200;
+    const TIMEOUT_BASE_MS = 10000;
+    const TIMEOUT_PER_CHAR_MS = 50;
+    const TIMEOUT_MAX_MS = 60000;
 
-    // Listen balasan terjemahan dari content script
+    window.marsVideoInfo = window.marsVideoInfo || {};
+
+    function detectPlatform() {
+        const host = location.hostname;
+        if (host.includes('youtube.com') || host.includes('youtu.be')) return 'youtube';
+        if (host.includes('vimeo.com')) return 'vimeo';
+        if (host.includes('frontendmasters.com')) return 'frontendmasters';
+        if (host.includes('udemy.com')) return 'udemy';
+        if (host.includes('coursera.org')) return 'coursera';
+        if (host.includes('netflix.com')) return 'netflix';
+        return 'generic';
+    }
+
+    window.marsVideoInfo.platform = detectPlatform();
+
     window.addEventListener("message", (event) => {
         if (event.source !== window || !event.data) return;
 
@@ -30,29 +43,39 @@
                 pendingTranslations.delete(originalUrl);
             }
         }
+
+        if (event.data.type === "MARS_CLEAR_SUBTITLE_CACHE") {
+            translationCache.clear();
+            translationInFlight.clear();
+            pendingTranslations.clear();
+            window.postMessage({ type: "MARS_CACHE_CLEARED" }, "*");
+        }
     });
 
-    /**
-     * Meminta terjemahan ke content script.
-     * Mengembalikan Promise yang resolve dengan teks terjemahan.
-     * Jika URL yang sama sudah diminta sebelumnya, tunggu promise yang sama (tidak duplikat).
-     * Includes a timeout to prevent memory leaks if content script doesn't respond.
-     */
+    function setCache(url, content) {
+        if (translationCache.size >= MAX_CACHE_SIZE) {
+            const firstKey = translationCache.keys().next().value;
+            translationCache.delete(firstKey);
+        }
+        translationCache.set(url, content);
+    }
+
+    function getTimeout(textLength) {
+        return Math.min(
+            Math.max(TIMEOUT_BASE_MS, textLength * TIMEOUT_PER_CHAR_MS),
+            TIMEOUT_MAX_MS
+        );
+    }
+
     function getOrStartTranslation(url, originalText, subtitleType) {
-        // Sudah punya cache? Langsung kembalikan
         if (translationCache.has(url)) {
-            console.log(`[Mars Translator] ⚡ Cache HIT untuk: ${url}`);
             return Promise.resolve(translationCache.get(url));
         }
 
-        // Terjemahan sedang berjalan? Tunggu promise yang sama
         if (translationInFlight.has(url)) {
-            console.log(`[Mars Translator] ⏳ Menunggu terjemahan yang sedang berjalan: ${url}`);
             return translationInFlight.get(url);
         }
 
-        // Buat request terjemahan baru
-        console.log(`[Mars Translator] 📤 Memulai terjemahan baru: ${url}`);
         const translationPromise = new Promise((resolve) => {
             pendingTranslations.set(url, resolve);
             window.postMessage({
@@ -62,16 +85,16 @@
                 subtitleType: subtitleType
             }, "*");
 
-            // Timeout: jika content script tidak merespons, resolve dengan original text
+            const timeoutMs = getTimeout(originalText.length);
             setTimeout(() => {
                 if (pendingTranslations.has(url)) {
-                    console.warn(`[Mars Translator] ⏰ Translation timeout for: ${url}`);
+                    console.warn(`[Mars Translator] Translation timeout (${timeoutMs}ms) for: ${url}`);
                     pendingTranslations.delete(url);
                     resolve(originalText);
                 }
-            }, TRANSLATION_TIMEOUT_MS);
+            }, timeoutMs);
         }).then((result) => {
-            translationCache.set(url, result);
+            setCache(url, result);
             translationInFlight.delete(url);
             return result;
         });
@@ -80,17 +103,19 @@
         return translationPromise;
     }
 
-    // Helper: apakah URL ini kemungkinan subtitle?
     function getSubtitleType(url) {
-        if (url.includes("/api/timedtext")) return "youtube";
-        if (url.includes(".vtt")) return "vtt";
+        if (url.includes('/api/timedtext')) return 'youtube';
+        if (url.match(/\.(vtt|srt|sbv|ass|ssa|sub|idx)(\?|#|$)/i)) return 'vtt';
+        if (url.includes('youtube.com') && (url.includes('caption') || url.includes('cc') || url.includes('subtitle'))) return 'youtube';
+        if (url.endsWith('.json') || url.includes('/subtitle/') || url.includes('caption_data')) return 'json';
         return null;
     }
 
-    // =============================================================
-    // --- Override Fetch API ---
-    // =============================================================
     window.fetch = function(...args) {
+        if (window._marsSubtitlePassthrough) {
+            return originalFetch.apply(this, args);
+        }
+
         const resource = args[0];
         let url = "";
 
@@ -100,140 +125,165 @@
 
         const subtitleTypeByUrl = getSubtitleType(url);
 
-        // Bukan subtitle → langsung teruskan
         if (!subtitleTypeByUrl) {
             return originalFetch.apply(this, args);
         }
 
-        // Fetch asli, lalu intercept body-nya
-        const originalFetchPromise = originalFetch.apply(this, args);
-
-        return originalFetchPromise.then(async (response) => {
-            const clonedResponse = response.clone();
-            const originalText = await clonedResponse.text();
-
-            // Double-check konten
-            let subtitleType = subtitleTypeByUrl;
-            if (subtitleType === "vtt" && !originalText.trim().startsWith("WEBVTT")) {
-                return new Response(originalText, {
-                    status: response.status,
-                    statusText: response.statusText,
-                    headers: response.headers
-                });
+        return originalFetch.apply(this, args).then(async (response) => {
+            if (!response.ok) {
+                console.warn(`[Mars Translator] Fetch subtitle gagal (HTTP ${response.status}), pass through: ${url}`);
+                return response;
             }
 
-            console.log(`[Mars Translator] 📡 Fetch menangkap subtitle (${subtitleType}): ${url}`);
+            const clonedResponse = response.clone();
+            let originalText;
+            try {
+                originalText = await clonedResponse.text();
+            } catch (e) {
+                console.warn("[Mars Translator] Gagal baca body subtitle, pass through:", e);
+                return response;
+            }
 
-            // Gunakan ReadableStream agar player tidak timeout:
-            // Stream akan terbuka dan menunggu terjemahan selesai.
+            let subtitleType = subtitleTypeByUrl;
+            if (subtitleType === "vtt" && !originalText.trim().startsWith("WEBVTT")) {
+                return response;
+            }
+
+            window.marsVideoInfo.subtitleDetected = true;
+            window.marsVideoInfo.subtitleFormat = subtitleType;
+            window.marsVideoInfo.subtitleLoadMethod = 'fetch';
+
             const stream = new ReadableStream({
                 async start(controller) {
                     try {
                         const translatedText = await getOrStartTranslation(url, originalText, subtitleType);
-                        console.log(`[Mars Translator] ✅ Fetch stream selesai, dikirim ke player: ${url}`);
                         controller.enqueue(new TextEncoder().encode(translatedText));
                         controller.close();
                     } catch (e) {
-                        console.error("[Mars Translator] ❌ Fetch stream gagal:", e);
+                        console.error("[Mars Translator] Fetch stream gagal:", e);
                         controller.enqueue(new TextEncoder().encode(originalText));
                         controller.close();
                     }
                 }
             });
 
+            const translatedHeaders = new Headers(response.headers);
+            translatedHeaders.delete("content-length");
+            translatedHeaders.delete("content-encoding");
+
             return new Response(stream, {
                 status: response.status,
                 statusText: response.statusText,
-                headers: response.headers
+                headers: translatedHeaders
             });
+        }).catch((err) => {
+            console.warn("[Mars Translator] Fetch subtitle network error, pass through:", err);
+            return originalFetch.apply(this, args);
         });
     };
 
-    // =============================================================
-    // --- Override XMLHttpRequest (Total Takeover untuk subtitle) ---
-    // Kunci: jangan panggil originalXHRSend untuk URL subtitle.
-    // Sebagai gantinya, kita fetch sendiri, terjemahkan, lalu 
-    // "pura-pura" XHR selesai dengan data Indonesia.
-    // Ini memastikan player TIDAK PERNAH melihat teks Inggris dari XHR.
-    // =============================================================
-    XMLHttpRequest.prototype.open = function(method, url, async = true, ...rest) {
+    XMLHttpRequest.prototype.open = function(method, url, async, ...rest) {
         this._marsMethod = method;
-        this._marsUrl = url;
-        this._marsAsync = async;
-        return originalXHROpen.call(this, method, url, async, ...rest);
+        this._marsUrl = typeof url === 'string' ? url : (url ? url.toString() : '');
+        this._marsAsync = async !== false;
+        this._marsHeaders = {};
+        return originalXHROpen.call(this, method, url, async !== false, ...rest);
+    };
+
+    XMLHttpRequest.prototype.setRequestHeader = function(name, value) {
+        this._marsHeaders = this._marsHeaders || {};
+        const existingValue = this._marsHeaders[name];
+        this._marsHeaders[name] = existingValue ? `${existingValue}, ${value}` : value;
+        return originalXHRSetRequestHeader.call(this, name, value);
     };
 
     XMLHttpRequest.prototype.send = function(body) {
+        if (window._marsSubtitlePassthrough) {
+            return originalXHRSend.call(this, body);
+        }
+
         const url = this._marsUrl || "";
         const subtitleType = getSubtitleType(url);
 
         if (!subtitleType) {
-            // Bukan subtitle → jalankan normal
             return originalXHRSend.call(this, body);
         }
 
-        // === TOTAL TAKEOVER ===
-        // Kita TIDAK memanggil originalXHRSend.
-        // Semua kontrol ada di tangan kita.
         const xhr = this;
-        console.log(`[Mars Translator] 🚦 XHR Total Takeover untuk: ${url}`);
+        const method = String(xhr._marsMethod || "GET").toUpperCase();
+        const requestedResponseType = xhr.responseType || "";
+        const hasCustomHeaders = Object.keys(xhr._marsHeaders || {}).length > 0;
+
+        // Jangan mengambil alih request yang semantiknya tidak bisa direplikasi dengan aman.
+        if (
+            xhr._marsAsync === false ||
+            method !== "GET" ||
+            hasCustomHeaders ||
+            xhr.withCredentials ||
+            !["", "text", "json"].includes(requestedResponseType)
+        ) {
+            console.debug("[Mars Translator] XHR subtitle dilewatkan agar request asli tetap utuh:", url);
+            return originalXHRSend.call(this, body);
+        }
+
+        window.marsVideoInfo.subtitleDetected = true;
+        window.marsVideoInfo.subtitleFormat = subtitleType;
+        window.marsVideoInfo.subtitleLoadMethod = 'xhr';
 
         (async () => {
             try {
-                // Fetch konten subtitle dari server asli menggunakan Fetch API kita sendiri
-                // (yang sudah di-patch, tapi kita pakai originalFetch agar tidak loop)
-                const response = await originalFetch(url);
+                const response = await originalFetch.call(window, url, {
+                    method,
+                    credentials: "same-origin",
+                });
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 const originalText = await response.text();
 
-                // Terjemahkan (atau ambil dari cache jika Fetch sudah menerjemahkannya lebih dulu)
                 const translatedText = await getOrStartTranslation(url, originalText, subtitleType);
-                console.log(`[Mars Translator] ✅ XHR takeover selesai, mengirim teks Indonesia ke player: ${url}`);
+                let responseValue = translatedText;
+                if (requestedResponseType === "json") {
+                    responseValue = JSON.parse(translatedText);
+                }
 
-                // Fake properti XHR dengan teks terjemahan
                 Object.defineProperty(xhr, 'readyState', { get: () => 4, configurable: true });
-                Object.defineProperty(xhr, 'status', { get: () => 200, configurable: true });
-                Object.defineProperty(xhr, 'statusText', { get: () => 'OK', configurable: true });
+                Object.defineProperty(xhr, 'status', { get: () => response.status, configurable: true });
+                Object.defineProperty(xhr, 'statusText', { get: () => response.statusText, configurable: true });
                 Object.defineProperty(xhr, 'responseText', { get: () => translatedText, configurable: true });
-                Object.defineProperty(xhr, 'response', { get: () => translatedText, configurable: true });
-                Object.defineProperty(xhr, 'responseType', { get: () => 'text', configurable: true });
-                Object.defineProperty(xhr, 'responseURL', { get: () => url, configurable: true });
-                if (!xhr.getResponseHeader._marsPatched) {
-                    const originalGetResponseHeader = xhr.getResponseHeader;
+                Object.defineProperty(xhr, 'response', { get: () => responseValue, configurable: true });
+                Object.defineProperty(xhr, 'responseType', { get: () => requestedResponseType, configurable: true });
+                Object.defineProperty(xhr, 'responseURL', { get: () => response.url || url, configurable: true });
+
+                const subFormat = subtitleType === 'youtube' ? 'application/json' : 'text/vtt; charset=utf-8';
+                if (!xhr._marsHeadersPatched) {
                     xhr.getResponseHeader = function(name) {
-                        if (name && name.toLowerCase() === 'content-type') return 'text/vtt; charset=utf-8';
-                        return originalGetResponseHeader.call(this, name);
+                        if (name && name.toLowerCase() === 'content-type') return subFormat;
+                        if (name && ['content-length', 'content-encoding'].includes(name.toLowerCase())) {
+                            return null;
+                        }
+                        return response.headers.get(name);
                     };
-                    xhr.getResponseHeader._marsPatched = true;
-                }
-                if (!xhr.getAllResponseHeaders._marsPatched) {
-                    const originalGetAllResponseHeaders = xhr.getAllResponseHeaders;
                     xhr.getAllResponseHeaders = function() {
-                        return 'content-type: text/vtt; charset=utf-8';
+                        const headerLines = [];
+                        response.headers.forEach((value, name) => {
+                            if (['content-type', 'content-length', 'content-encoding'].includes(name.toLowerCase())) return;
+                            headerLines.push(`${name}: ${value}`);
+                        });
+                        headerLines.push(`content-type: ${subFormat}`);
+                        return `${headerLines.join('\r\n')}\r\n`;
                     };
-                    xhr.getAllResponseHeaders._marsPatched = true;
+                    xhr._marsHeadersPatched = true;
                 }
 
-                // Tembak event ke player: readystatechange → load → loadend
                 xhr.dispatchEvent(new ProgressEvent('readystatechange'));
                 xhr.dispatchEvent(new ProgressEvent('load'));
                 xhr.dispatchEvent(new ProgressEvent('loadend'));
 
             } catch (e) {
-                console.error("[Mars Translator] ❌ XHR takeover gagal, fallback ke XHR asli:", e);
-                // Jika gagal, jalankan XHR asli sebagai fallback
+                console.warn("[Mars Translator] XHR takeover gagal, fallback ke XHR asli:", e);
                 originalXHRSend.call(xhr, body);
             }
         })();
-
-        // Return undefined seperti send() asli
     };
-
-    // =============================================================
-    // --- Monkey-Patch TextTrack.prototype.addCue ---
-    // Backup: untuk player yang pakai HLS + native TextTrack
-    // Uses originalText as cache key for deduplication.
-    // =============================================================
 
     if (window.TextTrack && window.TextTrack.prototype.addCue) {
         const originalAddCue = window.TextTrack.prototype.addCue;
@@ -242,21 +292,32 @@
                 const originalText = cue.text;
                 cue._marsTranslated = true;
 
-                // Use original text as key for deduplication
                 const cacheKey = `addCue:${originalText}`;
 
                 getOrStartTranslation(cacheKey, originalText, "vtt").then(translatedText => {
                     if (translatedText) {
                         cue.text = translatedText;
-                        console.log(`[Mars Translator] 🎯 addCue: "${originalText.slice(0, 30)}" → "${translatedText.slice(0, 30)}"`);
                     }
-                }).catch(e => {
-                    console.error("[Mars Translator] ❌ addCue terjemahan gagal:", e);
-                });
+                }).catch(() => {});
             }
             return originalAddCue.call(this, cue);
         };
-        console.log("[Mars Translator] 💉 TextTrack.prototype.addCue berhasil di-patch.");
     }
+
+    window.marsRestoreSubtitle = function() {
+        translationCache.clear();
+        translationInFlight.clear();
+        pendingTranslations.clear();
+        window._marsSubtitlePassthrough = true;
+        setTimeout(() => { window._marsSubtitlePassthrough = false; }, 10000);
+        window.postMessage({ type: "MARS_CACHE_CLEARED" }, "*");
+    };
+
+    window.addEventListener("message", (event) => {
+        if (event.source === window && event.data?.type === "MARS_ENABLE_PASSTHROUGH") {
+            window._marsSubtitlePassthrough = true;
+            setTimeout(() => { window._marsSubtitlePassthrough = false; }, parseInt(event.data?.duration) || 10000);
+        }
+    });
 
 })();

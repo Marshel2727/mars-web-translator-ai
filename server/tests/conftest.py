@@ -7,6 +7,9 @@ import pytest
 import pytest_asyncio
 from fastapi.testclient import TestClient
 
+TEST_API_TOKEN = "test-token-0123456789-abcdefghijklmnopqrstuvwxyz"
+os.environ["MARS_API_TOKEN"] = TEST_API_TOKEN
+
 # Use a temporary file for the database during testing
 @pytest.fixture(scope="session", autouse=True)
 def temp_db_path():
@@ -52,4 +55,9 @@ def mock_ollama_client():
 @pytest.fixture
 def test_client():
     from app.main import app
-    return TestClient(app)
+    return TestClient(app, headers={"X-Mars-Token": TEST_API_TOKEN})
+
+
+@pytest.fixture
+def auth_headers():
+    return {"X-Mars-Token": TEST_API_TOKEN}

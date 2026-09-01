@@ -1,4 +1,4 @@
-from unittest.mock import AsyncMock
+from unittest.mock import AsyncMock, patch
 import pytest
 from app.services.cache_service import TranslationCacheService
 from app.services.translator_service import TranslatorService
@@ -20,9 +20,13 @@ async def test_cache_service_crud():
     val = await cache.get("Hello", "translate")
     assert val == "Halo"
     
-    # Case insensitivity & whitespace normalization check
-    val_norm = await cache.get("  hello  ", "translate")
-    assert val_norm == "Halo"
+    # Case and whitespace are semantic and must not collide.
+    assert await cache.get("hello", "translate") is None
+    assert await cache.get("  Hello  ", "translate") is None
+
+    # Only line endings are normalized.
+    await cache.set("Line 1\r\nLine 2", "translate", "Baris")
+    assert await cache.get("Line 1\nLine 2", "translate") == "Baris"
     
     # Miss check
     val_miss = await cache.get("Goodbye", "translate")
@@ -30,7 +34,8 @@ async def test_cache_service_crud():
     
     # Update stats
     stats = await cache.get_stats()
-    assert stats["total_entries"] == 1
+    assert stats["total_entries"] == 2
+    assert stats["schema_version"] == 2
     
     # Clear cache
     await cache.clear()
@@ -42,7 +47,12 @@ async def test_cache_service_crud():
 async def test_translator_service_cache_hit(mock_ollama_client):
     service = TranslatorService()
     cache = TranslationCacheService()
-    await cache.set("Open the door", "translate", "Buka pintu", service.model)
+    await cache.set(
+        "Open the door",
+        "translate",
+        "Buka pintu",
+        service.translation_profile(),
+    )
     
     result = await service.translate("Open the door", "translate")
     
@@ -62,7 +72,9 @@ async def test_translator_service_cache_miss(mock_ollama_client):
     
     # Verify it was saved to cache with correct model
     cache = TranslationCacheService()
-    cached = await cache.get("Open the window", "translate", service.model)
+    cached = await cache.get(
+        "Open the window", "translate", service.translation_profile()
+    )
     assert cached == "Buka jendela"
 
 
@@ -105,8 +117,9 @@ async def test_batch_translate_success(mock_ollama_client):
     
     # Verify both stored in cache with correct model
     cache = TranslationCacheService()
-    assert await cache.get("One", "translate", service.model) == "Satu"
-    assert await cache.get("Two", "translate", service.model) == "Dua"
+    profile = service.translation_profile()
+    assert await cache.get("One", "translate", profile) == "Satu"
+    assert await cache.get("Two", "translate", profile) == "Dua"
 
 
 @pytest.mark.asyncio
@@ -146,13 +159,60 @@ async def test_batch_translate_fallback_on_missing_item(mock_ollama_client):
     assert results == {"1": "Satu", "2": "Dua"}
 
 
-def test_api_health_endpoint(test_client):
-    response = test_client.get("/api/v1/health")
-    assert response.status_code == 200
-    assert response.json() == {
-        "status": "ok",
-        "message": "Mars Web Translator AI server is running"
+@pytest.mark.asyncio
+async def test_batch_does_not_retry_unchanged_result(mock_ollama_client):
+    mock_ollama_client.generate.return_value = "[1] API"
+
+    service = TranslatorService()
+    results = await service.translate_batch(
+        [TranslateItem(id="api", text="API")],
+        "translate",
+    )
+
+    assert results == {"api": "API"}
+    assert mock_ollama_client.generate.await_count == 1
+
+
+def test_batch_parser_preserves_multiline_output():
+    service = TranslatorService()
+    parsed = service._parse_batch_result(
+        "[1] Baris pertama\nBaris kedua\n\n[2] Hasil lain",
+        expected_count=2,
+    )
+
+    assert parsed == {
+        0: "Baris pertama\nBaris kedua",
+        1: "Hasil lain",
     }
+
+
+@pytest.mark.asyncio
+async def test_translator_service_applies_glossary(mock_ollama_client):
+    mock_ollama_client.generate.return_value = "Pengakuan perangkat keras"
+
+    service = TranslatorService()
+    result = await service.translate("Hardware support feature", "translate")
+
+    assert result == "Dukungan perangkat keras"
+
+
+def test_api_health_endpoint(test_client):
+    active = "mars-translator-qwen3:latest"
+    with (
+        patch(
+            "app.api.v1.endpoints.health.list_installed_models",
+            new=AsyncMock(return_value=[active]),
+        ),
+        patch("app.api.v1.endpoints.health.OllamaClient") as client_class,
+    ):
+        client_class.return_value.is_model_on_gpu = AsyncMock(return_value=True)
+        response = test_client.get("/api/v1/health")
+
+    assert response.status_code == 200
+    data = response.json()
+    assert data["status"] == "ok"
+    assert data["active_model"]["gpu"] is True
+    assert len(data["translation_profile"]) == 64
 
 
 def test_api_cache_endpoints(test_client):
@@ -181,6 +241,7 @@ def test_api_batch_translate_endpoint(test_client, mock_ollama_client):
     assert len(res_data["results"]) == 1
     assert res_data["results"][0]["id"] == "abc"
     assert res_data["results"][0]["translated_text"] == "Terjemahan Sukses"
+    assert len(res_data["translation_profile"]) == 64
 
 
 # ================================================================

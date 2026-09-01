@@ -50,10 +50,31 @@
         <span class="btn-icon">↩️</span>
         <span class="btn-label">Restore Original</span>
       </button>
+      <button id="restoreSubtitleBtn" class="btn btn-warning" style="display:none;">
+        <span class="btn-icon">⏪</span>
+        <span class="btn-label">Restore Subtitle</span>
+      </button>
       <button id="testApiBtn" class="btn btn-secondary">
         <span class="btn-icon">🔌</span>
         <span class="btn-label">Test API Connection</span>
       </button>
+    </div>
+
+    <!-- Video Info Section -->
+    <div class="video-section" id="videoInfoSection" style="display:none;">
+      <h3 class="section-title">Info Video</h3>
+      <div class="video-info-grid" id="videoInfoGrid">
+        <div class="video-info-row"><span class="info-label">Platform</span><span class="info-value" id="viPlatform">—</span></div>
+        <div class="video-info-row"><span class="info-label">Video</span><span class="info-value" id="viVideoCount">—</span></div>
+        <div class="video-info-row"><span class="info-label">Subtitle</span><span class="info-value" id="viSubtitleDetected">—</span></div>
+        <div class="video-info-row"><span class="info-label">Format</span><span class="info-value" id="viFormat">—</span></div>
+        <div class="video-info-row"><span class="info-label">Load via</span><span class="info-value" id="viLoadMethod">—</span></div>
+        <div class="video-info-row"><span class="info-label">Status</span><span class="info-value" id="viStatus">—</span></div>
+        <div class="video-info-row video-tracks-row" id="viTracksRow" style="display:none;">
+          <span class="info-label">Tracks</span>
+          <span class="info-value" id="viTracks">—</span>
+        </div>
+      </div>
     </div>
 
     <!-- Stats Section -->
@@ -83,6 +104,7 @@
     </div>
   </div>
 
+  <script src="../shared/api.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>

@@ -1,0 +1,122 @@
+original_text,translated_text
+"Go deeper into topics like types, coercion, scope, and modules. This strengthens your understanding JavaScript and gives you a foundation for building web applications with Vanilla JS or frameworks like React.","Masuk lebih dalam ke topik-topik seperti tipe data, coerensi, lingkup, dan modul. Hal ini akan memperkuat pemahaman Anda tentang JavaScript dan memberikan dasar untuk membangun aplikasi web dengan JavaScript vanilla atau framework seperti React."
+"Scott connects the client-side tools to the app by removing old glue code that merged streamed backend outputs into Excalidraw. He explains how Cloudflare’s `onToolCall` and `addToolOutput` primitives let the browser execute tools locally and send the results back to the agent via WebSockets. Scott also adds helper logic, such as `stripNulls`, and a `queryCanvas` handler so the client can safely translate tool arguments into Excalidraw-friendly state.","Scott menghubungkan alat klien dengan aplikasi dengan menghapus kode lama yang menggabungkan output backend berbasis streaming ke Excalidraw. Dia menjelaskan bagaimana primitif Cloudflare `onToolCall` dan `addToolOutput` memungkinkan browser untuk mengeksekusi alat secara lokal dan mengirim hasilnya kembali ke agen melalui WebSockets. Scott juga menambahkan logika bantuan seperti `stripNulls`, serta handler `queryCanvas` sehingga klien dapat menerjemahkan argumen alat menjadi state yang ramah Excalidraw dengan aman."
+13:08:38 UTC+7,13:08:38 WIB
+17:12:42 UTC+7,17:12:42 WIB
+"I don't always have time, but I do enjoy it when I can.  I guess I'm just so focused on my boyfriend.  Do you have a significant other and is it serious?","Saya tidak selalu memiliki waktu, tapi saya senang ketika bisa. Mungkin hanya karena saya fokus pada pacar saya. Anda punya orang yang spesial dan hubungannya serius?"
+Buy now,Beli sekarang
+Get invite for group,Minta Undangan untuk Grup
+You can also install Node.js using,Anda juga dapat menyambungkan Node.js menggunakan
+Paste,Tempel
+"Feb 15, 2024",15 Februari 2024
+Undo,Urungkan
+Dark mode enabled,Mode gelap diaktifkan
+"Thinking Preservation: we’ve introduced a new option to retain reasoning context from historical messages, streamlining iterative development and reducing overhead.","Penghapusan Pemikiran: kami telah memasukkan opsi baru untuk menyimpan konteks pemikiran dari pesan sejarah, mengurangi overhead dan mempercepat pengembangan iteratif."
+File,Berkas
+Let's restart our dev server to apply the configuration update.,Mari kita mulai ulang dev server untuk menerapkan pembaruan konfigurasi.
+Security,Keamanan
+Settings saved successfully.,Pengaturan berhasil disimpan.
+distillation,distilasi
+The Supreme Dantian,Dantian Puncak
+Installing Node.js,Instalasi Node.js
+Travis CI support,Support Travis CI
+Add subtle drop shadow to subtitle text for visual contrast.,Tambahkan bayangan halus ke teks subtitle untuk kontras visual.
+Execute bash command inside running container with `docker exec -it app bash`.,Jalankan perintah bash di dalam kontainer yang berjalan dengan `docker exec -it app bash`.
+Error: Invalid response from server.,Error: Respons tidak valid dari server.
+Preserve code syntax and developer terms in video subtitles.,Pertahankan sintaksis kode dan istilah developer dalam subtitle video.
+Staff Software Engineer,Insinyur Sistem Perangkat Lunak
+Confirm deletion,Konfirmasi penghapusan
+"First, you'll need to install dependencies required by puppeteer, such as the necessary libraries and tools for running a headless Chromium browser.","Setelah memasang paket-paket ini, Anda dapat melanjutkan dengan menyambungkan whatsapp-web.js dan puppeteer seperti biasa. Ketika puppeteer menginstal, ia akan mendownload versi Chromium yang sesuai untuk lingkungan tanpa GUI."
+Configure UFW firewall to open ports 80 and 443 for web traffic.,Konfigurasikan firewall UFW untuk membuka port 80 dan 443 untuk lalu lintas web.
+Downloads,Unduhan
+Automate SSL certificate renewal using Let's Encrypt Certbot tool.,Otomatiskan pembaruan sertifikat SSL menggunakan tool Let's Encrypt Certbot.
+Staff UI Engineer,Desainer Antarmuka Pengguna
+Web server returned HTTP status 429 Too Many Requests.,Server web mengembalikan status HTTP 429 Too Many Requests.
+Set subtitle background color to solid or semi-transparent.,Setel warna latar belakang subtitle ke solid atau semi-transparan.
+Sending request to FastAPI...,Mengirim request ke FastAPI...
+Connection lost. Reconnecting...,Koneksi terputus. Menghubungkan kembali...
+ACK_SERVER,KONFIRMASI_SERVER
+Episode 32,Episod 32
+Archive Size,Ukuran Arsip
+Storage,Penyimpanan
+OpenCode config,Konfigurasi OpenCode
+Download only specific repositories you need,Unduh hanya repositori spesifik yang Anda butuhkan
+Learn more,Pelajari lebih lanjut
+Deserialization,Deserialisasi
+Course Description,Deskripsi Kurikulum
+Your changes have been saved.,Perubahan Anda telah disimpan.
+Listen for TextTrack oncuechange event to update subtitle text.,Dengarkan peristiwa oncuechange TextTrack untuk memperbarui teks subtitle.
+Documentation Index,Daftar Dokumentasi
+addOrEditCustomerNote(note),tambahAtauEditNotaPelanggan
+Largest Source,Sumber Terbesar
+"Unless required by applicable law or agreed to in writing, software","kecuali dibutuhkan oleh hukum yang berlaku atau disepakati tertulis, layanan dan kondisi apa pun, baik secara eksplisit maupun implisit."
+View all,Lihat semua
+"July 18, 2026","Juli 18, 2026"
+Today,Hari ini
+Tuesday,Selasa
+Improvement Loop,Loop Perbaikan
+Tools,Alat
+"Scott creates tools for adding and modifying diagrams. Each tool requires a description that tells the LLM when to use it, an inputSchema defined with Zod that validates the arguments, and an execute function that runs when the LLM calls the tool. These tools will work for simple diagrams but struggle with complex ones. Later in the course, the scores will show exactly where the agent falls short.","Scott membuat alat untuk menambahkan dan mengubah diagram. Setiap alat memerlukan deskripsi yang menjelaskan kapan LLM harus menggunakan alat tersebut, inputSchema yang didefinisikan dengan Zod untuk validasi argumen, dan fungsi execute yang dijalankan ketika LLM memanggil alat tersebut. Alat-alat ini akan bekerja baik untuk diagram yang sederhana tetapi sulit menghadapi diagram yang kompleks. Nantinya dalam kursus, skor akan menunjukkan tepat di mana agen terbatas."
+Settings updated successfully.,Pengaturan berhasil diperbarui.
+Create new git release tag using `git tag v1.0.0`.,Buat tag rilis git baru menggunakan `git tag v1.0.0`.
+Will Sentance,William Sentance
+drag handle,pegangan tarik
+GPU VRAM usage: 5.2 GB out of 8.0 GB.,"Penggunaan VRAM GPU: 5,2 GB dari 8,0 GB."
+Failed!,Gagal!
+Message replies,Balas Pesan
+Compile,Kompilasi
+Scope,Cakupan
+Use npm install to fetch project packages.,Gunakan npm install untuk mengambil paket proyek.
+Settings,Pengaturan
+Setup Zod Schemas,Pengaturan Skema Zod
+ACK_PENDING,PENUNGGUAN_KONFIRMASI
+Libraries:,Bibliothek:
+"Properly support all o1 models, regardless of provider.","Mendukung semua model o1, tidak peduli siapa penyedia modelnya."
+Crowned In A Hundred Days,Dipenghormati dalam Seratus Hari
+"Deep dive into JavaScript, the most popular framework React, Web performance, CSS, deploying websites, TypeScript, and functional JavaScript to become a professional web developer today.","Pengenalan mendalam ke JavaScript, framework terpopuler React, kinerja web, CSS, penerapan website, TypeScript, dan JavaScript fungsional untuk menjadi pengembang web profesional hari ini."
+"Loading, please wait...","Memuat, harap tunggu..."
+Authentication,Autentikasi
+"Comparing REST, GraphQL, and gRPC for microservices communication.","Membandingkan REST, GraphQL, dan gRPC untuk komunikasi microservices."
+Multi Device,Multi Perangkat
+Wrapping Up,Penutup
+BROADCAST_NOTIFICATION,PENULISAN_BERITA_PERINGATAN
+"Scott builds the first API-backed tool, a web search tool, so the agent can ground itself on current information or referenced URLs before making diagrams. He uses Tavily as the search provider and explains why summarized search results are helpful for keeping context size under control. Scott also talks through input design, error handling, and the security mindset of treating the LLM as a user who should see only the minimum necessary information.","Scott mengembangkan alat berbasis API yang pertama, yaitu alat pencarian web, sehingga agen dapat menempatkan dirinya pada informasi terkini atau URL yang diacu sebelum membuat diagram. Dia menggunakan Tavily sebagai penyedia pencarian dan men tetap terkontrol. Scott juga membahas desain input, penanganan kesalahan, dan sikap keamanan dalam memperlakukan LLM sebagai pengguna yang hanya harus melihat informasi minimum yang diperlukan."
+Privacy,Privasi
+Building responsive web UIs with CSS Grid and Flexbox layouts.,Membangun UI web responsif dengan tata letak CSS Grid dan Flexbox.
+Wrap text lines so subtitles do not exceed two screen lines.,Bungkus baris teks agar subtitle tidak melebihi dua baris layar.
+"{'messages': [{'role': 'system', 'content': 'You are WithinUsAI Master Scholars Earth & Climate Science. Provide concise, factual answers.'}, {'role': 'user', 'content': 'True or False (academics): The water cycle includes evaporation, condensation, precipitation, and runoff.'}]}","{'messages': [{'role': 'system', 'content': 'Anda adalah Ahli Sarjana Master Scholars Dalam Dunia Alam dan Ilmu Lingkungan WithinUsAI. Berikan jawaban yang singkat dan fakta.'}, {'role': 'user', 'content': 'Benar atau Salah (dari segi akademisi): Siklus air mencakup uapuap, penyusunan, penderitaan, dan aliran.'}]}"
+Next week,Minggu depan
+How to build custom browser extensions for productivity and translation.,Cara membangun ekstensi browser kustom untuk produktivitas dan terjemahan.
+"Like I would be surprised if there are any
+production agents out",Saya akan kaget jika ada agen produksi yang aktif.
+End of preview.,Akhir pratinjau.
+# AI Techniques,# Teknik AI
+Too many requests. Please wait a few minutes before retrying.,Terlalu banyak permintaan. Silakan tunggu beberapa menit sebelum mencoba lagi.
+Sign Up,Daftar
+Tales of Demons and Gods Season 10 Episode 02 Subtitle Indonesia,Tales of Demons and Gods Musim 10 Episode 02 Subtitle Bahasa Indonesia
+Pause video to inspect and review translated subtitle transcript.,Jeda video untuk memeriksa dan meninjau transkrip subtitle yang diterjemahkan.
+"Stores are external-independent database plugins that enable storing the session into different databases. To work with RemoteAuth, new stores must implement the following interface.","Store adalah plugin database independen yang memungkinkan penyimpanan sesi ke dalam database yang berbeda. Untuk bekerja dengan RemoteAuth, store baru harus mengimplementasikan interface berikut."
+Appearance,Tampilan
+FAQ,FAQ
+Interactive UI elements styled with utility-first Tailwind CSS classes.,Elemen UI interaktif ditata dengan kelas Tailwind CSS utility-first.
+Cannot fix,Tidak bisa diperbaiki
+Cloud & DevOps,Pelayanan Cloud dan DevOps
+Request method,Metode permintaan
+Increased Context Window,Konteks yang Lebih Besar
+"Alright, let's open up the terminal and run the dev server.","Oke, mari kita buka terminal dan jalankan dev server."
+Report inaccurate subtitle translation with one click button.,Laporkan terjemahan subtitle yang tidak akurat dengan satu tombol klik.
+"Scott updates the system prompt so its wording matches the schema changes, especially around labels and arrow bindings. He adds stronger global rules such as requiring arrows to bind to real shapes and forbidding free-floating connections or separate text elements when a label should live on the shape itself. Scott also notices that the client’s null-stripping helper only works at the top level, so he decides to make it recursive to avoid malformed canvas data.","Scott memperbarui prompt sistem agar bahasanya sesuai dengan perubahan schema, terutama seputar label dan ikatan panah. Dia menambahkan aturan global yang lebih kuat seperti meminta panah mengikat pada bentuk nyata dan melarang koneksi bebas atau elemen teks terpisah ketika label harus berada di atas bentuk itu sendiri. Scott juga menyadari bahwa helper penghapusan null milik klien hanya bekerja pada tingkat tertinggi, jadi dia memutuskan untuk membuatnya rekursif untuk menghindari data canvas yang tidak sah."
+Lead Projects and Teams at Scale,Memimpin Proyek dan Tim pada Skala Besar
+Browser APIs,API browser
+We gotta think about this.,Kita harus memikirkan hal ini.
+Account,Akun
+Evals & Scoring,Penilaian & Skor
+The Structure,Struktur
+"Scott revisits the element schema and explains that a single, mostly nullable schema leaves too much ambiguity for the model and the Excalidraw renderer. He replaces that approach with unions so the LLM must choose among concrete element types that more closely match how Excalidraw actually represents shapes and arrows. Scott also updates tool descriptions to match the new vocabulary and gives explicit guidance about using a shape’s label field instead of creating separate text elements for labels.",Scott kembali membahas skema elemen dan menjelaskan bahwa skema tunggal dengan banyak nullable meninggalkan terlalu banyak ambiguitas bagi model dan pemroses Excalidraw. Dia menggantikan pendekatan tersebut dengan unions sehingga LLM harus memilih antara tipe elemen konkret yang lebih dekat dengan cara Excalidraw mewakili bentuk dan
+GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-and-more-Distillation-Dataset,GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-dan-lebih-jauh-Distilasi-Dataset
+Stream LLM text output in real time for responsive user interaction.,Mengalirkan output teks LLM secara real-time untuk interaksi pengguna yang responsif.
+Let's jump straight into the coding part.,Mari kita langsung masuk ke bagian penulisan kode.
+Account created successfully.,Akun berhasil dibuat.
+"Master React and Next.js, the Leading Technologies Powering Modern Web Development","Menguasai React dan Next.js, Teknologi Terdepan yang Mempersatukan Pengembangan Web Modern"
+"Juli 11, 2026",11 Juli 2026
+Payment successful,Pembayaran berhasil

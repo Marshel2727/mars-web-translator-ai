@@ -16,7 +16,8 @@
         console.log("[Mars Translator] 💉 Interceptor script disuntikkan ke halaman.");
     }
 
-    // Panggil langsung saat script jalan (document_start)
+    window.marsVideoInfo = window.marsVideoInfo || {};
+
     injectInterceptor();
 
     // --- Floating UI Status ---
@@ -127,8 +128,9 @@
                 
                 if (textLines.length > 0) {
                     const id = `vtt_${idCounter++}`;
-                    items.push({ id, text: textLines.join('\n') });
-                    structure.push({ type: 'text', id });
+                    const originalText = textLines.join('\n');
+                    items.push({ id, text: originalText });
+                    structure.push({ type: 'text', id, originalText });
                 }
                 i = j - 1; // Skip baris teks yang sudah dibaca
             } else {
@@ -145,7 +147,7 @@
             if (block.type === 'raw' || block.type === 'time') {
                 result.push(block.content);
             } else if (block.type === 'text') {
-                result.push(translatedMap[block.id] || "");
+                result.push(translatedMap[block.id] ?? block.originalText ?? "");
             }
         }
         return result.join('\n');
@@ -211,23 +213,44 @@
                 // Gunakan mode "translate"
                 const response = await api.translateBatch(chunk, "translate");
                 if (response && response.results) {
+                    if (response.translation_profile && response.model) {
+                        globalThis.MarsTranslator.updateTranslationProfile?.(
+                            response.translation_profile,
+                            response.model,
+                        );
+                    }
                     response.results.forEach(res => {
                         translatedMap[res.id] = res.translated_text;
                     });
+
+                    // Respons parsial tidak boleh menghapus cue yang tidak dikembalikan backend.
+                    chunk.forEach(item => {
+                        if (!(item.id in translatedMap)) {
+                            translatedMap[item.id] = item.text;
+                        }
+                    });
                     consecutiveErrors = 0; // Reset error counter on success
+                } else {
+                    chunk.forEach(item => translatedMap[item.id] = item.text);
+                    consecutiveErrors++;
                 }
             } catch (err) {
                 console.error("[Mars Translator] Gagal translate chunk", err);
                 // Fallback ke teks asli jika gagal
                 chunk.forEach(c => translatedMap[c.id] = c.text);
                 consecutiveErrors++;
+            }
 
-                // Jika 2 chunk berturut-turut gagal (misal server mati/offline), hentikan loop dan tampilkan error
-                if (consecutiveErrors >= 2) {
-                    console.warn("[Mars Translator] Backend server tidak merespons. Menghentikan batch translation.");
-                    showSubtitleStatus("Server Backend Mati / Offline", null, false, true);
-                    break;
-                }
+            // Jika 2 chunk berturut-turut gagal (misal server mati/offline), hentikan loop.
+            if (consecutiveErrors >= 2) {
+                console.warn("[Mars Translator] Backend server tidak merespons. Menghentikan batch translation.");
+                showSubtitleStatus("Server Backend Mati / Offline", null, false, true);
+
+                // Semua chunk yang belum diproses harus tetap menggunakan subtitle asli.
+                items.slice(i + CHUNK_SIZE).forEach(item => {
+                    translatedMap[item.id] = item.text;
+                });
+                break;
             }
             
             completed += chunk.length;
@@ -303,78 +326,126 @@
         }
     });
 
+    function scanVideoInfo() {
+        const info = {
+            platform: window.marsVideoInfo?.platform || detectPlatformFromHost(),
+            videoCount: document.querySelectorAll('video').length,
+            subtitleDetected: false,
+            subtitleFormat: window.marsVideoInfo?.subtitleFormat || null,
+            subtitleLoadMethod: window.marsVideoInfo?.subtitleLoadMethod || null,
+            subtitleStatus: window.marsSubtitleDetected ? 'done' : 'idle',
+            tracks: [],
+            interceptorPresent: !!window._marsSubtitleInterceptorInjected,
+        };
+
+        document.querySelectorAll('track').forEach(t => {
+            const src = t.getAttribute('src') || '';
+            info.tracks.push({
+                lang: t.getAttribute('srclang') || '',
+                kind: t.getAttribute('kind') || '',
+                label: t.getAttribute('label') || '',
+                src: src,
+                isTranslated: t.getAttribute('data-mars-translated') === 'true',
+                format: src.match(/\.(\w+)(\?|#|$)/)?.[1] || 'unknown',
+            });
+        });
+
+        if (info.tracks.length > 0) info.subtitleDetected = true;
+        if (window.marsVideoInfo?.subtitleDetected) info.subtitleDetected = true;
+        if (info.subtitleFormat && !info.subtitleLoadMethod) info.subtitleLoadMethod = 'track';
+
+        return info;
+    }
+
+    function detectPlatformFromHost() {
+        const host = location.hostname;
+        if (host.includes('youtube.com') || host.includes('youtu.be')) return 'youtube';
+        if (host.includes('vimeo.com')) return 'vimeo';
+        if (host.includes('frontendmasters.com')) return 'frontendmasters';
+        if (host.includes('udemy.com')) return 'udemy';
+        if (host.includes('coursera.org')) return 'coursera';
+        if (host.includes('netflix.com')) return 'netflix';
+        return 'generic';
+    }
+
     // --- DOM Track Interceptor (<track> tag) ---
     async function processTrackElement(track) {
-        if (track.hasAttribute("data-mars-translated")) return;
-        track.setAttribute("data-mars-translated", "processing");
+        const currentStatus = track.getAttribute("data-mars-translated");
+        if (currentStatus === "processing" || currentStatus === "true") return;
 
-        // Tunggu sebentar jika src belum ter-set
         let src = track.getAttribute("src");
-        if (!src) return; 
+        if (!src) return;
 
-        // Hanya proses file .vtt (abaikan file gambar/metadata jika ada)
         if (!src.includes(".vtt")) {
-            // Beberapa website mungkin tidak menyertakan .vtt di URL, 
-            // tapi kita akan coba proses jika kind="subtitles" atau "captions"
             if (track.kind !== "subtitles" && track.kind !== "captions") return;
         }
 
-        console.log(`[Mars Translator] 🎞️ Mendeteksi elemen <track>:`, src);
+        track.setAttribute("data-mars-translated", "processing");
 
-        // Coba cari parent <video>
+        if (!track.hasAttribute("data-mars-original-src")) {
+            track.setAttribute("data-mars-original-src", src);
+        }
+
         const video = track.closest("video") || document.querySelector("video");
         let wasPlaying = false;
 
         if (video && !video.paused) {
             wasPlaying = true;
-            video.pause(); // Pause video while translating
-            console.log("[Mars Translator] ⏸️ Mem-pause video sementara untuk menerjemahkan subtitle...");
+            video.pause();
         }
 
         window.marsSubtitleDetected = true;
         window.marsSubtitleDetectedType = "vtt (track)";
+        window.marsVideoInfo = window.marsVideoInfo || {};
+        window.marsVideoInfo.subtitleDetected = true;
+        window.marsVideoInfo.subtitleFormat = 'vtt';
+        window.marsVideoInfo.subtitleLoadMethod = 'track';
+        window.marsVideoInfo.subtitleStatus = 'translating';
 
         showSubtitleStatus("Pre-Fetch Subtitle HTML5...", 0);
 
         try {
-            // Karena ini dari <track> DOM, URL mungkin relatif, jadi kita gunakan fetch bawaan content script
             const absoluteSrc = new URL(src, location.href).toString();
             const response = await fetch(absoluteSrc);
             if (!response.ok) throw new Error("Gagal fetch file subtitle");
-            
+
             const content = await response.text();
 
             const parsed = parseVTT(content);
             if (parsed.items.length === 0) {
                 track.setAttribute("data-mars-translated", "empty");
                 showSubtitleStatus("Subtitle kosong", null, false, true);
-                if (wasPlaying && video) video.play().catch(e => console.warn(e));
+                if (wasPlaying && video) video.play().catch(() => {});
                 return;
             }
 
             const translatedMap = await translateSubtitleChunks(parsed.items, absoluteSrc);
             const translatedContent = reconstructVTT(parsed.structure, translatedMap);
 
-            // Create Blob URL
             const blob = new Blob([translatedContent], { type: "text/vtt" });
             const blobUrl = URL.createObjectURL(blob);
 
-            // Set new src
+            const previousBlobUrl = track.getAttribute("data-mars-blob-url");
+            if (previousBlobUrl) {
+                URL.revokeObjectURL(previousBlobUrl);
+            }
+
             track.setAttribute("src", blobUrl);
+            track.setAttribute("data-mars-blob-url", blobUrl);
             track.setAttribute("data-mars-translated", "true");
+            window.marsVideoInfo.subtitleStatus = 'done';
 
             showSubtitleStatus("Subtitle Diterjemahkan", 100, true);
-            console.log("[Mars Translator] ✅ Subtitle <track> berhasil ditimpa.");
 
         } catch (e) {
             console.error("[Mars Translator] Gagal memproses <track> subtitle:", e);
             track.setAttribute("data-mars-translated", "error");
+            window.marsVideoInfo.subtitleStatus = 'error';
             showSubtitleStatus("Gagal menerjemahkan subtitle", null, false, true);
         }
 
         if (wasPlaying && video) {
-            video.play().catch(e => console.warn("[Mars Translator] Gagal auto-play video:", e));
-            console.log("[Mars Translator] ▶️ Melanjutkan video.");
+            video.play().catch(() => {});
         }
     }
 
@@ -486,15 +557,46 @@
     window.marsSubtitleDetected = false;
     window.marsSubtitleDetectedType = null;
 
+    async function restoreSubtitle() {
+        window.postMessage({ type: "MARS_CLEAR_SUBTITLE_CACHE" }, "*");
+        window.postMessage({ type: "MARS_ENABLE_PASSTHROUGH", duration: "15000" }, "*");
+
+        await new Promise(r => setTimeout(r, 100));
+
+        const tracks = document.querySelectorAll('track[data-mars-translated]');
+        tracks.forEach(track => {
+            const originalSrc = track.getAttribute('data-mars-original-src');
+            const blobUrl = track.getAttribute('data-mars-blob-url');
+            if (originalSrc) {
+                track.setAttribute('src', originalSrc);
+            }
+            if (blobUrl) URL.revokeObjectURL(blobUrl);
+            track.removeAttribute('data-mars-translated');
+            track.removeAttribute('data-mars-original-src');
+            track.removeAttribute('data-mars-blob-url');
+        });
+
+        window.marsSubtitleDetected = false;
+        window.marsSubtitleDetectedType = null;
+        window.marsVideoInfo = {};
+    }
+
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         if (message.type === "CHECK_SUBTITLE_STATUS") {
-            const trackElements = document.querySelectorAll("video track");
-            let hasTrack = trackElements.length > 0;
-            let hasFMTranscript = fmTranscriptScraped;
-            
-            sendResponse({
-                detected: window.marsSubtitleDetected || hasTrack || hasFMTranscript,
-                type: window.marsSubtitleDetectedType || (hasFMTranscript ? "frontend_masters_transcript" : (hasTrack ? "vtt (track)" : "unknown")),
+            const info = scanVideoInfo();
+
+            info.detected = window.marsSubtitleDetected || info.subtitleDetected;
+            info.type = window.marsSubtitleDetectedType || (info.subtitleDetected ? info.subtitleFormat : "unknown");
+
+            sendResponse(info);
+            return true;
+        }
+
+        if (message.type === "RESTORE_SUBTITLE") {
+            restoreSubtitle().then(() => {
+                sendResponse({ ok: true });
+            }).catch((e) => {
+                sendResponse({ ok: false, error: e.message });
             });
             return true;
         }
